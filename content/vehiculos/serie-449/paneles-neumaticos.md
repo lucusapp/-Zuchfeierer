@@ -14,7 +14,7 @@ Código de colores del plano general: **azul** = paneles neumáticos · **naranj
 
 ## Situación de cofres — semitrén A1-A2
 
-![Situación de cofres y paneles del semitrén A1-A2: Panel de Auxiliares, Sifa, Dotación, Panel Generación de TFA y Panel Auxiliar de freno](vehiculos/serie-449/situacion-cofres-a1-a2.svg)
+![Situación de cofres y paneles del semitrén A1-A2: Panel de Auxiliares, Sifa, Dotación, Panel Generación de TFA y Panel Auxiliar de freno](vehiculos/serie-449/situacion-cofres-a1-a2.webp)
 
 *(Falta la mitad A4-A3-A5-A2 del esquema — la añado en cuanto me pases esa imagen.)*
 
@@ -22,10 +22,10 @@ Código de colores del plano general: **azul** = paneles neumáticos · **naranj
 
 Uno en cada coche extremo (idénticos), en el faldón izquierdo en sentido de la marcha. El manual numera hasta 20 elementos en la foto de este panel, pero de todos ellos solo importan dos para el maquinista:
 
-- **Nº8 Válvula relé**: crea la TFA a partir de la TDP. En caso de fuga, pasar al otro panel o a freno de auxilio.
-- **Nº6 Llave de aislamiento del panel de TFA**: cierra para evitar una fuga completa de TFA por este panel.
+- **Nº8 Válvula relé** *(círculo verde)*: crea la TFA a partir de la TDP. En caso de fuga, pasar al otro panel o a freno de auxilio.
+- **Nº6 Llave de aislamiento del panel de TFA** *(conjunto marcado en magenta)*: cierra para evitar una fuga completa de TFA por este panel.
 
-> 📷 *Pendiente: foto real del panel (Imagen 20) con los 20 puntos numerados — la añado en cuanto me pases el archivo de imagen; no la redibujo a mano porque aquí sí importa la posición física exacta.*
+![Panel de generación de TFA con los 20 elementos numerados (imagen 20 del manual)](vehiculos/serie-449/panel-generacion-tfa.webp)
 
 ## 2. Panel de control del pantógrafo — A4/A5, lado izquierdo (último panel del coche)
 

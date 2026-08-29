@@ -21,7 +21,7 @@ meta:
 
 Tracción de **corriente alterna trifásica** con motores asíncronos y electrónica de potencia. **Dos cadenas de tracción y frenado independientes e idénticas**, cada una alimenta 3 motores: prácticamente todo el equipo va doblado para poder seguir en modo degradado si falla un elemento.
 
-![Circuito de potencia: pantógrafos, disyuntores, filtro de entrada, convertidor de tracción, convertidor de auxiliares y motores por coche](vehiculos/serie-449/circuito-potencia.svg)
+![Circuito de potencia: pantógrafos, disyuntores, filtro de entrada, convertidor de tracción, convertidor de auxiliares y motores por coche](vehiculos/serie-449/circuito-potencia.webp)
 
 > 🖼️ *Imagen 11 del manual: mismo esquema de potencia con la leyenda TCU/ACU/FR/RF/DY/SP/SD.*
 
