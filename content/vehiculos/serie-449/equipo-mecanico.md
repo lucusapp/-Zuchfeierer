@@ -22,7 +22,7 @@ Paneles laminados antihumedad, ignífugos y con aislamiento acústico, sobre sop
 
 12 ejes / 6 bogies: **2 bogies extremos** + **4 bogies compartidos** (Jakobs), de los cuales 6 ejes son motores y 6 remolques.
 
-![Distribución de bogies y ejes motores/remolques por coche](vehiculos/serie-449/distribucion-bogies-ejes.svg)
+![Distribución de bogies y ejes motores/remolques por coche](vehiculos/serie-449/distribucion-bogies-ejes.webp)
 
 ### Suspensión
 - **Secundaria** (neumática): bogies extremos con 2 resortes neumáticos, bogies compartidos con 4. Altura mantenida automáticamente por válvulas niveladoras; sensores de presión informan al sistema del peso por bogie.

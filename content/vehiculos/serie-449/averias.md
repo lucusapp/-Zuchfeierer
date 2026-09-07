@@ -28,11 +28,13 @@ Cada avería sigue el mismo esquema: **qué ocurre** → **cómo se detecta** �
 - **Sobre qué actuar:** **no se puede forzar manualmente** el cambio de alimentación — lo gestiona el COSMOS. Si hiciera falta anularlo del todo, se hace desde el seccionador de distribución (pero esto anula también la TCU asociada).
 - **Qué provoca / consecuencia:** los equipos pasan a alimentarse automáticamente por el otro ACU; los servicios auxiliares se mantienen al 100%. **Si fallan los dos ACU, el tren no puede encenderse.**
 
-### Seccionamiento de mitad del tren
-- **Qué ocurre:** avería de alta tensión en un semitrén que el COSMOS no consigue subsanar por sí solo.
+### Seccionamiento de mitad del tren (SD)
+- **Qué ocurre:** derivación / avería de alta tensión en un semitrén (TCU + ACU) que el COSMOS no consigue subsanar por sí solo. Solo hay **un SD en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**.
 - **Cómo se detecta:** persistencia de la avería de alta pese a la gestión automática del COSMOS.
-- **Sobre qué actuar:** conmutador del **seccionador de distribución (SD)**, en el armario BT de cabina, **más** seccionar la subida del pantógrafo del semitrén afectado. Debe hacerse desde la **cabina habilitada**.
-- **Qué provoca / consecuencia:** esa mitad queda aislada eléctricamente; tracción y auxiliares siguen funcionando solo con la otra mitad, al 50%. En doble composición, la acción solo afecta a la composición donde se ha actuado.
+- **Sobre qué actuar:** conmutador del **seccionador de distribución (SD)**, en el armario BT de cabina — se acciona siempre con **batería conectada y pantógrafos bajados**. El procedimiento cambia según la composición:
+  - **En simple:** no hace falta cambiar de cabina. Se acciona el SD y, desde la misma cabina, se sube el pantógrafo del semitrén que queda útil (si el A2 es el inútil, se sube el pantógrafo 1 del A1 y se sigue con esa cadena).
+  - **En mando múltiple:** si la derivación está en la unidad acoplada de detrás, sí hay que cambiar de cabina — ir a esa unidad y accionar el SD ahí.
+- **Qué provoca / consecuencia:** esa mitad queda aislada eléctricamente; el semitrén útil sigue con **50% de tracción/freno eléctrico** y **100% de servicios auxiliares**.
 
 ## Neumático — producción de aire
 
@@ -57,19 +59,46 @@ Cada avería sigue el mismo esquema: **qué ocurre** → **cómo se detecta** �
 - **Qué provoca / consecuencia:** con freno de auxilio no hay freno de retención — el apriete/afloje es directo con el palillo, con poco margen de precisión. Límite de velocidad: **120 km/h**. *Cambiar el panel de freno a la cabina no habilitada provoca frenado de urgencia — no se puede hacer en marcha (a diferencia de la 447).*
 
 ### Condena de freno de servicio en un eje
-- **Qué ocurre:** agarrotamiento de las guarniciones de freno en los discos de un eje.
+- **Qué ocurre:** agarrotamiento **neumático** de las guarniciones de freno en los discos de un eje. *Importante: aislar el freno de servicio en esta unidad es siempre neumático — este tren no permite aislar la parte eléctrica del freno de servicio (a diferencia de la serie 447). La parte eléctrica la controla la TCU y la neumática la BCU (o el WSP si falla la BCU), pero lo que se anula con las llaves es solo lo neumático.*
 - **Cómo se detecta:** en conducción (frenado irregular/ruido) o inspección.
-- **Sobre qué actuar:** llaves del **panel de freno TFA** (A4/A5): **10/1** para ejes remolques (grupos 1-2-6 // 7-11-12) o **10/2** para ejes motores (grupos 3-4-5 // 8-9-10) — se anula siempre de 3 en 3 ejes, nunca uno suelto. **Accionar también el bypass de tracción.**
-- **Qué provoca / consecuencia:** reducción de velocidad obligatoria: 110 km/h (UT simple, 3 ejes), 120 km/h (doble UT, 3 ejes), 110 km/h (doble UT, 6 ejes, nunca los 6 en la misma unidad simple). Con 9 o 12 ejes: **no permitido**. En la práctica, solo se puede aislar una llave por unidad.
+- **Sobre qué actuar:** siempre de 3 en 3 ejes (remolques o motores por separado), en el **panel de freno TFA** que corresponda según el eje averiado:
+
+  | Eje averiado | Panel | Llave | Grupo que se aísla |
+  |---|---|---|---|
+  | 1, 2 o 6 | Panel de freno TFA del **A4** | 10/1 | los 3 ejes remolques (1,2,6) |
+  | 3, 4 o 5 | Panel de freno TFA del **A4** | 10/2 | los 3 ejes motores (3,4,5) |
+  | 7, 11 o 12 | Panel de freno TFA del **A5** | 10/1 | los 3 ejes remolques (7,11,12) |
+  | 8, 9 o 10 | Panel de freno TFA del **A5** | 10/2 | los 3 ejes motores (8,9,10) |
+
+  **Accionar también el bypass de tracción.**
+- **Qué provoca / consecuencia:** solo se puede aislar **una llave en todo el tren** (3 ejes). Límite de velocidad: **110 km/h**. Con 6, 9 o 12 ejes aislados: no permitido (ver tabla de velocidades detallada más abajo para el caso de doble UT).
 
 ### Condena de freno de estacionamiento
-- **Qué ocurre:** fuga en las tuberías o en el bloque del muelle acumulador de un bogie.
+- **Qué ocurre:** agarrotamiento **neumático** en el bloque del muelle acumulador o fuga en tuberías de un bogie (el freno de estacionamiento no tiene parte eléctrica, es puramente neumático).
 - **Cómo se detecta:** cae la presión en los cilindros de freno de estacionamiento y este se aplica solo → **se dispara el freno de emergencia de toda la unidad**.
-- **Sobre qué actuar:**
-  1. Cerrar la llave de condena del bogie afectado — bogie extremo: llave **Nº5** del panel auxiliar de freno (A1/A2); bogie compartido: cuadradillo del panel **EP-Compact** (A4/A5).
-  2. Aflojar manualmente con los **trinquetes** (2 por bogie — se oye un ruido característico).
+- **Sobre qué actuar:** aislamiento según el bogie afectado — **esto usa siempre llave + trinquetes**, no el cuadradillo eléctrico (ver la avería siguiente para la alternativa eléctrica):
+
+  | Eje averiado | Bogie | Panel | Llave |
+  |---|---|---|---|
+  | 1 o 2 | Extremo A1 | Panel auxiliar de freno del **A1** | Nº5 |
+  | 3, 4, 5 o 6 | Compartidos A1/A4 y A4/A3 (bogies 2 y 3) | Panel de freno TFA del **A4** | Nº5 |
+  | 7, 8, 9 o 10 | Compartidos A3/A5 y A5/A2 (bogies 4 y 5) | Panel de freno TFA del **A5** | Nº5 |
+  | 11 o 12 | Extremo A2 | Panel auxiliar de freno del **A2** | Nº5 |
+
+  1. Cerrar la llave de condena correspondiente.
+  2. Aflojar manualmente con los **trinquetes** (2 por bogie — ruido característico).
   3. Accionar el **bypass de lazo de tracción** (si no, sigue apareciendo la luz de freno de estacionamiento).
-- **Qué provoca / consecuencia:** esfuerzo de frenado de estacionamiento reducido. Límite práctico en Cataluña (excepto R3): hasta 2 bogies aislados (3 en doble UT) sin problema. Pendiente máxima soportada con freno de estacionamiento: 45‰ (en tara, todos los bogies en servicio) — la línea Barcelona-Puigcerdà tiene 43‰.
+- **Qué provoca / consecuencia:** esfuerzo de frenado de estacionamiento reducido, **sin límite de velocidad** (a diferencia del freno de servicio). Límite práctico en Cataluña (excepto R3): hasta 2 bogies aislados (3 en doble UT) sin problema. Pendiente máxima soportada con freno de estacionamiento: 45‰ (en tara, todos los bogies en servicio) — la línea Barcelona-Puigcerdà tiene 43‰.
+
+### Apretar / aflojar freno de estacionamiento eléctricamente (sin aislar)
+- **Qué ocurre:** necesitas aplicar o soltar el freno de estacionamiento de un bogie **sin** que haya una avería real que requiera aislarlo con llave + trinquetes — por ejemplo, para soltar todos los frenos de estacionamiento del tren antes de un remolque, evitándote ir bogie a bogie con trinquetes.
+- **Cómo se detecta:** decisión del maquinista, no es una avería en sí — es una función adicional de esta serie (novedad frente a trenes más antiguos).
+- **Sobre qué actuar:** es una orden **eléctrica** a los cilindros, equivalente a pulsar el botón de cabina pero hecha desde el panel — no requiere aislar ni tirar de trinquetes:
+  - **Bogies compartidos:** girar el **cuadradillo** del panel **EP-Compact** (ejes motores, A4/A5 lado izquierdo) para apretar o aflojar.
+  - **Bogies extremos:** los **tetones** junto a cada electroválvula del **panel auxiliar de freno** (A1/A2 lado izquierdo).
+- **Qué provoca / consecuencia:** mismo resultado que el método tradicional (llave + trinquetes) pero sin necesidad de aislar nada — más rápido, especialmente útil cuando hay que soltar muchos bogies (remolque). El método de llave + trinquetes sigue siendo el único válido cuando lo que hay es una avería real que exige dejar el freno aislado.
+
+> 💡 **Consejo del formador:** el método eléctrico (cuadradillo/tetones) es más cómodo, pero es propio de esta serie. El método tradicional (llave + trinquetes) es el que funciona en **todos** los trenes, así que conviene dominarlo bien aunque en la 449 tengas el atajo eléctrico disponible.
 
 ### Procedimiento general — avería de freno de servicio
 - **Qué ocurre:** el freno de servicio no responde con normalidad.

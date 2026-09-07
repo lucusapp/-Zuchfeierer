@@ -23,7 +23,7 @@ Tracción de **corriente alterna trifásica** con motores asíncronos y electró
 
 ![Circuito de potencia: pantógrafos, disyuntores, filtro de entrada, convertidor de tracción, convertidor de auxiliares y motores por coche](vehiculos/serie-449/circuito-potencia.webp)
 
-> 🖼️ *Imagen 11 del manual: mismo esquema de potencia con la leyenda TCU/ACU/FR/RF/DY/SP/SD.*
+![Circuito de alimentación con leyenda: pantógrafos, pararrayos, SP, SD, DY, TCU, ACU, FR, RF y motores por coche](vehiculos/serie-449/circuito-alimentacion-leyenda.webp)
 
 Cadena A1 (izquierda): pantógrafo A4 → disyuntor → filtro entrada A1 → TCU A1 → 1 motor en A1 + 2 motores en A4.
 Cadena A2 (derecha): pantógrafo A5 → disyuntor → filtro entrada A2 → TCU A2 → 1 motor en A2 + 2 motores en A5.
@@ -42,7 +42,9 @@ Cada pantógrafo lleva un pararrayos asociado.
 
 - **Seccionadores de pantógrafo (SP)**: uno junto a cada pantógrafo, aíslan del circuito de 3 kV. Se accionan con el conmutador Nº8 del armario BT de cabina.
 - **Seccionadores de puesta a tierra (P.A.T.)**: dos, permiten puesta a tierra simultánea de toda la cadena de tracción correspondiente y su ACU.
-- **Seccionador de distribución (SD)**: en el coche A3, normalmente **cerrado** (conecta ambas cadenas de 3 kV entre sí). Se abre para aislar una derivación a tierra y seguir con una sola cadena. En doble composición, actúa solo sobre la composición donde se ha operado; debe hacerse desde la cabina habilitada.
+- **Seccionador de distribución (SD)**: **único en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**. Normalmente **cerrado** (conecta ambas cadenas de 3 kV entre sí). Se acciona siempre con **batería conectada y pantógrafos bajados**. Aísla eléctricamente el semitrén con la derivación (TCU + ACU), dejando el otro semitrén con 50% de tracción/freno eléctrico y 100% de auxiliares.
+  - **En simple:** no hace falta cambiar de cabina — se acciona el SD y se sube el pantógrafo del semitrén útil desde la propia cabina.
+  - **En mando múltiple:** si la derivación está en la unidad acoplada, sí hay que cambiar de cabina e ir a esa unidad para accionar su SD.
 
 ## Disyuntores
 

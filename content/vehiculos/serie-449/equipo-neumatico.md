@@ -11,11 +11,13 @@ meta:
 ## Los cinco sistemas de frenado
 
 ### 1. Freno de servicio
-Combina **freno eléctrico** (regenerativo o reostático) + **freno neumático**, ambos desde el manipulador. Gestionado por dos **BCU** (Brake Control Unit), una en A1 y otra en A2, cada una responsable de la mitad del tren. Si falla una BCU, el **WSP** (Wheel Slip Protection, antibloqueo) asume el control sin perder prestaciones.
+Combina **freno eléctrico** (regenerativo o reostático, controlado por la **TCU**) + **freno neumático** (controlado por la **BCU**, o por el **WSP** si falla la BCU), ambos desde el manipulador. Dos BCU (Brake Control Unit), una en A1 y otra en A2, cada una responsable de la mitad del tren. Si falla una BCU, el WSP (Wheel Slip Protection, antibloqueo) asume el control sin perder prestaciones.
 
 - Entre 160 y 15 km/h: el neumático complementa al eléctrico si este no llega a cubrir la demanda.
 - Si falla la TCU (sin freno eléctrico): la BCU asume todo el frenado neumático.
 - Entre 0 y 15 km/h: **solo freno neumático**.
+
+> **Importante para averías:** cuando se habla de "condenar" o "aislar" el freno de servicio, siempre es un aislamiento **neumático** — la parte eléctrica (TCU) no se puede aislar de forma independiente en esta serie (a diferencia de la 447). Ver **Averías** para la tabla de qué panel usar según el eje afectado.
 
 ### 2. Freno de urgencia / emergencia
 Completamente neumático, independiente del de servicio. Se activa con manipulador, seta de emergencia, tiradores de alarma, o automáticamente por sistemas de seguridad. Corta tracción de inmediato y aplica la máxima deceleración. Al accionarse desde la seta o el manipulador en posición máxima, suena la bocina (aguda y grave a la vez).
@@ -24,7 +26,9 @@ Completamente neumático, independiente del de servicio. Se activa con manipulad
 Completamente neumático, mediante la **TFA** (Tubería de Freno Automático), como respaldo independiente. Ver detalle de límites de velocidad en Averías.
 
 ### 4. Freno de estacionamiento
-Dos cilindros por bogie. No se puede aplicar a la vez que el freno de servicio. Indicadores visuales en los coches.
+Dos cilindros por bogie. **Es completamente neumático — no tiene ninguna parte eléctrica** (a diferencia del freno de servicio, que sí combina eléctrico + neumático). No se puede aplicar a la vez que el freno de servicio. Indicadores visuales en los coches.
+
+Además del aislamiento tradicional (llave + trinquetes, ver Averías), esta serie permite **apretarlo o aflojarlo eléctricamente** desde el panel sin necesidad de aislar nada — útil sobre todo para soltar todos los bogies de golpe antes de un remolque, en vez de ir uno a uno con trinquetes. Ver el detalle en **Averías** y en **Paneles neumáticos**.
 
 ### 5. Freno de retención (hill holder)
 Automático: si la velocidad baja de 3 km/h con el manipulador en posición de frenado, aplica un esfuerzo mínimo para no retroceder en pendiente. Se mantiene hasta que la tracción es suficiente para arrancar o se supera 3 km/h.

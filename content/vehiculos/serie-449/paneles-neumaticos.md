@@ -12,11 +12,9 @@ Referencia de ubicación física de cada panel y sus llaves. Útil para localiza
 
 Código de colores del plano general: **azul** = paneles neumáticos · **naranja** = cofres de media tensión · **rojo** = cofres de puesta a tierra y magnetotérmicos de batería · **lila** = puertas de acceso.
 
-## Situación de cofres — semitrén A1-A2
+## Situación de cofres — tren completo
 
-![Situación de cofres y paneles del semitrén A1-A2: Panel de Auxiliares, Sifa, Dotación, Panel Generación de TFA y Panel Auxiliar de freno](vehiculos/serie-449/situacion-cofres-a1-a2.webp)
-
-*(Falta la mitad A4-A3-A5-A2 del esquema — la añado en cuanto me pases esa imagen.)*
+![Situación de cofres del tren completo: A1-A2 (rojo), A4-A5 (verde) y A3 (azul), con todos los paneles y llaves](vehiculos/serie-449/situacion-cofres-completo.webp)
 
 ## 1. Panel Generación de TFA — A1/A2, lado izquierdo
 
@@ -37,17 +35,26 @@ Un panel por pantógrafo (A4 y A5). Contiene las electroválvulas (07/1) con las
 
 El panel más importante para el frenado neumático. Aquí se materializa la demanda del manipulador: las TCU dan freno eléctrico, la BCU crea la TFA constantemente y aplica presión a los cilindros de freno vía TDP según lo que falte por cubrir. La TFA en sí no se usa para frenar en modo normal — sirve de bucle de control entre presión pedida y presión real en los cilindros (excepto en canal de freno indirecto: fallo de BCU o remolque).
 
-Llaves accionables:
-- **Nº5** Aislamiento freno de estacionamiento, **bogies compartidos**.
+Hay uno de estos paneles en A4 y otro en A5, cada uno con su propio juego de llaves — **el panel al que hay que ir depende de qué eje/bogie esté averiado**, no vale cualquiera de los dos.
+
+Llaves accionables (en cada panel):
+- **Nº5** Aislamiento freno de estacionamiento, **bogies compartidos** — con llave + trinquetes (aislamiento real por avería). Para apretar/aflojar sin avería, ver el cuadradillo del EP-Compact más abajo.
 - **Nº6** Aislamiento arenero bogie extremo (el arenero de bogies compartidos usa la llave del panel de areneros del A3).
 - **Nº7/1** Aislamiento suspensión bogie compartido A4/A3 (fuga de balonas) — sin límite de velocidad, pero pérdida de confort.
 - **Nº7/2** Aislamiento suspensión bogie compartido A1-A4 // A2-A5 — igual, sin límite de velocidad, pérdida de confort.
 - **Nº10/1** Aislamiento cilindros de freno **ejes remolques** (vacía esos cilindros de la mitad del tren correspondiente).
 - **Nº10/2** Aislamiento cilindros de freno **ejes motores** (ídem).
 
-Recordatorio de agrupación de ejes (no se anula por bogie ni por eje suelto, sino de 3 en 3):
-- Remolques: EJES 1,2,6 // 7,11,12 (llave 10/1)
-- Motores: EJES 3,4,5 // 8,9,10 (llave 10/2)
+Qué panel según el eje/bogie afectado (no se anula por eje suelto, siempre en grupo):
+
+| Ejes / bogie afectado | Panel | Llave |
+|---|---|---|
+| Servicio, ejes remolques 1, 2, 6 | Panel TFA del **A4** | 10/1 |
+| Servicio, ejes motores 3, 4, 5 | Panel TFA del **A4** | 10/2 |
+| Servicio, ejes remolques 7, 11, 12 | Panel TFA del **A5** | 10/1 |
+| Servicio, ejes motores 8, 9, 10 | Panel TFA del **A5** | 10/2 |
+| Estacionamiento, bogies compartidos 2 y 3 (ejes 3,4,5,6) | Panel TFA del **A4** | 5 |
+| Estacionamiento, bogies compartidos 4 y 5 (ejes 7,8,9,10) | Panel TFA del **A5** | 5 |
 
 ## 4. Panel auxiliar de freno — A1/A2, lado izquierdo (final del coche)
 
@@ -55,7 +62,9 @@ No confundir con el "panel de auxiliares" (nº6). Cubre lo que el panel de freno
 
 - **Nº5** Aislamiento freno de estacionamiento (bogie extremo).
 - **Nº7** Aislamiento de suspensión (bogie extremo).
-- **Nº10** Válvula de impulsos del freno de estacionamiento: accionada manualmente introduce aire en los cilindros (si hay aire en TDP), aflojando el freno de estacionamiento.
+- **Nº10 (tetones junto a cada electroválvula)** Apretar/aflojar eléctricamente el freno de estacionamiento del bogie extremo, sin aislar: introduce o libera aire en los cilindros (si hay aire en TDP). Es el equivalente, para bogie extremo, al cuadradillo del EP-Compact en bogies compartidos (ver panel 5) — no sustituye al aislamiento con llave Nº5 + trinquetes cuando hay avería real.
+
+![Panel auxiliar de freno: tetón rojo "Aprieta" y tetón azul "Afloja" del freno de estacionamiento](vehiculos/serie-449/panel-auxiliar-freno-tetones.webp)
 
 ## 5. Paneles de freno EP-Compact — A4/A5, lado izquierdo
 
@@ -68,12 +77,18 @@ Dos EP-Compact por coche, prácticamente idénticos: uno para ejes motores, otro
 - **EDU**: válvula de carga variable según balonas.
 - Electroválvulas de urgencia (canal independiente, inversas: al desexcitarse dan presión máxima a los C.F.).
 
-El EP-Compact de **ejes motores** tiene además el cuadradillo para anular/apretar/desapretar el **freno de estacionamiento de bogies compartidos**.
+El EP-Compact de **ejes motores** tiene además un **cuadradillo** para **apretar/aflojar eléctricamente** el freno de estacionamiento de bogies compartidos — *ojo, esto no es lo mismo que aislarlo*: es una orden eléctrica a los cilindros (como pulsar el botón de cabina pero desde el panel), útil para soltar frenos rápido sin tener que ir con llave + trinquetes bogie a bogie (por ejemplo antes de un remolque). No sustituye al aislamiento real cuando hay una avería (agarrotamiento), que sigue necesitando llave + trinquetes.
 
-**Resumen de anulación de frenos:**
-- Servicio: de 3 en 3 ejes, diferenciando motor/remolque, llaves 10/1 y 10/2 del panel de freno TFA.
-- Estacionamiento bogie extremo: llave Nº5 del panel de freno TFA (o panel auxiliar de freno en A1/A2).
-- Estacionamiento bogie compartido: cuadradillo del EP-Compact.
+![EP-Compact de ejes motores, con el cuadradillo del freno de estacionamiento de bogies compartidos señalado](vehiculos/serie-449/ep-compact-freno-estacionamiento.webp)
+
+**Resumen — aislamiento real de frenos por avería (llave + trinquetes, con reducción de prestaciones):**
+- Servicio: de 3 en 3 ejes, diferenciando motor/remolque, llaves 10/1 y 10/2 del panel de freno TFA que corresponda (A4 o A5 según el eje).
+- Estacionamiento bogie extremo: llave Nº5 del **panel auxiliar de freno** (A1 o A2).
+- Estacionamiento bogie compartido: llave Nº5 del **panel de freno TFA** (A4 o A5) — no del EP-Compact.
+
+**Apretar/aflojar sin aislar (orden eléctrica, sin avería):**
+- Bogies compartidos: cuadradillo del EP-Compact (A4/A5).
+- Bogies extremos: tetones junto a cada electroválvula del panel auxiliar de freno (A1/A2).
 
 ## 6. Panel de auxiliares — interior de cabina (A1/A2, lado izquierdo del pupitre)
 
