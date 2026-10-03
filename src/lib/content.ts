@@ -65,3 +65,23 @@ export function searchDocs(query: string): Doc[] {
       d.body.toLowerCase().includes(q),
   )
 }
+
+// Fragmento de texto alrededor de la primera aparición de la búsqueda dentro
+// del cuerpo del documento (no solo título/resumen), para poder ver de un
+// vistazo en qué contexto se menciona un concepto antes de entrar a leerlo.
+export function getSnippet(doc: Doc, query: string, radius = 70): string {
+  const q = query.trim().toLowerCase()
+  if (!q) return doc.summary
+
+  const haystack = doc.body.toLowerCase()
+  const idx = haystack.indexOf(q)
+  if (idx === -1) return doc.summary
+
+  const start = Math.max(0, idx - radius)
+  const end = Math.min(doc.body.length, idx + q.length + radius)
+  const clean = (s: string) => s.replace(/\s+/g, ' ').replace(/[#*_>`|]/g, '').trim()
+
+  const prefix = start > 0 ? '… ' : ''
+  const suffix = end < doc.body.length ? ' …' : ''
+  return prefix + clean(doc.body.slice(start, end)) + suffix
+}

@@ -8,19 +8,21 @@ meta: {}
 
 Cada avería sigue el mismo esquema: **qué ocurre** → **cómo se detecta** → **sobre qué actuar** → **qué provoca / consecuencia**. Agrupadas por tipo (color) para localizarlas rápido. Para el funcionamiento completo de cada sistema, ve al submenú correspondiente (Equipo eléctrico, Equipo neumático, Paneles neumáticos).
 
+Si lo que hay es un **fallo informático masivo** (COSMOS colapsado, pantallas congeladas, pérdida de red TCN) y no una avería puntual de un componente, ve directamente al submenú **Modo Socorro**.
+
 ## Eléctrico
 
 ### Derivación / seccionamiento de un pantógrafo
 - **Qué ocurre:** derivación (fuga a tierra) en uno de los dos pantógrafos.
 - **Cómo se detecta:** el disyuntor no cierra, o se abre continuamente al intentarlo.
-- **Sobre qué actuar:** conmutador **Nº8** del armario de baja tensión (cabina A1/A2) para seccionar el pantógrafo averiado; opcionalmente llave **U08/1** del panel de control del pantógrafo para aislar también la parte neumática (recomendable, no imprescindible).
+- **Sobre qué actuar:** conmutador **Nº8** del armario de baja tensión (cabina A1/A2) para seccionar el pantógrafo averiado; opcionalmente llave **U08/1** del panel de control del pantógrafo para aislar también la parte neumática (recomendable, no imprescindible). Se hace siempre con **pantógrafos bajados, disyuntores abiertos y batería conectada**.
 - **Qué provoca / consecuencia:** una vez seccionado, se reanuda la marcha con el otro pantógrafo con normalidad.
 
 ### Fallo de un TCU (convertidor de tracción)
 - **Qué ocurre:** avería en uno de los dos convertidores de tracción (uno por cadena, en A1 o A2).
-- **Cómo se detecta:** se desconecta **automáticamente**; el IHM avisa de la avería detectada y del procedimiento a seguir.
-- **Sobre qué actuar:** ninguna llave de aislamiento específica — este tren **no tiene pulsador** para habilitar/deshabilitar el TCU; la única forma de intervenir es desconectando el disyuntor correspondiente.
-- **Qué provoca / consecuencia:** quedan fuera de servicio los motores de esa cadena; el tren continúa pero con solo el **50% de prestaciones** en tracción y freno eléctrico. *El MC no aclara si se puede salir de origen ya con esta avería presente — queda a criterio del maquinista.*
+- **Cómo se detecta:** proceso normal — el **COSMOS desconecta automáticamente** la cadena averiada y pasa al 50% de prestaciones por sí solo. En el **IHM** se ilumina en rojo la leyenda de la TCU afectada.
+- **Sobre qué actuar:** si el COSMOS no lo hace automáticamente y te quedas **sin tracción**, se puede **forzar manualmente** desconectando esa cadena a través del **seccionador de distribución (SD)** — este tren **no tiene pulsador** para habilitar/deshabilitar el TCU directamente, el SD es la vía manual. Recuerda: se acciona con pantógrafos bajados, disyuntores abiertos y batería conectada (ver Equipo eléctrico).
+- **Qué provoca / consecuencia:** quedan fuera de servicio los motores de esa cadena; el tren continúa pero con solo el **50% de prestaciones, tanto en tracción como en freno eléctrico**. *El MC no aclara si se puede salir de origen ya con esta avería presente — queda a criterio del maquinista.*
 
 ### Fallo de un ACU (convertidor de servicios auxiliares)
 - **Qué ocurre:** avería en uno de los dos convertidores auxiliares (A4 o A5).
@@ -31,7 +33,7 @@ Cada avería sigue el mismo esquema: **qué ocurre** → **cómo se detecta** �
 ### Seccionamiento de mitad del tren (SD)
 - **Qué ocurre:** derivación / avería de alta tensión en un semitrén (TCU + ACU) que el COSMOS no consigue subsanar por sí solo. Solo hay **un SD en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**.
 - **Cómo se detecta:** persistencia de la avería de alta pese a la gestión automática del COSMOS.
-- **Sobre qué actuar:** conmutador del **seccionador de distribución (SD)**, en el armario BT de cabina — se acciona siempre con **batería conectada y pantógrafos bajados**. El procedimiento cambia según la composición:
+- **Sobre qué actuar:** conmutador del **seccionador de distribución (SD)**, en el armario BT de cabina — se acciona siempre con **pantógrafos bajados, disyuntores abiertos y batería conectada**. El procedimiento cambia según la composición:
   - **En simple:** no hace falta cambiar de cabina. Se acciona el SD y, desde la misma cabina, se sube el pantógrafo del semitrén que queda útil (si el A2 es el inútil, se sube el pantógrafo 1 del A1 y se sigue con esa cadena).
   - **En mando múltiple:** si la derivación está en la unidad acoplada de detrás, sí hay que cambiar de cabina — ir a esa unidad y accionar el SD ahí.
 - **Qué provoca / consecuencia:** esa mitad queda aislada eléctricamente; el semitrén útil sigue con **50% de tracción/freno eléctrico** y **100% de servicios auxiliares**.
@@ -53,10 +55,25 @@ Cada avería sigue el mismo esquema: **qué ocurre** → **cómo se detecta** �
 ## Frenos
 
 ### Fallo en el panel de generación de TFA / el freno no libera
-- **Qué ocurre:** fallo de la BCU de la cabina habilitada o de algún elemento del panel de generación de TFA.
-- **Cómo se detecta:** el IHM avisa del fallo; el maquinista percibe que el freno no libera.
-- **Sobre qué actuar:** conmutador de cabina (a mano derecha del pupitre) para cambiar al panel/BCU de la cabina no habilitada; si no soluciona, seleccionar **freno de auxilio**.
+- **Qué ocurre:** la BCU de la cabina habilitada está continuamente creando y destruyendo la TFA según la demanda de freno. Si falla, deja de generarla correctamente — y **hasta que la TFA no llega a 5 bar no hay tracción**, así que el fallo no solo afecta al freno.
+- **Cómo se detecta:** el IHM avisa del fallo de la BCU; el maquinista nota que no hay tracción y/o que el freno no libera.
+- **Sobre qué actuar, en este orden:**
+  1. Si falla la BCU de la cabina habilitada, el **WSP** de esa misma mitad toma el control automáticamente (sin acción del maquinista).
+  2. **Si aun así el freno no libera** (BCU no funcional + freno sin liberar — esa es la condición concreta para este paso), hacer el **cambio de panel** con el conmutador de cabina (a mano derecha del pupitre). Esto conecta la **BCU de la cabina de cola** (la no habilitada).
+  3. Si tampoco soluciona, seleccionar **freno de auxilio**.
 - **Qué provoca / consecuencia:** con freno de auxilio no hay freno de retención — el apriete/afloje es directo con el palillo, con poco margen de precisión. Límite de velocidad: **120 km/h**. *Cambiar el panel de freno a la cabina no habilitada provoca frenado de urgencia — no se puede hacer en marcha (a diferencia de la 447).*
+
+### Fallo del WSP (antibloqueo) — frecuente y sin restricción
+- **Qué ocurre:** fallo del WSP (Wheel Slip Protection, el antibloqueo). Es una avería **bastante habitual** en esta serie.
+- **Cómo se detecta:** aviso en el IHM: *"Fallo WSP, frene suavemente"*.
+- **Sobre qué actuar:** ninguna — no hay llave ni procedimiento de aislamiento que aplicar.
+- **Qué provoca / consecuencia:** **no genera ninguna restricción** de velocidad ni de servicio. Se pierde la protección antideslizante mientras dura el fallo, así que conviene frenar con suavidad (evitar demandas bruscas) como indica el propio aviso.
+
+### Fallo triple (BCU + WSP + distribuidor) — tren inútil
+- **Qué ocurre:** en la **misma semiunidad**, fallan a la vez los tres sistemas de control del freno neumático: la **BCU**, su respaldo el **WSP**, y además el **distribuidor** del canal indirecto de esa mitad (hay uno por semitren).
+- **Cómo se detecta:** combinación de los avisos de las tres averías anteriores en la misma mitad del tren.
+- **Sobre qué actuar:** no hay margen de recuperación — se han perdido a la vez la vía directa (BCU), su respaldo (WSP) y la vía indirecta (distribuidor) de control neumático de esa mitad.
+- **Qué provoca / consecuencia:** **tren inútil.** No se puede continuar prestando servicio.
 
 ### Condena de freno de servicio en un eje
 - **Qué ocurre:** agarrotamiento **neumático** de las guarniciones de freno en los discos de un eje. *Importante: aislar el freno de servicio en esta unidad es siempre neumático — este tren no permite aislar la parte eléctrica del freno de servicio (a diferencia de la serie 447). La parte eléctrica la controla la TCU y la neumática la BCU (o el WSP si falla la BCU), pero lo que se anula con las llaves es solo lo neumático.*

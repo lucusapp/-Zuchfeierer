@@ -1,5 +1,5 @@
-import { useState, type ReactNode } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getChildren, getDoc, isEdited } from '../lib/content'
@@ -94,6 +94,46 @@ export default function DocPage() {
     metaText: string
     body: string
   } | null>(null)
+
+  const location = useLocation()
+  const contentRef = useRef<HTMLDivElement>(null)
+  const highlight = (location.state as { highlight?: string } | null)?.highlight
+
+  // Al llegar desde la búsqueda global con una palabra a resaltar, la localizamos
+  // dentro del contenido ya renderizado, la marcamos y hacemos scroll hasta ahí,
+  // en vez de dejar al usuario en la parte de arriba de la página a buscarla a mano.
+  useEffect(() => {
+    const root = contentRef.current
+    if (!root) return
+
+    root.querySelectorAll('mark[data-search-highlight]').forEach((mark) => {
+      const parent = mark.parentNode
+      if (!parent) return
+      while (mark.firstChild) parent.insertBefore(mark.firstChild, mark)
+      parent.removeChild(mark)
+    })
+
+    const q = highlight?.trim().toLowerCase()
+    if (!q) return
+
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
+    let node: Node | null
+    while ((node = walker.nextNode())) {
+      const text = node.textContent ?? ''
+      const idx = text.toLowerCase().indexOf(q)
+      if (idx !== -1 && node.textContent) {
+        const range = document.createRange()
+        range.setStart(node, idx)
+        range.setEnd(node, idx + q.length)
+        const mark = document.createElement('mark')
+        mark.dataset.searchHighlight = 'true'
+        mark.className = 'search-highlight'
+        range.surroundContents(mark)
+        mark.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        break
+      }
+    }
+  }, [highlight, doc?.slug, doc?.body])
 
   if (!meta || !doc || !section || !fullSlug) return <Navigate to="/" replace />
 
@@ -275,7 +315,7 @@ export default function DocPage() {
       )}
 
       {doc.body.trim() && (
-        <div className="prose-content">
+        <div className="prose-content" ref={contentRef}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{ img: ContentImage, h2: CategoryHeading }}

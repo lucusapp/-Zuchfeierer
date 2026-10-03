@@ -40,9 +40,11 @@ Cada pantógrafo lleva un pararrayos asociado.
 
 ## Seccionadores
 
+> ⚠️ **Condiciones previas comunes:** tanto el seccionamiento de los pantógrafos (SP) como el de la distribución (SD) se realizan siempre con **pantógrafos bajados, disyuntores abiertos y batería conectada** — nunca con el tren tomando corriente.
+
 - **Seccionadores de pantógrafo (SP)**: uno junto a cada pantógrafo, aíslan del circuito de 3 kV. Se accionan con el conmutador Nº8 del armario BT de cabina.
 - **Seccionadores de puesta a tierra (P.A.T.)**: dos, permiten puesta a tierra simultánea de toda la cadena de tracción correspondiente y su ACU.
-- **Seccionador de distribución (SD)**: **único en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**. Normalmente **cerrado** (conecta ambas cadenas de 3 kV entre sí). Se acciona siempre con **batería conectada y pantógrafos bajados**. Aísla eléctricamente el semitrén con la derivación (TCU + ACU), dejando el otro semitrén con 50% de tracción/freno eléctrico y 100% de auxiliares.
+- **Seccionador de distribución (SD)**: **único en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**. Normalmente **cerrado** (conecta ambas cadenas de 3 kV entre sí). Aísla eléctricamente el semitrén con la derivación (TCU + ACU), dejando el otro semitrén con 50% de tracción/freno eléctrico y 100% de auxiliares.
   - **En simple:** no hace falta cambiar de cabina — se acciona el SD y se sube el pantógrafo del semitrén útil desde la propia cabina.
   - **En mando múltiple:** si la derivación está en la unidad acoplada, sí hay que cambiar de cabina e ir a esa unidad para accionar su SD.
 
@@ -50,13 +52,17 @@ Cada pantógrafo lleva un pararrayos asociado.
 
 Extrarrápidos, uno por cadena, en los cofres de alta tensión de A4/A5. Conectan el pantógrafo activo con el TCU correspondiente (A1/A2). Soplado electromagnético para el arco + apertura rápida indirecta ante armónicos u otras anomalías. Se conectan/desconectan desde la botonera de cabina.
 
+**Para el funcionamiento normal de la unidad, ambos disyuntores deben estar cerrados** (las dos cadenas de tracción alimentadas). Ver Puesta en marcha y parada para la secuencia de conexión.
+
 ## Filtro de entrada
 
 Uno por coche A1/A2, a la entrada de cada TCU. Reduce armónicos hacia catenaria y estabiliza la alimentación del convertidor (hace de circuito intermedio junto con bobinas/condensadores internos del TCU).
 
 ## Convertidores de tracción (TCU)
 
-Uno en A1 y otro en A2, bajo bastidor. Cada uno aporta el **50% de la tracción y del freno eléctrico** total. Incluyen ondulador (frenado regenerativo), chopper de frenado, protecciones, refrigeración (ventilación forzada por tubería de calor) y control (IGBT, tecnología IPM, 6,5 kV tensión inversa). **No hay pulsador para habilitar/deshabilitar el TCU** — solo se puede desconectando el disyuntor.
+Uno en A1 y otro en A2, bajo bastidor. Cada uno aporta el **50% de la tracción y del freno eléctrico** total. Incluyen ondulador (frenado regenerativo), chopper de frenado, protecciones, refrigeración (ventilación forzada por tubería de calor) y control (IGBT, tecnología IPM, 6,5 kV tensión inversa).
+
+Ante un fallo, el **COSMOS** lo desconecta automáticamente y pasa al 50% de prestaciones por sí solo, con la leyenda de la TCU en rojo en el IHM. **No hay pulsador para habilitar/deshabilitar el TCU directamente** — si el COSMOS no actúa solo y te quedas sin tracción, la vía manual para forzarlo es el **seccionador de distribución (SD)**, no el disyuntor.
 
 ## Resistencias de frenado
 
@@ -70,8 +76,8 @@ Una por cadena, en el techo de los coches extremos. Disipan la energía de frena
 
 **COSMOS** es el ordenador central de mando y control (CCU), basado en protocolo TCN: supervisa tracción, frenado y el resto de sistemas embarcados.
 
-- **Velocidad prefijada** (modo normal): el maquinista fija la velocidad deseada y el sistema regula tracción/freno para mantenerla.
-- **Manual**: el maquinista controla directamente tracción y freno con el manipulador — poca precisión a partir de cierta velocidad.
+- **Velocidad prefijada** (modo normal): funciona entre **6 y 160 km/h**. El maquinista fija la velocidad deseada y el sistema regula tracción y frenado para mantenerla. **En este modo solo trabaja la TCU** — se traciona y se frena únicamente de forma eléctrica, sin intervención del freno neumático (BCU). Por eso, si se prefija 6 km/h, el tren frena eléctricamente hasta llegar a esos 6 km/h, aunque en frenado manual por debajo de 15 km/h ya no quede freno eléctrico disponible (ver Equipo neumático).
+- **Manual**: el maquinista controla directamente tracción y freno con el manipulador — poca precisión a partir de cierta velocidad. Aquí sí aplica la regla general: eléctrico entre 160 y 15 km/h, solo neumático por debajo de 15 km/h.
 
 Frenado: prioridad al **regenerativo** (devuelve energía a catenaria); si la red no la absorbe, pasa a **reostático** (resistencias de freno).
 

@@ -33,7 +33,11 @@ Un panel por pantógrafo (A4 y A5). Contiene las electroválvulas (07/1) con las
 
 ## 3. Panel de freno TFA — A4/A5, lado derecho (inicio del coche)
 
-El panel más importante para el frenado neumático. Aquí se materializa la demanda del manipulador: las TCU dan freno eléctrico, la BCU crea la TFA constantemente y aplica presión a los cilindros de freno vía TDP según lo que falte por cubrir. La TFA en sí no se usa para frenar en modo normal — sirve de bucle de control entre presión pedida y presión real en los cilindros (excepto en canal de freno indirecto: fallo de BCU o remolque).
+El panel más importante para el frenado neumático. Aquí se materializa la demanda del manipulador: las TCU dan freno eléctrico, la BCU crea y destruye la TFA constantemente según la demanda y aplica presión a los cilindros de freno vía TDP según lo que falte por cubrir. La TFA en sí no se usa para frenar en modo normal — sirve de bucle de control entre presión pedida y presión real en los cilindros (excepto en canal de freno indirecto: fallo de BCU o remolque).
+
+**Hasta que la TFA no llega a 5 bar no hay tracción.** Por eso un fallo de la BCU que impida generar la TFA correctamente no solo afecta al freno: también se queda el tren sin traccionar (ver Averías: *fallo en el panel de generación de TFA*).
+
+En este panel está también el **distribuidor** (el que se usa en canal indirecto: fallo de BCU o remolque) y las llaves para anular tanto el freno de servicio como el de estacionamiento. Resumen rápido de cómo se clasifican esas anulaciones: el **freno de servicio** se anula según sean **ejes motores o remolques**; el **freno de estacionamiento**, según sea **bogie extremo o compartido** (los extremos se aíslan desde el panel auxiliar de freno de A1/A2, no desde aquí — ver panel 4).
 
 Hay uno de estos paneles en A4 y otro en A5, cada uno con su propio juego de llaves — **el panel al que hay que ir depende de qué eje/bogie esté averiado**, no vale cualquiera de los dos.
 
@@ -68,14 +72,27 @@ No confundir con el "panel de auxiliares" (nº6). Cubre lo que el panel de freno
 
 ## 5. Paneles de freno EP-Compact — A4/A5, lado izquierdo
 
-Dos EP-Compact por coche, prácticamente idénticos: uno para ejes motores, otro para ejes remolques. Actúan como "ordenador central" de freno de esa mitad (parte de la BCU), con:
+Dos EP-Compact por coche, prácticamente idénticos: uno para ejes motores, otro para ejes remolques. Su función es **transformar una señal eléctrica en una señal neumática**, y actúan como "ordenador central" de freno de esa mitad (parte de la BCU), con:
 
 - **Módulo CP-C**: aplicación del freno de ejes motores de la mitad del tren.
 - **Módulo CP-P**: freno de estacionamiento de **bogies intermedios**.
 - **Módulo CP-M**: areneros del bogie extremo.
-- **DCL**: convertidor electroneumático — presión de referencia → presión a cilindros de freno (canal de freno directo, el normal). En canal indirecto (fallo BCU o remolque) se usa la TFA con distribuidor.
+- **DCL** (dentro del EP-Compact): el convertidor electroneumático que hace esa transformación eléctrico→neumático.
 - **EDU**: válvula de carga variable según balonas.
 - Electroválvulas de urgencia (canal independiente, inversas: al desexcitarse dan presión máxima a los C.F.).
+
+**Cómo funciona el canal directo (el normal):** la BCU crea y destruye la TFA constantemente, pero **ese aire de la TFA no se usa para frenar** — es solo una **señal de referencia** para un bucle de control que compara la presión pedida con la presión real en los cilindros. La presión que realmente aplica el freno sale de la **TDP**, a través del DCL. *Error común a evitar: decir que "se frena con el aire de la TFA a X bar" en canal directo — eso no es así; esa afirmación solo sería correcta hablando del **canal indirecto** (freno de auxilio: fallo de BCU o remolque), donde sí se usa directamente la TFA con un distribuidor.*
+
+**Ejemplo práctico**, desde que se acciona el manipulador (que tiene un detector óptico de su posición) hasta que se aplica el freno:
+
+- Se pide, por ejemplo, un **25%** de esfuerzo de frenado. Si la BCU puede cubrirlo con freno eléctrico (vía TCU), lo da todo eléctrico. Si no puede (por ejemplo, fallo de la TCU), el **DCL** transforma esa señal eléctrica del 25% en presión neumática tomada de la **TDP**, y frena a **todos los ejes de la semiunidad**.
+- Se pide un **70%**. De ese 70%, puede repartirse por ejemplo un 50% de freno eléctrico y el **20% restante lo aporta el DCL** en neumático, directo desde la TDP a los cilindros de freno.
+
+Mientras tanto, la TFA no aporta nada de esa presión — sirve para **comprobar que el DCL está funcionando correctamente y evitar incoherencias**: a cada % de esfuerzo demandado le corresponde un valor aproximado de depresión en la TFA (por ejemplo, en torno a **3,8 bar** para un 70% de esfuerzo; la depresión máxima de la TFA ronda los **3,5 bar** para la máxima demanda de frenado). Si la presión real en los cilindros no se corresponde con lo que marca esa referencia, el sistema detecta la incoherencia.
+
+**Canal indirecto:** aquí sí se frena directamente con **aire de la TFA**, a través del **distribuidor** — hay **dos en el tren, uno por semitren**, físicamente en el panel de freno TFA (panel 3). Cada mitad del tren puede estar, de forma independiente, en canal directo o en canal indirecto — no es un estado único para todo el tren. Si se aísla un distribuidor, se aíslan los **6 ejes** de esa semiunidad.
+
+> ⚠️ **Fallo triple — tren inútil:** si en la misma semiunidad fallan a la vez la **BCU**, su respaldo **WSP** y además el **distribuidor** (canal indirecto), no queda ninguna vía de control de freno neumático para esa mitad del tren. El resultado es **tren inútil**.
 
 El EP-Compact de **ejes motores** tiene además un **cuadradillo** para **apretar/aflojar eléctricamente** el freno de estacionamiento de bogies compartidos — *ojo, esto no es lo mismo que aislarlo*: es una orden eléctrica a los cilindros (como pulsar el botón de cabina pero desde el panel), útil para soltar frenos rápido sin tener que ir con llave + trinquetes bogie a bogie (por ejemplo antes de un remolque). No sustituye al aislamiento real cuando hay una avería (agarrotamiento), que sigue necesitando llave + trinquetes.
 
