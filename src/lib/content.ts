@@ -39,9 +39,9 @@ export function getDoc(section: Section, slug: string): Doc | undefined {
   return doc ? withOverride(doc) : undefined
 }
 
-// Un doc puede tener "hijos" anidándolo en una carpeta: content/vehiculos/serie-447.md
-// (padre, slug "serie-447") + content/vehiculos/serie-447/equipo-electrico.md (hijo,
-// slug "serie-447/equipo-electrico"). Así una ficha larga se parte en submenús por tema
+// Un doc puede tener "hijos" anidándolo en una carpeta: content/vehiculos/serie-448.md
+// (padre, slug "serie-448") + content/vehiculos/serie-448/equipo-electrico.md (hijo,
+// slug "serie-448/equipo-electrico"). Así una ficha larga se parte en submenús por tema
 // sin necesitar un campo extra en el frontmatter.
 export function getTopLevelDocs(section: Section): Doc[] {
   return getDocsBySection(section).filter((d) => !d.slug.includes('/'))

@@ -26,7 +26,7 @@ function textToMeta(text: string): Record<string, string> {
 }
 
 // Las imágenes de esquemas viven en public/content-images/ y se referencian en el
-// Markdown con ruta relativa a esa carpeta (ej. "vehiculos/serie-447/cuadro.png"),
+// Markdown con ruta relativa a esa carpeta (ej. "vehiculos/serie-448/cuadro.png"),
 // para que funcionen igual en local y desplegadas bajo un sub-path de GitHub Pages.
 function ContentImage(props: { src?: string; alt?: string }) {
   if (!props.src) return null
