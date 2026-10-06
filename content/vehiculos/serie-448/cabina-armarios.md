@@ -39,6 +39,19 @@ Organización similar en dos partes (superior e inferior). Diferencias clave:
 - **1d5**: relé auxiliar de control de teleindicadores y del circuito de lazo (serie alta 12 a 31).
 - Panel de relés de control del árbol de levas RD y temporizados de los ventiladores de resistencias.
 
+## Equipos solo en el remolque con cabina (Rc)
+
+- Físicamente, el Rc lleva el **compresor principal**, el **panel neumático** y el **secador de aire** (lado izquierdo), y el **cofre de baterías**, el **cargador** y el **convertidor estático** (lado derecho). El coche motor no los tiene.
+- Para llegar al convertidor habría que poner la unidad a tierra y coger una de las **10 llaves** de la caja de llaves. No hay nada que hacer en el convertidor: basta con saber que está ahí.
+- El **interruptor general de la batería** (el "gordo" de la batería) está en el **armario BT del Rc**.
+- En cada cabina hay un **magnetotérmico** (telemando de batería) que actúa sobre ese interruptor general. Por eso, para poner en marcha la unidad, hay que ir al magnetotérmico de la cabina que se va a habilitar. Ver Encendido en Procedimientos.
+
+## Armario Stone (aire acondicionado)
+
+- Es el armario del **aire acondicionado** (climatización).
+- En el coche motor está en la **cabina, en la parte izquierda**.
+- Cada coche tiene su armario Stone con los equipos de climatización (la chuleta indica tres equipos independientes por coche).
+
 ## Cabinas de conducción (ambas series)
 
 - **Combinador general ASFA**, **by-pass DASS**, mando de acoplamiento de unidad no reformada, telemando de batería, luz indicadora y conmutador de cambio de cabina.

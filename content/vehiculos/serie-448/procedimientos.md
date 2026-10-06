@@ -10,7 +10,7 @@ meta: {}
 
 ## Encendido de la unidad
 
-1. Conectar el **telemando de batería** del armario BT de la cabina que vamos a habilitar (Cm o Rc).
+1. Conectar el **telemando de batería** (magnetotérmico) de la cabina que vamos a habilitar (Cm o Rc). Ese magnetotérmico actúa sobre el interruptor general de la batería, que está en el **armario BT del Rc**.
 2. Insertar y girar la **maneta** que desenclava los interruptores de palanca del pupitre (serie baja y alta).
 3. Accionar en este orden los interruptores:
    a. Subir **pantógrafo**
@@ -103,10 +103,23 @@ Orden de trabajo: **1º acoplar, 2º acondicionar, 3º hacer la prueba de freno.
 
 ## Puesta a tierra
 
-1. Parar completamente el vehículo (no hace falta desconectar la batería).
-2. Asegurar la inmovilidad del vehículo.
-3. Comprobar visualmente que los pantógrafos están bajados.
-4. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.
-5. Cerrar la llave de paso de aire a los pantógrafos (armario de pantógrafos): introducir la llave de enclavamiento y girar; girar y extraer la llave de la maneta de paso de aire; volver la llave de enclavamiento a su posición inicial y extraerla.
-6. Poner a tierra los circuitos de alta en el cajetín del furgón del Cm: introducir y girar la llave de enclavamiento; introducir y girar la llave de la maneta de paso de aire; girar y extraer la llave de desbloqueo de la caja de llaves.
-7. Así se accede a la caja de llaves para abrir la cámara y los armarios de alta.
+Antes de empezar: parar completamente el vehículo (no hace falta desconectar la batería), asegurar su inmovilidad y comprobar visualmente que los pantógrafos están bajados.
+
+1. Accionar la **llave de tres vías** del armario de pantógrafos del coche motor. Condena los pantógrafos **eléctrica y neumáticamente** a la vez. Para ello: introducir la llave de enclavamiento y girar; girar y extraer la llave de la maneta de paso de aire; volver la llave de enclavamiento a su posición inicial y extraerla.
+2. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.
+3. Poner a tierra los circuitos de alta en el cajetín del furgón del Cm: introducir y girar la llave de enclavamiento; introducir y girar la llave de la maneta de paso de aire; girar y extraer la llave de desbloqueo de la caja de llaves.
+4. Así se accede a la caja de llaves para abrir la cámara y los armarios de alta.
+
+> **Doble composición:** la alta tensión **no pasa por el Scharfenberg**. Por la botonera del Scharfenberg solo pasan órdenes de mando de 72 V. Por eso, en doble composición, la puesta a tierra queda resuelta al realizarla en la **primera unidad**.
+
+### Llave máster (armario de reserva)
+
+1. Desde la cabina, coger la **llave de enclavamiento de interruptores**.
+2. Ir al **armario de reserva** y sacar la **llave máster**. La llave máster es una **palanca** que está en **posición horizontal**.
+3. Para sacarla, introducir primero la **llave de enclavamiento** en el **cuadradillo que hay justo encima de la llave máster**.
+4. Con la llave de enclavamiento introducida, la llave máster hace juego y se puede **colocar en vertical**, y así extraerla.
+5. Con esto se asegura que el **pantógrafo pueda subir**. Antes, comprobar que el **pantógrafo esté bajado**.
+6. Después, al lado del **armario de alta**, se hace el juego de giros en este orden:
+   a. Primero, la **llave de enclavamiento**.
+   b. Después, la **llave máster**.
+   c. Por último, se extrae la **llave de puesta a tierra**.

@@ -47,7 +47,7 @@ Electroneumático y reostático: regulador en "F" y maneta B4 en una de sus 6 pr
 | 10 – 0 km/h | Presión de aire total que corresponda | Presión de aire según el escalón | Presión de aire según el escalón |
 
 - Freno de patines a partir de **6 km/h**.
-- Si el freno electroneumático no vuelve a su posición y los patines rozan el carril: actuar sobre la **llave M6** del patín correspondiente, quitando aire para permitir la subida.
+- Si el patín no sube tras el freno electroneumático (queda rozando el carril): cierra la **llave M6** del patín correspondiente. Al no entrar aire, el patín no baja, y si está pillado lo puedes subir a mano.
 
 ## Freno de auxilio (segundo freno)
 

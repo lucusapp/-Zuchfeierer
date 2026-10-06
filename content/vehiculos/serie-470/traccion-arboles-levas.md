@@ -21,8 +21,8 @@ meta: {}
 
 - Situado en el lado derecho del vehículo. Aloja los árboles de levas y los componentes de tracción.
 
-## Tensiones que se mencionan
+## Tensiones (confirmadas por el formador para la 470)
 
 - **72 V**: pasa por los árboles de levas (control y mando).
 - **380 V**: alimenta los motores piloto.
-- **3.000 V** (catenaria): pasa por los motores de tracción.
+- **3.000 V**: tensión de los motores de tracción. La catenaria es de 3.000 Vcc y, según estén en serie o en paralelo, cada motor puede trabajar a 1.500 o a 3.000 V.

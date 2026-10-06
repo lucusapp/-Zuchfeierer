@@ -56,7 +56,8 @@ meta: {}
 
 ### Avería de suspensión neumática (balonas)
 - **Causas:** pérdida de aire en una balona, o balonas a distinta presión (la caja se inclina, por ejemplo al arrancar en curva).
-- **Actuar:** cerrar la **llave 207** (palometa) para condenar una balona, o la **llave 202** para condenar todo el coche.
+- **Pérdida de aire en una balona:** si la TDP baja de **6,5 bar**, salta el **presostato de mínima**. Hay que condenar la balona que pierde.
+- **Actuar:** cerrar la **llave 207** (palometa) del bogie para condenar la balona, o la **llave 202** para condenar todo el coche.
 - Si es por falta de nivelación: mover el material hasta ponerlo recto, volver a abrir la llave correspondiente y purgar la balona con más presión.
 - Si es por pérdida de aire: cerrar la llave de la(s) balona(s) que pierden.
 - **Restricción:** con una o más balonas condenadas, **80 km/h**.

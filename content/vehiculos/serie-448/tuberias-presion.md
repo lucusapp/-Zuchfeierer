@@ -11,7 +11,7 @@ meta: {}
 ## TDP (Tubería de Depósito Principal)
 
 - Va siempre por el **lado derecho del coche motor** (según la numeración).
-- Suministra **10 kg de presión** y la alimenta el **compresor**, ubicado en el **RC**.
+- Suministra **10 kg de presión** y la alimenta el **compresor**, ubicado en el **RC** (bajo bastidor, lado derecho). El aire pasa antes por el **secador** del RC, que lo seca.
 
 ## TFA (Tubería de Freno Automático)
 

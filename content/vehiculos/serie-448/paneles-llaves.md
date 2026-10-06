@@ -1,8 +1,8 @@
 ---
-title: "Paneles y llaves de aislamiento"
-summary: "Panel neumático de cada coche, llaves B12, 207, 202, M6 y limitaciones que implican."
+title: "Paneles neumáticos y llaves de aislamiento"
+summary: "Un panel neumático por coche, llaves B12 con su calderín, 207, 202, M6 y P6."
 order: 2
-tags: ["llaves", "paneles", "B12", "202", "207", "M6", "aislamiento"]
+tags: ["llaves", "paneles", "B12", "calderín", "202", "207", "M6", "P6", "aislamiento"]
 meta: {}
 ---
 
@@ -10,27 +10,44 @@ meta: {}
 
 ## Dónde están
 
-- **Coche motor (Cm), lateral izquierdo**: panel neumático con la **207** (una por bogie: anula la suspensión neumática de ese bogie), la **M6** (paso de aire al freno electromagnético de los patines) y la **202** (anula la suspensión de todo el coche).
-- **Coche motor (Cm)**: las **llaves B12** no están en el panel exterior, sino **dentro del coche, en el armario de los areneros**.
-- **Remolques Ri y Rc**: panel neumático propio, con las **B12** (freno neumático por bogie), las **M6** y la **202**.
-- En cada coche hay llaves de otros elementos (P-13, G-1, B-21, B25 y B29 según el coche) que se localizan con los planos de la chuleta.
+- Hay **un panel neumático por coche**. Tomando como referencia el **coche motor**, todo el equipo neumático está en su **lado izquierdo**.
+- **Coche motor (Cm)**: panel neumático con la **207** (una por bogie), la **M6** (patines) y la **202** (todo el coche). Las **B12** del Cm están dentro del coche, en el **armario de los areneros**.
+- **Remolque intermedio (Ri) y remolque con cabina (Rc)**: las **B12** están en el **panel de freno** de cada coche, junto con la **M6** y la **202**.
 
 ## Llave B12
 
-- Aísla la TDP hacia los cilindros de freno de cada bogie.
+- Es la llave que **cierra el aire que entra a los cilindros de freno y al antibloqueo** para iniciar la frenada del bogie.
 - Al cerrarla se **condena el freno de servicio y el segundo freno** de ese bogie.
-- Para localizarla, busca el calderín de freno más cercano al bogie.
+- Para saber cuál es la B12 de cada bogie, te orientas por el **calderín de freno**.
+
+## Calderín de freno
+
+- Es un **depósito de aire** que almacena aire para la frenada.
+- Impide que el aire entre directamente a los cilindros de freno del bogie: el aire del calderín es el que se usa para frenar.
+- Por eso, para localizar una B12, busca el calderín de freno más cercano al bogie.
 
 ## Llaves 207 y 202 (balonas de suspensión)
 
-- **207:** condena las balonas de **un bogie**.
-- **202:** condena las balonas de **los dos bogies del coche**.
+- **207**: cada llave 207 condena las balonas de **un bogie**. Hay una por bogie.
+- **202**: condena las balonas de **los dos bogies**, es decir, las balonas de **todo el coche**.
 - Condenar una balona limita la velocidad a **80 km/h**.
+- Si una balona pierde aire y la TDP baja de **6,5 bar**, salta el **presostato de mínima**. Hay que condenar la balona que pierde con su 207.
 
 ## Llave M6
 
-- Aísla el aire del **freno electromagnético de patines**.
-- Al cortar el aire, los muelles suben los patines. Si quedan abajo, se recogen a mano.
+- Controla el **freno de patines**. Los patines **bajan con aire** y **suben con dos muelles**.
+- Si cierras la M6, **impides que el patín baje** (no entra aire).
+- Si un patín se queda pillado y no sube, cierra la M6 y **súbelo a mano**: al no haber presión de aire, puede levantarse.
+
+## Llave B-21 (tubería de TDP)
+
+- Es la llave neumática de la **tubería del depósito principal (TDP)**.
+- Aparece en la lista de aparatos neumáticos bajo el bastidor del Cm, del Ri y del Rc, junto a las llaves P-13 y G-1.
+
+## Llave B13 (tubería de TFA)
+
+- Es la llave neumática de la **tubería de freno automático (TFA)**.
+- En la 470, el audio asocia la TFA a la llave P-13. Es una diferencia que conviene confirmar (ver Serie 470 → Puntos a contrastar).
 
 ## Llave P6
 
