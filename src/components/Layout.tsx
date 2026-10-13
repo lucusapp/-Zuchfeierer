@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { SECTIONS } from '../lib/types'
 import SearchOverlay from './SearchOverlay'
+import LoginModal from './LoginModal'
+import { useAuth } from './AuthContext'
+import { signOut } from '../lib/auth'
 
 export type LayoutContext = { openSearch: () => void }
 
@@ -9,6 +12,8 @@ export default function Layout() {
   const location = useLocation()
   const isHome = location.pathname === '/'
   const [searchOpen, setSearchOpen] = useState(false)
+  const [loginOpen, setLoginOpen] = useState(false)
+  const { session } = useAuth()
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -32,13 +37,21 @@ export default function Layout() {
           <span className="text-xl">🚆</span>
           <span className="font-semibold tracking-tight truncate">Maquinista App</span>
         </NavLink>
-        <button
-          onClick={() => setSearchOpen(true)}
-          aria-label="Buscar"
-          className="shrink-0 text-lg text-slate-300 hover:text-rail-accent rounded-lg border border-rail-700 px-3 py-1.5"
-        >
-          🔍
-        </button>
+        <div className="flex items-center gap-2 shrink-0">
+          <button
+            onClick={() => setSearchOpen(true)}
+            aria-label="Buscar"
+            className="text-lg text-slate-300 hover:text-rail-accent rounded-lg border border-rail-700 px-3 py-1.5"
+          >
+            🔍
+          </button>
+          <button
+            onClick={() => (session ? signOut() : setLoginOpen(true))}
+            className="text-xs text-slate-300 hover:text-rail-accent rounded-lg border border-rail-700 px-3 py-2"
+          >
+            {session ? 'Salir' : 'Entrar'}
+          </button>
+        </div>
       </header>
 
       <main className="flex-1 px-4 py-4 pb-24 max-w-2xl w-full mx-auto">
@@ -72,6 +85,7 @@ export default function Layout() {
       )}
 
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
   )
 }

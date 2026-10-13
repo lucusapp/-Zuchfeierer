@@ -6,6 +6,9 @@ import { getChildren, getDoc, isEdited } from '../lib/content'
 import { clearOverride, saveOverride } from '../lib/overrides'
 import { downloadTextFile, toMarkdown } from '../lib/exportDoc'
 import { SECTIONS, type Doc, type Section } from '../lib/types'
+import { useAuth } from '../components/AuthContext'
+import LoginModal from '../components/LoginModal'
+import { CONTENT_IMAGES_BUCKET, supabase } from '../lib/supabaseClient'
 
 function metaToText(meta: Record<string, string>): string {
   return Object.entries(meta)
@@ -30,7 +33,9 @@ function textToMeta(text: string): Record<string, string> {
 // para que funcionen igual en local y desplegadas bajo un sub-path de GitHub Pages.
 function ContentImage(props: { src?: string; alt?: string }) {
   if (!props.src) return null
-  const url = `${import.meta.env.BASE_URL}content-images/${props.src}`
+  const url = /^https?:\/\//.test(props.src)
+    ? props.src
+    : `${import.meta.env.BASE_URL}content-images/${props.src}`
   return (
     <img
       src={url}
@@ -86,7 +91,12 @@ export default function DocPage() {
   const meta = SECTIONS.find((s) => s.id === section)
   const doc = meta && fullSlug ? getDoc(section as Section, fullSlug) : undefined
 
+  const { session } = useAuth()
   const [editing, setEditing] = useState(false)
+  const [loginOpen, setLoginOpen] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [uploading, setUploading] = useState(false)
+  const [saveError, setSaveError] = useState<string | null>(null)
   const [form, setForm] = useState<{
     title: string
     summary: string
@@ -94,6 +104,7 @@ export default function DocPage() {
     metaText: string
     body: string
   } | null>(null)
+  const bodyRef = useRef<HTMLTextAreaElement>(null)
 
   const location = useLocation()
   const contentRef = useRef<HTMLDivElement>(null)
@@ -148,6 +159,10 @@ export default function DocPage() {
   const backLabel = parentSlug ? '← Volver' : `← ${meta.label}`
 
   function startEditing(doc: Doc) {
+    if (!session) {
+      setLoginOpen(true)
+      return
+    }
     setForm({
       title: doc.title,
       summary: doc.summary,
@@ -158,9 +173,11 @@ export default function DocPage() {
     setEditing(true)
   }
 
-  function handleSave() {
+  async function handleSave() {
     if (!form) return
-    saveOverride(currentSection, currentSlug, {
+    setSaving(true)
+    setSaveError(null)
+    const { error } = await saveOverride(currentSection, currentSlug, {
       title: form.title,
       summary: form.summary,
       tags: form.tags
@@ -170,16 +187,55 @@ export default function DocPage() {
       meta: textToMeta(form.metaText),
       body: form.body,
     })
+    setSaving(false)
+    if (error) {
+      setSaveError(error)
+      return
+    }
     setEditing(false)
     setForm(null)
     // Forzar relectura del override recién guardado.
     window.location.reload()
   }
 
-  function handleReset() {
-    if (!confirm('¿Descartar los cambios guardados en este dispositivo y volver al contenido original?')) return
-    clearOverride(currentSection, currentSlug)
+  async function handleReset() {
+    if (!confirm('¿Descartar los cambios guardados y volver al contenido original?')) return
+    const { error } = await clearOverride(currentSection, currentSlug)
+    if (error) {
+      alert(error)
+      return
+    }
     window.location.reload()
+  }
+
+  async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file || !form) return
+    if (!supabase) {
+      setSaveError('Supabase no está configurado todavía.')
+      return
+    }
+    setUploading(true)
+    setSaveError(null)
+    const path = `${currentSection}/${currentSlug}/${Date.now()}-${file.name}`
+    const { error } = await supabase.storage.from(CONTENT_IMAGES_BUCKET).upload(path, file)
+    setUploading(false)
+    if (error) {
+      setSaveError(error.message)
+      return
+    }
+    const { data } = supabase.storage.from(CONTENT_IMAGES_BUCKET).getPublicUrl(path)
+    const markdown = `\n![${file.name}](${data.publicUrl})\n`
+    const textarea = bodyRef.current
+    if (textarea) {
+      const start = textarea.selectionStart ?? form.body.length
+      const end = textarea.selectionEnd ?? form.body.length
+      const newBody = form.body.slice(0, start) + markdown + form.body.slice(end)
+      setForm({ ...form, body: newBody })
+    } else {
+      setForm({ ...form, body: form.body + markdown })
+    }
   }
 
   function handleExport(doc: Doc) {
@@ -233,6 +289,7 @@ export default function DocPage() {
         <label className="block text-sm">
           Contenido (Markdown)
           <textarea
+            ref={bodyRef}
             className="mt-1 w-full rounded-lg bg-rail-800 border border-rail-700 px-3 py-2 font-mono text-xs"
             rows={16}
             value={form.body}
@@ -240,17 +297,33 @@ export default function DocPage() {
           />
         </label>
 
+        <label className="block text-sm">
+          Añadir imagen
+          <input
+            type="file"
+            accept="image/*"
+            disabled={uploading}
+            onChange={handleImageUpload}
+            className="mt-1 w-full text-xs"
+          />
+          {uploading && <p className="text-xs text-slate-400 mt-1">Subiendo imagen…</p>}
+        </label>
+
+        {saveError && <p className="text-sm text-red-400">{saveError}</p>}
+
         <div className="flex gap-2 pt-2">
           <button
             onClick={handleSave}
-            className="flex-1 rounded-lg bg-rail-accent text-rail-950 font-semibold py-2"
+            disabled={saving}
+            className="flex-1 rounded-lg bg-rail-accent text-rail-950 font-semibold py-2 disabled:opacity-60"
           >
-            Guardar en este dispositivo
+            {saving ? 'Guardando…' : 'Guardar'}
           </button>
           <button
             onClick={() => {
               setEditing(false)
               setForm(null)
+              setSaveError(null)
             }}
             className="rounded-lg border border-rail-700 px-4 py-2 text-sm"
           >
@@ -361,14 +434,17 @@ export default function DocPage() {
             Restablecer original
           </button>
           <p className="text-xs text-slate-500 basis-full">
-            Este cambio solo está guardado en este navegador. Exporta el archivo y súbelo a{' '}
+            Este cambio está guardado en la nube (Supabase) y se ve igual en todos los
+            dispositivos. Para que también quede en el repositorio, exporta el archivo y súbelo a{' '}
             <code className="bg-rail-800 px-1 rounded">
               content/{section}/{currentSlug}.md
-            </code>{' '}
-            en el repo para que quede para todos.
+            </code>
+            .
           </p>
         </div>
       )}
+
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </div>
   )
 }
