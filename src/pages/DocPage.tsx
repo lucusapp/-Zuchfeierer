@@ -9,6 +9,7 @@ import { SECTIONS, type Doc, type Section } from '../lib/types'
 import { useAuth } from '../components/AuthContext'
 import LoginModal from '../components/LoginModal'
 import { CONTENT_IMAGES_BUCKET, supabase } from '../lib/supabaseClient'
+import { toWebp } from '../lib/imageOptimize'
 
 function metaToText(meta: Record<string, string>): string {
   return Object.entries(meta)
@@ -218,15 +219,31 @@ export default function DocPage() {
     }
     setUploading(true)
     setSaveError(null)
-    const path = `${currentSection}/${currentSlug}/${Date.now()}-${file.name}`
-    const { error } = await supabase.storage.from(CONTENT_IMAGES_BUCKET).upload(path, file)
+
+    const baseName = file.name.replace(/\.[^.]+$/, '')
+    let upload: Blob = file
+    let contentType = file.type
+    let extension = file.name.split('.').pop() ?? 'jpg'
+    try {
+      upload = await toWebp(file)
+      contentType = 'image/webp'
+      extension = 'webp'
+    } catch {
+      // Si el navegador no puede convertirla (formato raro, API no soportada),
+      // se sube el archivo original tal cual en vez de bloquear la subida.
+    }
+
+    const path = `${currentSection}/${currentSlug}/${Date.now()}-${baseName}.${extension}`
+    const { error } = await supabase.storage
+      .from(CONTENT_IMAGES_BUCKET)
+      .upload(path, upload, { contentType })
     setUploading(false)
     if (error) {
       setSaveError(error.message)
       return
     }
     const { data } = supabase.storage.from(CONTENT_IMAGES_BUCKET).getPublicUrl(path)
-    const markdown = `\n![${file.name}](${data.publicUrl})\n`
+    const markdown = `\n![${baseName}](${data.publicUrl})\n`
     const textarea = bodyRef.current
     if (textarea) {
       const start = textarea.selectionStart ?? form.body.length

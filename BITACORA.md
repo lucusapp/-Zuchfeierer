@@ -12,6 +12,49 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-15 — Conversión a WebP en el navegador y arreglo de variables en Vercel
+
+**Qué se hizo:** se resolvieron dos problemas de puesta en marcha del
+backend Supabase y se añadió la conversión automática de imágenes a
+WebP antes de subirlas. Por el lado de puesta en marcha: se detectó que
+las credenciales reales de Supabase se habían escrito por error en
+`.env.local.example` (que sí se sube a git) en vez de en `.env.local`
+(ignorado); se movieron al sitio correcto y se añadió `.env.*.local` a
+`.gitignore`. Después, en Vercel, el login seguía fallando con "Supabase
+no está configurado" a pesar de haber añadido las variables de entorno y
+hacer redeploy — se diagnosticó como el Service Worker de la PWA sirviendo
+la build antigua en caché (confirmado al funcionar en una ventana de
+incógnito); se resolvió desregistrando el Service Worker y limpiando el
+almacenamiento del sitio en el navegador del usuario. Por el lado de
+imágenes: se añadió `src/lib/imageOptimize.ts` (`toWebp()`), que usa
+`createImageBitmap` + `<canvas>` para redimensionar a un máximo de 1600px
+de ancho y convertir a WebP calidad 80 **en el propio navegador**, con el
+mismo criterio que ya usaba `scripts/optimize-images.mjs` para las
+imágenes del repo. Se enchufó en `handleImageUpload` de `DocPage.tsx`: si
+la conversión falla (navegador sin soporte), se sube el archivo original
+sin bloquear.
+
+**Qué se decidió y por qué:** convertir en el cliente (no en un servidor
+intermedio) porque no hay backend propio más allá de Supabase, y así las
+fotos de móvil (normalmente .jpg pesados) llegan ya optimizadas al bucket
+sin depender de ningún paso manual.
+
+**Problemas y cómo se resolvieron:** sin herramienta de automatización de
+navegador instalada en el entorno, se instaló Playwright + Chromium
+puntualmente para probar de verdad la conversión (foto sintética de
+3000×2000/35,5 KB → WebP 1600×1067/3,6 KB) y el flujo de "Editar sin
+sesión abre el login", ambos con éxito y sin errores de consola. No se
+pudo probar la subida real a Supabase Storage por no disponer de las
+credenciales de login del usuario (correcto: no se piden contraseñas por
+chat) — queda pendiente que el usuario la pruebe con una foto real desde
+el móvil.
+
+**Pendiente:** confirmar con el usuario que la subida de una imagen real
+funciona de punta a punta en producción (login → subir foto → URL
+pública insertada en el Markdown → visible desde otro dispositivo).
+
+---
+
 ## 2026-10-13 — Backend con Supabase (imágenes y ediciones en la nube)
 
 **Qué se hizo:** se añade Supabase como backend para dejar de depender
