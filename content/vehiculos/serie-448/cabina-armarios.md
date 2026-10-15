@@ -22,7 +22,7 @@ meta: {}
 
 Numeración según la foto del armario. Junto a la descripción literal de la chuleta se añade, en cursiva, una aclaración de qué hace cada elemento en la práctica (no es texto de la chuleta, es una ayuda de estudio).
 
-> La foto numera hasta el **17** (se ven además los puntos 14, 15, 16 y 17 agrupados a la derecha y abajo), pero el texto de la chuleta disponible solo describe del 1 al 13. Falta incorporar la descripción de los puntos 14-17 — ver Puntos a contrastar.
+> La foto numera hasta el **17**.
 
 1. **By-pass de puertas.** Al accionar el conmutador se ilumina la lámpara testigo, eliminando del circuito de tracción las cuatro puertas del coche y su intervención en el circuito de lazo. **Atención:** con el by-pass activo hay tracción y se podría circular con las puertas abiertas.
    *Qué hace: es un "puente" de seguridad que anula la vigilancia de que las 4 puertas de ese coche estén bien cerradas, para que el tren pueda moverse igualmente. Solo se usa si una puerta no cierra y hay que mover el tren.*
@@ -97,6 +97,33 @@ Numeración según la foto del armario. Junto a la descripción literal de la ch
     - **5e2** — electroválvula de bocina.
     - **5e9** — megafonía.
     *Nota: en el punto 6 aparece también un magnetotérmico de Tren Tierra (5e8TT). Puede ser el mismo elemento citado dos veces en la chuleta o dos térmicos distintos — ver Puntos a contrastar.*
+
+14. **Magnetotérmicos (de izda. a dcha.):**
+    - **1e53** — Alumbrado techo.
+    - **5e1** — Antivaho.
+    - **5e5** — Aspiradoras.
+    - **1e2** — Freno KBR.
+    - **1e5** — Memotel.
+    - **1e9** — Contactor de cola.
+    - **1e13** — Contactor freno de patín.
+    - **1e14 y 1e15** — Alimentación patines y electroválvula de patines del 1º y 2º bogie.
+    - **1e27** — Alumbrado testero.
+    - **1e30** — GR3, dispositivo antideslizamiento.
+    - **1e34** — Hombre muerto.
+    - **1e36** — Señalización freno de mano.
+    - **1e42** — Alumbrado pupitre.
+    - **1e43** — Calienta pies y alumbrado cabina.
+    - **5e17** — Alumbrado techo c.c.
+    *Qué hacen: es la fila larga de térmicos de la foto, abajo a la izquierda — protegen iluminación (techo, testero, pupitre, cabina), antivaho, aspiradoras, el freno KBR y el freno de patín (contactor y electroválvulas), el hombre muerto, la señalización de freno de mano, el Memotel y el dispositivo antideslizamiento GR3.*
+
+15. **5e13** — Sustitución del alumbrado de bandas.
+    *Qué hace: entra en servicio si falla el magnetotérmico principal del alumbrado de las bandas luminosas de las puertas, para no perder esa iluminación.*
+
+16. **1b23** — Sustitución de proyectores.
+    *Qué hace: igual que el anterior pero para los proyectores (faros) — es el térmico de repuesto si falla el principal.*
+
+17. **ACPS** — Compresor auxiliar.
+    *Nota: el punto 12 ya tiene un "ACPN — Compresor auxiliar". Puede que ACPN y ACPS protejan partes distintas del mismo compresor auxiliar (p. ej. mando y potencia) — ver Puntos a contrastar.*
 
 ## Armario BT del Cm, serie alta
 
