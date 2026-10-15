@@ -18,9 +18,11 @@ meta: {}
 
 ## Armario BT del Cm, serie baja — foto numerada (448000–448011)
 
-> Pendiente: foto del armario con los números 1 a 13 superpuestos sobre cada térmico/contactor. En cuanto se incorpore la imagen se enlaza aquí.
+![Armario BT, serie baja, numerado del 1 al 17](vehiculos/serie-448/armario-bt-serie-baja.webp)
 
 Numeración según la foto del armario. Junto a la descripción literal de la chuleta se añade, en cursiva, una aclaración de qué hace cada elemento en la práctica (no es texto de la chuleta, es una ayuda de estudio).
+
+> La foto numera hasta el **17** (se ven además los puntos 14, 15, 16 y 17 agrupados a la derecha y abajo), pero el texto de la chuleta disponible solo describe del 1 al 13. Falta incorporar la descripción de los puntos 14-17 — ver Puntos a contrastar.
 
 1. **By-pass de puertas.** Al accionar el conmutador se ilumina la lámpara testigo, eliminando del circuito de tracción las cuatro puertas del coche y su intervención en el circuito de lazo. **Atención:** con el by-pass activo hay tracción y se podría circular con las puertas abiertas.
    *Qué hace: es un "puente" de seguridad que anula la vigilancia de que las 4 puertas de ese coche estén bien cerradas, para que el tren pueda moverse igualmente. Solo se usa si una puerta no cierra y hay que mover el tren.*
