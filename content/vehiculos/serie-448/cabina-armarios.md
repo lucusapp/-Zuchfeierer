@@ -16,20 +16,85 @@ meta: {}
 
 **Remolque con cabina (Rc)**: cabina con pupitre idéntico al del Cm, cofre de baterías, cargador de baterías, convertidor estático, compresor principal, equipo de freno y arenado, patines y freno de estacionamiento.
 
-## Armario BT del Cm, serie baja (elementos principales)
+## Armario BT del Cm, serie baja — foto numerada (448000–448011)
 
-- **By-pass de puertas** (conmutador con lámpara): elimina del circuito de tracción las cuatro puertas del coche y su intervención en el lazo. Con él se tendría tracción con las puertas abiertas.
-- **CPP15**: pulsador de anulación de velocidad nula.
-- **RVN1**: relé de velocidad nula; se excita por debajo de 3 km/h y permite autorizar la apertura de puertas.
-- **RPT11**: temporizador de anulación de velocidad nula (6 min); complementa al pulsador verde de cada puerta.
-- **1d1**: relé de control (uno por cabina) para la cabina habilitada.
-- **Panel de defectos** (MMOCD 1 y 2, DFD, MGDFD, CCOS 2 y 1, MGRPB).
-- **1c9**: contactor de cola. **CACPM**: contactor del compresor auxiliar.
-- **RBMK1 y RBMK2**: disyuntores de los motores de los ventiladores de resistencias.
-- Magnetotérmicos de motores piloto, KBR y ER (PMN), ventiladores de resistencias, premagnetización del freno eléctrico, control, compresor auxiliar, pantógrafos (PanN1), areneros (SdN1), control del compresor y de convertidor de servicios auxiliares.
-- Magnetotérmicos de batería y de telemando de batería, puertas exteriores, puertas interiores, megafonía, estribos y cargador de linternas.
-- Magnetotérmicos de alumbrado, antivaho, freno KBR (1e2), freno de patín, hombre muerto (1e34), señalización de freno de mano (1e36) y calienta pies.
-- Relés de anulación de arenado, freno de patín, emergencia de arenado y ASFA, entre otros.
+> Pendiente: foto del armario con los números 1 a 13 superpuestos sobre cada térmico/contactor. En cuanto se incorpore la imagen se enlaza aquí.
+
+Numeración según la foto del armario. Junto a la descripción literal de la chuleta se añade, en cursiva, una aclaración de qué hace cada elemento en la práctica (no es texto de la chuleta, es una ayuda de estudio).
+
+1. **By-pass de puertas.** Al accionar el conmutador se ilumina la lámpara testigo, eliminando del circuito de tracción las cuatro puertas del coche y su intervención en el circuito de lazo. **Atención:** con el by-pass activo hay tracción y se podría circular con las puertas abiertas.
+   *Qué hace: es un "puente" de seguridad que anula la vigilancia de que las 4 puertas de ese coche estén bien cerradas, para que el tren pueda moverse igualmente. Solo se usa si una puerta no cierra y hay que mover el tren.*
+
+2. **CPP15 — Pulsador Anulación Velocidad Nula.** Al pulsarlo excita la bobina del Relé Temporizado Anulación Velocidad Nula (RPT11, punto 4).
+   *Qué hace: es el botón que pulsa el maquinista a mano para "desbloquear" el sistema de puertas cuando el relé de velocidad nula (punto 3) no se ha excitado solo.*
+
+3. **RVN1 — Relé Velocidad Nula 1.** Se excita al circular a velocidad inferior a 3 km/h. Da señal al sistema de apertura de puertas: una vez detenido el tren y accionados los conmutadores del pupitre que autorizan las bandas de puertas, los pulsadores se iluminan y se puede proceder a abrir o cerrar la puerta. También permite la apertura de puertas al actuar sobre la llave de socorro o desbloqueo.
+   *Qué hace: es el relé que "sabe" si el tren está prácticamente parado (menos de 3 km/h). Mientras no se excite, el sistema no deja abrir puertas — es la protección básica contra abrirlas en marcha.*
+
+4. **RPT11 — Relé Temporizador Anulación Velocidad Nula (6').** Al excitarse por el pulsador CPP15 (punto 2) o por el pulsador verde existente bajo la capota de cada puerta, elimina el bloqueo de puertas que provoca el Relé de Velocidad Nula [RVN1 (BT)] cuando, por anormalidad, no se ha excitado circulando a menos de 3 km/h. Existe uno en cada armario BT de cada cabina y complementa al pulsador verde.
+   *Qué hace: es el "plan B" de 6 minutos — si por algún fallo el relé de velocidad nula no confirma que el tren está parado, este temporizador permite igualmente abrir puertas durante ese tiempo.*
+
+5. **Resistencias del faro:**
+   - 5.1 — **1r6**, resistencia de protección del faro.
+   - 5.2 — **1r4**, resistencia de reducción del faro.
+   - 5.3 — **1r8**, resistencia de sustitución del faro.
+   *Qué hacen: las tres están en el circuito del faro delantero — una limita/protege la corriente, otra reduce su intensidad luminosa y la tercera sustituye a otra si hace falta.*
+
+6. **Magnetotérmicos (de izda. a dcha.):**
+   - **1e20** — Magnetotérmico IRIS.
+   - **5e8TT** — Magnetotérmico Tren Tierra.
+   - **Interruptor telemando batería** — alimenta la bobina del contactor de batería. Su disparo provoca la desconexión del circuito de batería al desexcitar la bobina del contactor. Se puede disparar manualmente o mediante el pulsador de telemando de batería existente en el panel frontal superior de las cabinas de conducción.
+   - **Mando puertas exteriores (totalizador)** — protege el circuito de puertas exteriores del coche.
+   - **Puertas exteriores izq. y dcha.** — protege el circuito de forma cruzada, una puerta lado derecho y otra lado izquierdo (puertas 1-4 y 2-3 del coche).
+   - **Puertas interiores de intercomunicación** — protege las puertas de intercomunicación del coche.
+   - **Megafonía** — protege el circuito de megafonía e IRIS.
+   - **Estribos** — protege la iluminación de balizamiento de los estribos.
+   - **Carga linternas** — protege los cargadores de linternas.
+   *Qué hacen: son los térmicos de protección de cada circuito auxiliar del coche — si hay un cortocircuito o sobrecarga en puertas, megafonía, batería, estribos o linternas, salta solo el térmico de ese circuito concreto, sin afectar a los demás.*
+
+7. **1d1 — Relé de Control.** Uno por cada cabina. Su bobina se excita al conectar el interruptor de control de pupitre de conducción de la cabina habilitada. Interviene en:
+   - Alimentación del circuito de control de puertas.
+   - Un enclavamiento para el sistema ASFA en servicio.
+   - Un enclavamiento para el circuito de engrase de pestañas.
+   - La alimentación del contactor de cola 1c9.
+   - Dos enclavamientos para el freno de patín.
+   - Un enclavamiento en reposo en cabina NO habilitada, para el equipo ASFA desconectado.
+   *Qué hace: es el relé "maestro" de cada cabina — solo se excita cuando esa cabina queda habilitada para conducir, y desde ahí reparte alimentación o autorización a varios sistemas (puertas, ASFA, engrase, freno de patín, contactor de cola).*
+
+8. **Panel de defectos** (MMOCD 1 y 2 — DFD — MGDFD — CCOS 2 y 1 — MGRPB).
+   *Qué hace: agrupa en un único panel los térmicos/cortacircuitos de detección de anomalías de varios equipos, para ver de un vistazo qué protección ha saltado.*
+
+9. **Magnetotérmicos (de izda. a dcha.):**
+   - **Baliza señalizadora.**
+   - **Dass.**
+   *Qué hacen: protegen el circuito de la baliza de señalización del tren y el del sistema DASS (ya mencionado como "by-pass DASS" en el pupitre de cabina — su significado exacto está en Puntos a contrastar).*
+
+10. 
+    - 10.1 — **1c9**, contactor de cola.
+    - 10.2 — **CACPM**, contactor del compresor auxiliar.
+    *Qué hacen: el contactor de cola conecta/desconecta la alimentación del extremo de cola de la unidad; el contactor del compresor auxiliar activa ese compresor cuando hace falta aire extra.*
+
+11. **RBMK1 y RBMK2 — disyuntores integrales de los motores de los ventiladores de resistencias.** En series bajas dispone de contactores de motores ventiladores RMNK1 y RMNK2, y de los magnetotérmicos correspondientes RBMN1 y RBMN2 de alimentación a los motores de los ventiladores.
+    *Qué hacen: protegen los motores que mueven los ventiladores de refrigeración de las resistencias de tracción/freno. Si uno de estos disyuntores salta, deja de enfriarse esa resistencia — coherente con lo ya registrado para la 470: si salta el térmico de un ventilador, el sistema corta la tracción por seguridad.*
+
+12. **Magnetotérmicos (de izda. a dcha.):**
+    - **PMN** — motores piloto, KBR, ER.
+    - **RBMN1** — ventilador de resistencias 1.
+    - **RBMN2** — ventilador de resistencias 2.
+    - **PEXN** — premagnetización en freno eléctrico.
+    - **CCN** — control.
+    - **ACPN** — compresor auxiliar.
+    - **PanN1** — pantógrafos.
+    - **SdN1** — areneros.
+    - **CPMKN1** — control del compresor.
+    - **RBMKN1** — control de ventiladores de resistencias.
+    - **MGSTKN1** — control del convertidor de servicios auxiliares.
+
+13. **Magnetotérmicos (de izda. a dcha.):**
+    - **5e8** — Tren Tierra.
+    - **5e2** — electroválvula de bocina.
+    - **5e9** — megafonía.
+    *Nota: en el punto 6 aparece también un magnetotérmico de Tren Tierra (5e8TT). Puede ser el mismo elemento citado dos veces en la chuleta o dos térmicos distintos — ver Puntos a contrastar.*
 
 ## Armario BT del Cm, serie alta
 
