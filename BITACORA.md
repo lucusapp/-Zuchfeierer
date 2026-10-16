@@ -12,6 +12,57 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-16 — Contenido completo del armario BT (448) y documento de arquitectura
+
+**Qué se hizo:** se terminó de incorporar la foto numerada del armario BT
+de la serie baja (448000–448011) a `content/vehiculos/serie-448/cabina-armarios.md`:
+primero los puntos 1-13 (a partir de un texto pegado por el usuario), y
+después los puntos 14-17 que faltaban (el usuario los pasó tras ver que la
+foto numeraba hasta el 17). La foto en sí la subió el usuario desde el
+editor de la app (confirmando que la conversión a WebP en el navegador
+funciona en producción) y se movió de Supabase Storage al repositorio
+(`public/content-images/vehiculos/serie-448/armario-bt-serie-baja.webp`)
+para no depender de esa URL externa. Se añadió `content/vehiculos/serie-448/puntos-a-contrastar.md`
+con las dudas que salieron del propio texto (siglas "Dass", posible
+duplicado de magnetotérmico "Tren Tierra" 5e8TT/5e8, y la diferencia entre
+ACPN y ACPS, ambos "compresor auxiliar"). Por último se creó
+`ARQUITECTURA.md`, un documento de referencia que explica de una vez cómo
+encajan la capa de contenido en git y la capa de edición en caliente de
+Supabase (overrides, imágenes, login, caché de la PWA), pensado para que
+otra sesión de Claude Code (en otro proyecto del usuario) lo pueda leer
+sin contexto previo.
+
+**Qué se decidió y por qué:** durante esta sesión se repitió varias veces
+el mismo problema — el usuario editaba o yo actualizaba una página, y el
+cambio no se veía porque: (a) el Service Worker de la PWA servía una
+versión en caché antigua, (b) había contenido pendiente de hacer commit y
+push, o (c) había un override guardado en Supabase tapando el contenido
+nuevo de git. Se añadió a `CLAUDE.md` una regla permanente: antes de
+editar cualquier `content/**/*.md`, comprobar primero (con la clave
+pública de Supabase, de solo lectura) si esa página tiene un override
+activo, e incorporarlo en vez de pisarlo a ciegas. El usuario preguntó
+explícitamente si no sería mejor pasar toda la persistencia a Supabase;
+se decidió que no, para no perder el historial de git ni el flujo de
+redactar y revisar el contenido en conversación antes de publicarlo — el
+problema real no era el diseño, era que faltaba esa comprobación.
+
+**Problemas y cómo se resolvieron:** el mismo bug de caché de la PWA y el
+mismo bug de override-tapando-contenido-nuevo aparecieron varias veces
+seguidas por falta de ese hábito de comprobación, hasta que se formalizó
+como regla en `CLAUDE.md`. Se diagnosticó además, leyendo directamente la
+tabla `doc_overrides` con la clave pública, que un override creado por el
+usuario al añadir la imagen a mano (antes de que se incorporaran los
+puntos 14-17) se había quedado desfasado — confirmando la causa exacta del
+problema en vez de suponerla.
+
+**Pendiente:** confirmar en el armario real los tres puntos de
+`puntos-a-contrastar.md` (Dass, 5e8TT/5e8, ACPN/ACPS). Copiar
+`ARQUITECTURA.md` (o su contenido) al otro proyecto del usuario que está
+documentando su propio proceso de construcción con un patrón similar
+(Codespaces + VS Code + Claude Code).
+
+---
+
 ## 2026-10-15 — Conversión a WebP en el navegador y arreglo de variables en Vercel
 
 **Qué se hizo:** se resolvieron dos problemas de puesta en marcha del

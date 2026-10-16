@@ -1,3 +1,11 @@
+## Arquitectura
+
+Antes de tocar nada relacionado con contenido, overrides, imágenes o
+Supabase, lee ARQUITECTURA.md — explica cómo encajan la capa de git (el
+contenido permanente) y la capa de Supabase (edición en caliente e
+imágenes), y por qué hay que comprobar los overrides antes de editar un
+`.md` (ver más abajo).
+
 ## Bitácora
 
 Este proyecto lleva su historial en BITACORA.md. Los codespaces se borran a
