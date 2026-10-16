@@ -64,7 +64,7 @@ Numeración según la foto del armario. Junto a la descripción literal de la ch
    *Qué hace: es el relé "maestro" de cada cabina — solo se excita cuando esa cabina queda habilitada para conducir, y desde ahí reparte alimentación o autorización a varios sistemas (puertas, ASFA, engrase, freno de patín, contactor de cola).*
 
 8. **Panel de defectos** (MMOCD 1 y 2 — DFD — MGDFD — CCOS 2 y 1 — MGRPB).
-   *Qué hace: agrupa en un único panel los térmicos/cortacircuitos de detección de anomalías de varios equipos, para ver de un vistazo qué protección ha saltado.*
+   *Qué hace: agrupa en un único panel los térmicos/cortacircuitos de detección de anomalías de varios equipos, para ver de un vistazo qué protección ha saltado. Qué es cada indicación de MMOCD1/MMOCD2/DFD: ver [Equipo eléctrico → Circuito de alta](#/vehiculos/serie-448/equipo-electrico).*
 
 9. **Magnetotérmicos (de izda. a dcha.):**
    - **Baliza señalizadora.**

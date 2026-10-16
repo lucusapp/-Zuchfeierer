@@ -87,8 +87,9 @@ meta: {}
 - Comprobar si cierra desde la cabina contraria, habilitándola.
 
 ### El disyuntor se abre al establecer tracción
-- **Causas:** actuación de una protección del panel de defectos (MMOCD1, MMOCD2, DFD) o posible derivación en un circuito de alta.
+- **Causas:** actuación de una protección del panel de defectos (MMOCD1, MMOCD2, DFD — qué es cada una: ver [Equipo eléctrico → Circuito de alta](#/vehiculos/serie-448/equipo-electrico)) o posible derivación en un circuito de alta.
 - **Actuar:** seccionar, si hace falta, algún grupo de motores con su cuchilla en la cámara de alta. Si es por DFD por derivación en resistencias principales, seccionar con la cuchilla **MS** en la cámara de alta o desconectando CCOS1 del armario BT.
+- *Qué es una "derivación en resistencias principales":* una derivación es una fuga de corriente a masa por fallo de aislamiento. Aquí está localizada en las resistencias principales (los bloques de resistencias de potencia usados en tracción/freno reostático), no en los motores — por eso se aísla esa parte del circuito (cuchilla MS o CCOS1) en vez de seccionar un grupo de motores.
 
 ### Avería en los ventiladores de resistencias
 - Se corta la tracción a los **6 segundos**.

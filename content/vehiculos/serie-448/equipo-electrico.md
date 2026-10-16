@@ -23,7 +23,13 @@ Capta los **3.000 V** de catenaria, los distribuye a la tracción y transforma p
 - Motores de tracción M1, M2, M3, M4.
 - Convertidor estático.
 
-Protecciones del circuito de alta: sobreintensidad de motores y diferenciales. Todas se señalizan en el **panel de defectos** del armario BT del Cm, y cualquier señal en ese panel **abre el disyuntor HB**. Indicaciones: MMOCD1 (sobreintensidad motores 1-2), MMOCD2 (sobreintensidad motores 3-4), DFD (diferencial total del circuito de tracción).
+Protecciones del circuito de alta: sobreintensidad de motores y diferenciales. Todas se señalizan en el **panel de defectos** del armario BT del Cm (ver [Cabina y armarios BT](#/vehiculos/serie-448/cabina-armarios)), y cualquier señal en ese panel **abre el disyuntor HB**. Indicaciones:
+
+- **MMOCD1**: sobreintensidad en motores 1-2.
+- **MMOCD2**: sobreintensidad en motores 3-4.
+- **DFD**: diferencial total del circuito de tracción.
+
+*Qué significa "diferencial total":* a diferencia de MMOCD1/MMOCD2, que vigilan la sobrecorriente de una pareja de motores en concreto, el DFD vigila **todo el circuito de tracción en conjunto** (motores, resistencias y cableado de alta), comparando lo que entra con lo que sale. Si no cuadra, es que hay corriente escapándose a la carcasa/masa del tren en algún punto — un fallo de aislamiento — y "total" indica que la protección avisa de que existe esa fuga en algún sitio del circuito de alta, sin decir exactamente dónde. Ver el procedimiento en caso de que salte en [Averías → El disyuntor se abre al establecer tracción](#/vehiculos/serie-448/averias).
 
 ## Convertidor estático
 

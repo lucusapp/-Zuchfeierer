@@ -12,6 +12,48 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-16 (tarde) — Explicación de DFD y enlaces cruzados entre páginas
+
+**Qué se hizo:** el usuario preguntó qué significa "DFD, diferencial total
+del circuito de tracción" y "derivación en resistencias principales"
+(términos ya presentes en sus apuntes pero sin aclarar). Se explicó y,
+tras su confirmación, se incorporó la aclaración al contenido en los tres
+sitios donde aparece el término: `equipo-electrico.md` (definición
+completa: el DFD vigila el circuito de tracción en conjunto, no un motor
+en concreto, comparando lo que entra con lo que sale para detectar fugas
+a masa), `cabina-armarios.md` (mención breve en el panel de defectos) y
+`averias.md` (explicación de qué es una derivación, en el procedimiento
+de "el disyuntor se abre al establecer tracción"). Se añadieron además
+**enlaces internos de ida y vuelta** entre las tres páginas
+(`[texto](#/vehiculos/serie-448/slug)`), usando el hash de React Router
+directamente en el Markdown — no hay componente `Link` conectado al
+renderer de `react-markdown`, así que se usan anclas `<a href="#/...">`
+normales, que HashRouter recoge igual.
+
+**Qué se decidió y por qué:** centralizar la definición completa de DFD
+en `equipo-electrico.md` (es la página de referencia del circuito de
+alta) y dejar en las otras dos páginas solo un enlace de vuelta, en vez
+de repetir el texto completo tres veces — así una sola explicación queda
+desactualizable en un solo sitio.
+
+**Problemas y cómo se resolvieron:** no había precedente en el proyecto
+de enlaces internos entre páginas de contenido, así que antes de darlo
+por bueno se probó de verdad con Playwright (clic en el enlace de
+`equipo-electrico` a `cabina-armarios` y vuelta): la URL cambia
+correctamente (`#/vehiculos/serie-448/cabina-armarios` y viceversa) sin
+recargar la página y sin errores de consola, confirmando que un simple
+`<a href="#/...">` funciona con el `HashRouter` sin necesitar ningún
+cambio de código. Antes de editar se comprobó (regla de `CLAUDE.md`) que
+ninguna de las tres páginas tenía un override activo en Supabase.
+
+**Pendiente:** ninguno nuevo. De paso, el procedimiento de "el disyuntor
+no cierra" menciona "compresor auxiliar (ACPN + ACPS)" usados juntos, lo
+que apunta a que no son duplicados sino un par (posible mando/potencia) —
+no se ha cerrado la duda de `puntos-a-contrastar.md` sobre ACPN/ACPS,
+pero este dato es una pista a favor de esa hipótesis.
+
+---
+
 ## 2026-10-16 — Contenido completo del armario BT (448) y documento de arquitectura
 
 **Qué se hizo:** se terminó de incorporar la foto numerada del armario BT
