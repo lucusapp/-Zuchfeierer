@@ -6,8 +6,6 @@ tags: ["puertas", "by-pass", "alarma", "estribos"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona).
-
 ## Puertas de acceso
 
 - Cada puerta tiene una **llave de socorro** (maneta de desbloqueo) en su parte superior. Permite abrirla a mano si la velocidad es menor de **3 km/h**.

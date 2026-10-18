@@ -6,7 +6,7 @@ tags: ["estaciones", "PK", "Sants", "El Prat", "Garraf", "Sitges", "Vilanova", "
 meta: {}
 ---
 
-> Fuente: apuntes de clase (transcripción). Pendiente de contrastar con la documentación oficial vigente.
+> Pendiente de contrastar con la documentación oficial vigente.
 
 ## Sants (Barcelona)
 

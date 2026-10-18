@@ -6,7 +6,7 @@ tags: ["llaves", "P21", "P13", "B12", "KBR", "FM3"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver "Puntos a contrastar".
+> Ver "Puntos a contrastar".
 
 ## Distribuidores
 

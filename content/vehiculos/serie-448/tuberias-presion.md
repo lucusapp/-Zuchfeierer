@@ -6,7 +6,7 @@ tags: ["neumático", "TDP", "TFA"]
 meta: {}
 ---
 
-> Fuente: resumen del audio de clase (transcripción). Pendiente de contrastar con el manual.
+> Pendiente de contrastar con el manual.
 
 ## TDP (Tubería de Depósito Principal)
 

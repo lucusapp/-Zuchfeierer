@@ -6,7 +6,7 @@ tags: ["cabina", "armario BT", "magnetotérmicos"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona). Referencia de localización; los números de cada elemento corresponden a las fotos del documento.
+> Referencia de localización; los números de cada elemento corresponden a las fotos del armario.
 
 ## Situación de aparatos
 

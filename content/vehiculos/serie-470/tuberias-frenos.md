@@ -8,7 +8,7 @@ meta:
   presion_tfa: "5 kg, generada a mano desde la TDP"
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver Puntos a contrastar.
+> Ver Puntos a contrastar.
 
 ## Tuberías principales
 

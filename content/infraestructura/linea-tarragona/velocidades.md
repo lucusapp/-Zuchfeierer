@@ -6,7 +6,7 @@ tags: ["velocidades", "limitaciones"]
 meta: {}
 ---
 
-> Fuente: apuntes de clase (transcripción). Pendiente de contrastar con la documentación oficial vigente.
+> Pendiente de contrastar con la documentación oficial vigente.
 
 ## Velocidad general de la línea
 

@@ -8,8 +8,6 @@ meta:
   presostato_kbr: "cierra 6,5 bar · abre 5,7 bar"
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona).
-
 ## Elementos del lazo
 
 - **Presostato de mínima** (único, en el Cm): cierra con **8,5 bar** y abre a **6,5 bar**.

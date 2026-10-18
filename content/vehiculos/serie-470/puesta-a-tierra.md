@@ -6,7 +6,7 @@ tags: ["puesta a tierra", "seguridad", "llave máster"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver "Puntos a contrastar"; contrastar con el procedimiento oficial de la serie.
+> Ver "Puntos a contrastar"; contrastar con el procedimiento oficial de la serie.
 
 1. Accionar la **llave de 3 vías** para aislar y condenar neumática y eléctricamente los pantógrafos.
 2. Abrir la **cámara de alta tensión** e interconectar a tierra. Con esto concluye la puesta a tierra.

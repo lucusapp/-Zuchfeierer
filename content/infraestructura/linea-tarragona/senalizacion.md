@@ -6,7 +6,7 @@ tags: ["señales", "balizas", "señalización"]
 meta: {}
 ---
 
-> Fuente: apuntes de clase (transcripción). Pendiente de contrastar con la documentación oficial vigente.
+> Pendiente de contrastar con la documentación oficial vigente.
 
 ## Sants — señal de entrada
 

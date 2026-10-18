@@ -6,7 +6,7 @@ tags: ["puntos singulares", "50 Hz", "pendientes", "túneles", "peatones"]
 meta: {}
 ---
 
-> Fuente: apuntes de clase (transcripción). Pendiente de contrastar con la documentación oficial vigente.
+> Pendiente de contrastar con la documentación oficial vigente.
 
 ## Sitges – Vilanova — túneles y peatones
 

@@ -6,7 +6,7 @@ tags: ["estaciones", "R16"]
 meta: {}
 ---
 
-> Fuente: apuntes propios. Pendiente de completar.
+> Pendiente de completar.
 
 ## Tarragona
 

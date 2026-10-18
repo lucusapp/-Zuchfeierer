@@ -12,28 +12,65 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-18 (tarde) — Quitar citas de fuente del contenido de clase
+
+**Qué se hizo:** por petición del usuario, se quitaron las citas de
+fuente ("Fuente: ...") de las páginas de `content/` que las tenían — 23
+archivos en total, entre `vehiculos/serie-448/`, `vehiculos/serie-470/`,
+`vehiculos/serie-449/caracteristicas-generales.md` e
+`infraestructura/`. Se preguntó primero al usuario hasta dónde llegar
+(solo las citas de clase, o también las de la chuleta oficial, que
+nombraban a una persona concreta), y confirmó que todas. Donde la línea
+de fuente tenía además un aviso útil (p. ej. "no tiene valor
+reglamentario", "pendiente de contrastar con la documentación oficial")
+se conservó ese aviso quitando solo la atribución. Se renombró
+`diferencias-448-470-audio.md` a `diferencias-448-470-bateria.md`, con
+un título descriptivo del contenido en vez de la fuente. También se
+generalizaron, donde hacía falta distinguir el origen de un dato frente
+a la chuleta oficial, las referencias a "en clase" / "la clase", sin más
+detalle ni nombres propios.
+
+**Qué se decidió y por qué:** el usuario pidió no mantener en el
+contenido ningún dato sobre la procedencia de los apuntes, ni citas que
+nombraran a personas concretas. Se aplicó a todo el repositorio tras
+confirmar el alcance con el usuario, no solo a la página que se estaba
+editando en ese momento.
+
+**Problemas y cómo se resolvieron:** en `puntos-a-contrastar.md` (470),
+la referencia al origen se usaba repetidamente para contrastar dos
+fuentes distintas (clase vs. chuleta), y en dos puntos para distinguir
+dos sesiones de clase entre sí; se reescribió con cuidado para no perder
+esa distinción (p. ej. "en una clase" / "en otra clase") en vez de un
+simple borrado o un find-and-replace ciego. Antes de tocar cada archivo
+se comprobó (regla de `CLAUDE.md`) que ninguno tenía un override activo
+en Supabase.
+
+**Pendiente:** ninguno nuevo.
+
+---
+
 ## 2026-10-18 — Explicación de CCOS1 y CCOS2
 
 **Qué se hizo:** el usuario preguntó dónde estaban definidos CCOS1/CCOS2
 (solo aparecían nombrados, sin explicar, en `equipo-electrico.md`,
 `cabina-armarios.md` y `averias.md`). Se añadió la explicación en
 `equipo-electrico.md`: CCOS1 es el interruptor de mando de los motores de
-tracción y freno (el profesor de la clase del usuario insiste en que es
-importante), CCOS2 gobierna el segundo grupo de servicios
-auxiliares/confort; ambos se operan a mano para aislar una avería o
-rearmar tras un disparo por sobrecorriente.
+tracción y de las resistencias de freno (es importante; se actúa sobre
+él para evitar que les llegue la orden de tracción), CCOS2 gobierna el
+segundo grupo de servicios auxiliares/confort; ambos se operan a mano
+para aislar una avería o rearmar tras un disparo por sobrecorriente.
 
 **Qué se decidió y por qué:** el usuario aportó primero una explicación
 con las siglas "CCS1/CCS2" (sin la O) diciendo que la redacción venía de
 una IA externa. Antes de incorporarla se preguntó explícitamente el
-origen del dato (¿chuleta, clase, o investigación propia?) y si las
-siglas eran un error tipográfico, siguiendo la norma del proyecto de no
-dar por buena información no verificada. El usuario confirmó que las
-siglas correctas son **CCOS** (como ya constaba en el resto de los
-apuntes) y que el contenido, aunque redactado con ayuda de IA, viene
-de un audio de una clase real que está siguiendo — por tanto se trata
-como fuente primaria (como el resto de audios de clase ya incorporados),
-con su atribución correspondiente, no como "punto a contrastar".
+origen del dato y si las siglas eran un error tipográfico, siguiendo la
+norma del proyecto de no dar por buena información no verificada. El
+usuario confirmó que las siglas correctas son **CCOS** (como ya constaba
+en el resto de los apuntes) y que el contenido, aunque redactado con
+ayuda de IA, corresponde a lo visto en una clase que está siguiendo. El
+usuario pidió además no citar fuentes en ningún apunte del proyecto, así
+que se retiraron también las citas existentes en el resto del contenido
+de la serie 470 (ver entrada siguiente).
 
 **Problemas y cómo se resolvieron:** la discrepancia CCS/CCOS podría
 haber llevado a escribir un término incorrecto en una página de
@@ -326,14 +363,14 @@ para evitar más confusión.
 
 ---
 
-## 2026-10-03 (tarde) — Infraestructura de Tarragona, serie 448 (chuleta) y serie 470 (audios)
+## 2026-10-03 (tarde) — Infraestructura de Tarragona, serie 448 (chuleta) y serie 470 (apuntes de clase)
 
 **Commit:** `ec383e8` — *Infraestructura de Tarragona, serie 448 y serie 470
 desde chuleta y audios*.
 
 **Qué se hizo:**
-- **Infraestructura → Línea de Tarragona**: se construyó con fragmentos de
-  audio de clase procesados por el usuario (vía Gemini): Sants, Bellvitge,
+- **Infraestructura → Línea de Tarragona**: se construyó con apuntes de
+  clase del usuario: Sants, Bellvitge,
   El Prat de Llobregat, Garraf, Sitges, Vilanova i la Geltrú, Sant Vicenç
   de Calders, Roda de Barà/Roda de Mar, Salomó, Valls y La Plana–Picamoixons.
   Organizado en submenús: Recomendaciones generales, Estaciones, Velocidades,
@@ -343,23 +380,24 @@ desde chuleta y audios*.
   la carpeta `content/vehiculos/serie-447/` a `serie-448/` (placeholder que
   hasta entonces estaba vacío).
 - Se recibió la **"Chuleta 448"** (PDF del Dpto. de Formación de Tarragona,
-  Ramón Ripoll): documento de referencia mucho más completo que los audios.
-  Con él se construyeron las páginas de la 448: características generales,
-  equipo eléctrico, tuberías y presión, paneles y llaves, freno de servicio
-  y auxiliar, freno electroneumático/reostático/combinado, tracción y
-  motores piloto, circuito de lazo, puertas y alarma, cabina y armarios BT,
-  procedimientos (encendido, cambio de cabina, apagado, desacople,
-  remolque, puesta a tierra), restricciones de velocidad y averías.
-- En paralelo, el usuario fue pasando **audios de clase de la serie 470**
+  Ramón Ripoll): documento de referencia mucho más completo que los apuntes
+  de clase. Con él se construyeron las páginas de la 448: características
+  generales, equipo eléctrico, tuberías y presión, paneles y llaves, freno
+  de servicio y auxiliar, freno electroneumático/reostático/combinado,
+  tracción y motores piloto, circuito de lazo, puertas y alarma, cabina y
+  armarios BT, procedimientos (encendido, cambio de cabina, apagado,
+  desacople, remolque, puesta a tierra), restricciones de velocidad y
+  averías.
+- En paralelo, el usuario fue pasando **apuntes de clase de la serie 470**
   (que comparte mucho con la 448, pero no tiene paneles neumáticos
   centralizados). Se creó `content/vehiculos/serie-470/` con sus propias
   páginas y, de forma explícita, una página **"Puntos a contrastar"**
-  recogiendo las discrepancias entre lo que decía el audio de la 470 y lo
+  recogiendo las discrepancias entre lo visto en clase sobre la 470 y lo
   que decía la chuleta de la 448 (tensiones de motores, umbral del
   gobernol, llave de la TDP/TFA, numeración de coches...), en vez de
   decidir unilateralmente cuál era correcta.
 
-**Qué se decidió y por qué:** cuando una fuente (audio, chuleta, memoria
+**Qué se decidió y por qué:** cuando una fuente (clase, chuleta, memoria
 del usuario) contradice a otra, **no se resuelve la contradicción por
 cuenta propia**: se anota como punto a contrastar y se deja que el usuario
 decida, porque son procedimientos de seguridad y seguridad eléctrica/neumática
@@ -430,7 +468,7 @@ comprobar antes de editar.
   `npm run preview` alguna vez.
 
 **Qué quedó pendiente:** nada explícito; esta sesión se cerró entrando
-directamente en la siguiente (infraestructura y 448/470 por chuleta/audio).
+directamente en la siguiente (infraestructura y 448/470 por chuleta y clase).
 
 ---
 

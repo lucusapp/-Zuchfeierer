@@ -7,7 +7,7 @@ meta:
   tramo: "Tarragona – Tortosa"
 ---
 
-> Fuente: apuntes propios de la habilitación. Pendiente de completar con el resto de paradas y de contrastar con la documentación oficial.
+> Pendiente de completar con el resto de paradas y de contrastar con la documentación oficial.
 
 ## Cómo usar esta sección
 

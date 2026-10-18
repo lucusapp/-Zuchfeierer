@@ -7,8 +7,6 @@ meta:
   presion_trabajo: "8,5–10 kg/cm²"
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona).
-
 ## Compresor principal
 
 - Situado bajo el bastidor del **Rc** (lado derecho), alimentado por el convertidor estático a 220 Vca / 50 Hz.

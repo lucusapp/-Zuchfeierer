@@ -6,8 +6,6 @@ tags: ["frenos", "electroneumático", "reostático", "blending"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona).
-
 ## Freno electroneumático
 
 - Freno de disco: discos en las ruedas en los ejes motores y en el eje en los ejes remolques.

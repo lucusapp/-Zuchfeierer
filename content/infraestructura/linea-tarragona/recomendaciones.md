@@ -6,7 +6,7 @@ tags: ["recomendaciones", "conducción", "hoja de ruta"]
 meta: {}
 ---
 
-> Fuente: apuntes de clase (transcripción). Pendiente de contrastar con la documentación oficial vigente.
+> Pendiente de contrastar con la documentación oficial vigente.
 
 ## Señales en amarillo
 

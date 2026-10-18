@@ -115,7 +115,7 @@ Si lo que hay es un **fallo informático masivo** (COSMOS colapsado, pantallas c
   - **Bogies extremos:** los **tetones** junto a cada electroválvula del **panel auxiliar de freno** (A1/A2 lado izquierdo).
 - **Qué provoca / consecuencia:** mismo resultado que el método tradicional (llave + trinquetes) pero sin necesidad de aislar nada — más rápido, especialmente útil cuando hay que soltar muchos bogies (remolque). El método de llave + trinquetes sigue siendo el único válido cuando lo que hay es una avería real que exige dejar el freno aislado.
 
-> 💡 **Consejo del formador:** el método eléctrico (cuadradillo/tetones) es más cómodo, pero es propio de esta serie. El método tradicional (llave + trinquetes) es el que funciona en **todos** los trenes, así que conviene dominarlo bien aunque en la 449 tengas el atajo eléctrico disponible.
+> 💡 **Consejo:** el método eléctrico (cuadradillo/tetones) es más cómodo, pero es propio de esta serie. El método tradicional (llave + trinquetes) es el que funciona en **todos** los trenes, así que conviene dominarlo bien aunque en la 449 tengas el atajo eléctrico disponible.
 
 ### Procedimiento general — avería de freno de servicio
 - **Qué ocurre:** el freno de servicio no responde con normalidad.

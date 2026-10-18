@@ -6,7 +6,7 @@ tags: ["armario BT", "bypass", "velocidad nula", "térmicos", "puertas"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver Puntos a contrastar.
+> Ver Puntos a contrastar.
 
 ## Ubicación de armarios BT
 

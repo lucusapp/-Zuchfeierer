@@ -6,7 +6,7 @@ tags: ["restricciones", "velocidad", "bogies"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona). Aplicar siempre las restricciones vigentes en el manual y consignas.
+> Aplicar siempre las restricciones vigentes en el manual y consignas.
 
 ## Restricciones generales
 

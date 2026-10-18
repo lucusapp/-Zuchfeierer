@@ -15,7 +15,6 @@ meta:
 ---
 
 > ⚠️ **Nota del manual original:** *"En caso de consulta reglamentaria o de discrepancias, consultar y referenciar siempre la documentación oficial: Manual de Conducción y de Intervención en Vía en su versión más actualizada y anejos, consignas y avisos aplicables. En caso de duda importante consultar siempre con el mando intermedio de referencia. Este documento no tiene valor reglamentario y sólo es válido para formación."*
-> (Fuente: apuntes de C. Alises Parra, Media Distancia Sant Andreu Comtal, Ed. 01 - Agosto 2026)
 
 ## Qué es
 

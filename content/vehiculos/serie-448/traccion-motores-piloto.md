@@ -6,8 +6,6 @@ tags: ["tracción", "motores piloto", "árboles de levas", "shuntado"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona), descripción del proceso de tracción.
-
 ## Situación
 
 - **Cofre de control, lado derecho del coche motor (Cm)**: aloja los dos árboles de levas.

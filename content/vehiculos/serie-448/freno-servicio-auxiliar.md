@@ -6,8 +6,6 @@ tags: ["frenos", "KBR", "FM3", "segundo freno", "B12"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona) y resumen del formador.
-
 ## Dos sistemas de freno neumático
 
 La 448 tiene dos sistemas de freno neumático, cada uno con su propio distribuidor:

@@ -17,7 +17,7 @@ meta:
   tipo_tren: "Tipo A"
 ---
 
-> Fuente: Chuleta 448, Dpto. de Formación de Tarragona (Ramon Ripoll). Documento vivo: cualquier error o mejora se comunica al departamento. No tiene valor reglamentario; ante duda, consulta el manual vigente y a tu mando intermedio.
+> Documento vivo: cualquier error o mejora se revisa y corrige. No tiene valor reglamentario; ante duda, consulta el manual vigente y a tu mando intermedio.
 
 ## Composición y series
 

@@ -6,7 +6,7 @@ tags: ["coches", "compresor", "presostato"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver Puntos a contrastar.
+> Ver Puntos a contrastar.
 
 ## Coche motor (M)
 

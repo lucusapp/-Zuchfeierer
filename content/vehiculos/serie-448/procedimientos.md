@@ -6,7 +6,7 @@ tags: ["encendido", "apagado", "cambio de cabina", "remolque", "puesta a tierra"
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona). Seguir siempre el orden del documento.
+> Seguir siempre el orden establecido.
 
 ## Encendido de la unidad
 

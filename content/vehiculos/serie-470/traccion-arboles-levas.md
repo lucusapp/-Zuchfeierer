@@ -6,7 +6,7 @@ tags: ["tracción", "árboles de levas", "regulador"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver "Puntos a contrastar" antes de usar los datos.
+> Ver "Puntos a contrastar" antes de usar los datos.
 
 ## Regulador de mando y árboles de levas
 
@@ -21,7 +21,7 @@ meta: {}
 
 - Situado en el lado derecho del vehículo. Aloja los árboles de levas y los componentes de tracción.
 
-## Tensiones (confirmadas por el formador para la 470)
+## Tensiones (confirmadas para la 470)
 
 - **72 V**: pasa por los árboles de levas (control y mando).
 - **380 V**: alimenta los motores piloto.

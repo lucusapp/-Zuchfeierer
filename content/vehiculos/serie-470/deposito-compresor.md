@@ -6,7 +6,7 @@ tags: ["depósito de reserva", "compresor auxiliar", "pantógrafo"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver "Puntos a contrastar".
+> Ver "Puntos a contrastar".
 
 ## Depósito de reserva
 

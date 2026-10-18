@@ -6,8 +6,6 @@ tags: ["llaves", "paneles", "B12", "calderín", "202", "207", "M6", "P6", "aisla
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona) y resumen del formador.
-
 ## Dónde están
 
 - Hay **un panel neumático por coche**. Tomando como referencia el **coche motor**, todo el equipo neumático está en su **lado izquierdo**.
@@ -47,7 +45,7 @@ meta: {}
 ## Llave B13 (tubería de TFA)
 
 - Es la llave neumática de la **tubería de freno automático (TFA)**.
-- En la 470, el audio asocia la TFA a la llave P-13. Es una diferencia que conviene confirmar (ver Serie 470 → Puntos a contrastar).
+- En la 470, según lo visto en clase, la TFA se asocia a la llave P-13. Es una diferencia que conviene confirmar (ver Serie 470 → Puntos a contrastar).
 
 ## Llave P6
 

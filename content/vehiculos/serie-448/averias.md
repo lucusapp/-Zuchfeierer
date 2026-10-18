@@ -6,7 +6,7 @@ tags: ["avería", "consulta rápida"]
 meta: {}
 ---
 
-> Fuente: Chuleta 448 (Dpto. de Formación de Tarragona). Consulta rápida; el procedimiento completo está en el manual vigente.
+> Consulta rápida; el procedimiento completo está en el manual vigente.
 
 ## Neumáticas
 

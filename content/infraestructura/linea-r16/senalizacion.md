@@ -6,7 +6,7 @@ tags: ["señales", "R16", "desviada"]
 meta: {}
 ---
 
-> Fuente: apuntes propios. Pendiente de contrastar.
+> Pendiente de contrastar.
 
 ## Señal avanzada en L'Ametlla de Mar
 

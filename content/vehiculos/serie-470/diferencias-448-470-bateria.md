@@ -1,12 +1,12 @@
 ---
-title: "Diferencias 448 / 470 (audio)"
-summary: "Lo que el formador señala como diferente entre la 448 y la 470: magnetotérmico de batería y generadores."
+title: "Diferencias 448 / 470 (batería)"
+summary: "Diferencias entre la 448 y la 470 en el magnetotérmico de batería y los generadores."
 order: 7
 tags: ["448", "470", "diferencias", "batería"]
 meta: {}
 ---
 
-> Fuente: audio de clase de la 470 (resumen). Ver Puntos a contrastar.
+> Ver Puntos a contrastar.
 
 ## Puesta en marcha y batería
 

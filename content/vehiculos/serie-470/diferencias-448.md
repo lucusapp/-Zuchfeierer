@@ -6,7 +6,7 @@ tags: ["llaves", "470", "448"]
 meta: {}
 ---
 
-> Fuente: resumen del audio de clase (transcripción). Pendiente de contrastar con el manual.
+> Pendiente de contrastar con el manual.
 
 ## Paneles neumáticos
 
