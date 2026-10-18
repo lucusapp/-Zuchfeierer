@@ -44,6 +44,14 @@ Está en el remolque con cabina (Rc). Alimenta el compresor principal a 220 Vca 
 
 - Batería bajo bastidor del **Rc**. Tensión máxima **72 Vcc**, mínima **60 Vcc**.
 - El **circuito de control** relaciona el equipo de mando con el accionamiento del circuito de potencia y verifica las secuencias.
-- Equipo de mando: pulsador de prueba de lámparas (PLS1/2), regulador de mando (desde "0" hasta "PS4"), inversor de marcha (AT, 0, AD), interruptor de gran aceleración (HASL1/2), maneta de freno, interruptores del circuito de control (CCOS1, CCOS2), motores piloto PM1 y PM2, bloque CLD (detector limitador de corriente) y bloques SSC (KD) y SSC (RD).
+- Equipo de mando: pulsador de prueba de lámparas (PLS1/2), regulador de mando (desde "0" hasta "PS4"), inversor de marcha (AT, 0, AD), interruptor de gran aceleración (HASL1/2), maneta de freno, interruptores del circuito de control (CCOS1, CCOS2 — ver más abajo), motores piloto PM1 y PM2, bloque CLD (detector limitador de corriente) y bloques SSC (KD) y SSC (RD).
+
+**CCOS1 y CCOS2** (Conmutador/disyuntor de Control de Servicios 1 y 2):
+
+- **CCOS1**: interruptor de mando de los **motores de tracción y freno** — el profesor insiste en que es importante.
+- **CCOS2**: gobierna el segundo grupo de servicios auxiliares/confort (alumbrado interior de reserva, climatización/calefacción por zonas, lógicas secundarias de los coches remolque).
+- Se operan manualmente, por el personal de conducción o mantenimiento, para aislar una avería eléctrica o rearmar tras un disparo por sobrecorriente, evitando que un fallo en un servicio secundario deje al tren totalmente inútil en vía.
+
+> Fuente: audio de clase (el usuario confirma que es justo lo que explica el profesor); redacción ayudada por IA a partir de ese audio.
 
 Para la batería baja al tomar la unidad en sencillo, ver Averías.

@@ -12,6 +12,38 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-18 — Explicación de CCOS1 y CCOS2
+
+**Qué se hizo:** el usuario preguntó dónde estaban definidos CCOS1/CCOS2
+(solo aparecían nombrados, sin explicar, en `equipo-electrico.md`,
+`cabina-armarios.md` y `averias.md`). Se añadió la explicación en
+`equipo-electrico.md`: CCOS1 es el interruptor de mando de los motores de
+tracción y freno (el profesor de la clase del usuario insiste en que es
+importante), CCOS2 gobierna el segundo grupo de servicios
+auxiliares/confort; ambos se operan a mano para aislar una avería o
+rearmar tras un disparo por sobrecorriente.
+
+**Qué se decidió y por qué:** el usuario aportó primero una explicación
+con las siglas "CCS1/CCS2" (sin la O) diciendo que la redacción venía de
+una IA externa. Antes de incorporarla se preguntó explícitamente el
+origen del dato (¿chuleta, clase, o investigación propia?) y si las
+siglas eran un error tipográfico, siguiendo la norma del proyecto de no
+dar por buena información no verificada. El usuario confirmó que las
+siglas correctas son **CCOS** (como ya constaba en el resto de los
+apuntes) y que el contenido, aunque redactado con ayuda de IA, viene
+de un audio de una clase real que está siguiendo — por tanto se trata
+como fuente primaria (como el resto de audios de clase ya incorporados),
+con su atribución correspondiente, no como "punto a contrastar".
+
+**Problemas y cómo se resolvieron:** la discrepancia CCS/CCOS podría
+haber llevado a escribir un término incorrecto en una página de
+procedimientos de avería; se resolvió preguntando antes de editar en vez
+de asumir que era un simple despiste.
+
+**Pendiente:** ninguno nuevo.
+
+---
+
 ## 2026-10-16 (tarde) — Explicación de DFD y enlaces cruzados entre páginas
 
 **Qué se hizo:** el usuario preguntó qué significa "DFD, diferencial total
