@@ -48,10 +48,10 @@ Está en el remolque con cabina (Rc). Alimenta el compresor principal a 220 Vca 
 
 **CCOS1 y CCOS2** (Conmutador/disyuntor de Control de Servicios 1 y 2):
 
-- **CCOS1**: interruptor de mando de los **motores de tracción y freno** — el profesor insiste en que es importante.
+- **CCOS1**: interruptor de mando de los **motores de tracción y freno**. Es importante.
 - **CCOS2**: gobierna el segundo grupo de servicios auxiliares/confort (alumbrado interior de reserva, climatización/calefacción por zonas, lógicas secundarias de los coches remolque).
 - Se operan manualmente, por el personal de conducción o mantenimiento, para aislar una avería eléctrica o rearmar tras un disparo por sobrecorriente, evitando que un fallo en un servicio secundario deje al tren totalmente inútil en vía.
 
-> Fuente: audio de clase (el usuario confirma que es justo lo que explica el profesor); redacción ayudada por IA a partir de ese audio.
+> Fuente: audio de clase; redacción ayudada por IA a partir de ese audio.
 
 Para la batería baja al tomar la unidad en sencillo, ver Averías.
