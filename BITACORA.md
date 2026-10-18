@@ -12,6 +12,47 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-18 (noche, 2) — Enlaces automáticos entre conceptos y averías (serie 448)
+
+**Qué se hizo:** se añadió un pequeño glosario (`src/lib/glossary.ts`) y un
+plugin de remark (`src/lib/remarkGlossaryLinks.ts`, usando
+`unist-util-visit`) que enlaza automáticamente, la primera vez que
+aparece en cada página, cualquier término del glosario hacia la página
+donde está explicado — sin tocar el `.md` a mano cada vez. Términos
+iniciales: CCOS1, CCOS2, MMOCD1, MMOCD2, DFD y "cuchilla MS" (hacia
+`equipo-electrico.md`) y "derivación en resistencias principales" (hacia
+`averias.md`). Se conecta en `DocPage.tsx` como un `remarkPlugin` más,
+junto a `remark-gfm`. Se añadió también un estilo (`a` subrayado en
+discontinuo, color de acento) para que estos enlaces se distingan del
+resto del texto.
+
+**Qué se decidió y por qué:** el usuario pidió poder navegar de ida y
+vuelta entre definiciones y averías (y entre conceptos) sin tener que
+preguntar cada vez. Se preguntó el alcance (solo serie 448, elegido) y el
+método: detección automática de términos frente a enlaces manuales
+uno a uno; el usuario eligió automática. Para no crear enlaces raros con
+siglas cortas y ambiguas (el riesgo que se le advirtió), el glosario es
+una lista curada a mano (no cualquier sigla que aparezca en el texto), se
+hace *match* con límites de palabra (`\b...\b`), nunca dentro de un
+enlace/título/código ya existente, nunca hacia la propia página en la
+que ya se está, y solo la primera aparición por página (para no llenar
+el texto de enlaces repetidos).
+
+**Problemas y cómo se resolvieron:** al probarlo en el navegador (no solo
+leyendo el código) se vio que la primera mención de "cuchilla **MS**" en
+`averias.md` no se enlazaba porque el **MS** en negrita rompe el nodo de
+texto de Markdown en dos (el plugin solo puede buscar dentro de un mismo
+nodo de texto, no a través de etiquetas como negrita). No bloqueó nada:
+el plugin seguía buscando y acabó enlazando una mención posterior sin
+negrita en la misma página. Queda como limitación conocida: un término
+partido por formato (negrita, cursiva) en su única aparición de una
+página no se enlazará.
+
+**Pendiente:** extender el glosario a más términos y, si se quiere,
+a las series 449/470 e infraestructura (de momento solo cubre la 448).
+
+---
+
 ## 2026-10-18 (noche) — Explicación de la cuchilla MS
 
 **Qué se hizo:** se añadió en `equipo-electrico.md` la explicación de la

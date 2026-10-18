@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { remarkGlossaryLinks } from '../lib/remarkGlossaryLinks'
 import { getChildren, getDoc, isEdited } from '../lib/content'
 import { clearOverride, saveOverride } from '../lib/overrides'
 import { downloadTextFile, toMarkdown } from '../lib/exportDoc'
@@ -407,7 +408,7 @@ export default function DocPage() {
       {doc.body.trim() && (
         <div className="prose-content" ref={contentRef}>
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+            remarkPlugins={[remarkGfm, [remarkGlossaryLinks, `#/${section}/${currentSlug}`]]}
             components={{ img: ContentImage, h2: CategoryHeading }}
           >
             {doc.body}

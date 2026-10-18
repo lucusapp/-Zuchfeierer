@@ -63,6 +63,10 @@ body {
   @apply bg-rail-800 px-1 py-0.5 rounded text-xs;
 }
 
+.prose-content a {
+  @apply text-rail-accent underline decoration-dotted underline-offset-2;
+}
+
 .search-highlight {
   @apply bg-rail-accent/40 text-slate-50 rounded px-0.5;
   scroll-margin-top: 5rem;
