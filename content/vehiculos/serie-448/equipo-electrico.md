@@ -23,6 +23,14 @@ Capta los **3.000 V** de catenaria, los distribuye a la tracción y transforma p
 - Motores de tracción M1, M2, M3, M4.
 - Convertidor estático.
 
+**Cuchilla MS** (seccionador del equipo de tracción): aísla eléctricamente y pone a tierra el circuito de potencia de alta tensión, para garantizar que no quede tensión residual al intervenir por mantenimiento o avería grave. Al accionarla se aíslan por completo:
+
+- Los **motores de tracción** y el **bloque de resistencias principales** (circuito de potencia).
+- Los **pantógrafos**, quedando aislados eléctricamente de la catenaria.
+- Los **contactores de línea** y los contactores del sistema de calefacción/climatización.
+
+Es el mecanismo de seguridad que permite manipular el armario eléctrico o los bajos del tren sin riesgo de electrocución por la tensión de catenaria (3.000 Vcc). Ver también su uso en caso de avería en [Averías → El disyuntor se abre al establecer tracción](#/vehiculos/serie-448/averias).
+
 Protecciones del circuito de alta: sobreintensidad de motores y diferenciales. Todas se señalizan en el **panel de defectos** del armario BT del Cm (ver [Cabina y armarios BT](#/vehiculos/serie-448/cabina-armarios)), y cualquier señal en ese panel **abre el disyuntor HB**. Indicaciones:
 
 - **MMOCD1**: sobreintensidad en motores 1-2.

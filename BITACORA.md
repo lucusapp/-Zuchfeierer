@@ -12,6 +12,25 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-18 (noche) — Explicación de la cuchilla MS
+
+**Qué se hizo:** se añadió en `equipo-electrico.md` la explicación de la
+**cuchilla MS** (seccionador del equipo de tracción): aísla
+eléctricamente y pone a tierra el circuito de potencia de alta tensión
+(motores de tracción, resistencias principales, pantógrafos, contactores
+de línea y de calefacción/climatización), permitiendo intervenir sin
+riesgo de electrocución por la tensión de catenaria. Enlazada con el
+procedimiento de avería donde ya se usaba la cuchilla MS.
+
+**Qué se decidió y por qué:** el usuario confirmó que, aunque el texto
+está redactado con ayuda de IA, el contenido es correcto, igual que con
+CCOS1/CCOS2 — se incorpora sin cita de fuente, siguiendo la petición
+de la entrada anterior.
+
+**Pendiente:** ninguno nuevo.
+
+---
+
 ## 2026-10-18 (tarde) — Quitar citas de fuente del contenido de clase
 
 **Qué se hizo:** por petición del usuario, se quitaron las citas de
