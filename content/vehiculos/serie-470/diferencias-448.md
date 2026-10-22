@@ -6,12 +6,10 @@ tags: ["llaves", "470", "448"]
 meta: {}
 ---
 
-> Pendiente de contrastar con el manual.
-
 ## Paneles neumáticos
 
 - **448:** la mayoría de las llaves neumáticas están **centralizadas en un panel neumático**.
-- **470:** **no existen paneles neumáticos centralizados**. Las llaves están **repartidas por distintos sitios** del tren.
+- **470:** confirmado — el coche motor es el único con algo parecido a un panel neumático, y aun así no es completo (quedan fuera B12, llaves de puertas, B-21 y P-13, entre otras). El Ri y el Rc **no tienen panel neumático**: sus llaves están repartidas por todo el coche.
 
 ## Aspecto de las llaves
 

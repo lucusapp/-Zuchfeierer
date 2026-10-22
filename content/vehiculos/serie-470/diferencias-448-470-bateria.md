@@ -6,13 +6,11 @@ tags: ["448", "470", "diferencias", "batería"]
 meta: {}
 ---
 
-> Ver Puntos a contrastar.
-
 ## Puesta en marcha y batería
 
 - **UT 448**: para la puesta en marcha se acciona un **magnetotérmico en cada cabina**, que actúa directamente sobre el interruptor general de la batería (armario BT del RC). El control de baja tensión se centra sobre todo en el sistema de puertas.
-- **UT 470**: **no tiene magnetotérmico en cabina** para la batería. Hay que ir físicamente al armario del RC a accionar el interruptor general de la batería.
+- **UT 470**: confirmado, **no tiene magnetotérmico en cabina** para la batería. El primer paso de la puesta en servicio es ir al armario BT del Rc a conectar el magnetotérmico de batería (**BatN**) directamente.
 
 ## Generadores
 
-- La 470 conserva los **grupos generadores originales**. Se le añadió un convertidor dedicado para el aire acondicionado.
+- La 470 conserva su **Grupo Motor Alternador (GMA)** original para los servicios auxiliares. Con la reforma de 1993 para incorporar aire acondicionado, se decidió mantener el GMA y añadir además un **convertidor estático** (en el Ri) dedicado a climatización, vacío del WC y autotransformador.

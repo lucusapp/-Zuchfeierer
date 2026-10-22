@@ -22,7 +22,8 @@ export function remarkGlossaryLinks(currentHref: string) {
       if (!parent || index == null) return
       if (SKIP_PARENT_TYPES.has(parent.type)) return
 
-      for (const { term, href } of GLOSSARY) {
+      for (const { term, href, scope } of GLOSSARY) {
+        if (!currentHref.startsWith(scope)) continue
         if (href === currentHref || used.has(term)) continue
 
         const match = new RegExp(`\\b${escapeRegExp(term)}\\b`).exec(node.value)

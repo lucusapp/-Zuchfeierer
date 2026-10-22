@@ -1,11 +1,9 @@
 ---
 title: "Serie 470"
-summary: "Diferencias con la 448: las llaves neumáticas no están centralizadas en un panel."
+summary: "Serie 470 completa: características, armarios, tracción, freno, procedimientos y averías."
 order: 3
 tags: ["eléctrico", "neumático", "llaves"]
 meta: {}
 ---
 
-Ver Puntos a contrastar.
-
-La 470 se explica junto a la 448. Su principal diferencia está en **dónde se encuentran las llaves**: ver Diferencias con la 448.
+La 470 comparte mucho con la 448, pero con diferencias reales: sin paneles neumáticos centralizados (salvo uno parcial en el coche motor), sin magnetotérmico de batería en cabina, y con GMA + convertidor estático + autotransformador en vez de solo convertidor estático. Ver Diferencias con la 448 y Puntos a contrastar.

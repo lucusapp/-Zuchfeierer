@@ -1,25 +1,28 @@
 ---
 title: "Puntos a contrastar (470)"
-summary: "Datos vistos en clase que no coinciden con la chuleta de la 448 o que hay que verificar."
+summary: "Qué se ha confirmado ya con la chuleta oficial de la 470 y qué sigue sin resolver."
 order: 6
 tags: ["contrastar", "dudas"]
 meta: {}
 ---
 
-Estos datos vienen de lo visto en clase (serie 470). La chuleta de la 448 es el manual de referencia para comparar. Antes de darlos por buenos, conviene contrastarlos con el manual de la 470 o con la chuleta de la 448.
+La mayoría de los puntos que estaban pendientes aquí ya se han resuelto al contrastarlos con la chuleta oficial de la 470. Quedan solo los que la propia chuleta no aclara (o en los que ella misma se contradice).
 
-- **Llave P13**: en clase se sitúa como llave de la TFG (lado izquierdo). En la chuleta de la 448 aparece como llave neumática P-13 en el Cm y en el Ri. Revisar si es la misma función.
-- **Motores piloto a 380 V**: en clase se confirma 380 V para la 470 (árboles de levas a 72 V, motores piloto a 380 V). La chuleta de la 448 incluye los motores piloto en el circuito de 220 Vca / 50 Hz del convertidor estático. Es una diferencia real entre ambas series a confirmar.
-- **Tensión en los motores de tracción**: la catenaria es de 3.000 Vcc, pero los motores pueden estar conectados en serie o en paralelo según la posición del mando. Según eso, la tensión en cada motor puede ser 1.500 o 3.000 Vcc. En clase se dice 3.000 V y la chuleta de la 448 indica 1.500 Vcc de trabajo con acoplamiento en serie por pares. Ambas cifras pueden ser correctas en distintos casos; verificar en la 470 cuál aplica a cada posición.
-- **Orden alfabético K/R**: en clase se explica la correspondencia KD/RD por orden alfabético. No lo puedo confirmar; la chuleta de la 448 solo dice que PM1 mueve KD y PM2 mueve RD.
-- **Caja de relés**: en clase se sitúa bajo el piso del coche motor. La chuleta de la 448 habla de un cofre de relés en el lado derecho del Cm. Confirmar la ubicación en la 470.
-- **Depósito de reserva**: en clase se dice que el compresor auxiliar arranca por debajo de 4 kg. La chuleta de la 448 dice que la electroválvula mantiene el depósito a 5 kg. Verificar el umbral.
-- **B12 en el coche motor**: en clase se presenta la ubicación en el armario amarillo como diferencia de la 470. La chuleta de la 448 indica lo mismo para la 448, así que no sería una diferencia real entre ambas. Confirmar.
-- **P21 frente a B-21 (TDP)**: en una clase se dice que la TDP se aísla con P21. En otra clase se dice que la TDP está controlada por la llave B-21. Confirmar la llave de la TDP.
-- **Gobernol**: una clase no lo mencionaba. Otra clase dice que el compresor actúa cuando la TDP baja de 8,5 kg y sube a 10 kg. La chuleta de la 448 dice que conecta al bajar de 7 bar y para entre 9 y 9,5 bar. Son valores distintos, revisar en la 470.
-- **Magnetotérmico de batería**: confirmado. En la 470 no hay magnetotérmico en cabina para la batería: hay que ir al armario BT del Rc a accionar el interruptor general de la batería. En la 448 sí hay un magnetotérmico (telemando) en cada cabina, que actúa sobre ese interruptor general.
-- **Presostato de mínima**: 6,5 kg tanto en clase como en la chuleta (abre a 6,5 bar). Coincide.
-- **Numeración de coches**: en clase se dice 9000 coche motor, 8000 remolque intermedio y 7000 remolque con cabina. La chuleta de la 448 dice Cm 9000, Ri 7000 y Rc 8000. Son cifras contrarias para RI y RC; confirmar la numeración de cada serie.
-- **Patines o piotines en el antibloqueo**: en clase se da como "patines" (pestañas de purga manual de las válvulas antibloqueo). Se ha corregido ese término en el apartado de Armarios BT.
+## Resueltos con la chuleta de la 470
 
-- **Llave de la TFA**: en clase (470) se dice que la TFA está controlada por la llave P-13. En la 448, en clase se indica la llave B13 para la tubería de TFA. Confirmar si las dos series usan llaves distintas.
+- **Llave de la TDP y de la TFA**: confirmado. La **TDP** se aísla con la llave **B-21**. La **TFA (2º freno)** se controla con la llave **P-13**. "P21" no es una llave real — coincide con el nombre de una posición del combinador de tracción (muesca "P21"), que es probablemente el origen de la confusión.
+- **Tensión de los motores de tracción**: confirmado **1.500 Vcc** de trabajo, con los motores acoplados por pares. La chuleta no menciona 3.000 V en ningún motor.
+- **Correspondencia KD/RD**: confirmado — **PM1 mueve KD**, **PM2 mueve RD** (la chuleta lo remarca en mayúsculas). No se confirma ni se descarta que el criterio sea el orden alfabético; es solo una regla mnemotécnica, no algo que diga la chuleta.
+- **Cofre de control / caja de relés**: confirmado — está bajo bastidor, en el **lado izquierdo** del coche motor (no en el lado derecho).
+- **Depósito de reserva / compresor auxiliar**: confirmado **5 kg**, no 4 kg. El compresor auxiliar no arranca si el depósito ya está a 5 kg, y no debe mantenerse en marcha más de 15 minutos.
+- **Gobernol (compresor principal)**: confirmado **8,5 kg - 10 kg** para la 470. Es una diferencia real frente a la 448 (donde se había registrado 7 - 9/9,5 bar), no un error: cada serie tiene sus propios umbrales.
+- **Magnetotérmico de batería**: confirmado. En la 470 no hay magnetotérmico de batería en cabina: la puesta en servicio empieza conectando el magnetotérmico de batería en el armario BT del **Rc**.
+- **Presostato de mínima**: confirmado, cierra a 8,5 bar y abre a 6,5 bar (coincide con lo ya registrado).
+- **Patines en el antibloqueo**: confirmado como término correcto (ya corregido).
+
+## Siguen sin confirmar
+
+- **Numeración de coches por código de avería** (9000/8000/7000): la chuleta de la 470 no incluye esta numeración — solo describe la numeración del sistema IRIS (coche nº 1 = el de la cabina habilitada, correlativos desde ahí), que es un sistema distinto. Sigue sin confirmar cuál de las dos cifras (9000-8000-7000 o 9000-7000-8000) corresponde a cada serie.
+- **Motores piloto a 380 V**: la chuleta de la 470 no da la tensión de los motores piloto ni de los árboles de levas explícitamente. Se mantiene lo ya registrado (72 V árboles de levas, 380 V motores piloto) sin confirmación directa del documento oficial.
+- **Ubicación exacta del GMA**: la propia chuleta se contradice en dos puntos distintos — en un sitio dice que el GMA está en el **lado derecho** del Rc, y en otro que está en el **lado izquierdo** bajo bastidor del Rc. No se puede resolver sin ver el armario real.
+- **Nombre del magnetotérmico diferencial del GMA**: aparece como **MGOCD** en un sitio de la chuleta y como **MGDFD** en otro, para la misma protección (diferencial GMA). Puede ser un error de edición del propio documento; confirmar cuál es el correcto.

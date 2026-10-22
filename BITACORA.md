@@ -12,6 +12,73 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-22 — Chuleta oficial de la 470: contenido completo y correcciones
+
+**Qué se hizo:** el usuario pegó la "Chuleta serie 470" completa (documento
+oficial del Dpto. de Formación de Tarragona, 38 páginas), igual que se hizo
+en su día con la Chuleta 448. Se usó para: (1) resolver casi todos los
+puntos de `puntos-a-contrastar.md` (470) que llevaban abiertos desde
+octubre — ver detalle abajo; (2) corregir errores reales en el contenido
+ya existente; (3) crear contenido nuevo que no existía: `averias.md`,
+`freno.md`, `procedimientos.md` (puesta en servicio, cambio de cabina con
+regla PAL, puesta fuera de servicio, desacople, remolques con tabla de
+códigos A/B/F/K/R/T/V, puesta a tierra — se fusionó aquí la antigua
+`puesta-a-tierra.md`, que se borró), `restricciones.md`,
+`circuito-lazo-puertas.md`, `sistema-iris.md` y
+`caracteristicas-generales.md` (no existía para la 470). El número de
+documentos indexados pasó de 47 a 53.
+
+**Correcciones de errores reales** (no solo huecos, sino datos
+incorrectos que ya estaban escritos):
+- `llaves-neumaticas.md` decía que la TDP se aislaba con **P21** y la TFA
+  con la llave de la "TFG"; la chuleta confirma que la TDP es **B-21** y
+  la TFA es **P-13** — "P21" resultó ser el nombre de una muesca del
+  combinador de tracción, no una llave neumática.
+- `equipo-coches.md` situaba el **convertidor estático en el Rc**; la
+  chuleta lo sitúa en el **Ri**. Se reescribió la página distinguiendo
+  bien qué lleva cada coche (Cm / Ri / Rc).
+- `traccion-arboles-levas.md` situaba el cofre de control/relés en el
+  **lado derecho**; la chuleta dice **lado izquierdo**. También se quitó
+  la cifra de 3.000 V en los motores de tracción (la chuleta solo da
+  1.500 Vcc) y se añadieron las tablas exactas de posición del
+  combinador → KD/RD → muesca, tanto de tracción como de frenado.
+- `deposito-compresor.md` decía que el compresor auxiliar arrancaba por
+  debajo de **4 kg**; la chuleta confirma **5 kg**.
+- `armarios-proteccion.md` se reescribió por completo: el panel de
+  defectos real de la 470 es Reset/MMOCD1/MMOCD2/DFD/MGOCD-MGDFD/MGRPB
+  — **no incluye un relé de velocidad nula** como sí tiene la 448 (ese
+  contenido estaba mal puesto en esta página). Se añadieron las listas
+  completas de magnetotérmicos/interruptores/contactores de los armarios
+  BT del Cm y del Rc, que no estaban.
+
+**Qué se decidió y por qué:** se preguntó solo lo imprescindible (el
+origen de un dato dudoso en un mensaje anterior) y se procesó el resto
+del documento de forma autónoma, siguiendo el patrón ya acordado con la
+Chuleta 448. Se dejó constancia en `puntos-a-contrastar.md` de dos cosas
+que ni siquiera la propia chuleta resuelve: se contradice a sí misma
+sobre si el GMA está en el lado derecho o el izquierdo del Rc, y usa dos
+siglas distintas (MGOCD / MGDFD) para la misma protección.
+
+**Problemas y cómo se resolvieron:** el sistema de enlaces automáticos
+entre conceptos y averías (creado para la serie 448 en la sesión
+anterior) habría enlazado por error términos de la 470 — "DFD", "CCOS1"
+y "cuchilla MS" también existen en la 470 — hacia las páginas de
+explicación de la 448. Se añadió un campo `scope` a cada entrada del
+glosario (`src/lib/glossary.ts`) para que un término solo se enlace
+dentro de las páginas de su propia serie, y se añadieron las entradas
+equivalentes para la 470 apuntando a sus propias páginas. Se verificó en
+el navegador (no solo leyendo el código) que el enlace de "DFD" en
+`serie-470/averias.md` apunta a `serie-470/armarios-proteccion`, no a la
+448.
+
+**Pendiente:** confirmar en el armario real los dos puntos que ni la
+propia chuleta resuelve (ubicación del GMA, MGOCD/MGDFD). Revisar si
+`diferencias-448.md` y `diferencias-448-470-bateria.md` deberían
+fusionarse ahora con el resto del contenido, al haber tanto contenido
+nuevo específico de la 470.
+
+---
+
 ## 2026-10-18 (noche, 2) — Enlaces automáticos entre conceptos y averías (serie 448)
 
 **Qué se hizo:** se añadió un pequeño glosario (`src/lib/glossary.ts`) y un

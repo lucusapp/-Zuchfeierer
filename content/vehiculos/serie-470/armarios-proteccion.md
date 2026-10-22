@@ -1,63 +1,67 @@
 ---
-title: "Armarios BT, protecciones y numeración"
-summary: "Ubicación de armarios, bypass y relé de velocidad nula, térmicos, freno antibloqueo, climatización y regla de puertas."
+title: "Armarios BT y panel de defectos"
+summary: "Panel de defectos del Cm, magnetotérmicos de los armarios BT del Cm y del Rc, antibloqueo y climatización."
 order: 8
-tags: ["armario BT", "bypass", "velocidad nula", "térmicos", "puertas"]
+tags: ["armario BT", "panel de defectos", "magnetotérmicos", "antibloqueo"]
 meta: {}
 ---
 
-> Ver Puntos a contrastar.
+## Diferencia entre el armario BT del Cm y el del Rc
 
-## Ubicación de armarios BT
+Solo en el armario BT del **Cm** están el panel de defectos, el by-pass del HM y el mando del compresor auxiliar. El armario BT del **Rc** no los tiene.
 
-- **Coche motor**: el armario BT está en la zona de bicicletas.
-- **RC y RI**: en las salas de viajeros o pasillos, cerca de las puertas o del estacionamiento.
+## Panel de defectos (armario BT del Cm)
 
-## Bypass de puertas (nº 1)
+Señaliza, lumínica y acústicamente, las protecciones del circuito de alta. Cualquier señal en este panel abre el disyuntor extrarrápido **HB**:
 
-- Permite traccionar el tren aunque haya una puerta abierta. Se ilumina en rojo al activarlo.
-- Se usa **bajo la propia responsabilidad del maquinista** y solo en trayectos muy cortos (para salir de un túnel o llegar a la estación). **Nunca para distancias largas.**
+- **Reset**: cese de la sonería.
+- **MMOCD1**: sobreintensidad en los motores 1 y 2.
+- **MMOCD2**: sobreintensidad en los motores 3 y 4.
+- **DFD**: diferencial (total) del circuito de tracción.
+- **MGOCD / MGDFD**: diferencial del GMA — la chuleta usa las dos siglas en sitios distintos para lo mismo; no está confirmado cuál es la correcta (ver Puntos a contrastar).
+- **MGRPB**: botón rojo de rearme por sobreembalamiento del GMA (cuando supera las 1.800 rpm).
 
-## Relé de velocidad nula (nº 3)
+*La 470 no incluye un relé de velocidad nula en este panel — a diferencia de lo registrado para la 448, en la chuleta de la 470 no aparece ese dispositivo.*
 
-- Presente en la serie 448.
-- Si la maneta o machito rojo de puerta se pone en vertical, el relé corta la tracción, aplica freno de urgencia e impide abrir puertas a más de **3 km/h**.
+## Magnetotérmicos del armario BT del Cm
 
-## Anulación del relé de velocidad nula (nº 2 y nº 4)
+- **CCN**: circuito de control.
+- **PMN**: motor piloto.
+- **PMN** (otro): freno y circuito de lazo.
+- **ACPN**: compresor auxiliar.
+- **IAG**: alumbrado principal.
 
-- Se activa con el pulsador de anulación si el relé falla en una parada.
-- Inhibe el efecto del relé durante **7 minutos** (temporizador nº 4).
+**Interruptores**: compresor auxiliar ("gorrinillo"), sustitución de proyectores, anulación de bandas de alumbrado del Cm.
 
-## Térmicos y protecciones
+**Contactores**: freno de patín, alumbrado principal.
 
-- **Térmico de mando de batería**: la protección eléctrica clave del armario.
-- Tipos de térmicos en las unidades:
-  - Magnetotérmicos estándar.
-  - Magnetotérmicos antiguos: pueden saltar y la palanca se queda arriba o enganchada.
-  - Térmicos con botón de reset: se rearman girando a Reset y volviendo a subir.
-  - Interruptores on/off.
-- **Ventiladores de resistencias**: cada grupo tiene su ventilador y su térmico. Si salta el térmico de un ventilador, el sistema **corta la tracción** por seguridad.
+## Magnetotérmicos del armario BT del Rc
+
+- **BATN**: batería.
+- **MGCN**: circuito de control de arranque del grupo (GMA).
+- **MGN2**: circuitos de corriente alterna y alumbrado.
+- **2129**: freno y circuito de lazo.
+- **CPMN**: compresor principal.
+- **IAG**: alumbrado principal.
+
+**Interruptores**: sustitución de proyectores, anulación de bandas de alumbrado del Rc.
+
+**Contactores**: compresor, freno de patín, alumbrado principal.
+
+En la parte inferior de este armario están los dispositivos de antiblocaje.
 
 ## Frenado y antibloqueo
 
-- La tubería **B12** lleva aire desde el calderín hasta las **válvulas antibloqueo**, situadas antes de los cilindros de freno.
-- **Purga**: las válvulas antibloqueo tienen **patines** (pestañas) para vaciar el aire a mano, por bogie o por eje.
+- Dispositivos antiblocaje, uno por bogie: regulan la presión del cilindro de freno según la adherencia rueda-carril, controlada en cada eje por generadores.
+- La tubería **B12** lleva aire desde el calderín (depósito B29) hasta las válvulas antibloqueo, situadas antes de los cilindros de freno.
+- **Purga**: las válvulas antibloqueo tienen pulsadores ("piu-piu") y las unidades KBR/FM3 tienen cadenillas, para vaciar el aire a mano.
 
-## Panel de defectos y compresor
+## Climatización (armarios de A/A)
 
-- **Panel de defectos**: contiene los térmicos o cortacircuitos de los grupos de motores, resistencias y reostato. En la 448 algunos botones del panel no tienen función, porque no hay grupo convertidor.
-- **Compresor auxiliar (nº 17)**: da aire cuando no hay presión suficiente en el depósito de reserva o en el pantógrafo.
-
-## Climatización (armarios Stone)
-
-- Cada coche tiene su propio armario de climatización (Stone / Stone Ibérica).
-- Se abren con una **llave pequeña especial**.
-- Contienen componentes del climatizador, la pértiga, la pasarela, etc.
-
-## Numeración y regla de puertas
-
-- Numeración por código de avería: **9000** coche motor (M), **8000** remolque intermedio (RI), **7000** remolque con cabina (RC).
-- Regla de puertas, mirando desde el coche motor hacia delante:
-  - **Lado izquierdo**: puertas impares (1, 3, 5...).
-  - **Lado derecho**: puertas pares (2, 4, 6...).
-- La puerta 1 del coche motor es la primera de la izquierda. La puerta 1 del RC sigue en el lado izquierdo del tren, según la referencia fija del coche motor.
+- Tres equipos independientes, uno por coche, más los de las cabinas. Cada uno en un armario:
+  - **Coche motor**: en el furgón, enfrente del equipo general del ASFA.
+  - **Remolque intermedio**: testero izquierdo de la sala de viajeros más cercano al coche motor.
+  - **Remolque con cabina**: testero izquierdo de la sala de viajeros más cercano al remolque intermedio.
+- Se alimenta a través del convertidor, a 380 Vca/50 Hz. Las resistencias de calefacción dependen del sistema de aire acondicionado.
+- Panel de mando (lo rige la cabina habilitada): indicador de cabina habilitada, selección de temperatura de cabina, puesta en marcha del A/A de cabina, puesta en marcha del A/A de viajeros (solo arranque, no regula temperatura).
+- Ante avería de un termostato, un conmutador de tres posiciones permite puentearlo ("emergencia calefacción" / "emergencia refrigeración"). Es solo una solución puntual: mantenerlo así puede provocar la parada del convertidor estático por sobretemperatura.
