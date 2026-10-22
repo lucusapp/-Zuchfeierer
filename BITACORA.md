@@ -12,6 +12,24 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-22 (tarde) — Explicación del MGL y la tubería G-5
+
+**Qué se hizo:** el usuario pidió explicar qué hacen la tubería G-5 y el
+contactor MGL, a partir de un texto redactado con ayuda de IA. Se añadió
+en `llaves-neumaticas.md` (470), junto a la definición de G-5 que ya
+existía, una explicación resumida: el MGL da paso a los 3.000 V hacia el
+GMA, y necesita aire para cerrarse (un pistón neumático vence los
+muelles internos); sin aire en la G-5, el MGL se abre por sí solo y
+corta la alta tensión — es una medida de seguridad, no solo un fallo.
+
+**Qué se decidió y por qué:** el usuario pidió explícitamente no pegar el
+texto tal cual, sino resumirlo y dejarlo claro — se reescribió en un
+párrafo corto en vez de incorporar el texto original completo.
+
+**Pendiente:** ninguno nuevo.
+
+---
+
 ## 2026-10-22 — Chuleta oficial de la 470: contenido completo y correcciones
 
 **Qué se hizo:** el usuario pegó la "Chuleta serie 470" completa (documento
