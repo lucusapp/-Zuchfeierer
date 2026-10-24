@@ -12,6 +12,47 @@ import LoginModal from '../components/LoginModal'
 import { CONTENT_IMAGES_BUCKET, supabase } from '../lib/supabaseClient'
 import { toWebp } from '../lib/imageOptimize'
 
+// Para una página de línea (frontmatter meta.layout: "linea"), cada hijo se
+// despliega en la misma página en vez de navegar a otra — una estación o un
+// tramo entre dos estaciones, con sus puntos singulares dentro.
+function LineaNodo(props: { section: Section; doc: Doc }) {
+  const { section, doc } = props
+  const esTramo = doc.meta.tipo === 'tramo'
+
+  return (
+    <details className="group rounded-lg bg-rail-800 border border-rail-700 open:border-rail-accent">
+      <summary className="flex items-center gap-3 px-3 py-3 cursor-pointer select-none list-none">
+        <span
+          className={
+            esTramo
+              ? 'shrink-0 h-2 w-2 rounded-full bg-slate-600 ml-1'
+              : 'shrink-0 h-3 w-3 rounded-full bg-rail-accent'
+          }
+        />
+        <div className="min-w-0 flex-1">
+          <div className={esTramo ? 'text-sm text-slate-400 italic' : 'font-medium'}>
+            {doc.title}
+          </div>
+          {doc.summary && <div className="text-xs text-slate-500">{doc.summary}</div>}
+        </div>
+        <span className="text-slate-500 group-open:rotate-90 transition-transform">›</span>
+      </summary>
+      {doc.body.trim() ? (
+        <div className="prose-content px-3 pb-3 pl-8">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm, [remarkGlossaryLinks, `#/${section}/${doc.slug}`]]}
+            components={{ img: ContentImage, h2: CategoryHeading }}
+          >
+            {doc.body}
+          </ReactMarkdown>
+        </div>
+      ) : (
+        <p className="px-3 pb-3 pl-8 text-sm text-slate-500">Pendiente de completar.</p>
+      )}
+    </details>
+  )
+}
+
 function metaToText(meta: Record<string, string>): string {
   return Object.entries(meta)
     .map(([k, v]) => `${k}: ${v}`)
@@ -260,7 +301,9 @@ export default function DocPage() {
     downloadTextFile(`${currentSlug.replace(/\//g, '-')}.md`, toMarkdown(doc))
   }
 
-  const metaEntries = Object.entries(doc.meta).filter(([, v]) => v && v !== '—')
+  const metaEntries = Object.entries(doc.meta).filter(
+    ([k, v]) => v && v !== '—' && k !== 'layout' && k !== 'tipo',
+  )
 
   if (editing && form) {
     return (
@@ -416,7 +459,18 @@ export default function DocPage() {
         </div>
       )}
 
-      {children.length > 0 && (
+      {children.length > 0 && doc.meta.layout === 'linea' && (
+        <div className="space-y-2 mt-2">
+          <h2 className="text-sm uppercase tracking-wide text-slate-400 mt-4 mb-1">
+            Estaciones
+          </h2>
+          {children.map((child) => (
+            <LineaNodo key={child.slug} section={currentSection} doc={child} />
+          ))}
+        </div>
+      )}
+
+      {children.length > 0 && doc.meta.layout !== 'linea' && (
         <div className="space-y-2 mt-2">
           <h2 className="text-sm uppercase tracking-wide text-slate-400 mt-4 mb-1">
             Sistemas / temas

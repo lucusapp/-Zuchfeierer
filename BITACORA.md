@@ -12,6 +12,48 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-24 — Nuevo layout "línea" con estaciones y tramos desplegables
+
+**Qué se hizo:** el usuario pidió una forma de consultar las líneas de
+infraestructura (empezando por la R17) parecida a la app de Rodalies: una
+lista de estaciones donde cada una se puede desplegar para ver sus puntos
+singulares, y además un punto intermedio entre cada dos estaciones para
+los puntos singulares que están en la vía pero no en ninguna estación. Se
+implementó como un modo de página nuevo: si el frontmatter de un doc
+tiene `meta.layout: "linea"`, sus hijos (detectados igual que siempre,
+por carpeta) se muestran como una lista de `<details>`/`<summary>`
+desplegables en la misma página, en vez de como tarjetas que navegan a
+otra — un punto grande para estación, uno pequeño en cursiva para tramo
+(distinguidos por `meta.tipo: "estacion" | "tramo"`). Se creó
+`content/infraestructura/linea-r17.md` y 19 páginas hijas (10 estaciones
++ 9 tramos) a partir de las estaciones visibles en una captura de la app
+de Rodalies que el usuario adjuntó, todas con el cuerpo vacío
+("Pendiente de completar") a la espera de que el usuario vaya dictando
+los puntos singulares de cada una.
+
+**Qué se decidió y por qué:** se preguntó antes de construir nada: (1) si
+quería la línea gráfica tipo mapa de metro de la captura (más fiel, más
+trabajo) o una lista desplegable simple con la misma interacción —
+eligió la lista simple; (2) si aplicar esto solo a la R17 o también
+reestructurar Tarragona/R16 — eligió solo la R17 por ahora. La lista de
+estaciones se tomó de la captura tal cual, marcada explícitamente como
+provisional porque la imagen se corta en L'Ametlla de Mar y faltan las
+paradas hasta Tortosa.
+
+**Problemas y cómo se resolvieron:** al probarlo en el navegador se vio
+que la ficha técnica mostraba un campo "Layout: linea" sin sentido para
+el lector (es una marca interna, no un dato del tren) — se excluyeron
+`layout` y `tipo` de la tabla de meta que se muestra en pantalla
+(`metaEntries` en `DocPage.tsx`), dejando esos dos campos solo para uso
+interno del layout.
+
+**Pendiente:** el usuario tiene que ir dictando, estación por estación y
+tramo por tramo, los puntos singulares reales de la R17 — ahora mismo
+todas las fichas están vacías. Completar la lista de estaciones desde
+L'Ametlla de Mar hasta Tortosa.
+
+---
+
 ## 2026-10-22 (tarde) — Explicación del MGL y la tubería G-5
 
 **Qué se hizo:** el usuario pidió explicar qué hacen la tubería G-5 y el

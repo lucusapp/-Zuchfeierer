@@ -155,6 +155,21 @@
     "body": "> ⚠️ **Origen de este apartado:** a diferencia del resto de la app (basado en los apuntes internos de formación de la 449), este contenido se ha completado con documentación complementaria para cubrir un vacío del manual original. Antes de aplicarlo en circulación real, **contrasta los datos concretos — sobre todo la referencia \"16-S10\" del conmutador — con el Manual de Conducción vigente o con tu mando intermedio.** Es exactamente el tipo de contenido que el propio manual pide verificar en caso de duda.\n\n## Qué es y para qué sirve\n\nModo de conducción excepcional, de degradación extrema. Su objetivo es permitir retirar el tren de vía principal o de una zona de riesgo por sus propios medios cuando el sistema informático de control (**COSMOS**) ha fallado de forma masiva. En este modo, la prioridad pasa a ser poder mover el tren con tracción mínima, por encima de las condiciones lógicas y automáticas de parada.\n\n## Cuándo se activa\n\n- **Colapso de la red TCN**: caída masiva del bus de datos y de la comunicación interna entre coches.\n- **Mal funcionamiento del manipulador**: avería o fallo de lectura del mando físico de tracción/freno en cabina.\n- **Puesta en servicio con batería baja**: tensión por debajo de los valores nominales de las baterías de 72 Vcc.\n- **Rotura de tuberías principales**: pérdida de continuidad física en la TFA (Tubería de Freno de Auxilio) o la TDP (Tubería de Depósitos Principales).\n\n## Cómo se activa: pupitre vs armario de térmicos — no es lo mismo\n\nHay dos formas de entrar en Modo Socorro, y son de naturaleza distinta:\n\n### Mando del pupitre (selector de socorro)\nEs una orden **por software**: el COSMOS sigue vivo, recibe la orden y es él quien activa por software las restricciones del modo (límite a 80 km/h, cambio a freno de auxilio, etc.). Se usa cuando el ordenador de a bordo todavía responde pero hace falta pasar a modo degradado (por ejemplo, avería del manipulador o batería baja).\n\n### Conmutador del armario de bajas tensiones (ABT), identificado como **16-S10**\nEs un **puenteo físico/eléctrico** (bypass de hardware), no una orden al software. Se usa cuando la informática del tren está completamente colapsada — pantalla congelada, comunicaciones TCN muertas — y el COSMOS ya no puede ni recibir la orden del pupitre. Al girar este conmutador se envía corriente directa por cableado analógico a las electroválvulas de freno y contactores de tracción esenciales, sin pasar por el ordenador.\n\nEn resumen: **el pupitre es \"pedírselo al ordenador\"; el armario BT es \"saltarte el ordenador\".**\n\n## Qué debe hacer el maquinista, paso a paso\n\n1. **Diagnóstico rápido**: mirar los manómetros analógicos (TFA y TDP) y el indicador de tracción. Si las presiones son correctas pero el tren no tracciona, o la pantalla COSMOS da un código incoherente o se queda congelada/en negro, es un bloqueo lógico (falsa alarma o caída de red) — ver más abajo cómo resolverlo antes de ir a socorro si aún es posible.\n2. **Activar el modo**: desde el pupitre si el sistema responde, o directamente en el conmutador **16-S10** del armario BT de la cabina activa si el sistema está colapsado.\n3. **Piloto amarillo**: no se enciende manualmente — es consecuencia del conmutador. Al accionar el 16-S10 (o al activarse el modo desde el pupitre) se cierra el circuito en bypass y se ilumina de forma fija el piloto amarillo de Socorro en el pupitre, confirmando que los lazos de seguridad informática están anulados. Las pantallas conmutan a una \"Pantalla de SOCORRO\" simplificada, con aviso en rojo, y el diagnóstico ordinario de averías queda bloqueado.\n4. **Freno de auxilio**: la conmutación es automática (la electroválvula de freno de servicio se queda sin alimentación y la lógica neumática pasa sola a freno de auxilio), **pero requiere una acción manual**: el tren tiende a aplicar freno de urgencia por defecto al perder la corriente de control, así que el maquinista debe llevar el manipulador de freno a la posición de afloje/carga para forzar neumáticamente el llenado de la TFA hasta **5 bar**.\n5. **Circular** respetando el límite de **80 km/h**, bajo amparo de las órdenes del Puesto de Mando y en marcha degradada/a la vista (ver protecciones más abajo).\n\n## Freno y tracción en Modo Socorro — lo que cambia de verdad\n\n- **Desaparece por completo el freno de retención (eléctrico/reostático).** Es la peculiaridad más importante: ese freno necesita comunicación TCN y software para sincronizar los motores en modo generador, y en socorro no existe. Toda la retención pasa a depender del **freno neumático de fricción** (discos). Hay que anticipar mucho más las frenadas — riesgo real de sobrecalentamiento de los discos con demandas fuertes y sostenidas.\n- **Freno de estacionamiento sin gestión automática.** Si se pierde el aire de la TDP, los muelles acumuladores se aplican solos (\"se clavan\"). Hay que vigilar los manómetros analógicos auxiliares de cabina y, si hace falta, usar el tirador de afloje manual de emergencia de los cilindros.\n- **Sin antipatinaje/antideslizamiento (WSP degradado al mínimo).** El COSMOS ya no regula finamente la adherencia. Aplicar la tracción de forma muy progresiva, casi a impulsos, para no hacer patinar los ejes en carril húmedo o de baja adherencia.\n- **ATP inoperativo.** ASFA Digital y ERTMS quedan sin comunicación de datos — hace falta aislarlos física/neumáticamente y circular bajo el amparo estricto de las órdenes del Puesto de Mando y marcha degradada visual.\n- **Bypass automático de lazos lógicos**: tracción, urgencia y detección de armónicos quedan puenteados automáticamente al entrar en el modo.\n\n## Bloqueo del tren por falsas alarmas del COSMOS (sin llegar a socorro)\n\nAntes de recurrir a socorro, si el tren \"quita tracción\" o aplica freno de urgencia de forma imprevista por un fallo informático puntual (lectura errónea de un sensor, falso positivo de bogie, fallo fantasma del lazo de puertas...), se puede intentar resolver así:\n\n1. **Diagnóstico visual**: manómetros de TFA/TDP correctos pero el tren no tracciona, y la pantalla da un código genérico/incoherente o se congela → confirma bloqueo lógico, no avería física real.\n2. **Ir al armario de térmicos (armario BT)** de la cabina activa: magnetotérmicos (breakers) numerados y etiquetados por subsistema (tracción, freno, puertas, hombre muerto/vigilante...).\n3. **Rearme (\"reset\")**: bajar y subir el térmico de control informático del coche afectado (o de la lógica central de monitorización), para reiniciar ese módulo colgado — el equivalente a reiniciar un ordenador de sobremesa.\n4. **Aislamiento físico (bypass) si el reset no soluciona nada**: si el componente está dañado de verdad y sigue mandando señal de parada al lazo de seguridad, usar los conmutadores de bypass del mismo armario (por ejemplo, aislamiento del lazo de puertas o de tracción) para puentear ese lazo de forma permanente y que la corriente llegue directa a los motores operativos, ignorando el bloqueo informático de ese coche.\n\n## Parámetros técnicos — resumen\n\n| Parámetro | Valor |\n|---|---|\n| Velocidad máxima | 80 km/h |\n| Freno activo | Auxilio — control neumático directo sobre la TFA |\n| Presión objetivo TFA | 5 bar (llenado manual con el manipulador) |\n| Freno de retención | No disponible (solo freno neumático de fricción) |\n| ATP (ASFA/ERTMS) | Inoperativo — requiere aislamiento y marcha bajo órdenes del PM |\n| Mando de activación | Pupitre (software, COSMOS vivo) o conmutador 16-S10 del armario BT (bypass físico) |\n| Indicación | Piloto amarillo fijo en pupitre + pantalla de SOCORRO simplificada |"
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/barcelona-estacio-de-franca",
+    "title": "Barcelona-Estació de França",
+    "summary": "Puntos singulares de la estación.",
+    "order": 1,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/diferencias-448",
     "title": "Diferencias con la 448",
@@ -421,6 +436,21 @@
     "body": "## Motores de tracción\n\n- 4 motores, todos en el coche motor (uno por eje). **Tensión de trabajo: 1.500 Vcc.** Acoplados por pares.\n- Según la posición del combinador de mando, los 4 motores quedan en serie o en 2 ramas en paralelo.\n- La transmisión del esfuerzo se hace mediante transmisión WM.\n\n## Regulador de mando y árboles de levas\n\n- El regulador de mando envía la orden, pasando por los **CCOS**, a la caja de relés, y de ahí a los motores piloto **PM1** y **PM2**, que mueven los árboles de levas **KD** y **RD** respectivamente, abriendo y cerrando los contactores de alta y de control de tracción.\n- **PM1 mueve KD. PM2 mueve RD.**\n- El árbol **KD** puede girar en ambos sentidos. El árbol **RD** solo puede girar en el sentido de aumentar muescas.\n- Si la posición del regulador de mando no coincide con la posición de los árboles de levas, no hay tracción. Hay que reiniciar la secuencia: regulador en 0 y árboles de levas en **KD→FF** y **RD→P1**.\n- Para mover los árboles de levas a mano, cada motor piloto tiene un volante en el lado opuesto.\n\n## Cofre de control / cofre de relés\n\n- Está **bajo bastidor, en el lado izquierdo** del coche motor (en el sentido de la marcha). Dentro están los motores piloto PM1 y PM2, sus contactos (uno de los conjuntos de contactos se identifica como \"PM2 RD\" y el otro como \"PM1 KD\"), y las resistencias que se van eliminando según avanza la secuencia.\n\n## Tabla de tracción (combinador → KD/RD → muesca)\n\n| Posición combinador | KD | RD | Muesca |\n|---|---|---|---|\n| 0 | FF | P1 | OFF |\n| M | FF | P5 | P5 |\n| S | FF | P13 | P13 |\n| SS1 | WF2 | P13 | SWF2 |\n| SS2 | WF4 | P13 | SWF4 |\n| P | FF | P21 | P21 |\n| PS1 | WF1 | P21 | WF1 |\n| PS2 | WF2 | P21 | WF2 |\n| PS3 | WF3 | P21 | WF3 |\n| PS4 | WF4 | P21 | WF4 |\n\n*Nota: \"P21\" de esta tabla es una posición del combinador de tracción (una muesca), no una llave neumática — no confundir con la llave B-21 de la TDP (ver Puntos a contrastar).*\n\n## Tabla de frenado (posición → KD/RD → muesca)\n\n| Posición | KD | RD | Muesca |\n|---|---|---|---|\n| 1 | BF1 | B1 | BF1 |\n| 2 | BF2 | B1 | BF2 |\n| 3 | BF3 | B1 | BF3 |\n| 4 | BF4 | B1 | BF4 |\n| 5 | BFF | B1 | B1 |\n| 6 | BFF | B2 | B2 |\n| 7 | — | B3 | B3 |\n| 8 | — | B4 | B4 |\n| … | — | … | … |\n| 17 | BFF | B13 | B13 |"
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-barcelona-estacio-de-franca-barcelona-passeig-de-gracia",
+    "title": "Tramo: Barcelona-Estació de França → Barcelona-Passeig de Gràcia",
+    "summary": "Puntos singulares entre Barcelona-Estació de França y Barcelona-Passeig de Gràcia.",
+    "order": 2,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/tuberias-frenos",
     "title": "Tuberías y circuitos de freno",
@@ -451,6 +481,21 @@
     ],
     "meta": {},
     "body": "> Pendiente de contrastar con la documentación oficial vigente.\n\n## Velocidad general de la línea\n\nMáxima de **155 km/h** en el tramo general, que se reduce paulatinamente a **140 km/h**, **100 km/h** y **80 km/h** al aproximarse a las curvas de entrada a Sant Vicenç de Calders.\n\n## Sants\n\n| Tramo | Velocidad máxima | Observaciones |\n|---|---|---|\n| General en Sants, hasta la entrada a andenes | 60 km/h | — |\n| Desde la señal previa a andenes | 45 km/h | Posibles desvíos a 30 km/h |\n| Salida de Sants (tramo inicial) | 45 km/h | Después pasa a 60 km/h |\n\n## El Prat de Llobregat\n\n| Tramo | Velocidad máxima | Observaciones |\n|---|---|---|\n| Circulación por desviada (vía 4) | 50 km/h (30 km/h en algunos puntos) | Mantener la velocidad de desviada hasta rebasar completamente los cambios de vía |\n| Limitación temporal (LTV) | 30 km/h | Dilatador defectuoso en vía en placa |\n\n> Si la señal de salida de El Prat está en verde pero vas por desviada, **no subas de la velocidad de desviada** hasta haber pasado completamente los cambios.\n\n- **Desviada hacia El Prat:** es especialmente larga. Incluye subidas y bajadas de puentes y rectas intermedias a **60 o 66 km/h**, y se llega al cambio de vía efectivo mucho después de ver la señal de entrada en verde.\n\n## Castelldefels – Gavà – Viladecans – El Prat\n\nSeñales muy próximas entre sí. Si la primera muestra verde pero la siguiente está en amarillo o rojo, es preferible **atemperar la marcha a 50–60 km/h**.\n\n## Vilanova i la Geltrú\n\n- **Curva a la salida:** limitada a **30 km/h**.\n\n## Sitges – Vilanova\n\n- Tramo costero con túneles y visibilidad cambiante (ver Puntos singulares)."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/barcelona-passeig-de-gracia",
+    "title": "Barcelona-Passeig de Gràcia",
+    "summary": "Puntos singulares de la estación.",
+    "order": 3,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -498,6 +543,23 @@
     ],
     "meta": {},
     "body": "## Dos sistemas de freno neumático\n\nLa 448 tiene dos sistemas de freno neumático, cada uno con su propio distribuidor:\n\n- **Freno de servicio**: distribuidor **KBR**. Hay **un KBR por coche** (tres por unidad).\n- **Segundo freno (auxilio)**: distribuidor **FM3**. Hay **un FM3 por coche** (tres por unidad).\n\nLos dos actúan sobre los **mismos cilindros de freno** de cada bogie.\n\n## Qué anula cada llave\n\n- Cerrar la **B12** de un bogie **condena los distribuidores KBR y FM3** para ese bogie: el freno de servicio y el segundo freno quedan anulados en ese bogie, porque ambos actúan sobre los mismos cilindros.\n- Para el detalle de cada llave, ver Paneles neumáticos y llaves de aislamiento."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17",
+    "title": "Línea R17 (Barcelona – Tortosa)",
+    "summary": "Estaciones de la R17 con sus puntos singulares, y los tramos entre estaciones.",
+    "order": 3,
+    "tags": [
+      "R17",
+      "Barcelona",
+      "Tortosa"
+    ],
+    "meta": {
+      "layout": "linea",
+      "tramo": "Barcelona-Estació de França – Tortosa"
+    },
+    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\n> Lista de estaciones provisional, tomada de una captura de la app de Rodalies que se corta en L'Ametlla de Mar — faltan las paradas desde ahí hasta Tortosa. Hay que completarla."
   },
   {
     "section": "vehiculos",
@@ -620,6 +682,36 @@
     "body": "## Situación\n\n- **Cofre de control, lado derecho del coche motor (Cm)**: aloja los dos árboles de levas.\n  - **KD**, movido por el **motor piloto 1 (PM1)**.\n  - **RD**, movido por el **motor piloto 2 (PM2)**.\n\n## Cadena de mando\n\n1. Al actuar sobre el **regulador de mando**, se envía una **orden eléctrica de control**.\n2. La orden pasa por el **cofre de relés**.\n3. Llega a los **motores piloto PM1 y PM2**, que están en el **cofre de control** (lado derecho del Cm).\n4. Cada motor piloto **mueve un árbol de levas**: **PM1 mueve KD** y **PM2 mueve RD**.\n5. Los **árboles de levas** son los que **conectan los motores de tracción en serie o en paralelo**, o bien **aplican los shuntados**.\n\n## Serie y paralelo\n\n- Con los motores en **serie** se obtiene **más intensidad**.\n- Con los motores en **paralelo** se obtiene **más tensión**.\n\n## Árboles de levas\n\n- **KD** (movido por PM1): **20 posiciones estables**. Gira en ambos sentidos. Cada posición fija un sentido de marcha, un esfuerzo (tracción o freno) y una proporción de shuntado de campo.\n- **RD** (movido por PM2): **21 posiciones estables**. Solo gira en un sentido. Controla los contactores de resistencias principales.\n\n## Posición inicial\n\n- Con el regulador de mando en **0**: **KD en FF** y **RD en P1**.\n\n## Motores piloto accesibles a mano\n\n- Los motores piloto tienen un **volante** en el lado opuesto para llevarlos a mano a la posición adecuada (KD-FF y RD-1 en posición inicial)."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-barcelona-passeig-de-gracia-barcelona-sants",
+    "title": "Tramo: Barcelona-Passeig de Gràcia → Barcelona-Sants",
+    "summary": "Puntos singulares entre Barcelona-Passeig de Gràcia y Barcelona-Sants.",
+    "order": 4,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/barcelona-sants",
+    "title": "Barcelona-Sants",
+    "summary": "Puntos singulares de la estación.",
+    "order": 5,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-448/circuito-lazo",
     "title": "Circuito de lazo",
@@ -666,6 +758,21 @@
     "body": "La mayoría de los puntos que estaban pendientes aquí ya se han resuelto al contrastarlos con la chuleta oficial de la 470. Quedan solo los que la propia chuleta no aclara (o en los que ella misma se contradice).\n\n## Resueltos con la chuleta de la 470\n\n- **Llave de la TDP y de la TFA**: confirmado. La **TDP** se aísla con la llave **B-21**. La **TFA (2º freno)** se controla con la llave **P-13**. \"P21\" no es una llave real — coincide con el nombre de una posición del combinador de tracción (muesca \"P21\"), que es probablemente el origen de la confusión.\n- **Tensión de los motores de tracción**: confirmado **1.500 Vcc** de trabajo, con los motores acoplados por pares. La chuleta no menciona 3.000 V en ningún motor.\n- **Correspondencia KD/RD**: confirmado — **PM1 mueve KD**, **PM2 mueve RD** (la chuleta lo remarca en mayúsculas). No se confirma ni se descarta que el criterio sea el orden alfabético; es solo una regla mnemotécnica, no algo que diga la chuleta.\n- **Cofre de control / caja de relés**: confirmado — está bajo bastidor, en el **lado izquierdo** del coche motor (no en el lado derecho).\n- **Depósito de reserva / compresor auxiliar**: confirmado **5 kg**, no 4 kg. El compresor auxiliar no arranca si el depósito ya está a 5 kg, y no debe mantenerse en marcha más de 15 minutos.\n- **Gobernol (compresor principal)**: confirmado **8,5 kg - 10 kg** para la 470. Es una diferencia real frente a la 448 (donde se había registrado 7 - 9/9,5 bar), no un error: cada serie tiene sus propios umbrales.\n- **Magnetotérmico de batería**: confirmado. En la 470 no hay magnetotérmico de batería en cabina: la puesta en servicio empieza conectando el magnetotérmico de batería en el armario BT del **Rc**.\n- **Presostato de mínima**: confirmado, cierra a 8,5 bar y abre a 6,5 bar (coincide con lo ya registrado).\n- **Patines en el antibloqueo**: confirmado como término correcto (ya corregido).\n\n## Siguen sin confirmar\n\n- **Numeración de coches por código de avería** (9000/8000/7000): la chuleta de la 470 no incluye esta numeración — solo describe la numeración del sistema IRIS (coche nº 1 = el de la cabina habilitada, correlativos desde ahí), que es un sistema distinto. Sigue sin confirmar cuál de las dos cifras (9000-8000-7000 o 9000-7000-8000) corresponde a cada serie.\n- **Motores piloto a 380 V**: la chuleta de la 470 no da la tensión de los motores piloto ni de los árboles de levas explícitamente. Se mantiene lo ya registrado (72 V árboles de levas, 380 V motores piloto) sin confirmación directa del documento oficial.\n- **Ubicación exacta del GMA**: la propia chuleta se contradice en dos puntos distintos — en un sitio dice que el GMA está en el **lado derecho** del Rc, y en otro que está en el **lado izquierdo** bajo bastidor del Rc. No se puede resolver sin ver el armario real.\n- **Nombre del magnetotérmico diferencial del GMA**: aparece como **MGOCD** en un sitio de la chuleta y como **MGDFD** en otro, para la misma protección (diferencial GMA). Puede ser un error de edición del propio documento; confirmar cuál es el correcto."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-barcelona-sants-vilanova-i-la-geltru",
+    "title": "Tramo: Barcelona-Sants → Vilanova i la Geltrú",
+    "summary": "Puntos singulares entre Barcelona-Sants y Vilanova i la Geltrú.",
+    "order": 6,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-448/cabina-armarios",
     "title": "Cabina y armarios BT",
@@ -693,6 +800,21 @@
     ],
     "meta": {},
     "body": "## Puesta en marcha y batería\n\n- **UT 448**: para la puesta en marcha se acciona un **magnetotérmico en cada cabina**, que actúa directamente sobre el interruptor general de la batería (armario BT del RC). El control de baja tensión se centra sobre todo en el sistema de puertas.\n- **UT 470**: confirmado, **no tiene magnetotérmico en cabina** para la batería. El primer paso de la puesta en servicio es ir al armario BT del Rc a conectar el magnetotérmico de batería (**BatN**) directamente.\n\n## Generadores\n\n- La 470 conserva su **Grupo Motor Alternador (GMA)** original para los servicios auxiliares. Con la reforma de 1993 para incorporar aire acondicionado, se decidió mantener el GMA y añadir además un **convertidor estático** (en el Ri) dedicado a climatización, vacío del WC y autotransformador."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/vilanova-i-la-geltru",
+    "title": "Vilanova i la Geltrú",
+    "summary": "Puntos singulares de la estación.",
+    "order": 7,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -726,6 +848,21 @@
     "body": "> Seguir siempre el orden establecido.\n\n## Encendido de la unidad\n\n1. Conectar el **telemando de batería** (magnetotérmico) de la cabina que vamos a habilitar (Cm o Rc). Ese magnetotérmico actúa sobre el interruptor general de la batería, que está en el **armario BT del Rc**.\n2. Insertar y girar la **maneta** que desenclava los interruptores de palanca del pupitre (serie baja y alta).\n3. Accionar en este orden los interruptores:\n   a. Subir **pantógrafo**\n   b. Cerrar **disyuntor**\n   c. **Convertidor estático**\n   d. **Compresor**\n   e. **Ventiladores de resistencias**\n   f. **Control auxiliar**\n   g. **Alumbrado** de habilitación serie 444/448\n   h. **Alumbrado exterior**\n4. Colocar la **maneta de negativos** en posición marcha.\n5. Cuando la TDP supere **8,5 bar**, cargar el **segundo freno**.\n\n## Cambio de cabina\n\n**Antes de abandonar la cabina:**\n\n1. Inversor en \"posición 0\" y extraerlo.\n2. Conmutador de cambio de cabina a posición \"1\" (luce su lámpara). Tienes **10 s** para desconectar la maneta de control de freno positivos/negativos.\n3. Desconectar y sacar la maneta de control de freno; quitar todos los interruptores del pupitre (no importa el orden). Tienes **15 minutos** para hacer el cambio o el vehículo se parará. Girar la maneta para enclavar el pupitre y extraerla.\n4. Desconectar ASFA.\n5. Girar y extraer la maneta del segundo freno.\n6. Conmutador de luces en discos rojos (luces de cola).\n7. Si la unidad va en sencillo, pasar a la otra cabina: maneta de negativos, maneta de enclavar pupitre, mando del inversor y maneta del segundo freno.\n\n**En la otra cabina:**\n\n1. Colocar la maneta de enclavamiento del pupitre y desenclavarlo.\n2. Conectar los interruptores del pupitre (no importa el orden).\n3. Colocar la maneta del segundo freno y el control de freno en posición marcha.\n4. Colocar la maneta del inversor en su posición.\n5. Deshacer el cambio de cabina con su conmutador.\n6. Conectar ASFA.\n7. Poner el conmutador de luces con la señalización por cabeza.\n\n## Apagado de la unidad\n\nCondiciones: regulador de tracción e inversor en **0**.\n\n1. Comprobar que la maneta del distribuidor del freno de estacionamiento está en posición de **apretar**.\n2. Girar la manivela del freno de estacionamiento (de mano) en el sentido de las agujas del reloj hasta que luzca la lámpara roja de apretado.\n3. Con los frenos de servicio liberados, hacer un establecimiento de tracción para comprobar su eficacia.\n4. Desconectar los interruptores de palanca: alumbrado, alumbrado exterior, ventiladores de resistencias, control auxiliar, compresor, convertidor estático y, por último, bajada de pantógrafo.\n5. Apretar el **segundo freno**.\n6. Maneta de control de negativos en \"extraer maneta\"; girar la maneta y enclavar el pupitre.\n7. Desconectar la batería con el **pulsador de telemando de batería** (parte superior de la cabina). Esto abre el disyuntor extrarrápido.\n\nAl pulsar el telemando de batería se desconecta en **todas las cabinas** conectadas, incluso en doble composición.\n\n## Desacople\n\n1. Situarse en la cabina desde la que se va a cortar, habilitando todos los mandos.\n2. Control de freno en posición marcha.\n3. Girar la palomilla del desacoplador y pulsar el botón de desacoplar.\n4. Inversor en AT, tracción y separarse del otro vehículo; normalizar la palomilla.\n5. Si el desacoplador automático no funciona, tirar de la cadenilla junto al Scharfenberg:\n   a. Llevar la llave del segundo freno a su posición (cierra el paso de aire de la TFA, si se ha quedado abierta).\n   b. Con las tulipas eléctricas cerradas, traccionar separándose del otro vehículo.\n\n## Remolque\n\nLa UT 448 se puede remolcar:\n\n- Por **otra 448** (eléctrica y mecánicamente).\n- Por una **447, 449 o 465** (solo mecánicamente).\n- Por una **locomotora**, acoplando el enganche y los topes supletorios (situados en el furgón).\n\nOrden de trabajo: **1º acoplar, 2º acondicionar, 3º hacer la prueba de freno.**\n\n**Remolque con batería** (remolcado por otra 448 u otra unidad con batería):\n\n1. Comprobar que están abiertos los machos de 5 y 10 bar, bajo el bastidor junto al primer eje del extremo.\n2. Cerrar el pestillo tras el Scharfenberg y asegurarlo con el prisionero.\n3. Desconectar ASFA de la consola y del armario del combinador general.\n4. Montar el enganche supletorio en la locomotora y colocar los suplementos en la 448.\n5. Acoplar las mangas de 5 y 10 bar tras el acople mecánico.\n6. Abrir los machos de aire de la locomotora y cargar el segundo freno de la 448.\n7. Cuando la TDP marque al menos **8,5 bar**, conectar el interruptor de control auxiliar.\n8. Maneta positivos/negativos en marcha; inversor en AD o AT; pulsar a la vez el dispositivo HM (libera el lazo).\n9. Comprobar antes de arrancar el apriete y afloje del vehículo remolcado con los visores ópticos.\n\n**Remolque sin batería**:\n\n1. Machos de 5 y 10 bar abiertos, pestillo tras el Scharfenberg asegurado.\n2. Montar el enganche supletorio en la locomotora y los suplementos en la 448.\n3. Acoplar las mangas de 5 y 10 bar y abrir los machos de la locomotora.\n4. Cerrar las KBR y accionar las cadenillas para aflojarlas.\n5. Cargar el segundo freno y comprobar el apriete y afloje con los visores ópticos.\n6. Enclavar todos los interruptores, inversor en 0, maneta de negativos en extracción y **señales portátiles en cola**.\n\n## Puesta a tierra\n\nAntes de empezar: parar completamente el vehículo (no hace falta desconectar la batería), asegurar su inmovilidad y comprobar visualmente que los pantógrafos están bajados.\n\n1. Accionar la **llave de tres vías** del armario de pantógrafos del coche motor. Condena los pantógrafos **eléctrica y neumáticamente** a la vez. Para ello: introducir la llave de enclavamiento y girar; girar y extraer la llave de la maneta de paso de aire; volver la llave de enclavamiento a su posición inicial y extraerla.\n2. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.\n3. Poner a tierra los circuitos de alta en el cajetín del furgón del Cm: introducir y girar la llave de enclavamiento; introducir y girar la llave de la maneta de paso de aire; girar y extraer la llave de desbloqueo de la caja de llaves.\n4. Así se accede a la caja de llaves para abrir la cámara y los armarios de alta.\n\n> **Doble composición:** la alta tensión **no pasa por el Scharfenberg**. Por la botonera del Scharfenberg solo pasan órdenes de mando de 72 V. Por eso, en doble composición, la puesta a tierra queda resuelta al realizarla en la **primera unidad**.\n\n### Llave máster (armario de reserva)\n\n1. Desde la cabina, coger la **llave de enclavamiento de interruptores**.\n2. Ir al **armario de reserva** y sacar la **llave máster**. La llave máster es una **palanca** que está en **posición horizontal**.\n3. Para sacarla, introducir primero la **llave de enclavamiento** en el **cuadradillo que hay justo encima de la llave máster**.\n4. Con la llave de enclavamiento introducida, la llave máster hace juego y se puede **colocar en vertical**, y así extraerla.\n5. Con esto se asegura que el **pantógrafo pueda subir**. Antes, comprobar que el **pantógrafo esté bajado**.\n6. Después, al lado del **armario de alta**, se hace el juego de giros en este orden:\n   a. Primero, la **llave de enclavamiento**.\n   b. Después, la **llave máster**.\n   c. Por último, se extrae la **llave de puesta a tierra**."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-vilanova-i-la-geltru-sant-vicenc-de-calders",
+    "title": "Tramo: Vilanova i la Geltrú → Sant Vicenç de Calders",
+    "summary": "Puntos singulares entre Vilanova i la Geltrú y Sant Vicenç de Calders.",
+    "order": 8,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/freno",
     "title": "Freno",
@@ -740,6 +877,21 @@
     ],
     "meta": {},
     "body": "La unidad tiene seis tipos de freno: electroneumático, electroreostático, combinado, electromagnético, de auxilio y de estacionamiento.\n\n## Electroneumático (freno de servicio)\n\nFreno de servicio de la unidad. Según la orden dada con la palanca de freno **B4**, se manda una orden eléctrica a la **KBR**, que según la demanda de freno envía, a través del depósito de reserva **B7**, una señal neumática a la válvula de carga variable **RLV7** (una por bogie), pasando por la válvula de doble efecto **P9** (deja pasar el aire según venga la demanda del freno de servicio o del 2º freno).\n\n- La **RLV7** recibe también, a través de la **B9** (válvula de presión media de las balonas), una señal que corrige el esfuerzo según la carga del coche.\n- La RLV7 deja pasar aire de la TDP (conducto R) hacia los antibloqueo, que a su vez dejan pasar aire de la TDP —pasando por la **B12** y el calderín **B29** (el calderín está situado antes de la B12)— hacia los cilindros de freno, a una presión de unos 3,5 bar.\n- En el coche motor, el depósito B7 no manda la señal directamente a la RLV7: pasa antes por un transformador de presión, que la regula según esté o no establecido el freno combinado.\n- Con el **2º freno**: al mandar la orden desde cabina se tira aire de la TFA al exterior (depresión). El distribuidor **FM3** nota la depresión y manda una señal desde su depósito de reserva, por la válvula P9, a la RLV7 — repitiendo el mismo proceso que el freno de servicio.\n- Si se cierra la **B12**, no hay ni freno de servicio ni segundo freno en ese bogie.\n- Los cilindros de freno se pueden vaciar tirando de las cadenillas, o con los pulsadores de los antibloqueo (\"piu-piu\").\n- Según el punto de freno, se excitan o desexcitan las electroválvulas I/II/III de la KBR (\"hilos romanos\"), variando la señal neumática:\n\n| Posición manipulador | I | II | III | Estado del freno |\n|---|---|---|---|---|\n| 0 | 1 | 1 | 1 | Aflojado |\n| 1 | 0 | 1 | 1 | 1er escalón |\n| 2 | 1 | 0 | 1 | 2º escalón |\n| 3 | 0 | 0 | 1 | 3er escalón |\n| 4 | 1 | 1 | 0 | 4º escalón |\n| 5 | 0 | 1 | 0 | 5º escalón |\n| 6 | 1 | 0 | 0 | 6º escalón |\n| 7 | 0 | 0 | 0 | Urgencia |\n| 8 | 0 | 0 | 0 | Urgencia + patines |\n\n## Electroreostático\n\nSe establece entre 11 y 140 km/h, solo en el coche motor (en composición múltiple, en todos los coches motores que no lleven motores seccionados). Es **solo de retención y mantenimiento de velocidad en pendientes** — no es un freno de urgencia ni de parada.\n\n## Combinado (blending)\n\nPara establecerlo: regulador de mando a la posición \"F\" (primera muesca de frenado eléctrico), y girar el manipulador de freno de 1 a 6 según el esfuerzo requerido — las muescas de frenado eléctrico avanzan automáticamente en el coche motor.\n\n- Entre 100 y 120 km/h, el esfuerzo se refuerza con 50% de freno neumático en el coche motor.\n- Por debajo de 100 km/h, en el coche motor solo actúa el reostático.\n- En los remolques, el esfuerzo siempre es neumático, según el escalón pedido.\n- Por debajo de 10 km/h, solo hay esfuerzo neumático.\n\n| Tramo de velocidad | Coche motor | Ri / Rc |\n|---|---|---|\n| 140-100 km/h | Reostático; 50% de la presión de aire que correspondería | Presión de aire según el escalón de freno |\n| 100-10 km/h | Reostático (si la intensidad en motores > 75 A) | Presión de aire según el escalón de freno |\n| 10-0 km/h | Presión de aire total que corresponda | Presión de aire según el escalón de freno |\n\n## Electromagnético (patines)\n\nCada bogie lleva un par de patines de freno, uno a cada lado, con sus elementos de guiado, distanciador y centraje. Entre 0 y 10 km/h hay un dispositivo de seguridad que impide su funcionamiento.\n\n## Auxilio (2º freno)\n\nEl esfuerzo se establece a través de los tres distribuidores **FM3** (uno por coche). Llevando la maneta del segundo freno a fondo se provoca una frenada de urgencia por vaciado completo de la tubería de freno, quedando retenida por un trinquete.\n\n- Se usa para remolcar una unidad con el freno electroneumático totalmente fuera de servicio.\n- Hay que cargarlo al poner la unidad en marcha: maneta a \"Aflojamiento\" hasta que el manómetro marque **5 kg/cm²**. Si no se alcanza esa presión, la válvula de compensación no cierra y la unidad queda enfrenada por el escape de aire.\n\n## Estacionamiento\n\nEn las unidades con la modificación de señalización, el indicador \"Freno de Mano/Motores Seccionados\" del pupitre parpadea si hay algún freno de estacionamiento puesto, tanto en el Cm como en el Rc (no el del Ri, que tiene su propia señalización junto al freno). En doble tracción, esa señalización solo es válida para la cabina habilitada; no hay forma de saber el estado de la unidad acoplada desde ahí. Establecer el freno de estacionamiento **no corta el circuito de tracción**."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/sant-vicenc-de-calders",
+    "title": "Sant Vicenç de Calders",
+    "summary": "Puntos singulares de la estación.",
+    "order": 9,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -784,6 +936,21 @@
     "body": "- **Significado de \"Dass\"**: en el armario BT del Cm aparece un magnetotérmico de \"Dass\" (punto 9 de la foto numerada), y en Cabina y armarios se menciona también un \"by-pass DASS\" en el pupitre. La chuleta no explica qué siglas son ni su función exacta. Confirmar.\n- **Dos magnetotérmicos de Tren Tierra**: la foto numerada del armario BT muestra **5e8TT** (punto 6) y **5e8** (punto 13), ambos descritos como \"Tren Tierra\". Puede ser el mismo elemento citado dos veces en la chuleta, o dos térmicos distintos en ubicaciones distintas del armario. Confirmar en el armario real.\n- **ACPN frente a ACPS**: el punto 12 de la foto del armario BT tiene un magnetotérmico **ACPN** (\"Compresor auxiliar\") y el punto 17 tiene otro, **ACPS**, también \"Compresor auxiliar\". Puede que protejan partes distintas del mismo compresor (por ejemplo, mando y potencia), o que uno sea de una serie distinta. Confirmar la diferencia."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-sant-vicenc-de-calders-torredembarra",
+    "title": "Tramo: Sant Vicenç de Calders → Torredembarra",
+    "summary": "Puntos singulares entre Sant Vicenç de Calders y Torredembarra.",
+    "order": 10,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/procedimientos",
     "title": "Procedimientos",
@@ -797,6 +964,21 @@
     ],
     "meta": {},
     "body": "## Puesta en servicio\n\n1. Conectar el magnetotérmico de batería, en el armario BT de la cabina del Rc (si va acoplada, basta con conectar el de la unidad de cola; el resto se hace desde la de cabeza).\n2. Insertar y girar la maneta de enclavamientos, para liberar los interruptores de palanca del pupitre.\n3. Accionar, en este orden: 1) subir pantógrafo, 2) cerrar disyuntor, 3) grupo motor alternador, 4) compresor automático, 5) convertidor, 6) control auxiliar, 7) alumbrado interior, 8) alumbrado exterior.\n4. Control de negativos en posición marcha.\n5. Con más de 8,5 bar en la TDP, cargar el segundo freno.\n\n### Puesta en servicio sin aire en la TDP\n\n1. Abrir la llave del depósito de reserva (armario neumático posterior de la cabina del Cm), comprobando antes en su manómetro si está lleno.\n2. Si el depósito de reserva no basta para subir el pantógrafo, pasar a mano el conmutador del compresor auxiliar (armario BT del Cm) a ON, manteniéndolo así hasta que suba el pantógrafo.\n3. Verificar antes que el magnetotérmico **ACPN** está conectado.\n\n*En algunos vehículos la llave del depósito de reserva se ha sustituido por una electroválvula, que deja pasar aire al pantógrafo seleccionado al accionar su interruptor de palanca en cabina, siempre que el depósito tenga aire.*\n\n## Cambio de cabina\n\n**Antes de abandonar la cabina:**\n\n1. Inversor a \"0\" y extraerlo.\n2. Conmutador de cambio de cabina a \"1\" (se enciende su lámpara) — hay 10 segundos para desconectar el control de freno de positivos/negativos.\n3. Desconectar y sacar el control de freno, quitar todos los interruptores del pupitre (cualquier orden). Hay 15 minutos para completar el cambio o el vehículo se parará. Girar para enclavar el pupitre y extraerlo.\n4. Desconectar el ASFA en el conmutador principal de esa cabina.\n5. Girar y extraer la maneta del segundo freno.\n6. Conmutador de luces a discos rojos (luces de cola).\n7. Si la unidad va en sencillo, desplazar a la otra cabina: control de negativos, llave de enclavamiento del pupitre, mando del inversor y maneta del segundo freno.\n\n**En la otra cabina:**\n\n1. Enclavamiento del pupitre y desenclavarlo.\n2. Conectar los interruptores del pupitre (cualquier orden).\n3. Segundo freno y control de freno en marcha.\n4. Inversor en su posición.\n5. Control de negativos en marcha.\n6. Deshacer el cambio de cabina con su conmutador.\n7. Conectar el ASFA del armario principal.\n8. Conmutador de luces con la señalización por cabeza.\n\n**Regla mnemotécnica: PAL — Puertas, ASFA, Luces** (lo último que hay que revisar).\n\n## Puesta fuera de servicio\n\n1. Regulador de tracción e inversor en posición 0.\n2. Comprobar que el distribuidor del freno de estacionamiento está en posición de apretar.\n3. Girar la manivela en sentido horario para aplicar el freno de estacionamiento, hasta que luzca la lámpara de apretado (roja).\n4. Con los frenos de servicio liberados, probar un establecimiento de tracción para comprobar la eficacia del freno de estacionamiento.\n5. Desconectar los interruptores del pupitre: convertidor, alumbrado interior, control auxiliar, compresor automático, motor alternador, pantógrafo, bajada de pantógrafo, alumbrado exterior.\n6. Apretar el segundo freno.\n7. Llave de control de negativos en posición \"extraer\".\n8. Girar y enclavar el pupitre.\n9. Desconectar el térmico de batería **BatN** en el armario BT del Rc (si va en doble composición, también el de la otra unidad).\n\n## Desacople\n\n1. Situarse en la cabina desde la que se corta, habilitando todos los mandos.\n2. Control de negativos en marcha.\n3. Girar la palomilla del desacoplador y pulsar el botón de desacoplar.\n4. Inversor en AT, traccionar y separarse unos metros; normalizar la palomilla del desacoplador.\n5. Si el desacoplador automático no funciona: tirar de la cadenilla junto al Scharfenberg, llevar la llave del segundo freno a su posición, y una vez cerradas las tulipas eléctricas, traccionar para separarse.\n\n## Remolques\n\nLa 470 solo puede ser remolcada por otra 470 (la salida de la TFA y la TDP del Scharfenberg está invertida respecto al resto de unidades).\n\n- **Avería en motores de tracción**: seccionar los motores de la unidad averiada y acoplar completo. Si es por derivación en resistencias principales y se circula en doble tracción, desconectando **CCOS1** se puede remolcar con todos los servicios salvo tracción (sin necesidad de seccionar motores).\n- **Avería en el GMA**: desconectar el magnetotérmico **MGCN** (armario BT del Rc) y acoplar completo.\n- **Derivación en alta tensión**: cerrar las llaves neumáticas de ambos pantógrafos (armario furgón del Cm), acoplar completo, y en las dos cabinas intermedias conectar compresor principal y control auxiliar (para cargar la batería de la unidad inútil). Precaución: conmutadores de apertura de puertas de ambas cabinas intermedias en \"0\".\n- **Derivación en baja tensión**: engatillar el cerrojillo de las botoneras, acoplar completo, anular las tres KBR de la unidad afectada, liberar el freno de los coches con las cadenillas, cargar el freno de auxilio (el freno neumático simultáneo se hace a través de ese 2º freno) y hacer prueba de freno con un segundo agente. La unidad averiada no tiene señalización exterior, alarma ni control de puertas.\n\n**Códigos de remolque**: A = acoplar mecánicamente; B = acoplar eléctricamente; F = cargar 2º freno / freno de auxilio; K = poner luces de cola (según el coche en cola); R = acondicionar KBR y tirar de cadenillas; T = CCOS1 desconectado (derivación en alta); V = quitar cuchilla MS (derivación en resistencias de alta).\n\n**Importante: 1º acoplar, 2º acondicionar, 3º prueba de freno.**\n\n## Puesta a tierra\n\n1. Parar completamente el vehículo (no hace falta desconectar la batería).\n2. Asegurar la inmovilidad del vehículo.\n3. Comprobar visualmente que los pantógrafos están bajados.\n4. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.\n5. Cerrar la llave de tres vías a los pantógrafos (armario de pantógrafos): introducir la llave de enclavamiento de interruptores y girar, girar y extraer la llave de paso de aire, y volver a colocar la llave de enclavamiento en su posición inicial y extraerla.\n6. Poner a tierra los circuitos de alta (cajetín de la cabina del Cm): introducir los interruptores y girar la llave de enclavamiento, introducir y girar la llave de paso de aire, girar y extraer la llave de desbloqueo de la caja de llaves.\n7. Esta última llave da acceso a la caja de llaves para abrir la cámara y los armarios de alta."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/torredembarra",
+    "title": "Torredembarra",
+    "summary": "Puntos singulares de la estación.",
+    "order": 11,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -813,6 +995,36 @@
     "body": "> Aplicar siempre las restricciones vigentes en el manual y consignas.\n\n## Restricciones generales\n\n- Circulando con una o varias **balonas fuera de servicio**: velocidad máxima **80 km/h**.\n- Con uno o varios **bogies condenados**: ver tabla de masa frenada más abajo (varía según cuántos bogies y en qué coche).\n\n## Datos de masa frenada por coche\n\n| Coche | Masa frenada | Masa frenada freno estac. | Tara | Asientos | Plazas máx. |\n|---|---|---|---|---|---|\n| Cm | 106 t | 27 t | 65,6 t | 82 | 148 |\n| Ri | 72 t | 25 t | 43,1 t | 80 | 181 |\n| Rc | 79 t | 27 t | 46,7 t | 80 | 185 |\n\n## Porcentaje de frenado con bogies condenados\n\n**1 composición** — masa total 205 t, masa frenada 257 t, λ = 125,36%:\n\n| Coche | Bogies condenados | % frenado | Vel. máx. |\n|---|---|---|---|\n| Cm | 1 bogie | 99,51% | 120 |\n| Cm | 2 bogies | 73,65% | 100 |\n| Ri | 1 bogie | 107,80% | 130 |\n| Ri | 2 bogies | 90,24% | 120 |\n| Rc | 1 bogie | 106,09% | 130 |\n| Rc | 2 bogies | 86,82% | 110 |\n\n**2 composiciones** — masa total 410 t, masa frenada 514 t, λ = 125,36%:\n\n| Coche | Bogies condenados | % frenado | Vel. máx. |\n|---|---|---|---|\n| Cm | 1 bogie | 112,43% | 130 |\n| Cm | 2 bogies | 99,51% | 120 |\n| Ri | 1 bogie | 116,58% | 130 |\n| Ri | 2 bogies | 107,80% | 130 |\n| Rc | 1 bogie | 115,73% | 130 |\n| Rc | 2 bogies | 106,09% | 130 |"
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-torredembarra-altafulla-tamarit",
+    "title": "Tramo: Torredembarra → Altafulla-Tamarit",
+    "summary": "Puntos singulares entre Torredembarra y Altafulla-Tamarit.",
+    "order": 12,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/altafulla-tamarit",
+    "title": "Altafulla-Tamarit",
+    "summary": "Puntos singulares de la estación.",
+    "order": 13,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/sistema-iris",
     "title": "Sistema IRIS 4",
@@ -825,5 +1037,95 @@
     ],
     "meta": {},
     "body": "## Numeración\n\nEl sistema establece como coche nº 1 el que tiene la cabina habilitada, y numera correlativamente el resto en orden ascendente desde ahí.\n\n**Trayectos especiales**: 001 = pruebas, 002 = sin servicio.\n\n## Anuncio de estación\n\n- El texto **TT11** se muestra cuando el tren se acerca a la estación que va a anunciar.\n- Pulsando **\"A: ANULA\"** se anula el siguiente anuncio.\n\n## Error de distancia\n\n- Si antes de llegar a la distancia esperada se produce apertura y cierre de puertas, aparece el texto **TT12** (error en la medida de la distancia).\n- Si ocurre entre dos estaciones: pulsar **\"A\"** para anular el anunciador.\n- Si ocurre estando en una estación: pulsar **\"B\"** para seleccionar la próxima parada.\n\n## Control de megafonía\n\n- Teclas: **TR, MU, TA, CA, PU, AC**. La última línea del display indica el modo de funcionamiento.\n- **TR** (Habla-Escucha): activo en todos los terminales, sin actividad predefinida.\n\n## Conexión cabina-cabina\n\n- Se activa con el pulsador **CA** en cualquiera de las cabinas. El mensaje sale por los altavoces monitores de todas las cabinas; el display muestra \"CAB -- CAB\".\n- Solo puede finalizarla el terminal que la solicitó, o un intercomunicador.\n\n## Conexión cabina-público\n\n- Se activa con el pulsador **PU**; el display muestra \"CAB PUB\".\n- Puede interrumpirla un intercomunicador o la conexión cabina-cabina."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-altafulla-tamarit-tarragona",
+    "title": "Tramo: Altafulla-Tamarit → Tarragona",
+    "summary": "Puntos singulares entre Altafulla-Tamarit y Tarragona.",
+    "order": 14,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/tarragona",
+    "title": "Tarragona",
+    "summary": "Puntos singulares de la estación.",
+    "order": 15,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-tarragona-lhospitalet-de-linfant",
+    "title": "Tramo: Tarragona → L'Hospitalet de l'Infant",
+    "summary": "Puntos singulares entre Tarragona y L'Hospitalet de l'Infant.",
+    "order": 16,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/lhospitalet-de-linfant",
+    "title": "L'Hospitalet de l'Infant",
+    "summary": "Puntos singulares de la estación.",
+    "order": 17,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/tramo-lhospitalet-de-linfant-lametlla-de-mar",
+    "title": "Tramo: L'Hospitalet de l'Infant → L'Ametlla de Mar",
+    "summary": "Puntos singulares entre L'Hospitalet de l'Infant y L'Ametlla de Mar.",
+    "order": 18,
+    "tags": [
+      "R17",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r17/lametlla-de-mar",
+    "title": "L'Ametlla de Mar",
+    "summary": "Puntos singulares de la estación.",
+    "order": 19,
+    "tags": [
+      "R17",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   }
 ]
