@@ -96,6 +96,13 @@ meta: {}
 - **Causas:** falta de tensión en la línea, o disparo de un magnetotérmico del armario BT del Rc: **MGCN** (control del convertidor), **MCN1** (circuito de carga de batería), **MGN2** (servicios de corriente alterna) o **MGSKN2**.
 - **Actuar:** rearmar el magnetotérmico correspondiente. Confirmar con el pantógrafo que hay tensión; si hay tensión y no marca el voltímetro de línea con el disyuntor cerrado, revisar el **LVR** (relé de tensión de línea, en la cámara de alta) y el **LVXR** (relé de exploración de tensión de línea, bajo bastidor, cofre del Cm).
 
+### No hay tracción
+- **Causas probables:** falta de tensión en la línea (menos de 2.000 V); puertas cerradas pero con fallo o sin llegar al final de carrera; convertidor no produce (el contactor **MGR** no cierra); relé de patinaje **SLXR** excitado o **TR1** desexcitado; mala posición de los árboles de levas KD o RD.
+- **Actuar:**
+  1. Comprobar el relé de lazo de puertas (encendido o apagado según cabina) — indica si las puertas están cerradas.
+  2. Comprobar los ventiladores de resistencias **RBMK1** y **RBMK2**: llevan sistema de rearme; cuando actúan hay que girarlos totalmente hacia la izquierda y después hacia la derecha.
+  3. Comprobar el **PMN** del armario BT del Cm y la posición correcta de los árboles de levas: **KD en FF** y **RD en P1**.
+
 ### Avería en los ventiladores de resistencias
 - Se corta la tracción a los **6 segundos**.
 - **Causas:** interruptor de ventiladores del pupitre desconectado; disparo de un magnetotérmico (RBMKN1 en el Cm, RBMKN2 en el Rc, RBMN1 o RBMN2 en la serie baja, o disyuntores integrales en la serie alta).

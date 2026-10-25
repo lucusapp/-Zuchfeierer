@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 (noche, 2) — Confirmado: Tracción de la 448 no lleva GMA
+
+**Qué se hizo:** el usuario mandó una captura real de la tabla
+"Tracción" del PDF comparativo, con flechas marcando el orden de
+lectura de cada columna. Confirma que la columna de la 448 no menciona
+GMA ni autotransformador en ningún punto — esa parte es solo de la 470.
+La columna real de la 448 es: causas (falta de tensión en línea,
+puertas cerradas pero con fallo o sin final de carrera, convertidor no
+produce — contactor MGR no cierra —, relé de patinaje SLXR/TR1, mala
+posición de árboles de levas) y acciones (relé de lazo de puertas,
+ventiladores RBMK1/RBMK2 con su sistema de rearme, PMN del BT Cm y
+posición de árboles KD en FF / RD en P1). Se añadió como "No hay
+tracción" en `averias.md`.
+
+**Qué se decidió y por qué:** solo se escribió una vez confirmado el
+contenido exacto por el usuario con una captura real de la tabla, no
+por la reconstrucción indirecta de la sesión anterior — aunque esa
+reconstrucción resultó ser correcta, el proceso de pedir confirmación
+antes de escribir fue el camino correcto dado lo poco fiable que es el
+texto plano extraído de esta tabla en concreto.
+
+**Pendiente:** seguir con Puertas y estribos y Megafonía de la 448
+(pidiendo capturas si el texto vuelve a ser ambiguo), y después 470 y
+449.
+
+---
+
 ## 2026-10-25 (noche) — Verificación del apartado Tracción y nomenclatura de puertas
 
 **Qué se hizo:** el usuario confirmó cómo está estructurado el PDF
