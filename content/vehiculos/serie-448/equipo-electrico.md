@@ -48,6 +48,10 @@ Transforma los 3.000 Vcc de catenaria en:
 
 Está en el remolque con cabina (Rc). Alimenta el compresor principal a 220 Vca / 50 Hz.
 
+## Climatización
+
+Tres equipos independientes, uno por coche (armarios Stone).
+
 ## Batería y circuito de control
 
 - Batería bajo bastidor del **Rc**. Tensión máxima **72 Vcc**, mínima **60 Vcc**.

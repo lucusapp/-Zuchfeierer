@@ -12,6 +12,54 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 (tarde) — Resumen comparativo 447/448/449/470: primera tanda (448)
+
+**Qué se hizo:** el usuario pegó un PDF distinto a las chuletas: un
+resumen comparativo con las cuatro series (447, 448, 449, 470) en
+columnas lado a lado, por procedimiento (encendido, apagado, averías de
+puertas, batería, disyuntor, convertidores, lazo de freno, tracción,
+megafonía...). Se decidió con el usuario no crear una página
+"comparativa" nueva, sino repartir cada fila a la página de averías de
+su propia serie — es más rápido de consultar en caso de avería real
+(ya sabes qué serie llevas). Se empezó por la 448 (su habilitación),
+dejando 470 y 449 para después, y sin crear la 447 (no existe esa
+sección todavía).
+
+De esta primera pasada se añadió a `averias.md`: un procedimiento
+detallado para localizar qué grupo de motores tiene una derivación
+(seccionar 1-2, probar, seccionar 3-4, desconectar CCOS1 — con el aviso
+de cerrar el disyuntor antes), y una avería nueva del convertidor
+estático (MGCN/MCN1/MGN2/MGSKN2, LVR/LVXR). A `equipo-electrico.md` se
+añadió que la climatización son tres equipos independientes (armarios
+Stone).
+
+**Qué se decidió y por qué:** el texto extraído del PDF mezcla las
+columnas de las cuatro series de forma poco fiable (la tabla original
+tiene un diseño complejo que el extractor de texto no respeta). Antes
+de escribir nada se contrastó cada bloque candidato contra contenido ya
+confirmado de la 448 (coincidencias de términos como "telemando de
+batería", "BT Rc" del convertidor, "serie alta" en el relé 1C104/1C105)
+para darle o no por bueno. Donde la comprobación cruzada funcionó, se
+incorporó. Donde no — la sección de Tracción menciona GMA y
+autotransformador, que la 448 no tiene, así que ese bloque no se puede
+atribuir con seguridad a la 448 — se dejó fuera y pendiente de
+preguntar al usuario, en vez de arriesgarse a escribir un procedimiento
+de seguridad en la página equivocada.
+
+**Problemas y cómo se resolvieron:** la sección de puertas/estribos usa
+terminología (interruptor de palanca 112, magnetotérmico 218/215, LPA,
+ZL) que no coincide con lo que ya había en `puertas-alarma.md` (LP111,
+lámpara T12) — no se tocó esa página; queda como punto a contrastar con
+el usuario en vez de decidir cuál es la correcta.
+
+**Pendiente:** preguntar al usuario sobre el bloque de Tracción (parece
+no ser de la 448) y la posible discrepancia de nombres en
+puertas/estribos, antes de seguir. Completar Puertas y estribos, Lazo de
+freno y Megafonía de la 448 con ese PDF una vez aclarado. Después, 470 y
+449.
+
+---
+
 ## 2026-10-25 — Iconos de señales y decisión de no usar vectores/bifurcaciones
 
 **Qué se hizo:** el usuario preguntó por añadir vía general/desviada,

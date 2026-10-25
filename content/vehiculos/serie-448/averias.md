@@ -90,6 +90,11 @@ meta: {}
 - **Causas:** actuación de una protección del panel de defectos (MMOCD1, MMOCD2, DFD — qué es cada una: ver [Equipo eléctrico → Circuito de alta](#/vehiculos/serie-448/equipo-electrico)) o posible derivación en un circuito de alta.
 - **Actuar:** seccionar, si hace falta, algún grupo de motores con su cuchilla en la cámara de alta. Si es por DFD por derivación en resistencias principales, seccionar con la cuchilla **MS** en la cámara de alta o desconectando CCOS1 del armario BT.
 - *Qué es una "derivación en resistencias principales":* una derivación es una fuga de corriente a masa por fallo de aislamiento. Aquí está localizada en las resistencias principales (los bloques de resistencias de potencia usados en tracción/freno reostático), no en los motores — por eso se aísla esa parte del circuito (cuchilla MS o CCOS1) en vez de seccionar un grupo de motores.
+- **Para localizar qué grupo de motores tiene la derivación, en caso de ir en composición:** seccionar primero el grupo de motores 1 y 2, probar tracción; si al abrir el regulador se vuelve a abrir el disyuntor, seccionar también 3 y 4. Si se sigue abriendo, es una derivación de resistencias: desconectar el CCOS1 (el vehículo queda inútil para circular y hay que remolcarlo, con todos los servicios menos tracción). **Antes de desconectar el CCOS1, cerrar primero el disyuntor.** En doble composición: desconectar el CCOS1 (cerrando antes el disyuntor) y traccionar.
+
+### Avería en el convertidor estático
+- **Causas:** falta de tensión en la línea, o disparo de un magnetotérmico del armario BT del Rc: **MGCN** (control del convertidor), **MCN1** (circuito de carga de batería), **MGN2** (servicios de corriente alterna) o **MGSKN2**.
+- **Actuar:** rearmar el magnetotérmico correspondiente. Confirmar con el pantógrafo que hay tensión; si hay tensión y no marca el voltímetro de línea con el disyuntor cerrado, revisar el **LVR** (relé de tensión de línea, en la cámara de alta) y el **LVXR** (relé de exploración de tensión de línea, bajo bastidor, cofre del Cm).
 
 ### Avería en los ventiladores de resistencias
 - Se corta la tracción a los **6 segundos**.
