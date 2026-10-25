@@ -12,6 +12,32 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 (noche) — Verificación del apartado Tracción y nomenclatura de puertas
+
+**Qué se hizo:** el usuario confirmó cómo está estructurado el PDF
+comparativo (una fila con las 4 series, columna de cada una debajo) y
+pidió revisar de nuevo el apartado "Tracción", sin añadir nada con
+dudas. Al releerlo con esa estructura en mente, aparecen dos bloques casi
+idénticos de "NO HAY TRACCIÓN / ACCIONES": uno menciona GMA y
+autotransformador (no son de la 448), el otro menciona **RBMK1 y
+RBMK2** (ventiladores de resistencias), término ya confirmado como de la
+448 en `cabina-armarios.md`. Se le devolvió la pregunta al usuario
+pidiendo que confirme en su copia del PDF qué pone exactamente en la
+columna de la 448 de ese apartado, en vez de decidirlo por contraste
+indirecto. No se ha escrito nada de Tracción todavía.
+
+Sobre la discrepancia de nomenclatura de puertas (LP111/T12 ya escrito
+frente a 112/218/215/1C104/1C105/LPA/ZL del PDF nuevo), el usuario pidió
+dejarla como punto a contrastar — se añadió a
+`puntos-a-contrastar.md` (448) sin decidir cuál es la correcta.
+
+**Pendiente:** que el usuario confirme el contenido real de la columna
+448 en "Tracción" para poder incorporarlo. Seguir con Puertas y
+estribos, Lazo de freno y Megafonía de la 448 (con más cuidado dado lo
+anterior), y después 470 y 449.
+
+---
+
 ## 2026-10-25 (tarde) — Resumen comparativo 447/448/449/470: primera tanda (448)
 
 **Qué se hizo:** el usuario pegó un PDF distinto a las chuletas: un
