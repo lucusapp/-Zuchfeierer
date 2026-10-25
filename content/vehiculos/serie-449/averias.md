@@ -34,7 +34,7 @@ Si lo que hay es un **fallo informático masivo** (COSMOS colapsado, pantallas c
 - **Qué ocurre:** derivación / avería de alta tensión en un semitrén (TCU + ACU) que el COSMOS no consigue subsanar por sí solo. Solo hay **un SD en todo el tren** (coche A3), situado **después de los pantógrafos y antes de los disyuntores**.
 - **Cómo se detecta:** persistencia de la avería de alta pese a la gestión automática del COSMOS.
 - **Sobre qué actuar:** conmutador del **seccionador de distribución (SD)**, en el armario BT de cabina — se acciona siempre con **pantógrafos bajados, disyuntores abiertos y batería conectada**. El procedimiento cambia según la composición:
-  - **En simple:** no hace falta cambiar de cabina. Se acciona el SD y, desde la misma cabina, se sube el pantógrafo del semitrén que queda útil (si el A2 es el inútil, se sube el pantógrafo 1 del A1 y se sigue con esa cadena).
+  - **En simple:** no hace falta cambiar de cabina. Se acciona el SD y, desde la misma cabina, se sube el pantógrafo del semitrén que queda útil (si el A2 es el inútil, se sube el pantógrafo 1 del A1 y se sigue con esa cadena). Orden concreto: 1) conexión de batería, sin habilitar todavía la cabina; 2) seccionar el SD en el armario BT de la cabina; 3) subir el pantógrafo del semitrén útil de forma manual; 4) habilitar la cabina y seguir circulando.
   - **En mando múltiple:** si la derivación está en la unidad acoplada de detrás, sí hay que cambiar de cabina — ir a esa unidad y accionar el SD ahí.
 - **Qué provoca / consecuencia:** esa mitad queda aislada eléctricamente; el semitrén útil sigue con **50% de tracción/freno eléctrico** y **100% de servicios auxiliares**.
 

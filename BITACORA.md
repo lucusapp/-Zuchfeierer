@@ -12,6 +12,30 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 (noche, 4) — Resumen comparativo: tercera tanda (449)
+
+**Qué se hizo:** al revisar la columna de la 449 en el mismo PDF
+comparativo, se encontró que el contenido ya existente de esta serie
+(de sesiones anteriores) es mucho más detallado que lo que aporta este
+documento en casi todos los apartados — así que solo se añadió una cosa
+con valor real: el orden exacto de la secuencia para activar el SD en
+simple (1. conexión de batería sin habilitar cabina, 2. seccionar SD,
+3. subir el pantógrafo del semitrén útil a mano, 4. habilitar cabina),
+incorporado dentro de la avería "Seccionamiento de mitad del tren (SD)"
+en `averias.md`.
+
+**Qué se decidió y por qué:** no se hizo una pasada completa como con
+la 448 y la 470 porque no había huecos reales que llenar — el contenido
+existente de la 449 es más completo que el del PDF en casi todo. Antes
+de seguir con más detalle de la 449, se le preguntará al usuario si
+quiere una revisión más exhaustiva o si con esto basta.
+
+**Pendiente:** confirmar con el usuario si quiere profundizar más en la
+449 con este documento, y hacer Megafonía (448 y 470) al final, como
+pidió.
+
+---
+
 ## 2026-10-25 (noche, 3) — Resumen comparativo: segunda tanda (470)
 
 **Qué se hizo:** siguiendo con el PDF comparativo 447/448/449/470 (el
