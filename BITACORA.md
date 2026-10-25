@@ -12,6 +12,38 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 (noche, 3) — Resumen comparativo: segunda tanda (470)
+
+**Qué se hizo:** siguiendo con el PDF comparativo 447/448/449/470 (el
+usuario pidió dejar Megafonía para el final), se pasó a la 470. A
+diferencia de la 448, la mayor parte de este documento para la 470 ya
+coincidía con lo que se había sacado de su chuleta oficial — sirvió
+sobre todo para confirmar, no para añadir. Se detectaron tres
+averías genuinamente nuevas, no cubiertas todavía: "No hay tracción"
+(sin GMA — ese síntoma sí es de la 470, a diferencia de la 448),
+"Lazo de freno no se establece" (todo el árbol de diagnóstico de la
+pinza R5, con/sin liberar freno) y "Avería en el circuito de puertas"
+(con los códigos exactos LPA/ZL/BP y el procedimiento COM V 168/19 con
+el temporizador de 15 minutos del by-pass). Se añadieron a
+`averias.md`, y se enlazaron los códigos LPA/ZL/BP en
+`circuito-lazo-puertas.md`, donde antes solo se describían como
+"piloto/zumbador" sin su nombre exacto. También se añadió el mismo
+procedimiento de localización de derivación en composición
+(seccionar 1-2, luego 3-4, CCOS1) que se incorporó para la 448, al
+aparecer también para la 470 en el documento.
+
+**Qué se decidió y por qué:** al ser prácticamente idéntico a la
+chuleta ya incorporada, se pudo trabajar con más confianza que con la
+448 — las pocas novedades se cruzaron contra terminología ya conocida
+de la 470 (LPA/ZL encaja con el "piloto/zumbador" ya descrito; SLXR/TR1
+y PMN/KD/RD ya aparecían en el apartado de tracción de la 448 y son
+coherentes) antes de escribirlas.
+
+**Pendiente:** la 449 con este mismo documento, y Megafonía (448 y 470)
+al final, como pidió el usuario.
+
+---
+
 ## 2026-10-25 (noche, 2) — Confirmado: Tracción de la 448 no lleva GMA
 
 **Qué se hizo:** el usuario mandó una captura real de la tabla

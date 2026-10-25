@@ -61,6 +61,25 @@ Al poner el inversor en "AD" baja la presión en la TDP; en "0" o "AT" la pérdi
 ### Se produce apertura al establecer tracción
 **Causas**: actuación de una protección del panel de defectos (**MMOCD1, MMOCD2, DFD**) o posible derivación en un circuito de alta.
 **Acciones**: seccionar, si hace falta, algún grupo de motores de tracción con su cuchilla en la cámara de alta (haciendo antes el procedimiento de puesta a tierra). Si es por **DFD** y **derivación en resistencias principales**, seccionar con la **cuchilla MS** en la cámara de alta, o desconectando **CCOS1** del armario BT.
+**Para localizar qué grupo de motores tiene la derivación, en composición**: seccionar primero el grupo de motores 1 y 2, probar tracción; si al abrir el regulador se vuelve a abrir el disyuntor, seccionar también 3 y 4. Si se sigue abriendo, es derivación de resistencias: desconectar el CCOS1 (la unidad queda inútil para circular y hay que remolcarla, con todos los servicios menos tracción). **Antes de desconectar el CCOS1, cerrar primero el disyuntor.** En doble composición: desconectar el CCOS1 (cerrando antes el disyuntor) y traccionar.
+
+### No hay tracción
+**Causas probables**: falta de tensión en la línea (menos de 2.000 V); conmutador de puertas fuera de "0"; el GMA no funciona y está desconectado el térmico del autotransformador; relé de patinaje **SLXR** excitado o **TR1** desexcitado; mala posición de los árboles de levas KD o RD.
+**Acciones**: comprobar el **PMN** del armario BT del Cm y la posición correcta de los árboles de levas (**KD en FF**, **RD en P1**); comprobar el térmico del autotransformador y del aire acondicionado del Rc (el 3º de izquierda a derecha del cofre exterior, lado izquierdo del Ri).
+
+### Lazo de freno no se establece
+**Si al poner el inversor en "AD" no hay lazo** (no quita la urgencia):
+- Si con el by-pass de lazo **libera** el freno, comprobar: aparatos de alarma (IRIS-4); final de carrera del Scharfenberg (se comprueba viendo si luce el alumbrado exterior); presostato KBR (alguna llave cerrada).
+- Si con el by-pass de lazo **no libera**, acondicionar el enclavamiento del inversor con la "pinza" **R5**: poner el inversor en AD y sujetar con un papel o una pinza los primeros contactos del árbol de levas. Si al hacer la pinza hay tracción, el problema está **fuera** de la cabina; si no hay tracción, está **dentro**.
+  - **Si libera, comprobar**: ASFA en urgencia o conectado en la cabina contraria; avería del hombre muerto; presostato de mínima con TDP < 6,5 bar; inversor de las cabinas no habilitadas en posición distinta de "0".
+  - **Si no libera, comprobar**: control de negativos fuera de marcha; térmicos **2128** (Cm) o **2129** (Rc); fusible de 2 A; alcachofa de la caja de relés suelta.
+
+### Avería en el circuito de puertas
+- **Conmutador en "0" y una puerta abierta**: se enciende la lámpara **LPA**, suena el zumbador **ZL** en rojo, no hay tracción y el zumbador no se apaga. *Si la unidad no tiene LPA ni ZL, se puede circular con una puerta abierta sin que corte la tracción.*
+- **Puertas abiertas detectadas una vez establecida la tracción**: la LPA se ilumina en marcha, suena el ZL en rojo, y esta vez **sí corta tracción**.
+- **Si por avería todas las puertas están cerradas pero la LPA sigue encendida** (procedimiento según COM V 168/19): comprobar que todas las puertas están cerradas.
+  - **Tren parado en estación**: informar al regulador de circulación y comunicar al Centro de Gestión para que envíen personal o se retire el vehículo al taller.
+  - **Tren parado en plena vía**: activar el by-pass de puertas (**BP**) en posición 1 — el conmutador se ilumina en verde, el ZL desaparece, y el BP se mantiene activo 15 minutos (o hasta volver a ponerlo en "0"). Pasados los 15 minutos vuelve a cortar tracción; hay que poner el BP de nuevo en "0" y otra vez en "1" para disponer de otros 15 minutos.
 
 ### El GMA se para una vez en marcha
 **Causas**: **MGSKN1** (armario BT Cm) o **MGSKN2** (armario BT Rc) desconectados, **MGCN** (armario BT Rc, parte superior izquierda) desconectado, o sobreembalamiento.

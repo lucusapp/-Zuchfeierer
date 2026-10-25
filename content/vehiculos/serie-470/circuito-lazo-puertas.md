@@ -46,9 +46,9 @@ Lo único que da "puertas cerradas" en el pupitre es el final de carrera de la p
 
 ## Circuito de lazo de puertas y by-pass de puertas
 
-Un piloto/zumbador se ilumina en rojo cuando hay una puerta abierta y se intenta traccionar (o si se abre una puerta en marcha), impidiendo la tracción.
+Un piloto/zumbador (lámpara **LPA**, zumbador **ZL**) se ilumina en rojo cuando hay una puerta abierta y se intenta traccionar (o si se abre una puerta en marcha), impidiendo la tracción.
 
-- **By-pass de puertas**, dos posiciones:
+- **By-pass de puertas (BP)**, dos posiciones:
   - **Inactivo**: funcionamiento normal.
-  - **Activado**: permite traccionar con una puerta abierta, o ante un fallo del sistema.
+  - **Activado**: permite traccionar con una puerta abierta, o ante un fallo del sistema. Ver el procedimiento completo de avería en [Averías → Avería en el circuito de puertas](#/vehiculos/serie-470/averias).
 - El sistema chequea en serie los finales de carrera de puertas cerradas de toda la unidad: si uno no hace contacto, da puertas abiertas. Ni el selector de puertas de cabina ni el macho de la puerta dan, por sí solos, la señal de puerta abierta — solo el final de carrera.
