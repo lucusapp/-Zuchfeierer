@@ -79,6 +79,22 @@ function ContentImage(props: { src?: string; alt?: string }) {
   const url = /^https?:\/\//.test(props.src)
     ? props.src
     : `${import.meta.env.BASE_URL}content-images/${props.src}`
+
+  // Los iconos de señales (y cualquier otro icono pequeño reutilizable) viven
+  // en una carpeta "/senales/" o "/iconos/" y se usan dentro de texto o de
+  // tablas: sin marco, sin margen grande, alineados con el texto.
+  const esIcono = /\/(senales|iconos)\//.test(props.src)
+  if (esIcono) {
+    return (
+      <img
+        src={url}
+        alt={props.alt ?? ''}
+        loading="lazy"
+        className="inline-block align-middle h-6 w-6"
+      />
+    )
+  }
+
   return (
     <img
       src={url}

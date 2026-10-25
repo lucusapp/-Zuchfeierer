@@ -639,6 +639,20 @@
   },
   {
     "section": "infraestructura",
+    "slug": "senales-aspectos",
+    "title": "Señales: aspectos y iconos",
+    "summary": "Leyenda de los iconos de aspecto usados en las tablas de señales de las líneas.",
+    "order": 4,
+    "tags": [
+      "señales",
+      "ASFA",
+      "aspectos"
+    ],
+    "meta": {},
+    "body": "Iconos reutilizables para la columna \"Aspecto\" de las tablas de señales en cada estación o tramo. Repertorio de partida (clásico ASFA) — pendiente de confirmar o corregir según la línea real.\n\n| Icono | Aspecto | Significado de partida |\n|---|---|---|\n| ![Rojo fijo](infraestructura/senales/rojo-fijo.svg) | Rojo fijo | Parada |\n| ![Amarillo fijo](infraestructura/senales/amarillo-fijo.svg) | Amarillo fijo | Anuncio de parada |\n| ![Amarillo intermitente](infraestructura/senales/amarillo-intermitente.svg) | Amarillo intermitente | Preanuncio de parada |\n| ![Verde fijo](infraestructura/senales/verde-fijo.svg) | Verde fijo | Vía libre |\n| ![Verde intermitente](infraestructura/senales/verde-intermitente.svg) | Verde intermitente | Vía libre con limitación en el próximo cambio de aguja |\n\n*Pendiente de confirmar con el usuario si este repertorio coincide con el de sus líneas, o si hace falta añadir/corregir aspectos.*"
+  },
+  {
+    "section": "infraestructura",
     "slug": "linea-tarragona/senalizacion",
     "title": "Señalización",
     "summary": "Señales que hay que reconocer, cómo se interpretan y los puntos donde más se rebasan.",

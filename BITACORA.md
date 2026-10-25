@@ -12,6 +12,53 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-10-25 — Iconos de señales y decisión de no usar vectores/bifurcaciones
+
+**Qué se hizo:** el usuario preguntó por añadir vía general/desviada,
+señales luminosas, limitadoras de velocidad y la lógica de balizas ASFA
+(que cambia según si la señal da preanuncio o anuncio de parada),
+sugiriendo líneas que se bifurcan para representarlo visualmente. Se
+evaluó el coste de un diagrama de vías bifurcadas (modelo de datos en
+árbol/grafo en vez de lista plana, motor de dibujo SVG a medida,
+problemas de legibilidad en pantalla de móvil, coste añadido por cada
+dato nuevo) y se recomendó en su lugar texto estructurado (tablas
+"Aspecto → Indicación → Control de la baliza siguiente" dentro de cada
+punto singular), reutilizando el sistema de tablas que ya funciona. El
+usuario lo aceptó.
+
+A continuación pidió dibujos de señales. Se acordó un set de iconos
+pequeños y reutilizables (uno por aspecto) en vez de un dibujo de una
+señal concreta. Se crearon 5 iconos SVG conceptuales (círculo de color,
+con un anillo discontinuo para distinguir "intermitente" de "fijo") en
+`public/content-images/infraestructura/senales/`: rojo fijo, amarillo
+fijo, amarillo intermitente, verde fijo, verde intermitente — el
+repertorio clásico ASFA, marcado explícitamente como punto de partida a
+confirmar. Se creó `content/infraestructura/senales-aspectos.md` como
+leyenda reutilizable, con una tabla de ejemplo.
+
+**Qué se decidió y por qué:** se buscó en internet cómo funciona la
+salida de la Estación de Francia (vía general/desviada, señalización) a
+petición del usuario; no hay nada público sobre esquemas de señales o
+enclavamientos de una estación concreta (solo lo tiene la documentación
+interna de Adif/Renfe o los apuntes de clase del usuario), así que se
+descartó la búsqueda como fuente para este tipo de dato y se dejó claro
+que ese contenido tiene que venir del usuario.
+
+**Problemas y cómo se resolvieron:** los iconos, al insertarse dentro de
+una tabla, se veían con el marco y margen grande pensado para fotos
+normales. Se extendió `ContentImage` (`DocPage.tsx`) para detectar rutas
+bajo `/senales/` o `/iconos/` y renderizarlas como icono pequeño en
+línea (sin marco, 24×24, alineado con el texto), dejando el estilo de
+foto normal para el resto de imágenes. Probado en el navegador: los
+iconos se ven correctamente dentro de la tabla de la página de leyenda.
+
+**Pendiente:** el usuario tiene que confirmar o corregir el repertorio
+de aspectos (¿su línea usa estos cinco, o hay más/menos?), y dictar los
+puntos singulares reales de la primera estación (Barcelona-Estació de
+França) a partir de sus propios apuntes de clase.
+
+---
+
 ## 2026-10-24 — Nuevo layout "línea" con estaciones y tramos desplegables
 
 **Qué se hizo:** el usuario pidió una forma de consultar las líneas de
