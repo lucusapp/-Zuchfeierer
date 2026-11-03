@@ -1518,7 +1518,7 @@
     "meta": {
       "tipo": "tramo"
     },
-    "body": "- ![135](infraestructura/senales/velocidad-maxima-135.svg) **135** — al salir del apeadero de Vila-seca."
+    "body": "- ![135](infraestructura/senales/velocidad-maxima-135.svg) **135** — al salir del apeadero de Vila-seca.\n- ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) **956** — Intermedia Absoluta.\n- ![Baliza previa](infraestructura/senales/baliza-previa.svg) **956** — a la altura del comienzo de la nave con contrachapado azul superior."
   },
   {
     "section": "infraestructura",

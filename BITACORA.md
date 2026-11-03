@@ -12,6 +12,32 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (noche, 4) — Iconos de señal fija fundamental y baliza previa
+
+**Qué se hizo:** el usuario pidió dos iconos nuevos: la **señal fija
+fundamental** (lo que coloquialmente sería un semáforo, pero no se
+llama así en el ámbito ferroviario) **en blanco**, sin ninguna
+indicación encendida ni número en la pantalla — porque lo que indica
+depende de la secuencia de señales en cada momento, no es algo fijo
+que se pueda dibujar de antemano; y un icono aparte para marcar,
+dentro del texto, cuándo se está hablando de la **baliza previa** de
+una señal (tan importante como la señal misma en este tipo de
+señales). Se crearon
+`senal-fija-fundamental.svg` (cabezal con 3 luces apagadas y pantalla
+digital en blanco) y `baliza-previa.svg` (una "P" en una placa azul).
+Se usaron de inmediato para documentar la **señal 956** (Intermedia
+Absoluta) y su baliza previa (a la altura del comienzo de la nave con
+contrachapado azul) en el tramo Vila-seca → Tarragona de la R15.
+
+**Qué se decidió y por qué:** se probaron los dos iconos a tamaño
+pequeño (24px) antes de usarlos, para confirmar que se distinguen bien
+entre sí y del resto de iconos ya existentes (los rombos de velocidad).
+
+**Pendiente:** seguir dictando la R15; crear iconos de velocidad para
+otros valores (110, 60, 30) en cuanto hagan falta.
+
+---
+
 ## 2026-11-03 (noche, 3) — Icono de señal de velocidad y R15 invertida al sentido correcto
 
 **Qué se hizo:** el usuario pidió dibujar la señal real de "velocidad
