@@ -12,6 +12,32 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (noche) — Esqueleto de la línea R15 (21 estaciones)
+
+**Qué se hizo:** se confirmó con el usuario el nuevo formato corto para
+los puntos singulares (señal/elemento — anotación breve, una línea cada
+uno, en vez de las secciones largas de la R14) y se montó el esqueleto
+completo de la **R15**, usando el mapa oficial completo que pasó el
+usuario (Barcelona-Estació de França hasta Faió-La Pobla de Massaluca):
+21 estaciones y 20 tramos. Cuatro estaciones (Les Borges del Camp,
+Riudecanyes-Botarell, Duesaigües-l'Argentera y Pradell) se marcaron en
+su resumen como parada solo de algunos trenes de la R15, no de todos
+— se distinguen en el mapa por el círculo hueco en vez de relleno.
+
+**Qué se decidió y por qué:** la primera pregunta sobre qué estaciones
+tenía la R15 se contestó con "otra opción" sin texto (fallo al
+capturar la respuesta), así que se le pidió directamente el mapa
+completo en vez de asumir nada — con él se vio que la R15 es mucho más
+larga de lo esperado (llega hasta cerca de Zaragoza), no solo hasta
+Reus.
+
+**Pendiente:** acordar el formato corto en la práctica (aún no se ha
+escrito ningún punto singular real con él) y que el usuario empiece a
+dictar la R15, previsiblemente desde donde la dejó con la R14 (tramo
+Vila-seca → Tarragona) pero ahora en el formato breve.
+
+---
+
 ## 2026-11-03 (tarde) — Se descarta la R14; formato demasiado largo
 
 **Qué se hizo:** el usuario vio la R14 ya con contenido real en la app y
