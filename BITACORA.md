@@ -12,6 +12,26 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (noche, 2) — R15 recortada hasta Riba-roja d'Ebre
+
+**Qué se hizo:** el usuario confirmó que su habilitación llega solo
+hasta Riba-roja d'Ebre, así que se quitaron la última estación
+(Faió-La Pobla de Massaluca) y el tramo que la conecta con Riba-roja
+d'Ebre. Se actualizó el título y el resumen de `linea-r15.md` para
+reflejar el nuevo final, dejando una nota de que la línea real sigue
+más allá por si hace falta retomarlo.
+
+De paso, el usuario reportó "error al cargar la aplicación"; se
+comprobó la web en producción con una sesión de navegador nueva (sin
+caché) y cargaba perfectamente, sin errores — se confirmó que era,
+otra vez, el Service Worker sirviendo una versión antigua en el
+navegador del usuario, no un fallo real del código.
+
+**Pendiente:** dictar los puntos singulares reales de la R15 con el
+formato corto acordado.
+
+---
+
 ## 2026-11-03 (noche) — Esqueleto de la línea R15 (21 estaciones)
 
 **Qué se hizo:** se confirmó con el usuario el nuevo formato corto para

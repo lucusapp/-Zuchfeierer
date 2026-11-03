@@ -821,20 +821,20 @@
   {
     "section": "infraestructura",
     "slug": "linea-r15",
-    "title": "Línea R15 (Barcelona – Faió / La Pobla de Massaluca)",
+    "title": "Línea R15 (Barcelona – Riba-roja d'Ebre)",
     "summary": "Estaciones de la R15 con sus puntos singulares, y los tramos entre estaciones.",
     "order": 5,
     "tags": [
       "R15",
       "Barcelona",
       "Reus",
-      "Faió"
+      "Riba-roja"
     ],
     "meta": {
       "layout": "linea",
-      "tramo": "Barcelona-Estació de França – Faió-La Pobla de Massaluca"
+      "tramo": "Barcelona-Estació de França – Riba-roja d'Ebre"
     },
-    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\nLes Borges del Camp, Riudecanyes-Botarell, Duesaigües-l'Argentera y Pradell tienen parada solo de algunos trenes de la R15, no de todos."
+    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\nLes Borges del Camp, Riudecanyes-Botarell, Duesaigües-l'Argentera y Pradell tienen parada solo de algunos trenes de la R15, no de todos.\n\n*La línea real sigue hasta Faió-La Pobla de Massaluca; aquí se recoge solo hasta Riba-roja d'Ebre.*"
   },
   {
     "section": "vehiculos",
@@ -1736,36 +1736,6 @@
     "title": "Riba-roja d'Ebre",
     "summary": "Puntos singulares de la estación.",
     "order": 39,
-    "tags": [
-      "R15",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r15/tramo-riba-roja-debre-faio-la-pobla-de-massaluca",
-    "title": "Tramo: Riba-roja d'Ebre → Faió-La Pobla de Massaluca",
-    "summary": "Puntos singulares entre Riba-roja d'Ebre y Faió-La Pobla de Massaluca.",
-    "order": 40,
-    "tags": [
-      "R15",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r15/faio-la-pobla-de-massaluca",
-    "title": "Faió-La Pobla de Massaluca",
-    "summary": "Puntos singulares de la estación.",
-    "order": 41,
     "tags": [
       "R15",
       "estacion"
