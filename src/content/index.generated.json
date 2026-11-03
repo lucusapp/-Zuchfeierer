@@ -296,21 +296,6 @@
     "body": "> ⚠️ **Plantilla de ejemplo — no uses este texto como referencia operativa.**\n> Esta sección trata procedimientos de seguridad. Redacta y verifica cada entrada\n> contra la normativa oficial vigente (manuales de circulación, instrucciones técnicas,\n> circulares de tu empresa ferroviaria) antes de darla por válida. Anota aquí también\n> la referencia del documento oficial de origen (nombre, versión, fecha) para poder\n> comprobar que no ha quedado desactualizado.\n\n## Cuándo aplica\n\nDescribe aquí la casuística exacta (tipo de paso a nivel, señalización presente/ausente).\n\n## Actuación del maquinista\n\n1. Paso 1 (ejemplo — sustituir)\n2. Paso 2 (ejemplo — sustituir)\n3. Paso 3 (ejemplo — sustituir)\n\n## Referencia normativa\n\nDocumento y artículo de origen, fecha de la versión consultada."
   },
   {
-    "section": "infraestructura",
-    "slug": "linea-r14/reus",
-    "title": "Reus",
-    "summary": "Puntos singulares de la estación.",
-    "order": 1,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
     "section": "vehiculos",
     "slug": "serie-449",
     "title": "Serie 449",
@@ -458,21 +443,6 @@
     "order": 2,
     "tags": [
       "R17",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/tramo-reus-vila-seca",
-    "title": "Tramo: Reus → Vila-seca",
-    "summary": "Puntos singulares entre Reus y Vila-seca.",
-    "order": 2,
-    "tags": [
-      "R14",
       "tramo"
     ],
     "meta": {
@@ -639,21 +609,6 @@
     "body": "La 470 comparte mucho con la 448, pero con diferencias reales: sin paneles neumáticos centralizados (salvo uno parcial en el coche motor), sin magnetotérmico de batería en cabina, y con GMA + convertidor estático + autotransformador en vez de solo convertidor estático. Ver Diferencias con la 448 y Puntos a contrastar."
   },
   {
-    "section": "infraestructura",
-    "slug": "linea-r14/vila-seca",
-    "title": "Vila-seca",
-    "summary": "Puntos singulares de la estación.",
-    "order": 3,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "- Es un **apeadero**: no tiene señal de salida propia ni agujas de salida.\n- Está situada **fuera de la bifurcación** (más allá de ella), lo que explica que no tenga esa señal."
-  },
-  {
     "section": "vehiculos",
     "slug": "serie-470/deposito-compresor",
     "title": "Depósito de reserva y compresor auxiliar",
@@ -757,21 +712,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r14/tramo-vila-seca-tarragona",
-    "title": "Tramo: Vila-seca → Tarragona",
-    "summary": "Puntos singulares entre Vila-seca y Tarragona.",
-    "order": 4,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "## Salida de Vila-seca\n\n- **LTV** (limitación temporal de velocidad) — *a confirmar*.\n- La estación queda en **curva a izquierdas, en contra**, con **escasa visibilidad** — dificulta saber si los viajeros se han terminado de subir. Hay que recurrir a los **monitores**, y aun así cuesta ver el final del tren.\n- Por la poca visibilidad, aplicar el **procedimiento de OT (observación de tren) sin interventor**.\n\n## Inicio del trayecto\n\n- Al poco de iniciar el trayecto, **señal de velocidad máxima a 135 km/h**, justo al finalizar el tramo de curva y antes de atravesar un **puente elevado**.\n\n## Señal 956 — Intermedia Absoluta\n\n- Su **previa** está en la recta, a la altura del comienzo de una **nave larga a la izquierda** con un contrachapado azul en la parte superior. La nave no se ve hasta llegar a ella, la tapan unos arbustos.\n- Tiene **pantalla eléctrica**. *A confirmar: puede tratarse de una secuencia de preanuncio de parada, para hacer secuencia con la señal avanzada siguiente.*\n\n## Baliza previa de la señal avanzada\n\n- Justo antes de llegar a un **depósito de agua grande** a mano izquierda, y un poco antes de llegar al **puente de la autovía** (se pasa por debajo).\n- En la señal de proximidad de la avanzada, la de las **dos franjas**, hay un **anuncio de CSV a 110**.\n\n## Señal avanzada E'2\n\n- Bastante próxima a la baliza anterior.\n- Es **absoluta** y cuenta con **pantalla luminosa**.\n\n## Primer puente tras la señal avanzada\n\n- **Señal de velocidad máxima a 110**, justo antes de pasar por debajo.\n- En este puente hay que **ponerse a 110 km/h**.\n\n## Segundo puente\n\n- **Señal de LTV a 60 km/h con su baliza**, justo después de pasar por debajo.\n- En este puente hay que **reconocer la piruleta del 60 km/h**.\n\n## Fin de la CSV de 110\n\n- Señal que muestra una indicación de **velocidad máxima de 135 km/h** — pero en ese punto ya se está iniciando la **curva de frenado de la LTV a 60 km/h**, así que el 135 no es de uso libre."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/barcelona-sants",
     "title": "Barcelona-Sants",
     "summary": "Puntos singulares de la estación.",
@@ -802,38 +742,6 @@
       "presostato_kbr": "cierra 6,5 bar · abre 5,7 bar"
     },
     "body": "## Elementos del lazo\n\n- **Presostato de mínima** (único, en el Cm): cierra con **8,5 bar** y abre a **6,5 bar**.\n- **Presostato KBR** (tres, uno en cada coche): cierra a **6,5 bar** y abre a **5,7 bar**.\n- **Fusible de 2 A**: uno en cada cabina; está activo el de la cabina habilitada.\n- **Magnetotérmico 1e2** en Cm y **1e3** en Rc: activo el de la cabina habilitada.\n- **Magnetotérmico 1e6** en Cm: único en la serie alta (448012–448031).\n- Aparatos de alarma de sala de viajeros.\n- Dispositivo **HM** (hombre muerto).\n- Enclavamiento final de carrera del Scharfenberg.\n- **ASFA**: para el equipo ASFA hay que desconectar el conmutador de conexión y el de anulación de la cabina no habilitada. Recibe alimentación por dos enclavamientos de los relés de control (excitado el de la cabina habilitada y desexcitado el de las no habilitadas).\n- Conmutador de control positivos/negativos en posición marcha en la cabina habilitada.\n- Llave de socorro de puertas de acceso al tren (velocidad mayor de 3 km/h).\n- Estribos desplegados.\n\n## Cómo localizar qué ha abierto el lazo\n\n1. **Maneta POS/NEG**: comprobar que está en la posición correcta. Abrir la llave del desacoplador y pulsarlo; solo funciona en marcha o negativos. Si no, invertir la posición (puede que la maneta se haya extraído mal o el conmutador haya quedado mal montado).\n2. **Si libera al bajar de 3 km/h**: ha sido la llave de desbloqueo de una puerta (el iris indica la puerta abierta).\n3. **Si no libera al bajar de 3 km/h**: acondicionar el primer enclavamiento de la derecha del RVD.\n\nSi **libera**, comprobar: aparatos de alarma (indicados en el iris), presostato KBR de cada coche, dispositivo HM, enclavamiento del Scharfenberg, que el ASFA de la cabina contraria no esté conectado, que el ASFA de la habilitada esté bien conectado, que el interruptor de control de la cabina no habilitada no haya quedado conectado y el presostato de mínima.\n\nSi **no libera**, comprobar: magnetotérmico 1e2 (freno) en Cm y 1e3 en Rc de la cabina habilitada; magnetotérmico 1e6 en Cm (si circulamos con el Cm en cabeza, serie alta); fusible de 2 A de la cabina habilitada; conector de la caja 4 Bis; y la maneta POS/NEG (invertir posición)."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14",
-    "title": "Línea R14 (Reus – Barcelona)",
-    "summary": "Estaciones de la R14 con sus puntos singulares, y los tramos entre estaciones, sentido Reus → Barcelona.",
-    "order": 5,
-    "tags": [
-      "R14",
-      "Reus",
-      "Barcelona"
-    ],
-    "meta": {
-      "layout": "linea",
-      "tramo": "Reus – Barcelona-Estació de França"
-    },
-    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\nSentido de esta línea: **Reus → Vila-seca → Tarragona → Altafulla-Tamarit → Torredembarra → Sant Vicenç de Calders → Barcelona-Sants → Barcelona-Passeig de Gràcia → Barcelona-Estació de França** (no para en Vilanova i la Geltrú, a diferencia de la R17)."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/tarragona",
-    "title": "Tarragona",
-    "summary": "Entrada a la estación (sentido Vila-seca → Barcelona): señales E2, E4, E4T y S2/2ª, LTV de 60 y 30.",
-    "order": 5,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "## Entrada (sentido Vila-seca → Barcelona)\n\n- **Recta grande**: referencia, un **complejo industrial** a lo lejos a mano izquierda. Justo a esa altura está la **baliza previa de la señal de entrada E2**, con **dos pantallas luminosas**.\n- **Inicio de la LTV de 60 km/h**, justo antes de las agujas que se ven a continuación.\n- Justo después de esas agujas, unos metros más adelante (a la altura de la zona de aparcamiento de una nave a mano izquierda), está la **baliza de la LTV de 60** — hay que **reconocerla**. Queda a mano derecha la **terminal de mercancías** con sus vías anexas.\n- Se superan varios pasos de peatones hacia la terminal (**usar el silbato**). Uno de ellos, de goma, sirve de referencia: la **baliza previa de la siguiente señal de entrada** está entre ese paso de goma y el puente que se supera por debajo.\n- **Señal E4**, en el pescante. Una vez superado el puente se divisa mejor o peor según las condiciones meteorológicas y la hora del día — sirve para **confirmar visualmente** lo que ya indicaba la baliza previa.\n- A la altura de las agujas (unas vienen del puerto, otras no banalizan a vía 1) está la **avanzada de la señal E4T**, con **foco blanco**.\n- Justo después, antes de las siguientes agujas (se cogen **de talón**, son de la línea a Port Aventura), hay un **anuncio de LTV de 30 km/h con baliza** — hay que **reconocerla** y hacer el **cambio de canal al 61**.\n\n### ⚠️ Señal de entrada S2/2ª — sin baliza previa\n\n- Tramo en **curva a derechas**. Justo antes de acabar la curva está la señal de entrada **S2/2ª**.\n- **Esta señal no tiene baliza previa.** Especial atención si se circula en **anuncio de parada**.\n- **Consejo:** ponerse en disposición de cumplir la LTV de 30 inmediatamente, y buscar cuanto antes la indicación de la señal. Cuidado con entretenerse con el cambio de canal — mejor hacerlo **después** de haber superado esta señal.\n\n## Andén de Tarragona\n\n- Detenerse antes de la **señal indicadora de salida** (desde ahí también se ve la orden de esa señal).\n- Hay una señal de **velocidad máxima de 110 km/h**, pero en este punto seguimos en disposición de cumplir la **LTV de 30 km/h**."
   },
   {
     "section": "vehiculos",
@@ -875,36 +783,6 @@
     ],
     "meta": {
       "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/tramo-tarragona-altafulla-tamarit",
-    "title": "Tramo: Tarragona → Altafulla-Tamarit",
-    "summary": "Puntos singulares entre Tarragona y Altafulla-Tamarit.",
-    "order": 6,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/altafulla-tamarit",
-    "title": "Altafulla-Tamarit",
-    "summary": "Puntos singulares de la estación.",
-    "order": 7,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
     },
     "body": "Pendiente de completar."
   },
@@ -985,21 +863,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r14/tramo-altafulla-tamarit-torredembarra",
-    "title": "Tramo: Altafulla-Tamarit → Torredembarra",
-    "summary": "Puntos singulares entre Altafulla-Tamarit y Torredembarra.",
-    "order": 8,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tramo-vilanova-i-la-geltru-sant-vicenc-de-calders",
     "title": "Tramo: Vilanova i la Geltrú → Sant Vicenç de Calders",
     "summary": "Puntos singulares entre Vilanova i la Geltrú y Sant Vicenç de Calders.",
@@ -1059,21 +922,6 @@
     "body": "> Aplicar siempre las restricciones vigentes en el manual y consignas.\n\n## Restricciones generales\n\n- Circulando con **una o varias balonas** fuera de servicio: **80 km/h**.\n- Circulando **en cabeza con el Coche Motor** y con el **pantógrafo nº1** seleccionado: **140 km/h**.\n- Circulando con uno o varios **bogies condenados**: consultar la tabla siguiente.\n\n## Bogies condenados — una composición (masa total 187,8 t, masa frenada 238 t)\n\n| Coche | Bogies condenados | Velocidad máxima |\n|---|---|---|\n| Cm | 1 bogie | 120 km/h |\n| Cm | 2 bogies | 110 km/h |\n| Ri | 1 bogie | 130 km/h |\n| Ri | 2 bogies | 120 km/h |\n| Rc | 1 bogie | 130 km/h |\n| Rc | 2 bogies | 110 km/h |\n\n## Bogies condenados — dos composiciones (masa total 375,6 t, masa frenada 476 t)\n\n| Coche | Bogies condenados | Velocidad máxima |\n|---|---|---|\n| Cm | 1 bogie | 130 km/h |\n| Cm | 2 bogies | 120 km/h |\n| Ri | 1 bogie | 130 km/h |\n| Ri | 2 bogies | 130 km/h |\n| Rc | 1 bogie | 130 km/h |\n| Rc | 2 bogies | 130 km/h |\n\n> Los porcentajes de frenado de la tabla original se calculan como (frenada − bogies condenados) × 100 / masa total. Los valores de cada caso están en la chuleta original."
   },
   {
-    "section": "infraestructura",
-    "slug": "linea-r14/torredembarra",
-    "title": "Torredembarra",
-    "summary": "Puntos singulares de la estación.",
-    "order": 9,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
     "section": "vehiculos",
     "slug": "serie-470/circuito-lazo-puertas",
     "title": "Circuito de lazo y puertas exteriores",
@@ -1117,21 +965,6 @@
     "body": "Pendiente de completar."
   },
   {
-    "section": "infraestructura",
-    "slug": "linea-r14/tramo-torredembarra-sant-vicenc-de-calders",
-    "title": "Tramo: Torredembarra → Sant Vicenç de Calders",
-    "summary": "Puntos singulares entre Torredembarra y Sant Vicenç de Calders.",
-    "order": 10,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
     "section": "vehiculos",
     "slug": "serie-470/procedimientos",
     "title": "Procedimientos",
@@ -1145,21 +978,6 @@
     ],
     "meta": {},
     "body": "## Puesta en servicio\n\n1. Conectar el magnetotérmico de batería, en el armario BT de la cabina del Rc (si va acoplada, basta con conectar el de la unidad de cola; el resto se hace desde la de cabeza).\n2. Insertar y girar la maneta de enclavamientos, para liberar los interruptores de palanca del pupitre.\n3. Accionar, en este orden: 1) subir pantógrafo, 2) cerrar disyuntor, 3) grupo motor alternador, 4) compresor automático, 5) convertidor, 6) control auxiliar, 7) alumbrado interior, 8) alumbrado exterior.\n4. Control de negativos en posición marcha.\n5. Con más de 8,5 bar en la TDP, cargar el segundo freno.\n\n### Puesta en servicio sin aire en la TDP\n\n1. Abrir la llave del depósito de reserva (armario neumático posterior de la cabina del Cm), comprobando antes en su manómetro si está lleno.\n2. Si el depósito de reserva no basta para subir el pantógrafo, pasar a mano el conmutador del compresor auxiliar (armario BT del Cm) a ON, manteniéndolo así hasta que suba el pantógrafo.\n3. Verificar antes que el magnetotérmico **ACPN** está conectado.\n\n*En algunos vehículos la llave del depósito de reserva se ha sustituido por una electroválvula, que deja pasar aire al pantógrafo seleccionado al accionar su interruptor de palanca en cabina, siempre que el depósito tenga aire.*\n\n## Cambio de cabina\n\n**Antes de abandonar la cabina:**\n\n1. Inversor a \"0\" y extraerlo.\n2. Conmutador de cambio de cabina a \"1\" (se enciende su lámpara) — hay 10 segundos para desconectar el control de freno de positivos/negativos.\n3. Desconectar y sacar el control de freno, quitar todos los interruptores del pupitre (cualquier orden). Hay 15 minutos para completar el cambio o el vehículo se parará. Girar para enclavar el pupitre y extraerlo.\n4. Desconectar el ASFA en el conmutador principal de esa cabina.\n5. Girar y extraer la maneta del segundo freno.\n6. Conmutador de luces a discos rojos (luces de cola).\n7. Si la unidad va en sencillo, desplazar a la otra cabina: control de negativos, llave de enclavamiento del pupitre, mando del inversor y maneta del segundo freno.\n\n**En la otra cabina:**\n\n1. Enclavamiento del pupitre y desenclavarlo.\n2. Conectar los interruptores del pupitre (cualquier orden).\n3. Segundo freno y control de freno en marcha.\n4. Inversor en su posición.\n5. Control de negativos en marcha.\n6. Deshacer el cambio de cabina con su conmutador.\n7. Conectar el ASFA del armario principal.\n8. Conmutador de luces con la señalización por cabeza.\n\n**Regla mnemotécnica: PAL — Puertas, ASFA, Luces** (lo último que hay que revisar).\n\n## Puesta fuera de servicio\n\n1. Regulador de tracción e inversor en posición 0.\n2. Comprobar que el distribuidor del freno de estacionamiento está en posición de apretar.\n3. Girar la manivela en sentido horario para aplicar el freno de estacionamiento, hasta que luzca la lámpara de apretado (roja).\n4. Con los frenos de servicio liberados, probar un establecimiento de tracción para comprobar la eficacia del freno de estacionamiento.\n5. Desconectar los interruptores del pupitre: convertidor, alumbrado interior, control auxiliar, compresor automático, motor alternador, pantógrafo, bajada de pantógrafo, alumbrado exterior.\n6. Apretar el segundo freno.\n7. Llave de control de negativos en posición \"extraer\".\n8. Girar y enclavar el pupitre.\n9. Desconectar el térmico de batería **BatN** en el armario BT del Rc (si va en doble composición, también el de la otra unidad).\n\n## Desacople\n\n1. Situarse en la cabina desde la que se corta, habilitando todos los mandos.\n2. Control de negativos en marcha.\n3. Girar la palomilla del desacoplador y pulsar el botón de desacoplar.\n4. Inversor en AT, traccionar y separarse unos metros; normalizar la palomilla del desacoplador.\n5. Si el desacoplador automático no funciona: tirar de la cadenilla junto al Scharfenberg, llevar la llave del segundo freno a su posición, y una vez cerradas las tulipas eléctricas, traccionar para separarse.\n\n## Remolques\n\nLa 470 solo puede ser remolcada por otra 470 (la salida de la TFA y la TDP del Scharfenberg está invertida respecto al resto de unidades).\n\n- **Avería en motores de tracción**: seccionar los motores de la unidad averiada y acoplar completo. Si es por derivación en resistencias principales y se circula en doble tracción, desconectando **CCOS1** se puede remolcar con todos los servicios salvo tracción (sin necesidad de seccionar motores).\n- **Avería en el GMA**: desconectar el magnetotérmico **MGCN** (armario BT del Rc) y acoplar completo.\n- **Derivación en alta tensión**: cerrar las llaves neumáticas de ambos pantógrafos (armario furgón del Cm), acoplar completo, y en las dos cabinas intermedias conectar compresor principal y control auxiliar (para cargar la batería de la unidad inútil). Precaución: conmutadores de apertura de puertas de ambas cabinas intermedias en \"0\".\n- **Derivación en baja tensión**: engatillar el cerrojillo de las botoneras, acoplar completo, anular las tres KBR de la unidad afectada, liberar el freno de los coches con las cadenillas, cargar el freno de auxilio (el freno neumático simultáneo se hace a través de ese 2º freno) y hacer prueba de freno con un segundo agente. La unidad averiada no tiene señalización exterior, alarma ni control de puertas.\n\n**Códigos de remolque**: A = acoplar mecánicamente; B = acoplar eléctricamente; F = cargar 2º freno / freno de auxilio; K = poner luces de cola (según el coche en cola); R = acondicionar KBR y tirar de cadenillas; T = CCOS1 desconectado (derivación en alta); V = quitar cuchilla MS (derivación en resistencias de alta).\n\n**Importante: 1º acoplar, 2º acondicionar, 3º prueba de freno.**\n\n## Puesta a tierra\n\n1. Parar completamente el vehículo (no hace falta desconectar la batería).\n2. Asegurar la inmovilidad del vehículo.\n3. Comprobar visualmente que los pantógrafos están bajados.\n4. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.\n5. Cerrar la llave de tres vías a los pantógrafos (armario de pantógrafos): introducir la llave de enclavamiento de interruptores y girar, girar y extraer la llave de paso de aire, y volver a colocar la llave de enclavamiento en su posición inicial y extraerla.\n6. Poner a tierra los circuitos de alta (cajetín de la cabina del Cm): introducir los interruptores y girar la llave de enclavamiento, introducir y girar la llave de paso de aire, girar y extraer la llave de desbloqueo de la caja de llaves.\n7. Esta última llave da acceso a la caja de llaves para abrir la cámara y los armarios de alta."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/sant-vicenc-de-calders",
-    "title": "Sant Vicenç de Calders",
-    "summary": "Puntos singulares de la estación.",
-    "order": 11,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
   },
   {
     "section": "infraestructura",
@@ -1192,21 +1010,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r14/tramo-sant-vicenc-de-calders-barcelona-sants",
-    "title": "Tramo: Sant Vicenç de Calders → Barcelona-Sants",
-    "summary": "Puntos singulares entre Sant Vicenç de Calders y Barcelona-Sants.",
-    "order": 12,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tramo-torredembarra-altafulla-tamarit",
     "title": "Tramo: Torredembarra → Altafulla-Tamarit",
     "summary": "Puntos singulares entre Torredembarra y Altafulla-Tamarit.",
@@ -1228,21 +1031,6 @@
     "order": 13,
     "tags": [
       "R17",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/barcelona-sants",
-    "title": "Barcelona-Sants",
-    "summary": "Puntos singulares de la estación.",
-    "order": 13,
-    "tags": [
-      "R14",
       "estacion"
     ],
     "meta": {
@@ -1281,36 +1069,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r14/tramo-barcelona-sants-barcelona-passeig-de-gracia",
-    "title": "Tramo: Barcelona-Sants → Barcelona-Passeig de Gràcia",
-    "summary": "Puntos singulares entre Barcelona-Sants y Barcelona-Passeig de Gràcia.",
-    "order": 14,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/barcelona-passeig-de-gracia",
-    "title": "Barcelona-Passeig de Gràcia",
-    "summary": "Puntos singulares de la estación.",
-    "order": 15,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tarragona",
     "title": "Tarragona",
     "summary": "Puntos singulares de la estación.",
@@ -1326,21 +1084,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r14/tramo-barcelona-passeig-de-gracia-barcelona-estacio-de-franca",
-    "title": "Tramo: Barcelona-Passeig de Gràcia → Barcelona-Estació de França",
-    "summary": "Puntos singulares entre Barcelona-Passeig de Gràcia y Barcelona-Estació de França.",
-    "order": 16,
-    "tags": [
-      "R14",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tramo-tarragona-lhospitalet-de-linfant",
     "title": "Tramo: Tarragona → L'Hospitalet de l'Infant",
     "summary": "Puntos singulares entre Tarragona y L'Hospitalet de l'Infant.",
@@ -1351,21 +1094,6 @@
     ],
     "meta": {
       "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r14/barcelona-estacio-de-franca",
-    "title": "Barcelona-Estació de França",
-    "summary": "Puntos singulares de la estación.",
-    "order": 17,
-    "tags": [
-      "R14",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
     },
     "body": "Pendiente de completar."
   },

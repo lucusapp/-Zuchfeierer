@@ -12,6 +12,29 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (tarde) — Se descarta la R14; formato demasiado largo
+
+**Qué se hizo:** el usuario vio la R14 ya con contenido real en la app y
+no le convenció el formato: demasiado texto por punto singular. Pidió
+borrar toda la R14 (estaciones, tramos y el documento padre) y empezar
+de nuevo con la **R15**, con un formato mucho más corto — la señal y una
+pequeña anotación, en vez de párrafos largos. Se borraron los 18
+archivos de `content/infraestructura/linea-r14*` y se comprobó que
+ningún otro archivo del proyecto los referenciaba (glosario, otras
+líneas) antes de eliminarlos.
+
+**Qué se decidió y por qué:** el contenido en sí no estaba mal (recogía
+fielmente lo dictado y lo confirmado por el usuario), pero el formato
+elegido — un apartado "## Título" largo con varias viñetas de prosa por
+punto singular — resultó poco práctico para consulta rápida en cabina.
+Se descarta ese formato para las líneas siguientes.
+
+**Pendiente:** acordar con el usuario el formato corto antes de empezar
+la R15 (algo tipo "señal — anotación breve" en vez de secciones
+largas), y montar el esqueleto de la R15 con sus estaciones reales.
+
+---
+
 ## 2026-11-03 — Línea R14 creada, tramo Vila-seca → Tarragona completo
 
 **Qué se hizo:** el usuario quiso documentar la **línea R14** (hasta
