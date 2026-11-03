@@ -12,6 +12,35 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (noche, 3) — Icono de señal de velocidad y R15 invertida al sentido correcto
+
+**Qué se hizo:** el usuario pidió dibujar la señal real de "velocidad
+máxima" de vía (rombo blanco con el número dentro) para el valor 135, a
+partir de una foto de la señal oficial. Se creó
+`public/content-images/infraestructura/senales/velocidad-maxima-135.svg`
+(rombo blanco, borde y texto negros, igual que la señal real — pensado
+para poder añadir otros valores igual en el futuro). Antes de guardar el
+primer punto real se detectó que el esqueleto de la R15 estaba montado
+en sentido Barcelona → Riba-roja, pero el usuario iba a dictar en
+sentido Riba-roja → Barcelona (como ya hizo con la R14) — se preguntó y
+se confirmó, y se **regeneró el esqueleto completo de la R15 invertido**
+(nadie había escrito contenido real todavía, así que no se perdió
+nada). Se guardó el primer punto real en el formato corto acordado, en
+el tramo Vila-seca → Tarragona: *"135 — al salir del apeadero de
+Vila-seca."*
+
+**Qué se decidió y por qué:** se probó en el navegador antes de dar
+nada por bueno: el icono se ve bien incluso en 24px, y el formato corto
+(icono + número en negrita + nota breve, una línea) cabe de un vistazo
+dentro de la tarjeta desplegable, resolviendo la queja del usuario sobre
+la R14 (demasiado texto).
+
+**Pendiente:** seguir dictando la R15 en sentido Riba-roja → Barcelona
+con el formato corto; crear nuevos iconos de velocidad (110, 60, 30...)
+según vayan apareciendo.
+
+---
+
 ## 2026-11-03 (noche, 2) — R15 recortada hasta Riba-roja d'Ebre
 
 **Qué se hizo:** el usuario confirmó que su habilitación llega solo

@@ -1,7 +1,7 @@
 ---
 title: "Barcelona-Sants"
 summary: "Puntos singulares de la estación."
-order: 5
+order: 35
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

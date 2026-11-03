@@ -1,7 +1,7 @@
 ---
 title: "Flix"
 summary: "Puntos singulares de la estación."
-order: 37
+order: 3
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

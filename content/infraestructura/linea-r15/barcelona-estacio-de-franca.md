@@ -1,7 +1,7 @@
 ---
 title: "Barcelona-Estació de França"
 summary: "Puntos singulares de la estación."
-order: 1
+order: 39
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

@@ -1,7 +1,7 @@
 ---
 title: "Ascó"
 summary: "Puntos singulares de la estación."
-order: 35
+order: 5
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

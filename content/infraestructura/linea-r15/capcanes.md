@@ -1,7 +1,7 @@
 ---
 title: "Capçanes"
 summary: "Puntos singulares de la estación."
-order: 31
+order: 9
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

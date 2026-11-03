@@ -1,7 +1,7 @@
 ---
 title: "Móra la Nova"
 summary: "Puntos singulares de la estación."
-order: 33
+order: 7
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

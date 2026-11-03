@@ -1,7 +1,7 @@
 ---
 title: "Riba-roja d'Ebre"
 summary: "Puntos singulares de la estación."
-order: 39
+order: 1
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

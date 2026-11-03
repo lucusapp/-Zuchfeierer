@@ -1,7 +1,7 @@
 ---
 title: "Tarragona"
 summary: "Puntos singulares de la estación."
-order: 15
+order: 25
 tags: ["R15", "estacion"]
 meta:
   tipo: "estacion"

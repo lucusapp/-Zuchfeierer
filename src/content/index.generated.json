@@ -156,21 +156,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/barcelona-estacio-de-franca",
-    "title": "Barcelona-Estació de França",
-    "summary": "Puntos singulares de la estación.",
-    "order": 1,
-    "tags": [
-      "R15",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/barcelona-estacio-de-franca",
     "title": "Barcelona-Estació de França",
     "summary": "Puntos singulares de la estación.",
@@ -309,6 +294,21 @@
       "categoria": "Circulación / Seguridad"
     },
     "body": "> ⚠️ **Plantilla de ejemplo — no uses este texto como referencia operativa.**\n> Esta sección trata procedimientos de seguridad. Redacta y verifica cada entrada\n> contra la normativa oficial vigente (manuales de circulación, instrucciones técnicas,\n> circulares de tu empresa ferroviaria) antes de darla por válida. Anota aquí también\n> la referencia del documento oficial de origen (nombre, versión, fecha) para poder\n> comprobar que no ha quedado desactualizado.\n\n## Cuándo aplica\n\nDescribe aquí la casuística exacta (tipo de paso a nivel, señalización presente/ausente).\n\n## Actuación del maquinista\n\n1. Paso 1 (ejemplo — sustituir)\n2. Paso 2 (ejemplo — sustituir)\n3. Paso 3 (ejemplo — sustituir)\n\n## Referencia normativa\n\nDocumento y artículo de origen, fecha de la versión consultada."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r15/riba-roja-debre",
+    "title": "Riba-roja d'Ebre",
+    "summary": "Puntos singulares de la estación.",
+    "order": 1,
+    "tags": [
+      "R15",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -452,12 +452,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-barcelona-estacio-de-franca-barcelona-passeig-de-gracia",
+    "slug": "linea-r17/tramo-barcelona-estacio-de-franca-barcelona-passeig-de-gracia",
     "title": "Tramo: Barcelona-Estació de França → Barcelona-Passeig de Gràcia",
     "summary": "Puntos singulares entre Barcelona-Estació de França y Barcelona-Passeig de Gràcia.",
     "order": 2,
     "tags": [
-      "R15",
+      "R17",
       "tramo"
     ],
     "meta": {
@@ -467,12 +467,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r17/tramo-barcelona-estacio-de-franca-barcelona-passeig-de-gracia",
-    "title": "Tramo: Barcelona-Estació de França → Barcelona-Passeig de Gràcia",
-    "summary": "Puntos singulares entre Barcelona-Estació de França y Barcelona-Passeig de Gràcia.",
+    "slug": "linea-r15/tramo-riba-roja-debre-flix",
+    "title": "Tramo: Riba-roja d'Ebre → Flix",
+    "summary": "Puntos singulares entre Riba-roja d'Ebre y Flix.",
     "order": 2,
     "tags": [
-      "R17",
+      "R15",
       "tramo"
     ],
     "meta": {
@@ -511,21 +511,6 @@
     ],
     "meta": {},
     "body": "> Pendiente de contrastar con la documentación oficial vigente.\n\n## Velocidad general de la línea\n\nMáxima de **155 km/h** en el tramo general, que se reduce paulatinamente a **140 km/h**, **100 km/h** y **80 km/h** al aproximarse a las curvas de entrada a Sant Vicenç de Calders.\n\n## Sants\n\n| Tramo | Velocidad máxima | Observaciones |\n|---|---|---|\n| General en Sants, hasta la entrada a andenes | 60 km/h | — |\n| Desde la señal previa a andenes | 45 km/h | Posibles desvíos a 30 km/h |\n| Salida de Sants (tramo inicial) | 45 km/h | Después pasa a 60 km/h |\n\n## El Prat de Llobregat\n\n| Tramo | Velocidad máxima | Observaciones |\n|---|---|---|\n| Circulación por desviada (vía 4) | 50 km/h (30 km/h en algunos puntos) | Mantener la velocidad de desviada hasta rebasar completamente los cambios de vía |\n| Limitación temporal (LTV) | 30 km/h | Dilatador defectuoso en vía en placa |\n\n> Si la señal de salida de El Prat está en verde pero vas por desviada, **no subas de la velocidad de desviada** hasta haber pasado completamente los cambios.\n\n- **Desviada hacia El Prat:** es especialmente larga. Incluye subidas y bajadas de puentes y rectas intermedias a **60 o 66 km/h**, y se llega al cambio de vía efectivo mucho después de ver la señal de entrada en verde.\n\n## Castelldefels – Gavà – Viladecans – El Prat\n\nSeñales muy próximas entre sí. Si la primera muestra verde pero la siguiente está en amarillo o rojo, es preferible **atemperar la marcha a 50–60 km/h**.\n\n## Vilanova i la Geltrú\n\n- **Curva a la salida:** limitada a **30 km/h**.\n\n## Sitges – Vilanova\n\n- Tramo costero con túneles y visibilidad cambiante (ver Puntos singulares)."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r15/barcelona-passeig-de-gracia",
-    "title": "Barcelona-Passeig de Gràcia",
-    "summary": "Puntos singulares de la estación.",
-    "order": 3,
-    "tags": [
-      "R15",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
   },
   {
     "section": "infraestructura",
@@ -572,6 +557,21 @@
       "presion_trabajo": "8,5-10 bar (máx. 11 bar)"
     },
     "body": "## Los cinco sistemas de frenado\n\n### 1. Freno de servicio\nCombina **freno eléctrico** (regenerativo o reostático, controlado por la **TCU**) + **freno neumático**, ambos desde el manipulador — es un frenado combinado, el llamado ***blending***. El **dinamómetro** de cabina indica qué proporción de frenado eléctrico se está aplicando en cada momento; cuando marca **-100**, el freno eléctrico ya no aporta nada y el blending pasa todo el peso al freno neumático.\n\nEl frenado neumático lo controlan dos ordenadores que forman parte del **COSMOS**:\n- **BCU** (Brake Control Unit): el principal. Hay una en A1 y otra en A2, cada una responsable del frenado neumático de su mitad del tren.\n- **WSP** (Wheel Slip Protection): el antibloqueo. También hay uno por mitad del tren.\n\nSi falla una BCU, se ve en el IHM (su leyenda se pone en **rojo**) y el **WSP de esa misma mitad** asume el control automáticamente, sin perder prestaciones de frenado. Además, el maquinista puede forzar el cambio a la BCU del otro coche con el **conmutador de cambio de panel de cabina** — por ejemplo, si falla la BCU del A1, cambiando de panel pasa a controlar la BCU del A2 (ver Averías: *fallo en el panel de generación de TFA*).\n\n> El WSP falla con relativa frecuencia por sí solo (no por avería de la BCU). Cuando ocurre, el IHM avisa con *\"Fallo WSP, frene suavemente\"* y **no hay ninguna restricción** de velocidad ni de servicio — solo conviene frenar con suavidad, ya que se pierde la protección antideslizante mientras dura. Ver Averías.\n\nA modo de curiosidad: la presión a los cilindros de freno se aplica por dos vías — el **canal directo** (el normal, presión de la TDP a través del DCL) o el **canal indirecto** (con la TFA y un distribuidor, si falla la BCU o en caso de remolque). Detalle en Paneles neumáticos.\n\n- Entre 160 y 15 km/h: el neumático complementa al eléctrico si este no llega a cubrir la demanda.\n- Si falla la TCU (sin freno eléctrico): la BCU asume todo el frenado neumático.\n- Entre 0 y 15 km/h: **solo freno neumático**.\n\nEsta regla (eléctrico 160-15 km/h, neumático por debajo) es para el frenado **manual** con el manipulador. En **velocidad prefijada** (6-160 km/h) el frenado es **solo eléctrico** en todo su rango, sin intervención neumática — si se prefija 6 km/h, frena eléctricamente hasta esos 6 km/h. Ver Equipo eléctrico.\n\n> **Importante para averías:** cuando se habla de \"condenar\" o \"aislar\" el freno de servicio, siempre es un aislamiento **neumático** — la parte eléctrica (TCU) no se puede aislar de forma independiente en esta serie (a diferencia de la 447). Ver **Averías** para la tabla de qué panel usar según el eje afectado.\n\n### 2. Freno de urgencia / emergencia\nCompletamente neumático, independiente del de servicio. Se activa con manipulador, seta de emergencia, tiradores de alarma, o automáticamente por sistemas de seguridad. Corta tracción de inmediato y aplica la máxima deceleración. Al accionarse desde la seta o el manipulador en posición máxima, suena la bocina (aguda y grave a la vez).\n\n### 3. Freno de auxilio\nCompletamente neumático, mediante la **TFA** (Tubería de Freno Automático), como respaldo independiente. Ver detalle de límites de velocidad en Averías.\n\n### 4. Freno de estacionamiento\nDos cilindros por bogie. **Es completamente neumático — no tiene ninguna parte eléctrica** (a diferencia del freno de servicio, que sí combina eléctrico + neumático). No se puede aplicar a la vez que el freno de servicio. Indicadores visuales en los coches.\n\nAdemás del aislamiento tradicional (llave + trinquetes, ver Averías), esta serie permite **apretarlo o aflojarlo eléctricamente** desde el panel sin necesidad de aislar nada — útil sobre todo para soltar todos los bogies de golpe antes de un remolque, en vez de ir uno a uno con trinquetes. Ver el detalle en **Averías** y en **Paneles neumáticos**.\n\n### 5. Freno de retención (hill holder)\nAutomático: si la velocidad baja de 3 km/h con el manipulador en posición de frenado, aplica un esfuerzo mínimo para no retroceder en pendiente. Se mantiene hasta que la tracción es suficiente para arrancar o se supera 3 km/h.\n\n## Producción de aire comprimido\n\nDos equipos independientes (compresor rotativo de tornillo + tratamiento de aire), bajo bastidor de **A4 y A5**. Capacidad **950 l/min**, presión de trabajo 8,5-10 bar (soporta hasta 11 bar). Los 2 compresores los gestiona el COSMOS, normalmente a días alternos (ambos pueden trabajar juntos al encender el tren o cuando haga falta).\n\nTratamiento: secador autoregenerativo de doble torre + separador de aceite + purga.\n\n**Compresores auxiliares** (2, alimentados por batería): generan la presión mínima para subir pantógrafos si no hay aire en el circuito principal. Depósito de reserva de 6 bar — si baja de ese valor, el COSMOS enciende los compresores auxiliares automáticamente.\n\nEl aire comprimido alimenta: frenado, suspensión neumática secundaria, estribos, accionamiento de pantógrafos (vía compresor auxiliar si hace falta), y equipos auxiliares (retrovisores, bocinas, areneros, engrase de pestaña).\n\nPara el detalle de paneles físicos y llaves de aislamiento, ve al submenú **Paneles neumáticos**. Para procedimientos de avería, ve a **Averías**."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r15/flix",
+    "title": "Flix",
+    "summary": "Puntos singulares de la estación.",
+    "order": 3,
+    "tags": [
+      "R15",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
   },
   {
     "section": "vehiculos",
@@ -742,21 +742,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-barcelona-passeig-de-gracia-barcelona-sants",
-    "title": "Tramo: Barcelona-Passeig de Gràcia → Barcelona-Sants",
-    "summary": "Puntos singulares entre Barcelona-Passeig de Gràcia y Barcelona-Sants.",
-    "order": 4,
-    "tags": [
-      "R15",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tramo-barcelona-passeig-de-gracia-barcelona-sants",
     "title": "Tramo: Barcelona-Passeig de Gràcia → Barcelona-Sants",
     "summary": "Puntos singulares entre Barcelona-Passeig de Gràcia y Barcelona-Sants.",
@@ -772,8 +757,23 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/barcelona-sants",
-    "title": "Barcelona-Sants",
+    "slug": "linea-r15/tramo-flix-asco",
+    "title": "Tramo: Flix → Ascó",
+    "summary": "Puntos singulares entre Flix y Ascó.",
+    "order": 4,
+    "tags": [
+      "R15",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r15/asco",
+    "title": "Ascó",
     "summary": "Puntos singulares de la estación.",
     "order": 5,
     "tags": [
@@ -821,8 +821,8 @@
   {
     "section": "infraestructura",
     "slug": "linea-r15",
-    "title": "Línea R15 (Barcelona – Riba-roja d'Ebre)",
-    "summary": "Estaciones de la R15 con sus puntos singulares, y los tramos entre estaciones.",
+    "title": "Línea R15 (Riba-roja d'Ebre – Barcelona)",
+    "summary": "Estaciones de la R15 con sus puntos singulares, y los tramos entre estaciones, sentido Riba-roja d'Ebre → Barcelona.",
     "order": 5,
     "tags": [
       "R15",
@@ -832,9 +832,9 @@
     ],
     "meta": {
       "layout": "linea",
-      "tramo": "Barcelona-Estació de França – Riba-roja d'Ebre"
+      "tramo": "Riba-roja d'Ebre – Barcelona-Estació de França"
     },
-    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\nLes Borges del Camp, Riudecanyes-Botarell, Duesaigües-l'Argentera y Pradell tienen parada solo de algunos trenes de la R15, no de todos.\n\n*La línea real sigue hasta Faió-La Pobla de Massaluca; aquí se recoge solo hasta Riba-roja d'Ebre.*"
+    "body": "Toca una estación para ver sus puntos singulares. Entre estación y estación hay además un punto de **tramo**, para los puntos singulares que están en la vía pero no en ninguna estación.\n\nSentido de esta línea: **Riba-roja d'Ebre → Barcelona**.\n\nLes Borges del Camp, Riudecanyes-Botarell, Duesaigües-l'Argentera y Pradell tienen parada solo de algunos trenes de la R15, no de todos.\n\n*La línea real sigue hasta Faió-La Pobla de Massaluca; aquí se recoge solo hasta Riba-roja d'Ebre.*"
   },
   {
     "section": "vehiculos",
@@ -866,9 +866,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-barcelona-sants-vilanova-i-la-geltru",
-    "title": "Tramo: Barcelona-Sants → Vilanova i la Geltrú",
-    "summary": "Puntos singulares entre Barcelona-Sants y Vilanova i la Geltrú.",
+    "slug": "linea-r15/tramo-asco-mora-la-nova",
+    "title": "Tramo: Ascó → Móra la Nova",
+    "summary": "Puntos singulares entre Ascó y Móra la Nova.",
     "order": 6,
     "tags": [
       "R15",
@@ -925,8 +925,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/vilanova-i-la-geltru",
-    "title": "Vilanova i la Geltrú",
+    "slug": "linea-r15/mora-la-nova",
+    "title": "Móra la Nova",
     "summary": "Puntos singulares de la estación.",
     "order": 7,
     "tags": [
@@ -986,9 +986,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-vilanova-i-la-geltru-sant-vicenc-de-calders",
-    "title": "Tramo: Vilanova i la Geltrú → Sant Vicenç de Calders",
-    "summary": "Puntos singulares entre Vilanova i la Geltrú y Sant Vicenç de Calders.",
+    "slug": "linea-r15/tramo-mora-la-nova-capcanes",
+    "title": "Tramo: Móra la Nova → Capçanes",
+    "summary": "Puntos singulares entre Móra la Nova y Capçanes.",
     "order": 8,
     "tags": [
       "R15",
@@ -1015,6 +1015,21 @@
     "body": "Pendiente de completar."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r15/capcanes",
+    "title": "Capçanes",
+    "summary": "Puntos singulares de la estación.",
+    "order": 9,
+    "tags": [
+      "R15",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/freno",
     "title": "Freno",
@@ -1029,21 +1044,6 @@
     ],
     "meta": {},
     "body": "La unidad tiene seis tipos de freno: electroneumático, electroreostático, combinado, electromagnético, de auxilio y de estacionamiento.\n\n## Electroneumático (freno de servicio)\n\nFreno de servicio de la unidad. Según la orden dada con la palanca de freno **B4**, se manda una orden eléctrica a la **KBR**, que según la demanda de freno envía, a través del depósito de reserva **B7**, una señal neumática a la válvula de carga variable **RLV7** (una por bogie), pasando por la válvula de doble efecto **P9** (deja pasar el aire según venga la demanda del freno de servicio o del 2º freno).\n\n- La **RLV7** recibe también, a través de la **B9** (válvula de presión media de las balonas), una señal que corrige el esfuerzo según la carga del coche.\n- La RLV7 deja pasar aire de la TDP (conducto R) hacia los antibloqueo, que a su vez dejan pasar aire de la TDP —pasando por la **B12** y el calderín **B29** (el calderín está situado antes de la B12)— hacia los cilindros de freno, a una presión de unos 3,5 bar.\n- En el coche motor, el depósito B7 no manda la señal directamente a la RLV7: pasa antes por un transformador de presión, que la regula según esté o no establecido el freno combinado.\n- Con el **2º freno**: al mandar la orden desde cabina se tira aire de la TFA al exterior (depresión). El distribuidor **FM3** nota la depresión y manda una señal desde su depósito de reserva, por la válvula P9, a la RLV7 — repitiendo el mismo proceso que el freno de servicio.\n- Si se cierra la **B12**, no hay ni freno de servicio ni segundo freno en ese bogie.\n- Los cilindros de freno se pueden vaciar tirando de las cadenillas, o con los pulsadores de los antibloqueo (\"piu-piu\").\n- Según el punto de freno, se excitan o desexcitan las electroválvulas I/II/III de la KBR (\"hilos romanos\"), variando la señal neumática:\n\n| Posición manipulador | I | II | III | Estado del freno |\n|---|---|---|---|---|\n| 0 | 1 | 1 | 1 | Aflojado |\n| 1 | 0 | 1 | 1 | 1er escalón |\n| 2 | 1 | 0 | 1 | 2º escalón |\n| 3 | 0 | 0 | 1 | 3er escalón |\n| 4 | 1 | 1 | 0 | 4º escalón |\n| 5 | 0 | 1 | 0 | 5º escalón |\n| 6 | 1 | 0 | 0 | 6º escalón |\n| 7 | 0 | 0 | 0 | Urgencia |\n| 8 | 0 | 0 | 0 | Urgencia + patines |\n\n## Electroreostático\n\nSe establece entre 11 y 140 km/h, solo en el coche motor (en composición múltiple, en todos los coches motores que no lleven motores seccionados). Es **solo de retención y mantenimiento de velocidad en pendientes** — no es un freno de urgencia ni de parada.\n\n## Combinado (blending)\n\nPara establecerlo: regulador de mando a la posición \"F\" (primera muesca de frenado eléctrico), y girar el manipulador de freno de 1 a 6 según el esfuerzo requerido — las muescas de frenado eléctrico avanzan automáticamente en el coche motor.\n\n- Entre 100 y 120 km/h, el esfuerzo se refuerza con 50% de freno neumático en el coche motor.\n- Por debajo de 100 km/h, en el coche motor solo actúa el reostático.\n- En los remolques, el esfuerzo siempre es neumático, según el escalón pedido.\n- Por debajo de 10 km/h, solo hay esfuerzo neumático.\n\n| Tramo de velocidad | Coche motor | Ri / Rc |\n|---|---|---|\n| 140-100 km/h | Reostático; 50% de la presión de aire que correspondería | Presión de aire según el escalón de freno |\n| 100-10 km/h | Reostático (si la intensidad en motores > 75 A) | Presión de aire según el escalón de freno |\n| 10-0 km/h | Presión de aire total que corresponda | Presión de aire según el escalón de freno |\n\n## Electromagnético (patines)\n\nCada bogie lleva un par de patines de freno, uno a cada lado, con sus elementos de guiado, distanciador y centraje. Entre 0 y 10 km/h hay un dispositivo de seguridad que impide su funcionamiento.\n\n## Auxilio (2º freno)\n\nEl esfuerzo se establece a través de los tres distribuidores **FM3** (uno por coche). Llevando la maneta del segundo freno a fondo se provoca una frenada de urgencia por vaciado completo de la tubería de freno, quedando retenida por un trinquete.\n\n- Se usa para remolcar una unidad con el freno electroneumático totalmente fuera de servicio.\n- Hay que cargarlo al poner la unidad en marcha: maneta a \"Aflojamiento\" hasta que el manómetro marque **5 kg/cm²**. Si no se alcanza esa presión, la válvula de compensación no cierra y la unidad queda enfrenada por el escape de aire.\n\n## Estacionamiento\n\nEn las unidades con la modificación de señalización, el indicador \"Freno de Mano/Motores Seccionados\" del pupitre parpadea si hay algún freno de estacionamiento puesto, tanto en el Cm como en el Rc (no el del Ri, que tiene su propia señalización junto al freno). En doble tracción, esa señalización solo es válida para la cabina habilitada; no hay forma de saber el estado de la unidad acoplada desde ahí. Establecer el freno de estacionamiento **no corta el circuito de tracción**."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r15/sant-vicenc-de-calders",
-    "title": "Sant Vicenç de Calders",
-    "summary": "Puntos singulares de la estación.",
-    "order": 9,
-    "tags": [
-      "R15",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
   },
   {
     "section": "infraestructura",
@@ -1104,9 +1104,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-sant-vicenc-de-calders-torredembarra",
-    "title": "Tramo: Sant Vicenç de Calders → Torredembarra",
-    "summary": "Puntos singulares entre Sant Vicenç de Calders y Torredembarra.",
+    "slug": "linea-r15/tramo-capcanes-marca-falset",
+    "title": "Tramo: Capçanes → Marçà-Falset",
+    "summary": "Puntos singulares entre Capçanes y Marçà-Falset.",
     "order": 10,
     "tags": [
       "R15",
@@ -1133,6 +1133,21 @@
     "body": "Pendiente de completar."
   },
   {
+    "section": "infraestructura",
+    "slug": "linea-r15/marca-falset",
+    "title": "Marçà-Falset",
+    "summary": "Puntos singulares de la estación.",
+    "order": 11,
+    "tags": [
+      "R15",
+      "estacion"
+    ],
+    "meta": {
+      "tipo": "estacion"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
     "section": "vehiculos",
     "slug": "serie-470/procedimientos",
     "title": "Procedimientos",
@@ -1146,21 +1161,6 @@
     ],
     "meta": {},
     "body": "## Puesta en servicio\n\n1. Conectar el magnetotérmico de batería, en el armario BT de la cabina del Rc (si va acoplada, basta con conectar el de la unidad de cola; el resto se hace desde la de cabeza).\n2. Insertar y girar la maneta de enclavamientos, para liberar los interruptores de palanca del pupitre.\n3. Accionar, en este orden: 1) subir pantógrafo, 2) cerrar disyuntor, 3) grupo motor alternador, 4) compresor automático, 5) convertidor, 6) control auxiliar, 7) alumbrado interior, 8) alumbrado exterior.\n4. Control de negativos en posición marcha.\n5. Con más de 8,5 bar en la TDP, cargar el segundo freno.\n\n### Puesta en servicio sin aire en la TDP\n\n1. Abrir la llave del depósito de reserva (armario neumático posterior de la cabina del Cm), comprobando antes en su manómetro si está lleno.\n2. Si el depósito de reserva no basta para subir el pantógrafo, pasar a mano el conmutador del compresor auxiliar (armario BT del Cm) a ON, manteniéndolo así hasta que suba el pantógrafo.\n3. Verificar antes que el magnetotérmico **ACPN** está conectado.\n\n*En algunos vehículos la llave del depósito de reserva se ha sustituido por una electroválvula, que deja pasar aire al pantógrafo seleccionado al accionar su interruptor de palanca en cabina, siempre que el depósito tenga aire.*\n\n## Cambio de cabina\n\n**Antes de abandonar la cabina:**\n\n1. Inversor a \"0\" y extraerlo.\n2. Conmutador de cambio de cabina a \"1\" (se enciende su lámpara) — hay 10 segundos para desconectar el control de freno de positivos/negativos.\n3. Desconectar y sacar el control de freno, quitar todos los interruptores del pupitre (cualquier orden). Hay 15 minutos para completar el cambio o el vehículo se parará. Girar para enclavar el pupitre y extraerlo.\n4. Desconectar el ASFA en el conmutador principal de esa cabina.\n5. Girar y extraer la maneta del segundo freno.\n6. Conmutador de luces a discos rojos (luces de cola).\n7. Si la unidad va en sencillo, desplazar a la otra cabina: control de negativos, llave de enclavamiento del pupitre, mando del inversor y maneta del segundo freno.\n\n**En la otra cabina:**\n\n1. Enclavamiento del pupitre y desenclavarlo.\n2. Conectar los interruptores del pupitre (cualquier orden).\n3. Segundo freno y control de freno en marcha.\n4. Inversor en su posición.\n5. Control de negativos en marcha.\n6. Deshacer el cambio de cabina con su conmutador.\n7. Conectar el ASFA del armario principal.\n8. Conmutador de luces con la señalización por cabeza.\n\n**Regla mnemotécnica: PAL — Puertas, ASFA, Luces** (lo último que hay que revisar).\n\n## Puesta fuera de servicio\n\n1. Regulador de tracción e inversor en posición 0.\n2. Comprobar que el distribuidor del freno de estacionamiento está en posición de apretar.\n3. Girar la manivela en sentido horario para aplicar el freno de estacionamiento, hasta que luzca la lámpara de apretado (roja).\n4. Con los frenos de servicio liberados, probar un establecimiento de tracción para comprobar la eficacia del freno de estacionamiento.\n5. Desconectar los interruptores del pupitre: convertidor, alumbrado interior, control auxiliar, compresor automático, motor alternador, pantógrafo, bajada de pantógrafo, alumbrado exterior.\n6. Apretar el segundo freno.\n7. Llave de control de negativos en posición \"extraer\".\n8. Girar y enclavar el pupitre.\n9. Desconectar el térmico de batería **BatN** en el armario BT del Rc (si va en doble composición, también el de la otra unidad).\n\n## Desacople\n\n1. Situarse en la cabina desde la que se corta, habilitando todos los mandos.\n2. Control de negativos en marcha.\n3. Girar la palomilla del desacoplador y pulsar el botón de desacoplar.\n4. Inversor en AT, traccionar y separarse unos metros; normalizar la palomilla del desacoplador.\n5. Si el desacoplador automático no funciona: tirar de la cadenilla junto al Scharfenberg, llevar la llave del segundo freno a su posición, y una vez cerradas las tulipas eléctricas, traccionar para separarse.\n\n## Remolques\n\nLa 470 solo puede ser remolcada por otra 470 (la salida de la TFA y la TDP del Scharfenberg está invertida respecto al resto de unidades).\n\n- **Avería en motores de tracción**: seccionar los motores de la unidad averiada y acoplar completo. Si es por derivación en resistencias principales y se circula en doble tracción, desconectando **CCOS1** se puede remolcar con todos los servicios salvo tracción (sin necesidad de seccionar motores).\n- **Avería en el GMA**: desconectar el magnetotérmico **MGCN** (armario BT del Rc) y acoplar completo.\n- **Derivación en alta tensión**: cerrar las llaves neumáticas de ambos pantógrafos (armario furgón del Cm), acoplar completo, y en las dos cabinas intermedias conectar compresor principal y control auxiliar (para cargar la batería de la unidad inútil). Precaución: conmutadores de apertura de puertas de ambas cabinas intermedias en \"0\".\n- **Derivación en baja tensión**: engatillar el cerrojillo de las botoneras, acoplar completo, anular las tres KBR de la unidad afectada, liberar el freno de los coches con las cadenillas, cargar el freno de auxilio (el freno neumático simultáneo se hace a través de ese 2º freno) y hacer prueba de freno con un segundo agente. La unidad averiada no tiene señalización exterior, alarma ni control de puertas.\n\n**Códigos de remolque**: A = acoplar mecánicamente; B = acoplar eléctricamente; F = cargar 2º freno / freno de auxilio; K = poner luces de cola (según el coche en cola); R = acondicionar KBR y tirar de cadenillas; T = CCOS1 desconectado (derivación en alta); V = quitar cuchilla MS (derivación en resistencias de alta).\n\n**Importante: 1º acoplar, 2º acondicionar, 3º prueba de freno.**\n\n## Puesta a tierra\n\n1. Parar completamente el vehículo (no hace falta desconectar la batería).\n2. Asegurar la inmovilidad del vehículo.\n3. Comprobar visualmente que los pantógrafos están bajados.\n4. Enclavar la caja de interruptores de palanca del pupitre y extraer su llave.\n5. Cerrar la llave de tres vías a los pantógrafos (armario de pantógrafos): introducir la llave de enclavamiento de interruptores y girar, girar y extraer la llave de paso de aire, y volver a colocar la llave de enclavamiento en su posición inicial y extraerla.\n6. Poner a tierra los circuitos de alta (cajetín de la cabina del Cm): introducir los interruptores y girar la llave de enclavamiento, introducir y girar la llave de paso de aire, girar y extraer la llave de desbloqueo de la caja de llaves.\n7. Esta última llave da acceso a la caja de llaves para abrir la cámara y los armarios de alta."
-  },
-  {
-    "section": "infraestructura",
-    "slug": "linea-r15/torredembarra",
-    "title": "Torredembarra",
-    "summary": "Puntos singulares de la estación.",
-    "order": 11,
-    "tags": [
-      "R15",
-      "estacion"
-    ],
-    "meta": {
-      "tipo": "estacion"
-    },
-    "body": "Pendiente de completar."
   },
   {
     "section": "infraestructura",
@@ -1193,9 +1193,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-torredembarra-altafulla-tamarit",
-    "title": "Tramo: Torredembarra → Altafulla-Tamarit",
-    "summary": "Puntos singulares entre Torredembarra y Altafulla-Tamarit.",
+    "slug": "linea-r15/tramo-marca-falset-pradell",
+    "title": "Tramo: Marçà-Falset → Pradell",
+    "summary": "Puntos singulares entre Marçà-Falset y Pradell.",
     "order": 12,
     "tags": [
       "R15",
@@ -1223,12 +1223,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/altafulla-tamarit",
+    "slug": "linea-r17/altafulla-tamarit",
     "title": "Altafulla-Tamarit",
     "summary": "Puntos singulares de la estación.",
     "order": 13,
     "tags": [
-      "R15",
+      "R17",
       "estacion"
     ],
     "meta": {
@@ -1238,12 +1238,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r17/altafulla-tamarit",
-    "title": "Altafulla-Tamarit",
-    "summary": "Puntos singulares de la estación.",
+    "slug": "linea-r15/pradell",
+    "title": "Pradell",
+    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
     "order": 13,
     "tags": [
-      "R17",
+      "R15",
       "estacion"
     ],
     "meta": {
@@ -1267,21 +1267,6 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-altafulla-tamarit-tarragona",
-    "title": "Tramo: Altafulla-Tamarit → Tarragona",
-    "summary": "Puntos singulares entre Altafulla-Tamarit y Tarragona.",
-    "order": 14,
-    "tags": [
-      "R15",
-      "tramo"
-    ],
-    "meta": {
-      "tipo": "tramo"
-    },
-    "body": "Pendiente de completar."
-  },
-  {
-    "section": "infraestructura",
     "slug": "linea-r17/tramo-altafulla-tamarit-tarragona",
     "title": "Tramo: Altafulla-Tamarit → Tarragona",
     "summary": "Puntos singulares entre Altafulla-Tamarit y Tarragona.",
@@ -1297,9 +1282,24 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tarragona",
-    "title": "Tarragona",
-    "summary": "Puntos singulares de la estación.",
+    "slug": "linea-r15/tramo-pradell-duesaigues-largentera",
+    "title": "Tramo: Pradell → Duesaigües-l'Argentera",
+    "summary": "Puntos singulares entre Pradell y Duesaigües-l'Argentera.",
+    "order": 14,
+    "tags": [
+      "R15",
+      "tramo"
+    ],
+    "meta": {
+      "tipo": "tramo"
+    },
+    "body": "Pendiente de completar."
+  },
+  {
+    "section": "infraestructura",
+    "slug": "linea-r15/duesaigues-largentera",
+    "title": "Duesaigües-l'Argentera",
+    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
     "order": 15,
     "tags": [
       "R15",
@@ -1327,12 +1327,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r17/tramo-tarragona-lhospitalet-de-linfant",
-    "title": "Tramo: Tarragona → L'Hospitalet de l'Infant",
-    "summary": "Puntos singulares entre Tarragona y L'Hospitalet de l'Infant.",
+    "slug": "linea-r15/tramo-duesaigues-largentera-riudecanyes-botarell",
+    "title": "Tramo: Duesaigües-l'Argentera → Riudecanyes-Botarell",
+    "summary": "Puntos singulares entre Duesaigües-l'Argentera y Riudecanyes-Botarell.",
     "order": 16,
     "tags": [
-      "R17",
+      "R15",
       "tramo"
     ],
     "meta": {
@@ -1342,12 +1342,12 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-tarragona-vila-seca",
-    "title": "Tramo: Tarragona → Vila-seca",
-    "summary": "Puntos singulares entre Tarragona y Vila-seca.",
+    "slug": "linea-r17/tramo-tarragona-lhospitalet-de-linfant",
+    "title": "Tramo: Tarragona → L'Hospitalet de l'Infant",
+    "summary": "Puntos singulares entre Tarragona y L'Hospitalet de l'Infant.",
     "order": 16,
     "tags": [
-      "R15",
+      "R17",
       "tramo"
     ],
     "meta": {
@@ -1372,9 +1372,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/vila-seca",
-    "title": "Vila-seca",
-    "summary": "Puntos singulares de la estación.",
+    "slug": "linea-r15/riudecanyes-botarell",
+    "title": "Riudecanyes-Botarell",
+    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
     "order": 17,
     "tags": [
       "R15",
@@ -1402,9 +1402,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-vila-seca-reus",
-    "title": "Tramo: Vila-seca → Reus",
-    "summary": "Puntos singulares entre Vila-seca y Reus.",
+    "slug": "linea-r15/tramo-riudecanyes-botarell-les-borges-del-camp",
+    "title": "Tramo: Riudecanyes-Botarell → Les Borges del Camp",
+    "summary": "Puntos singulares entre Riudecanyes-Botarell y Les Borges del Camp.",
     "order": 18,
     "tags": [
       "R15",
@@ -1432,9 +1432,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/reus",
-    "title": "Reus",
-    "summary": "Puntos singulares de la estación.",
+    "slug": "linea-r15/les-borges-del-camp",
+    "title": "Les Borges del Camp",
+    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
     "order": 19,
     "tags": [
       "R15",
@@ -1447,9 +1447,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-reus-les-borges-del-camp",
-    "title": "Tramo: Reus → Les Borges del Camp",
-    "summary": "Puntos singulares entre Reus y Les Borges del Camp.",
+    "slug": "linea-r15/tramo-les-borges-del-camp-reus",
+    "title": "Tramo: Les Borges del Camp → Reus",
+    "summary": "Puntos singulares entre Les Borges del Camp y Reus.",
     "order": 20,
     "tags": [
       "R15",
@@ -1462,9 +1462,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/les-borges-del-camp",
-    "title": "Les Borges del Camp",
-    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
+    "slug": "linea-r15/reus",
+    "title": "Reus",
+    "summary": "Puntos singulares de la estación.",
     "order": 21,
     "tags": [
       "R15",
@@ -1477,9 +1477,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-les-borges-del-camp-riudecanyes-botarell",
-    "title": "Tramo: Les Borges del Camp → Riudecanyes-Botarell",
-    "summary": "Puntos singulares entre Les Borges del Camp y Riudecanyes-Botarell.",
+    "slug": "linea-r15/tramo-reus-vila-seca",
+    "title": "Tramo: Reus → Vila-seca",
+    "summary": "Puntos singulares entre Reus y Vila-seca.",
     "order": 22,
     "tags": [
       "R15",
@@ -1492,9 +1492,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/riudecanyes-botarell",
-    "title": "Riudecanyes-Botarell",
-    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
+    "slug": "linea-r15/vila-seca",
+    "title": "Vila-seca",
+    "summary": "Puntos singulares de la estación.",
     "order": 23,
     "tags": [
       "R15",
@@ -1507,9 +1507,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-riudecanyes-botarell-duesaigues-largentera",
-    "title": "Tramo: Riudecanyes-Botarell → Duesaigües-l'Argentera",
-    "summary": "Puntos singulares entre Riudecanyes-Botarell y Duesaigües-l'Argentera.",
+    "slug": "linea-r15/tramo-vila-seca-tarragona",
+    "title": "Tramo: Vila-seca → Tarragona",
+    "summary": "Puntos singulares entre Vila-seca y Tarragona.",
     "order": 24,
     "tags": [
       "R15",
@@ -1518,13 +1518,13 @@
     "meta": {
       "tipo": "tramo"
     },
-    "body": "Pendiente de completar."
+    "body": "- ![135](infraestructura/senales/velocidad-maxima-135.svg) **135** — al salir del apeadero de Vila-seca."
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/duesaigues-largentera",
-    "title": "Duesaigües-l'Argentera",
-    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
+    "slug": "linea-r15/tarragona",
+    "title": "Tarragona",
+    "summary": "Puntos singulares de la estación.",
     "order": 25,
     "tags": [
       "R15",
@@ -1537,9 +1537,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-duesaigues-largentera-pradell",
-    "title": "Tramo: Duesaigües-l'Argentera → Pradell",
-    "summary": "Puntos singulares entre Duesaigües-l'Argentera y Pradell.",
+    "slug": "linea-r15/tramo-tarragona-altafulla-tamarit",
+    "title": "Tramo: Tarragona → Altafulla-Tamarit",
+    "summary": "Puntos singulares entre Tarragona y Altafulla-Tamarit.",
     "order": 26,
     "tags": [
       "R15",
@@ -1552,9 +1552,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/pradell",
-    "title": "Pradell",
-    "summary": "Puntos singulares de la estación. Parada solo de algunos trenes de la R15, no de todos.",
+    "slug": "linea-r15/altafulla-tamarit",
+    "title": "Altafulla-Tamarit",
+    "summary": "Puntos singulares de la estación.",
     "order": 27,
     "tags": [
       "R15",
@@ -1567,9 +1567,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-pradell-marca-falset",
-    "title": "Tramo: Pradell → Marçà-Falset",
-    "summary": "Puntos singulares entre Pradell y Marçà-Falset.",
+    "slug": "linea-r15/tramo-altafulla-tamarit-torredembarra",
+    "title": "Tramo: Altafulla-Tamarit → Torredembarra",
+    "summary": "Puntos singulares entre Altafulla-Tamarit y Torredembarra.",
     "order": 28,
     "tags": [
       "R15",
@@ -1582,8 +1582,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/marca-falset",
-    "title": "Marçà-Falset",
+    "slug": "linea-r15/torredembarra",
+    "title": "Torredembarra",
     "summary": "Puntos singulares de la estación.",
     "order": 29,
     "tags": [
@@ -1597,9 +1597,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-marca-falset-capcanes",
-    "title": "Tramo: Marçà-Falset → Capçanes",
-    "summary": "Puntos singulares entre Marçà-Falset y Capçanes.",
+    "slug": "linea-r15/tramo-torredembarra-sant-vicenc-de-calders",
+    "title": "Tramo: Torredembarra → Sant Vicenç de Calders",
+    "summary": "Puntos singulares entre Torredembarra y Sant Vicenç de Calders.",
     "order": 30,
     "tags": [
       "R15",
@@ -1612,8 +1612,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/capcanes",
-    "title": "Capçanes",
+    "slug": "linea-r15/sant-vicenc-de-calders",
+    "title": "Sant Vicenç de Calders",
     "summary": "Puntos singulares de la estación.",
     "order": 31,
     "tags": [
@@ -1627,9 +1627,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-capcanes-mora-la-nova",
-    "title": "Tramo: Capçanes → Móra la Nova",
-    "summary": "Puntos singulares entre Capçanes y Móra la Nova.",
+    "slug": "linea-r15/tramo-sant-vicenc-de-calders-vilanova-i-la-geltru",
+    "title": "Tramo: Sant Vicenç de Calders → Vilanova i la Geltrú",
+    "summary": "Puntos singulares entre Sant Vicenç de Calders y Vilanova i la Geltrú.",
     "order": 32,
     "tags": [
       "R15",
@@ -1642,8 +1642,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/mora-la-nova",
-    "title": "Móra la Nova",
+    "slug": "linea-r15/vilanova-i-la-geltru",
+    "title": "Vilanova i la Geltrú",
     "summary": "Puntos singulares de la estación.",
     "order": 33,
     "tags": [
@@ -1657,9 +1657,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-mora-la-nova-asco",
-    "title": "Tramo: Móra la Nova → Ascó",
-    "summary": "Puntos singulares entre Móra la Nova y Ascó.",
+    "slug": "linea-r15/tramo-vilanova-i-la-geltru-barcelona-sants",
+    "title": "Tramo: Vilanova i la Geltrú → Barcelona-Sants",
+    "summary": "Puntos singulares entre Vilanova i la Geltrú y Barcelona-Sants.",
     "order": 34,
     "tags": [
       "R15",
@@ -1672,8 +1672,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/asco",
-    "title": "Ascó",
+    "slug": "linea-r15/barcelona-sants",
+    "title": "Barcelona-Sants",
     "summary": "Puntos singulares de la estación.",
     "order": 35,
     "tags": [
@@ -1687,9 +1687,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-asco-flix",
-    "title": "Tramo: Ascó → Flix",
-    "summary": "Puntos singulares entre Ascó y Flix.",
+    "slug": "linea-r15/tramo-barcelona-sants-barcelona-passeig-de-gracia",
+    "title": "Tramo: Barcelona-Sants → Barcelona-Passeig de Gràcia",
+    "summary": "Puntos singulares entre Barcelona-Sants y Barcelona-Passeig de Gràcia.",
     "order": 36,
     "tags": [
       "R15",
@@ -1702,8 +1702,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/flix",
-    "title": "Flix",
+    "slug": "linea-r15/barcelona-passeig-de-gracia",
+    "title": "Barcelona-Passeig de Gràcia",
     "summary": "Puntos singulares de la estación.",
     "order": 37,
     "tags": [
@@ -1717,9 +1717,9 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/tramo-flix-riba-roja-debre",
-    "title": "Tramo: Flix → Riba-roja d'Ebre",
-    "summary": "Puntos singulares entre Flix y Riba-roja d'Ebre.",
+    "slug": "linea-r15/tramo-barcelona-passeig-de-gracia-barcelona-estacio-de-franca",
+    "title": "Tramo: Barcelona-Passeig de Gràcia → Barcelona-Estació de França",
+    "summary": "Puntos singulares entre Barcelona-Passeig de Gràcia y Barcelona-Estació de França.",
     "order": 38,
     "tags": [
       "R15",
@@ -1732,8 +1732,8 @@
   },
   {
     "section": "infraestructura",
-    "slug": "linea-r15/riba-roja-debre",
-    "title": "Riba-roja d'Ebre",
+    "slug": "linea-r15/barcelona-estacio-de-franca",
+    "title": "Barcelona-Estació de França",
     "summary": "Puntos singulares de la estación.",
     "order": 39,
     "tags": [
