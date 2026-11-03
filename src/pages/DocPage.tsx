@@ -90,7 +90,7 @@ function ContentImage(props: { src?: string; alt?: string }) {
         src={url}
         alt={props.alt ?? ''}
         loading="lazy"
-        className="inline-block align-middle h-6 w-6"
+        className="inline-block align-middle h-8 w-8"
       />
     )
   }

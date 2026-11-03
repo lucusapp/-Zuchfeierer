@@ -12,6 +12,29 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 (noche, 5) — Ajuste de iconos: tamaño y "P" de previa en ámbar
+
+**Qué se hizo:** el usuario pidió dos ajustes sobre lo anterior: (1) el
+icono de la señal fija fundamental, más grande, para que se aprecie que
+tiene pantalla digital — se subió el tamaño de todos los iconos de
+`/senales/` de 24px a 32px (`ContentImage` en `DocPage.tsx`); (2) el
+icono de la baliza previa, más vistoso, porque es una información tan
+importante como la señal misma — se cambió de azul a **ámbar**
+(`#f59e0b`, el mismo color de acento que ya usa el resto de la app) con
+la "P" más grande. Además, al tratarse de la misma señal (956), se
+fusionaron los dos puntos en uno solo: primero el detalle de la previa,
+después el de la señal, en vez de dos viñetas separadas.
+
+**Qué se decidió y por qué:** se reutilizó el color de acento ya
+existente en la app (`rail-accent`) para la "P", en vez de inventar un
+color nuevo, para que destaque y a la vez quede integrado visualmente.
+Probado en el navegador antes de subir: ya se distingue bien la pantalla
+del semáforo y la "P" ámbar llama la atención como se pedía.
+
+**Pendiente:** seguir dictando la R15.
+
+---
+
 ## 2026-11-03 (noche, 4) — Iconos de señal fija fundamental y baliza previa
 
 **Qué se hizo:** el usuario pidió dos iconos nuevos: la **señal fija
