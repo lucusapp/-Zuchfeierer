@@ -12,6 +12,59 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-03 — Línea R14 creada, tramo Vila-seca → Tarragona completo
+
+**Qué se hizo:** el usuario quiso documentar la **línea R14** (hasta
+ahora solo existía la R17), empezando por Vila-seca en sentido hacia
+Barcelona, a partir de un vídeo que estaba revisando. Se confirmó con
+una captura del mapa oficial de Rodalies que la R14 es una línea
+distinta a la R17 (no para en Vilanova i la Geltrú, sí llega hasta
+Reus) y se creó `content/infraestructura/linea-r14.md` con el mismo
+layout "línea" que la R17: 9 estaciones (Reus → Vila-seca → Tarragona
+→ Altafulla-Tamarit → Torredembarra → Sant Vicenç de Calders →
+Barcelona-Sants → Barcelona-Passeig de Gràcia → Barcelona-Estació de
+França) y sus 8 tramos.
+
+Se rellenó **Vila-seca** (es apeadero, sin señal ni agujas de salida,
+fuera de la bifurcación) y el **tramo Vila-seca → Tarragona** completo
+(señal de 135 al salir de la curva, señal 956 intermedia absoluta con
+su previa junto a una nave con contrachapado azul, baliza previa de la
+avanzada junto a un depósito de agua, señal avanzada E'2, dos puentes
+con 110 y LTV de 60, fin de la CSV de 110 con el matiz de que el 135
+que se ve no es de uso libre porque ya se inicia la curva de frenado de
+la LTV 60). También se rellenó la **entrada a Tarragona** (señales E2,
+E4, E4T y S2/2ª, dos LTV sucesivas de 60 y 30, cambio de canal al 61, y
+un aviso de seguridad destacado: la señal S2/2ª no tiene baliza previa,
+con un consejo explícito de qué hacer si se circula en anuncio de
+parada).
+
+**Qué se decidió y por qué:** el usuario fue dictando sobre la marcha,
+en mensajes cortos, mientras veía el vídeo — se fue guardando cada
+punto singular tal cual llegaba. Al final mandó dos resúmenes escritos
+más completos y ordenados del mismo tramo; el primero coincidía con lo
+ya guardado, así que no hizo falta cambiar nada; el segundo añadía
+contenido nuevo (la entrada a Tarragona) que no se había dictado antes
+en los mensajes cortos. Se sustituyó el contenido del tramo por la
+versión del resumen (más completa y mejor ordenada que la dictada punto
+a punto) y se añadió la entrada a Tarragona como contenido nuevo en la
+ficha de esa estación.
+
+**Problemas y cómo se resolvieron:** antes de sustituir el tramo por el
+resumen, se le preguntó explícitamente al usuario si los puntos que
+había dictado al final (bloque de edificios, agujas de talón, "pasando
+los cambios") seguían siendo válidos o quedaban sustituidos — resultó
+que sí seguían siendo válidos, solo que pertenecían a la *entrada a
+Tarragona*, no al tramo, y llegaron mejor explicados en el resumen. Se
+evitó así mezclar o perder esos puntos por asumir que el resumen los
+sustituía sin más.
+
+**Pendiente:** seguir completando la R14 estación por estación según el
+usuario vaya revisando el vídeo. Confirmar los puntos marcados "a
+confirmar" (LTV a la salida de Vila-seca, si la señal 956 es preanuncio
+de parada en secuencia con la avanzada).
+
+---
+
 ## 2026-10-25 (noche, 4) — Resumen comparativo: tercera tanda (449)
 
 **Qué se hizo:** al revisar la columna de la 449 en el mismo PDF
