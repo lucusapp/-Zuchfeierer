@@ -16,3 +16,4 @@ meta:
     - ![Señal de proximidad](infraestructura/senales/senal-proximidad-avanzada.svg) ![Anuncio LTV](infraestructura/senales/anuncio-ltv-110.svg) Proximidad — en la señal de proximidad (las dos franjas), anuncio de LTV a **110**.
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — poco después de pasar el puente. Es absoluta y tiene pantalla eléctrica.
 - ![Señal de LTV 110](infraestructura/senales/senal-ltv-110.svg) **110** — justo antes de llegar al segundo puente. Deja de circularse a 135; a partir de aquí, 110.
+  - ![Anuncio LTV-CSV](infraestructura/senales/anuncio-ltv-csv-60.svg) ![Baliza](infraestructura/senales/baliza-previa.svg) Anuncio de LTV-CSV a **60**, con su baliza — justo al superar el tercer puente.

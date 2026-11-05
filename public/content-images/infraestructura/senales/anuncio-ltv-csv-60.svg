@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" role="img" aria-label="Anuncio de LTV CSV 60">
+  <circle cx="50" cy="50" r="42" fill="#facc15" stroke="#111111" stroke-width="8"/>
+  <text x="50" y="63" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" fill="#111111" text-anchor="middle">60</text>
+  <rect x="30" y="100" width="40" height="22" fill="#f97316" stroke="#7c2d12" stroke-width="3"/>
+</svg>

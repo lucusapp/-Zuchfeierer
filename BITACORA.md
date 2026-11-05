@@ -12,6 +12,24 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 5) — Anuncio de LTV-CSV 60 con baliza, dentro del 110
+
+**Qué se hizo:** el usuario dictó "Anuncio de LTV CSV y Baliza. Justo al
+superar el tercer puente" sin dar el valor de velocidad — se le
+preguntó antes de crear nada y confirmó **60 km/h**. Se creó
+`anuncio-ltv-csv-60.svg` y se añadió el punto anidado dentro del grupo
+del 110 (no es una señal absoluta nueva, así que no cierra el grupo).
+Se reutilizó el icono de baliza existente (la "B" ya genérica, no solo
+para "previa") para marcar la baliza de este anuncio.
+
+**Qué se decidió y por qué:** no se asumió el valor de velocidad aunque
+un punto parecido de la R14 (descartada) usara 60 — se preguntó
+explícitamente para no dar por buena información no confirmada.
+
+**Pendiente:** seguir dictando dentro del 110.
+
+---
+
 ## 2026-11-05 (noche, 4) — Señal de LTV 110: cierra el grupo del 135
 
 **Qué se hizo:** el usuario dictó la señal de LTV (rombo, no anuncio)
