@@ -12,6 +12,23 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 20) — Señal permisiva (icono nuevo) y velocidad máxima 160
+
+**Qué se hizo:** el usuario mandó una foto de un semáforo de 2 luces
+(roja encendida) con una placa "P" debajo y pidió quitarle el rojo
+— se llama **señal permisiva**. Se creó el icono `senal-permisiva.svg`
+(cabezal de 2 luces neutras, igual que el resto de señales, más la
+placa blanca con la "P" en negro debajo), siguiendo la convención de
+dibujar siempre las señales sin indicación fija. Se añadió al tramo
+Tarragona → Altafulla-Tamarit: se supera una trinchera y, al final,
+hay una señal de velocidad máxima de 160 km/h (icono nuevo
+`velocidad-maxima-160.svg`, mismo patrón que 135/145) junto a la
+señal permisiva.
+
+**Pendiente:** seguir completando este tramo y el resto de la R15.
+
+---
+
 ## 2026-11-05 (noche, 19) — Arranca el tramo Tarragona → Altafulla-Tamarit
 
 **Qué se hizo:** se empezó a rellenar
