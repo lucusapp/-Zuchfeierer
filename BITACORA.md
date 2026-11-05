@@ -12,6 +12,27 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 9) — Señal de LTV-CSV 60: cierra el grupo del 135, quitado detalle de E2
+
+**Qué se hizo:** se quitó de la señal de entrada E2 el detalle "pantalla
+eléctrica, situada debajo del semáforo" (el usuario pidió eliminar esa
+parte, quedando solo "tiene pantalla eléctrica"). Se añadió, como
+nuevo punto de nivel superior, la señal de LTV-CSV a 60 km/h —
+después de pasar el puente, justo antes de las agujas — cerrando el
+grupo del 135 igual que las demás señales absolutas. Se creó el icono
+`senal-ltv-csv-60.svg` (mismo patrón que `senal-ltv-csv-30.svg`: rombo
+amarillo + rectángulo naranja de CSV, con el número 60).
+
+**Qué se decidió y por qué:** se colocó como punto de nivel superior
+(no anidado bajo el 135/E2) siguiendo el mismo criterio ya establecido
+de que las señales absolutas de velocidad cierran el grupo anterior,
+igual que hizo la señal de LTV 110.
+
+**Pendiente:** seguir dictando el tramo a partir de aquí (zona de
+agujas en adelante) y el resto de estaciones/tramos de la R15.
+
+---
+
 ## 2026-11-05 (noche, 8) — Recordatorio de la LTV-CSV 60 pendiente en el 135
 
 **Qué se hizo:** a petición del usuario, se amplió la nota del último

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" role="img" aria-label="Señal de LTV CSV 60">
+  <rect x="18" y="18" width="64" height="64" rx="3" fill="#facc15" stroke="#111111" stroke-width="7" transform="rotate(45 50 50)"/>
+  <text x="50" y="58" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#111111" text-anchor="middle">60</text>
+  <rect x="30" y="100" width="40" height="22" fill="#f97316" stroke="#7c2d12" stroke-width="3"/>
+</svg>

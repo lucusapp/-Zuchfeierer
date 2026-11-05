@@ -21,4 +21,5 @@ meta:
   - **E2**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — a la altura del bloque de edificios (nave aislada) que se ve a mano izquierda.
     - Pantalla de posición de agujas — justo delante de la señal.
-    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — de entrada. Tiene pantalla eléctrica, situada debajo del semáforo.
+    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — de entrada. Tiene pantalla eléctrica.
+- ![Señal de LTV-CSV 60](infraestructura/senales/senal-ltv-csv-60.svg) **60** — señal de LTV-CSV, después de pasar el puente, justo antes de las agujas. Deja de circularse a 135; a partir de aquí, 60.
