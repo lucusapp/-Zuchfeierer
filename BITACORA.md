@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 17) — Corrección de nombre S2/2A y detalle de las vías que protege
+
+**Qué se hizo:** el usuario corrigió el nombre de la señal recién
+añadida: no es "S2/2ª" sino **S2/2A**. Se corrigió en las dos
+menciones (grupo y detalle de la previa). Se volvió a añadir el
+detalle de qué protege, esta vez con el texto correcto: protege los
+cambios para ir a las vías 1, 3 o 5, o para ir a la 4 o 6, de la
+estación de viajeros (el detalle anterior, más genérico, se había
+quitado a petición del usuario en la entrada anterior).
+
+**Pendiente:** seguir completando el complejo logístico y la estación
+de viajeros de Tarragona.
+
+---
+
 ## 2026-11-05 (noche, 16) — Señal S2/2ª: absoluta, aspecto de señal de entrada
 
 **Qué se hizo:** se añadió la baliza previa y la señal S2/2ª,

@@ -20,6 +20,6 @@ meta:
     - ![Cambio de canal](infraestructura/senales/cambio-canal-61.svg) Cambio de canal — justo al superar la señal E4T, cambio de canal al **canal 61**.
     - Comienzo de la LTV de **60 km/h** — justo al superar la señal E4T.
   - ![Anuncio LTV-CSV](infraestructura/senales/anuncio-ltv-csv-30.svg) ![Baliza](infraestructura/senales/baliza-previa.svg) Anuncio de LTV-CSV a **30**, con su baliza.
-  - **S2/2ª**
-    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la señal S2/2ª.
-    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — absoluta, en el pórtico.
+  - **S2/2A**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la señal S2/2A.
+    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — absoluta, en el pórtico. Protege los cambios para ir a las vías 1, 3 o 5, o para ir a la 4 o 6, de la estación de viajeros.
