@@ -13,3 +13,4 @@ meta:
 - Se supera una trinchera.
 - ![160](infraestructura/senales/velocidad-maxima-160.svg) **160** — al final de la trinchera, junto a una señal permisiva.
   - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal permisiva.
+- *(Tramo pendiente: la cámara se desenfocó en este punto del vídeo. Pendiente de completar cuando se disponga de los datos.)*

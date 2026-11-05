@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 21) — Hueco marcado por cámara desenfocada en el tramo Tarragona-Altafulla
+
+**Qué se hizo:** el usuario avisó de que, justo a continuación de la
+señal permisiva, hay un tramo que no pudo ver en el vídeo porque la
+cámara se desenfocó, y lo completará cuando tenga esos datos. Se
+añadió una nota explícita en `tramo-tarragona-altafulla-tamarit.md`
+señalando el hueco y su motivo, en vez de dejarlo implícito, para que
+quede claro que no es contenido olvidado sino pendiente por falta de
+datos.
+
+**Pendiente:** completar este hueco cuando el usuario disponga de
+nuevo material del tramo.
+
+---
+
 ## 2026-11-05 (noche, 20) — Señal permisiva (icono nuevo) y velocidad máxima 160
 
 **Qué se hizo:** el usuario mandó una foto de un semáforo de 2 luces
