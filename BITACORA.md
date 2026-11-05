@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 22) — Rellenado el hueco: baliza previa de la señal 54 en el km 5,2
+
+**Qué se hizo:** el usuario trajo el primer dato del tramo que había
+quedado pendiente por el desenfoque de cámara: en el **km 5,2**, la
+baliza previa de la señal intermedia permisiva número **54**. Se
+sustituyó la nota de hueco por este punto real, anidado como nuevo
+grupo de nivel superior **54** con su baliza previa.
+
+**Pendiente:** falta aún la señal 54 en sí (solo se ha dictado su
+baliza previa) y seguir completando el resto del tramo.
+
+---
+
 ## 2026-11-05 (noche, 21) — Hueco marcado por cámara desenfocada en el tramo Tarragona-Altafulla
 
 **Qué se hizo:** el usuario avisó de que, justo a continuación de la
