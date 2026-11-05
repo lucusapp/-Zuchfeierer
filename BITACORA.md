@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 7) — Señal de entrada E2, nuevo icono distinto de la fundamental
+
+**Qué se hizo:** el usuario dictó la señal de entrada E2: aspecto de
+cabezal de 3 luces con una baliza/pantalla por debajo en un vástago
+curvo (foto de referencia aportada), pantalla eléctrica situada debajo
+del semáforo, pantalla de posición de agujas justo delante de la
+señal, y la previa a la altura del bloque de edificios (nave aislada)
+a mano izquierda. Se creó un icono nuevo, `senal-entrada.svg`,
+visualmente distinto de `senal-fija-fundamental.svg` (añade el
+vástago curvo y el círculo inferior), manteniendo la misma paleta
+neutra/apagada ya que la indicación real nunca es fija. Se añadió como
+un segundo nivel ("E2") dentro del tercer grupo del 135, con tres
+puntos de detalle: Previa, pantalla de posición de agujas (sin icono
+propio, solo texto, a petición del usuario — "no tengo el logo
+apropiado") y Señal.
+
+**Qué se decidió y por qué:** se verificó primero el icono solo en un
+harness HTML (32px y 80px) antes de insertarlo en el contenido real,
+siguiendo la disciplina habitual de comprobar visualmente cada icono
+nuevo con Playwright antes de darlo por bueno.
+
+**Pendiente:** seguir dictando el resto del tramo Tarragona en
+adelante; completar el resto de estaciones/tramos de la R15, aún
+pendientes de contenido real.
+
+---
+
 ## 2026-11-05 (noche, 6) — Fin de la LTV 110: vuelta a 135, cierra el grupo
 
 **Qué se hizo:** el usuario dictó el fin de la LTV de 110 (justo
