@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 8) — Recordatorio de la LTV-CSV 60 pendiente en el 135
+
+**Qué se hizo:** a petición del usuario, se amplió la nota del último
+grupo del 135 (fin de la LTV de 110) para recordar que, aunque se
+vuelve a velocidad máxima de 135, hay que circular en condiciones de
+poder cumplir la siguiente LTV-CSV de 60 ya anunciada (anunciada antes
+en el grupo del 110, aún no alcanzada).
+
+**Pendiente:** seguir dictando el resto del tramo Tarragona en
+adelante.
+
+---
+
 ## 2026-11-05 (noche, 7) — Señal de entrada E2, nuevo icono distinto de la fundamental
 
 **Qué se hizo:** el usuario dictó la señal de entrada E2: aspecto de
