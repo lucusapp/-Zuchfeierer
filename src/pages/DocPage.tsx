@@ -85,12 +85,15 @@ function ContentImage(props: { src?: string; alt?: string }) {
   // tablas: sin marco, sin margen grande, alineados con el texto.
   const esIcono = /\/(senales|iconos)\//.test(props.src)
   if (esIcono) {
+    // La baliza previa es un marcador de texto, no una señal en sí: un poco
+    // más pequeña que los iconos de señales (semáforo, velocidad máxima).
+    const esBalizaPrevia = /baliza-previa\.svg$/.test(props.src)
     return (
       <img
         src={url}
         alt={props.alt ?? ''}
         loading="lazy"
-        className="inline-block align-middle h-8 w-8"
+        className={esBalizaPrevia ? 'inline-block align-middle h-6 w-6' : 'inline-block align-middle h-8 w-8'}
       />
     )
   }

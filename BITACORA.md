@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (tarde) — Icono de previa más pequeño y dos detalles nuevos
+
+**Qué se hizo:** el usuario pidió que el icono de la baliza previa fuera
+algo más pequeño que el del semáforo (antes ambos medían igual), y
+añadió dos detalles al ejemplo de la señal 956: la previa está "en
+recta", y la señal "tiene pantalla eléctrica". Se hizo que `ContentImage`
+(`DocPage.tsx`) reconozca específicamente `baliza-previa.svg` y la
+renderice a 24px en vez de los 32px del resto de iconos de señal.
+
+**Pendiente:** seguir dictando la R15.
+
+---
+
 ## 2026-11-05 — Listas anidadas con línea de conexión vertical
 
 **Qué se hizo:** el usuario pidió un cambio estructural: que una
