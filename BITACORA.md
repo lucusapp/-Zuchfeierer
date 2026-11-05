@@ -12,28 +12,23 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
-## 2026-11-05 (noche, 11) — Traslado del tramo de agujas a la estación de Tarragona
+## 2026-11-05 (noche, 11) — Revertido el traslado a la estación de Tarragona
 
-**Qué se hizo:** el usuario aclaró que, a partir de la señal de entrada
-E2, ya se está dentro de la estación de Tarragona, así que la señal de
-LTV-CSV 60 (justo antes de las agujas) y el anuncio de otra LTV-CSV 60
-en la nave de SERCO se trasladaron de `tramo-vila-seca-tarragona.md` a
-`tarragona.md`. La estación de Tarragona es amplia (complejo logístico
-+ estación de viajeros propiamente dicha), así que se dividió su
-contenido en dos apartados (`## Complejo logístico` y `## Estación de
-viajeros`), con el primero ya conteniendo los dos puntos trasladados.
-En el detalle de la señal E2 (ahora el último punto del tramo) se
-añadió el icono del anuncio de LTV-CSV 60 junto al de la señal de
-entrada, como recordatorio de que se circula en condiciones de cumplir
-esa LTV-CSV ya anunciada, con una nota de que el contenido continúa en
-el epígrafe de la estación.
+**Qué se hizo:** el usuario indicó que el cambio anterior (mover la
+señal de LTV-CSV 60 y el anuncio de SERCO desde el tramo a la
+estación de Tarragona, dividida en complejo logístico/estación de
+viajeros) mezclaba términos, así que se revirtió por completo con
+`git revert`. `tramo-vila-seca-tarragona.md` y `tarragona.md` vuelven
+a quedar como estaban antes de ese cambio.
 
-**Qué se decidió y por qué:** se comprobó que ni `tramo-vila-seca-tarragona.md`
-ni `tarragona.md` tenían overrides activos en Supabase antes de tocarlos.
+**Qué se decidió y por qué:** se comprobó que no había overrides
+activos en Supabase para ninguna de las dos páginas antes de tocarlas,
+y se usó `git revert` en vez de editar a mano para garantizar que el
+contenido vuelve exactamente al estado previo.
 
-**Pendiente:** completar el apartado "Estación de viajeros" de
-Tarragona (E4, E4T, S2-2ª, cambio de canal, etc., aún no dictados en
-este formato corto) y seguir con el resto de la R15.
+**Pendiente:** aclarar con el usuario dónde debe ir realmente el
+contenido de la zona de agujas/estación de Tarragona antes de volver a
+intentarlo.
 
 ---
 
