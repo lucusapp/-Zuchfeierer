@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 2) — Avanzada renombrada a E'2, baliza con "B"
+
+**Qué se hizo:** tres ajustes sobre el punto anterior: (1) la "B" de
+`baliza-previa.svg` sustituye a la "P" que tenía; (2) la cabecera
+"Avanzada (próxima)" pasa a ser directamente **E'2** (el número real de
+la señal, igual que se hizo con 956); (3) se añadió el detalle de la
+propia señal (no solo su previa): está poco después de pasar el puente,
+es absoluta y tiene pantalla eléctrica — con el icono de señal fija
+fundamental, como segunda indicación nidada bajo E'2 (previa primero,
+señal después, mismo patrón que 956).
+
+**Pendiente:** seguir dictando la R15.
+
+---
+
 ## 2026-11-05 (noche) — Iconos de LTV/CSV y proximidad a la avanzada
 
 **Qué se hizo:** el usuario pasó 5 fotos de señales reales para que se
