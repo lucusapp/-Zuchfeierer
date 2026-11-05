@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 — Listas anidadas con línea de conexión vertical
+
+**Qué se hizo:** el usuario pidió un cambio estructural: que una
+velocidad absoluta (p. ej. "135") agrupe visualmente, con una línea
+vertical, todo lo que ocurre mientras sigue vigente — señales
+intermedias y sus indicaciones — hasta que aparece la siguiente
+velocidad absoluta. Se confirmó el diseño exacto con un boceto en texto
+antes de tocar nada. Se implementó con **listas Markdown anidadas** (sin
+motor gráfico nuevo): un nuevo estilo en `index.css`
+(`.prose-content li > ul`) añade un borde izquierdo de color de acento
+a cualquier lista anidada dentro de otra, dando el efecto de línea de
+conexión. Se reestructuró el ejemplo ya escrito (135 → 956) a tres
+niveles: velocidad (nivel 1) → señal 956 (nivel 2) → sus dos
+indicaciones, previa y señal (nivel 3).
+
+**Qué se decidió y por qué:** en vez de un motor de dibujo a medida
+(descartado antes por el coste), se reutilizó algo que Markdown ya hace
+bien — listas anidadas — y se le añadió solo una línea de CSS para el
+efecto visual. Se verificó primero el diseño exacto con el usuario
+mediante un boceto de texto (evitando repetir el error de construir
+algo y que no gustara, como pasó con la R14).
+
+**Pendiente:** aplicar esta misma estructura de anidado al resto de la
+R15 según se vaya dictando.
+
+---
+
 ## 2026-11-03 (noche, 5) — Ajuste de iconos: tamaño y "P" de previa en ámbar
 
 **Qué se hizo:** el usuario pidió dos ajustes sobre lo anterior: (1) el

@@ -8,4 +8,6 @@ meta:
 ---
 
 - ![135](infraestructura/senales/velocidad-maxima-135.svg) **135** — al salir del apeadero de Vila-seca.
-- **956**: ![Baliza previa](infraestructura/senales/baliza-previa.svg) a la altura del comienzo de la nave con contrachapado azul superior. ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Intermedia Absoluta.
+  - **956**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — a la altura del comienzo de la nave con contrachapado azul superior.
+    - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — Intermedia Absoluta.

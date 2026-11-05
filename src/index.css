@@ -42,6 +42,19 @@ body {
   @apply list-decimal;
 }
 
+/* Lista anidada: línea vertical que conecta un punto (p.ej. una velocidad
+   vigente) con todo lo que pasa mientras está en vigor, hasta el siguiente
+   punto del mismo nivel. */
+.prose-content li > ul,
+.prose-content li > ol {
+  @apply mt-1 mb-2 ml-1 pl-3 border-l-2 border-rail-accent/40 list-none space-y-2;
+}
+
+.prose-content li > ul > li,
+.prose-content li > ol > li {
+  @apply pl-1;
+}
+
 .prose-content table {
   @apply w-full text-sm border-collapse mb-4;
 }
