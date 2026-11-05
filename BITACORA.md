@@ -12,6 +12,25 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 12) — Señal de LTV-CSV 60 y anuncio de SERCO al complejo logístico
+
+**Qué se hizo:** el usuario pidió de nuevo quitar del tramo
+Vila-seca → Tarragona la señal de LTV-CSV 60 (justo antes de las
+agujas) y el anuncio de LTV-CSV 60 en la nave de SERCO, y ponerlos ya
+en el ámbito del complejo logístico de la estación de Tarragona. Esta
+vez se hizo solo ese movimiento puntual, sin añadir la nota/recordatorio
+en el detalle de E2 ni crear el segundo apartado "Estación de
+viajeros" (eso fue parte del cambio revertido antes por mezclar
+términos). `tarragona.md` queda con un único apartado `## Complejo
+logístico` con esos dos puntos; `tramo-vila-seca-tarragona.md` termina
+en la señal de entrada E2.
+
+**Pendiente:** confirmar con el usuario si procede añadir más adelante
+el apartado de la estación de viajeros propiamente dicha, y seguir
+completando la R15.
+
+---
+
 ## 2026-11-05 (noche, 11) — Revertido el traslado a la estación de Tarragona
 
 **Qué se hizo:** el usuario indicó que el cambio anterior (mover la
