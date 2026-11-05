@@ -21,6 +21,4 @@ meta:
   - **E2**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — a la altura del bloque de edificios (nave aislada) que se ve a mano izquierda.
     - Pantalla de posición de agujas — justo delante de la señal.
-    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — de entrada. Tiene pantalla eléctrica.
-- ![Señal de LTV-CSV 60](infraestructura/senales/senal-ltv-csv-60.svg) **60** — señal de LTV-CSV, después de pasar el puente, justo antes de las agujas. Deja de circularse a 135; a partir de aquí, 60.
-  - ![Anuncio LTV-CSV](infraestructura/senales/anuncio-ltv-csv-60.svg) Anuncio de LTV-CSV a **60** — a la altura de la nave de SERCO. La señal está en la vía de la derecha, en la columna del pórtico.
+    - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) ![Anuncio LTV-CSV](infraestructura/senales/anuncio-ltv-csv-60.svg) Señal — de entrada. Tiene pantalla eléctrica. A partir de aquí entramos en la estación de Tarragona, circulando en condiciones de cumplir la LTV-CSV de 60 ya anunciada — continúa en el epígrafe de la estación de Tarragona.
