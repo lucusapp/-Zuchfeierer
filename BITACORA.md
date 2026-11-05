@@ -12,6 +12,38 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 13) — Dos señales nuevas en el complejo logístico: nombre pendiente y E4T
+
+**Qué se hizo:** el usuario dictó una señal (baliza previa antes de un
+puente, señal en un pórtico después del puente, con la indicación
+visible desde lejos) llamándola inicialmente "E4T", pero a mitad de la
+conversación se dio cuenta de que ese no es su nombre real y que aún
+hay que confirmarlo — y que la verdadera E4T es otra señal distinta
+(baliza previa al final de los cambios de talón que vienen del
+complejo logístico y que pueden llevar a vía 1 de punta; señal después
+del puente elevado, con el mismo aspecto que la señal de entrada E2 —
+cabezal de 3 luces + vástago + círculo inferior — y además con un
+letrero luminoso). Se añadieron ambas, anidadas bajo el grupo del 60
+en `tarragona.md`: la primera con el nombre provisional **"E-pendiente
+(nombre por confirmar)"** y el icono genérico de señal fija
+fundamental, para dejar explícito que el nombre real está por
+confirmar; la segunda como **E4T**, reutilizando `senal-entrada.svg`
+(sin crear icono nuevo, ya que el usuario confirmó que su aspecto es
+el de la foto ya usada para esa señal) y añadiendo el detalle del
+letrero luminoso.
+
+**Qué se decidió y por qué:** se preguntó explícitamente antes de
+escribir nada, al detectar que el usuario estaba mezclando dos señales
+distintas bajo el mismo nombre — siguiendo la regla de no dar por
+buena información ambigua. Se usó un nombre ficticio reconocible en
+vez de inventar o adivinar el nombre real de la primera señal.
+
+**Pendiente:** confirmar el nombre real de la señal "E-pendiente" y
+renombrarla cuando se sepa; seguir completando el complejo logístico y
+la estación de viajeros de Tarragona.
+
+---
+
 ## 2026-11-05 (noche, 12) — Señal de LTV-CSV 60 y anuncio de SERCO al complejo logístico
 
 **Qué se hizo:** el usuario pidió de nuevo quitar del tramo
