@@ -88,12 +88,21 @@ function ContentImage(props: { src?: string; alt?: string }) {
     // La baliza previa es un marcador de texto, no una señal en sí: un poco
     // más pequeña que los iconos de señales (semáforo, velocidad máxima).
     const esBalizaPrevia = /baliza-previa\.svg$/.test(props.src)
+    // Los carteles de cambio de canal son apaisados (rectángulo ancho con
+    // texto), no cuadrados como el resto de iconos: ancho automático en vez
+    // de forzar un cuadrado, para no deformar el texto.
+    const esCambioCanal = /cambio-canal/.test(props.src)
+    const claseIcono = esCambioCanal
+      ? 'inline-block align-middle h-7 w-auto'
+      : esBalizaPrevia
+        ? 'inline-block align-middle h-6 w-6'
+        : 'inline-block align-middle h-8 w-8'
     return (
       <img
         src={url}
         alt={props.alt ?? ''}
         loading="lazy"
-        className={esBalizaPrevia ? 'inline-block align-middle h-6 w-6' : 'inline-block align-middle h-8 w-8'}
+        className={claseIcono}
       />
     )
   }

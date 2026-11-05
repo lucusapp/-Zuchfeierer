@@ -12,6 +12,32 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 14) — Cambio de canal y comienzo de la LTV 60 tras la E4T
+
+**Qué se hizo:** el usuario mandó una foto de un cartel blanco tipo
+"CANAL 69" (referencia de formato, no de valor) y dictó que justo al
+superar la señal E4T hay un cambio de canal al **canal 61**, y además
+el comienzo de la LTV de 60 km/h en ese mismo punto. Se creó un icono
+nuevo, `cambio-canal-61.svg` (rectángulo blanco apaisado con borde
+negro, "CANAL" y el número, replicando el formato de la foto), y se
+añadieron ambos detalles anidados bajo **E4T**. Como el cartel es
+apaisado (no cuadrado como el resto de iconos de señales), se ajustó
+`ContentImage` en `DocPage.tsx` para que los iconos cuyo nombre
+contenga "cambio-canal" usen ancho automático (`h-7 w-auto`) en lugar
+del cuadrado fijo de 32×32, evitando que el texto del cartel salga
+deformado.
+
+**Qué se decidió y por qué:** se interpretó la foto de "CANAL 69" como
+plantilla visual reutilizable (mismo patrón que los iconos de
+velocidad o LTV, donde la imagen de referencia fija el diseño pero no
+el valor numérico concreto, que se dicta aparte).
+
+**Pendiente:** confirmar el nombre real de "E-pendiente"; seguir
+completando el complejo logístico y la estación de viajeros de
+Tarragona.
+
+---
+
 ## 2026-11-05 (noche, 13) — Dos señales nuevas en el complejo logístico: nombre pendiente y E4T
 
 **Qué se hizo:** el usuario dictó una señal (baliza previa antes de un
