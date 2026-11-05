@@ -12,6 +12,22 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 16) — Señal S2/2ª: absoluta, aspecto de señal de entrada
+
+**Qué se hizo:** se añadió la baliza previa y la señal S2/2ª,
+anidadas bajo el grupo del 60 (sibling de E-pendiente, E4T y el
+anuncio de 30), reutilizando `senal-entrada.svg` porque el usuario
+confirmó que tiene el mismo aspecto (cabezal + círculo blanco debajo).
+Se anotó que es absoluta y que está en el pórtico. El usuario pidió
+quitar a mitad de la dictado el detalle "protege los cambios de punta
+a vía 1" que se había incluido, así que se eliminó esa frase y quedó
+solo "Señal — absoluta, en el pórtico."
+
+**Pendiente:** el usuario no dio ubicación para la baliza previa de
+S2/2ª; seguir completando el complejo logístico.
+
+---
+
 ## 2026-11-05 (noche, 15) — Anuncio de LTV-CSV 30 con baliza en el complejo logístico
 
 **Qué se hizo:** se añadió un nuevo anuncio de LTV-CSV a 30 km/h con
