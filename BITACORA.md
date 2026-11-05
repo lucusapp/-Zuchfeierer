@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 18) — Arranca la estación de viajeros de Tarragona: andén, 145 y S2/2
+
+**Qué se hizo:** se creó el apartado `## Estación de viajeros` en
+`tarragona.md`. El usuario dictó: andén de viajeros con vía general
+vía 2; se estaciona a la altura de la señal de velocidad máxima de
+145 del andén (icono nuevo `velocidad-maxima-145.svg`, mismo patrón
+que el de 135), un poco antes de la señal de salida; la baliza previa
+de la señal de salida está al comienzo del andén; la señal de salida
+**S2/2** es visible desde el punto de estacionamiento y es del tipo
+"círculo blanco debajo" (se reutilizó `senal-entrada.svg`, sin crear
+icono nuevo). El usuario bautizó explícitamente este tipo de icono
+(cabezal de 3 luces + vástago + círculo inferior) como **"señal con
+indicación de rebase"** de ahora en adelante — se usó ya ese nombre en
+el alt del icono para este punto.
+
+**Qué se decidió y por qué:** no se renombró el fichero
+`senal-entrada.svg` ni su aria-label interno (seguiría siendo válido
+para E2, E4T, S2/2A), solo se adoptó el nuevo nombre genérico en el
+texto/alt de los puntos nuevos que usan este tipo de señal — evita
+romper referencias ya confirmadas y deja clara la terminología hacia
+adelante.
+
+**Pendiente:** seguir completando la estación de viajeros de
+Tarragona.
+
+---
+
 ## 2026-11-05 (noche, 17) — Corrección de nombre S2/2A y detalle de las vías que protege
 
 **Qué se hizo:** el usuario corrigió el nombre de la señal recién

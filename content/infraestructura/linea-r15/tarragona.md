@@ -23,3 +23,12 @@ meta:
   - **S2/2A**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la señal S2/2A.
     - ![Señal de entrada](infraestructura/senales/senal-entrada.svg) Señal — absoluta, en el pórtico. Protege los cambios para ir a las vías 1, 3 o 5, o para ir a la 4 o 6, de la estación de viajeros.
+
+## Estación de viajeros
+
+Andén de viajeros. La vía general es la **vía 2**.
+
+- ![145](infraestructura/senales/velocidad-maxima-145.svg) **145** — señal de velocidad máxima en el andén, un poco antes de la señal de salida. Estacionamos a su altura.
+  - **S2/2**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la señal de salida, al comienzo del andén.
+    - ![Señal con indicación de rebase](infraestructura/senales/senal-entrada.svg) Señal de salida — del tipo señal con indicación de rebase (círculo blanco debajo). Visible desde el punto de estacionamiento.
