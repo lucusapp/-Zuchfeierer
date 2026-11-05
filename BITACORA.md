@@ -12,6 +12,35 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 25) — Corrección estructural: 54 y E'2 al nivel de las incidencias, no de la velocidad
+
+**Qué se hizo:** el usuario aportó una captura de cómo quedaba el
+formato en el tramo Vila-seca → Tarragona (956 y E'2 anidados bajo el
+135) y señaló la regla exacta: cada viñeta de **nivel superior**
+representa la velocidad a la que se circula en ese tramo; todo lo
+demás (incidencias, señales nombradas como 54 o E'2) va **anidado**
+dentro de esa velocidad, nunca como viñeta propia de nivel superior.
+En `tramo-tarragona-altafulla-tamarit.md` esto no se cumplía: "54" y
+"E'2" estaban al mismo nivel que "30" y "160" (con icono de velocidad)
+en vez de anidados bajo ellos. Se corrigió: ahora solo **30** y
+**160** son de nivel superior; "Pendiente prolongada" pasa a anidada
+bajo el 30; y "54", el anuncio de velocidad 140/155 y "E'2" quedan
+anidados bajo el **160**, todos al mismo nivel que "Señal permisiva".
+También se eliminó la línea suelta "Cambio de rasante a izquierdas —
+finaliza en el km 6,8" y se fusionó esa información dentro de la nota
+del anuncio de velocidad 140/155 ("...después de un cambio de rasante
+a izquierdas, en el km 6,8").
+
+**Qué se decidió y por qué:** se preguntó primero para confirmar la
+lectura exacta de la captura antes de reestructurar todo el tramo por
+segunda vez, dado que la corrección anterior en esta misma sesión ya
+se había quedado corta.
+
+**Pendiente:** aplicar este mismo criterio (nivel superior = solo
+velocidad) a cualquier nuevo punto que se añada en adelante.
+
+---
+
 ## 2026-11-05 (noche, 24) — Ajustes de estructura: trinchera anidada, 54 con Señal, quitada la pantalla de proximidad
 
 **Qué se hizo:** el usuario revisó el tramo y pidió volver a la
