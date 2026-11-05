@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 19) — Arranca el tramo Tarragona → Altafulla-Tamarit
+
+**Qué se hizo:** se empezó a rellenar
+`tramo-tarragona-altafulla-tamarit.md` (hasta ahora "Pendiente de
+completar"): pendiente prolongada de 700 m que termina en las agujas
+de salida; a partir de ahí, LTV-CSV a 30 km/h (reutilizando el icono
+ya existente `senal-ltv-csv-30.svg`); y un indicador de posición de
+agujas a vía directa, señal nueva para la que se creó el icono
+`indicador-agujas-via-directa.svg` (cuadrado negro con flecha blanca
+hacia arriba, según la foto de referencia del usuario).
+
+**Pendiente:** seguir completando este tramo y el resto de la R15.
+
+---
+
 ## 2026-11-05 (noche, 18) — Arranca la estación de viajeros de Tarragona: andén, 145 y S2/2
 
 **Qué se hizo:** se creó el apartado `## Estación de viajeros` en
