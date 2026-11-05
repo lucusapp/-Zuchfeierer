@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 3) — E'2 dividida en tres indicaciones
+
+**Qué se hizo:** el usuario vio que la "Previa" de E'2 mezclaba
+demasiado detalle (ubicación + proximidad + anuncio de LTV en un solo
+punto) y pidió dividirla en tres indicaciones nidadas: **Previa** (solo
+ubicación), **Proximidad** (icono de proximidad + icono de anuncio LTV
++ detalle), y **Señal** (ya existía). Se separó en
+`tramo-vila-seca-tarragona.md`.
+
+**Pendiente:** seguir dictando la R15.
+
+---
+
 ## 2026-11-05 (noche, 2) — Avanzada renombrada a E'2, baliza con "B"
 
 **Qué se hizo:** tres ajustes sobre el punto anterior: (1) la "B" de
