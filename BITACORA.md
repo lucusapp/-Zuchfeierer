@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 6) — Fin de la LTV 110: vuelta a 135, cierra el grupo
+
+**Qué se hizo:** el usuario dictó el fin de la LTV de 110 (justo
+después de reconocer el anuncio de 60) y la vuelta a la velocidad
+máxima de 135. Se añadió como un tercer punto de nivel superior en
+`tramo-vila-seca-tarragona.md`, reutilizando el icono ya existente
+`velocidad-maxima-135.svg` (sin crear uno nuevo), cerrando el grupo del
+110 igual que el 110 cerró el del 135 anterior.
+
+**Pendiente:** seguir dictando dentro de este nuevo grupo del 135.
+
+---
+
 ## 2026-11-05 (noche, 5) — Anuncio de LTV-CSV 60 con baliza, dentro del 110
 
 **Qué se hizo:** el usuario dictó "Anuncio de LTV CSV y Baliza. Justo al
