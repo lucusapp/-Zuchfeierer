@@ -12,6 +12,27 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 10) — Anuncio de otra LTV-CSV 60 en la nave de SERCO
+
+**Qué se hizo:** el usuario dictó un anuncio de LTV-CSV a 60 km/h a la
+altura de la nave de SERCO (señal en la vía de la derecha, en la
+columna del pórtico). Se preguntó explícitamente si se refería a la
+misma restricción que la señal de 60 recién cerrada o a una nueva más
+adelante — el usuario confirmó que es el anuncio de **otra**
+restricción futura, también a 60. Se añadió anidado bajo el grupo
+actual del 60 (reutilizando el icono ya existente
+`anuncio-ltv-csv-60.svg`), a la espera de la señal real que la cierre
+más adelante.
+
+**Qué se decidió y por qué:** se preguntó antes de asumir la relación
+entre ambos puntos, siguiendo la regla de no dar información por
+buena cuando hay ambigüedad real.
+
+**Pendiente:** falta la señal real de esta segunda LTV-CSV 60 (aún no
+dictada) y seguir completando el tramo hacia Tarragona.
+
+---
+
 ## 2026-11-05 (noche, 9) — Señal de LTV-CSV 60: cierra el grupo del 135, quitado detalle de E2
 
 **Qué se hizo:** se quitó de la señal de entrada E2 el detalle "pantalla
