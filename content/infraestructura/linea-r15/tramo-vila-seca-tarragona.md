@@ -11,3 +11,6 @@ meta:
   - **956**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — en recta, a la altura del comienzo de la nave con contrachapado azul superior.
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — Intermedia Absoluta. Tiene pantalla eléctrica.
+  - **Avanzada** (próxima)
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — justo antes de un depósito de agua grande a mano izquierda, y un poco antes del puente de la autovía (se pasa por debajo).
+    - ![Señal de proximidad](infraestructura/senales/senal-proximidad-avanzada.svg) ![Anuncio LTV](infraestructura/senales/anuncio-ltv-110.svg) En la señal de proximidad (las dos franjas), anuncio de LTV a **110**.

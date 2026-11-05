@@ -12,6 +12,34 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche) — Iconos de LTV/CSV y proximidad a la avanzada
+
+**Qué se hizo:** el usuario pasó 5 fotos de señales reales para que se
+crearan como iconos: la **señal de proximidad a la avanzada** (poste
+con panel de rayas diagonales), el **anuncio de LTV** (círculo
+amarillo con el número) y el **anuncio de LTV-CSV** (círculo amarillo +
+rectángulo naranja), y la **señal de LTV** y **señal de LTV-CSV**
+(mismo esquema en rombo en vez de círculo — rombo = señal fija del
+punto, círculo = anuncio previo). Se crearon como SVG en
+`public/content-images/infraestructura/senales/`, con un patrón
+reutilizable para generar rápido otros valores de velocidad. Se
+añadió el punto de la **baliza previa de la avanzada** (antes de un
+depósito de agua y del puente de la autovía) y el anuncio de LTV a 110
+en la señal de proximidad, anidado bajo el 135 junto a la señal 956
+existente, en `tramo-vila-seca-tarragona.md` (R15).
+
+**Qué se decidió y por qué:** al dictar el punto, el usuario dijo
+primero "anuncio de CSV a 110" y lo corrigió enseguida a "anuncio de
+LTV" (sin CSV) — se generó primero el icono CSV-110 por el enunciado
+inicial, y al corregirse se generó el icono LTV-110 (sin rectángulo
+naranja) y se borró el CSV-110 que no llegó a usarse, para no dejar un
+archivo suelto sin referencia.
+
+**Pendiente:** seguir dictando la R15; generar más iconos de
+velocidad según aparezcan valores nuevos.
+
+---
+
 ## 2026-11-05 (tarde) — Icono de previa más pequeño y dos detalles nuevos
 
 **Qué se hizo:** el usuario pidió que el icono de la baliza previa fuera
