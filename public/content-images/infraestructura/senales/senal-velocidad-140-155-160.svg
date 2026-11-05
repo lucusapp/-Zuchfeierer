@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 220" role="img" aria-label="Señal de velocidad máxima 140/155/160">
+  <rect x="19" y="19" width="62" height="62" rx="3" fill="#ffffff" stroke="#111111" stroke-width="6" transform="rotate(45 50 50)"/>
+  <rect x="19" y="75" width="62" height="62" rx="3" fill="#ffffff" stroke="#111111" stroke-width="6" transform="rotate(45 50 106)"/>
+  <rect x="19" y="131" width="62" height="62" rx="3" fill="#ffffff" stroke="#111111" stroke-width="6" transform="rotate(45 50 162)"/>
+  <text x="50" y="57" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111111" text-anchor="middle">140</text>
+  <text x="50" y="113" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111111" text-anchor="middle">155</text>
+  <text x="50" y="169" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#111111" text-anchor="middle">160</text>
+</svg>

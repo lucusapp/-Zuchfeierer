@@ -92,11 +92,17 @@ function ContentImage(props: { src?: string; alt?: string }) {
     // texto), no cuadrados como el resto de iconos: ancho automático en vez
     // de forzar un cuadrado, para no deformar el texto.
     const esCambioCanal = /cambio-canal/.test(props.src)
+    // Los paneles de velocidad con varias indicaciones apiladas (anuncio o
+    // señal) son más altos que anchos: más alto que el resto de iconos, con
+    // ancho automático para no deformar los círculos/rombos apilados.
+    const esVelocidadApilada = /(anuncio|senal)-velocidad-\d/.test(props.src)
     const claseIcono = esCambioCanal
       ? 'inline-block align-middle h-7 w-auto'
-      : esBalizaPrevia
-        ? 'inline-block align-middle h-6 w-6'
-        : 'inline-block align-middle h-8 w-8'
+      : esVelocidadApilada
+        ? 'inline-block align-middle h-12 w-auto'
+        : esBalizaPrevia
+          ? 'inline-block align-middle h-6 w-6'
+          : 'inline-block align-middle h-8 w-8'
     return (
       <img
         src={url}

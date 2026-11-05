@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" role="img" aria-label="Anuncio de velocidad máxima 140/155">
+  <circle cx="50" cy="44" r="36" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+  <circle cx="50" cy="100" r="36" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+  <text x="50" y="51" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#111111" text-anchor="middle">140</text>
+  <text x="50" y="107" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#111111" text-anchor="middle">155</text>
+</svg>

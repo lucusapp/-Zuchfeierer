@@ -12,6 +12,37 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 23) — Paneles de velocidad apilados: anuncio 140/155 y señal E'2 140/155/160
+
+**Qué se hizo:** el usuario mandó dos fotos de referencia (círculos
+apilados = anuncio, rombos apilados = señal, con valores de ejemplo
+125/135/145) para un tipo de cartel con varias indicaciones de
+velocidad máxima según categoría de tren. Se crearon dos iconos reales
+con los valores dictados: `anuncio-velocidad-140-155.svg` (dos
+círculos, al final de un cambio de rasante a izquierdas en el km 6,8,
+solo 2 indicaciones, no 3 como la foto) y
+`senal-velocidad-140-155-160.svg` (tres rombos, en el km 7,3 justo
+antes de un puente, 3 indicaciones como la foto). Se añadió también
+una nueva **E'2** (nombre reutilizado de otro punto de la línea, pero
+es una señal distinta en este tramo) con su baliza previa en el km 7,
+que además incorpora el icono de pantalla de proximidad ya existente.
+Como estos paneles apilados son más altos que anchos, se ajustó
+`ContentImage` en `DocPage.tsx` para que los iconos
+`anuncio-velocidad-*`/`senal-velocidad-*` usen `h-12 w-auto` en lugar
+del cuadrado fijo, evitando que los círculos/rombos apilados salgan
+deformados.
+
+**Qué se decidió y por qué:** se interpretó el círculo-apilado como
+"anuncio" y el rombo-apilado como "señal" siguiendo la misma
+convención ya usada para los iconos de LTV (círculo = anuncio, rombo =
+señal), ya que el usuario llamó explícitamente "señal de anuncio" al
+primer punto y el segundo es la indicación real en la propia señal
+E'2.
+
+**Pendiente:** seguir completando el tramo Tarragona-Altafulla.
+
+---
+
 ## 2026-11-05 (noche, 22) — Rellenado el hueco: baliza previa de la señal 54 en el km 5,2
 
 **Qué se hizo:** el usuario trajo el primer dato del tramo que había

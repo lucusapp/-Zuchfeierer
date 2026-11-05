@@ -15,3 +15,8 @@ meta:
   - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal permisiva.
 - **54**
   - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — en el **km 5,2**, de la señal intermedia permisiva número 54.
+- Cambio de rasante a izquierdas — finaliza en el **km 6,8**.
+  - ![Anuncio de velocidad máxima](infraestructura/senales/anuncio-velocidad-140-155.svg) Anuncio de velocidad máxima con dos indicaciones: **140** y **155**.
+- **E'2**
+  - ![Baliza previa](infraestructura/senales/baliza-previa.svg) ![Señal de proximidad](infraestructura/senales/senal-proximidad-avanzada.svg) Previa — en el **km 7**, con la pantalla de proximidad de la avanzada.
+  - ![Señal de velocidad máxima](infraestructura/senales/senal-velocidad-140-155-160.svg) Señal — en el **km 7,3**, justo antes de llegar al puente, con tres indicaciones: **140**, **155** y **160**.
