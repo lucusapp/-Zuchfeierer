@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 15) — Anuncio de LTV-CSV 30 con baliza en el complejo logístico
+
+**Qué se hizo:** se añadió un nuevo anuncio de LTV-CSV a 30 km/h con
+su baliza, anidado directamente bajo el grupo del 60 (al mismo nivel
+que "E-pendiente" y "E4T"), siguiendo el mismo criterio ya usado antes
+para los anuncios: van anidados bajo el grupo de la velocidad activa,
+no dentro de una señal con nombre concreto. Se reutilizaron los iconos
+ya existentes `anuncio-ltv-csv-30.svg` y `baliza-previa.svg`, sin crear
+ninguno nuevo.
+
+**Pendiente:** el usuario no dio ubicación para este anuncio; falta
+por dictar y la señal real de LTV-CSV 30 que lo cierre más adelante.
+
+---
+
 ## 2026-11-05 (noche, 14) — Cambio de canal y comienzo de la LTV 60 tras la E4T
 
 **Qué se hizo:** el usuario mandó una foto de un cartel blanco tipo
