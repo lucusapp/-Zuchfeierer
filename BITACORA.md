@@ -12,6 +12,28 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 4) — Señal de LTV 110: cierra el grupo del 135
+
+**Qué se hizo:** el usuario dictó la señal de LTV (rombo, no anuncio)
+a 110 km/h, justo antes del segundo puente, y aclaró explícitamente
+cómo colocarla: **al mismo nivel que 135**, no anidada dentro — porque
+esta señal marca el final de la velocidad 135 y el inicio de la 110;
+todo lo que venga a partir de ahora queda anidado dentro del 110. Se
+creó `senal-ltv-110.svg` (rombo amarillo) y se añadió el punto en
+`tramo-vila-seca-tarragona.md` como hermano de 135, cerrando su grupo.
+Se verificó en el navegador que queda fuera de la línea vertical de
+135/956/E'2.
+
+**Qué se decidió y por qué:** esto confirma en la práctica la regla ya
+acordada ("una velocidad absoluta agrupa todo hasta la siguiente
+velocidad absoluta") — el usuario la aplicó él mismo correctamente al
+dictar, señal de que el formato ya se entiende bien de cara a seguir
+dictando el resto de la línea.
+
+**Pendiente:** seguir dictando dentro del 110.
+
+---
+
 ## 2026-11-05 (noche, 3) — E'2 dividida en tres indicaciones
 
 **Qué se hizo:** el usuario vio que la "Previa" de E'2 mezclaba

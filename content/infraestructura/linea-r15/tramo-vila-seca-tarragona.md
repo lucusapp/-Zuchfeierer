@@ -15,3 +15,4 @@ meta:
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — justo antes de un depósito de agua grande a mano izquierda, y un poco antes del puente de la autovía (se pasa por debajo).
     - ![Señal de proximidad](infraestructura/senales/senal-proximidad-avanzada.svg) ![Anuncio LTV](infraestructura/senales/anuncio-ltv-110.svg) Proximidad — en la señal de proximidad (las dos franjas), anuncio de LTV a **110**.
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — poco después de pasar el puente. Es absoluta y tiene pantalla eléctrica.
+- ![Señal de LTV 110](infraestructura/senales/senal-ltv-110.svg) **110** — justo antes de llegar al segundo puente. Deja de circularse a 135; a partir de aquí, 110.
