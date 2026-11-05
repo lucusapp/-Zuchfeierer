@@ -12,6 +12,30 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-05 (noche, 24) — Ajustes de estructura: trinchera anidada, 54 con Señal, quitada la pantalla de proximidad
+
+**Qué se hizo:** el usuario revisó el tramo y pidió volver a la
+disciplina estructural ya establecida: "Se supera una trinchera" pasó
+de ser una viñeta de nivel superior a un detalle de texto anidado
+dentro del grupo del **30** (sin viñeta propia, como el resto de
+detalles anidados); la señal **54** ganó una línea "Señal — permisiva"
+(con el icono `senal-permisiva.svg`) siguiendo siempre el patrón
+Previa → Señal, en vez de dejar la previa con el texto suelto
+"de la señal intermedia permisiva número 54". A mitad de la revisión,
+también pidió quitar de la previa de **E'2** la mención "con la
+pantalla de proximidad de la avanzada" (texto e icono), que se había
+añadido en la entrada anterior — queda solo "Previa — en el km 7."
+
+**Qué se decidió y por qué:** ninguno de estos cambios añade hechos
+nuevos, solo reordena/recorta para seguir la convención ya acordada
+(grupo de velocidad > señal nombrada > Previa/Señal), así que no hacía
+falta preguntar nada antes de aplicarlos.
+
+**Pendiente:** seguir completando el tramo Tarragona-Altafulla
+manteniendo esta estructura.
+
+---
+
 ## 2026-11-05 (noche, 23) — Paneles de velocidad apilados: anuncio 140/155 y señal E'2 140/155/160
 
 **Qué se hizo:** el usuario mandó dos fotos de referencia (círculos
