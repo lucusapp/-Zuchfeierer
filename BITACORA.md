@@ -12,6 +12,30 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (9) — Salto a Barcelona-Sants: pajarita 45, S2/13, S2/13A e indicadora de dirección B
+
+**Qué se hizo:** el usuario saltó directamente a la estación de
+Barcelona-Sants (quedan muchas estaciones/tramos intermedios de la
+R15 aún "Pendiente de completar" entre Altafulla y aquí). Mandó una
+foto de una "pajarita" (señal fija fundamental con un rombo amarillo
+con cola apuntando hacia abajo, debajo, marcando una velocidad) y
+dictó: por vía general, dos señales de salida (**S2/13**, al final del
+andén, y **S2/13A**, en el lugar donde debería estar el piquete entre
+esta vía y la desviada), ambas con pajarita a **45 km/h**; suelen
+meternos por la desviada. Se creó el icono nuevo `pajarita-45.svg`
+(rombo + cola, mismo estilo que los demás carteles amarillos) y se
+reutilizó `senal-fija-fundamental.svg` para el cabezal de cada señal.
+A mitad de turno, el usuario añadió que ambas señales tienen también
+una indicadora de dirección eléctrica con la letra **B** (Barcelona) —
+se creó `indicadora-direccion-b.svg` (panel negro con "B" en blanco,
+estilo "pantalla eléctrica") y se añadió a ambas.
+
+**Pendiente:** completar las estaciones y tramos intermedios de la R15
+que quedan pendientes entre Altafulla-Tamarit y Barcelona-Sants, y el
+resto de Barcelona-Sants.
+
+---
+
 ## 2026-11-06 (8) — Usada la indicadora de posición de agujas (icono nuevo) e Itinerarios de Salida
 
 **Qué se hizo:** se añadieron, anidadas bajo el 160 del tramo

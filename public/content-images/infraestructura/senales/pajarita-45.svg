@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" role="img" aria-label="Pajarita de velocidad 45">
+  <rect x="18" y="18" width="64" height="64" rx="3" fill="#facc15" stroke="#111111" stroke-width="7" transform="rotate(45 50 50)"/>
+  <path d="M 50 82 L 57 112 L 50 138 L 43 112 Z" fill="#facc15" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+  <text x="50" y="58" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#111111" text-anchor="middle">45</text>
+</svg>
