@@ -12,6 +12,20 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (11) — Señal S2/13-14 en el túnel (Barcelona-Sants)
+
+**Qué se hizo:** se añadió, anidada bajo el 45, la señal **S2/13-14**:
+baliza previa inmediatamente después de la indicadora eléctrica de
+posición de agujas, con la señal más adelante siguiendo el túnel, y
+es absoluta. Como no se dio el aspecto físico de la señal, se dejó la
+línea "Señal — absoluta." sin icono, a la espera de que se confirme su
+tipo.
+
+**Pendiente:** aspecto/icono de la señal S2/13-14; seguir completando
+Barcelona-Sants.
+
+---
+
 ## 2026-11-06 (10) — Indicadora eléctrica de posición de agujas en mitad del túnel (Barcelona-Sants)
 
 **Qué se hizo:** se añadió, anidada bajo el grupo del 45 en

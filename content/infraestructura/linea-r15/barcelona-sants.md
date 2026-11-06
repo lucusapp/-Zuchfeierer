@@ -16,3 +16,6 @@ meta:
     - ![Indicadora de dirección B](infraestructura/senales/indicadora-direccion-b.svg) Indicadora de dirección eléctrica — debe tener la **B**, que indica que vamos a Barcelona.
   - Suelen meternos por la desviada.
   - ![Indicadora de posición de agujas](infraestructura/senales/indicador-posicion-agujas.svg) Indicadora eléctrica de posición de agujas a vía directa — en mitad del túnel.
+  - **S2/13-14**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — inmediatamente después de la indicadora de posición de agujas eléctrica. La señal sigue el túnel.
+    - Señal — absoluta.
