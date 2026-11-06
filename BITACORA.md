@@ -12,6 +12,22 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (8) — Usada la indicadora de posición de agujas (icono nuevo) e Itinerarios de Salida
+
+**Qué se hizo:** se añadieron, anidadas bajo el 160 del tramo
+Altafulla-Tamarit → Torredembarra: unas agujas de talón, y la
+indicadora eléctrica de posición de agujas a vía directa para las
+agujas de punta siguientes — usando por fin el icono
+`indicador-posicion-agujas.svg` (flecha fina discontinua) que el
+usuario había adelantado como "para la siguiente descripción". Se
+anotó también la regla operativa: si está encendida (que suele
+estarlo), se evita aplicar la norma de Itinerarios de Salida prescrita
+para las agujas que puedan desviar (las de punta).
+
+**Pendiente:** seguir completando el tramo Altafulla-Torredembarra.
+
+---
+
 ## 2026-11-06 (7) — Velocidad 160 explícita en Altafulla-Tamarit y arranca el tramo a Torredembarra
 
 **Qué se hizo:** antes de dictar el primer punto del nuevo tramo
