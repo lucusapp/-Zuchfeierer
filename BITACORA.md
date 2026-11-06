@@ -12,6 +12,24 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (1) — Nueva señal E2 tras otra señal de 160, con icono de rebase confirmado
+
+**Qué se hizo:** se añadió una nueva señal **E2** (distinta de la E'2
+ya existente en este mismo tramo y de la E2 del tramo Vila-seca →
+Tarragona) al tramo Tarragona → Altafulla-Tamarit: su baliza previa
+está justo antes de llegar al segundo puente, al finalizar una curva a
+derechas, y la señal está después de otra señal de velocidad máxima de
+160. Como esta última es una señal de velocidad absoluta, se le dio su
+propio grupo de nivel superior (nuevo **160**), con E2 anidada debajo,
+siguiendo la regla ya acordada de que el nivel superior es siempre la
+velocidad activa. Se preguntó por el aspecto de E2 antes de elegir
+icono; el usuario confirmó que es del tipo "señal con indicación de
+rebase" (se reutilizó `senal-entrada.svg`, sin crear uno nuevo).
+
+**Pendiente:** seguir completando el tramo Tarragona-Altafulla.
+
+---
+
 ## 2026-11-05 (noche, 25) — Corrección estructural: 54 y E'2 al nivel de las incidencias, no de la velocidad
 
 **Qué se hizo:** el usuario aportó una captura de cómo quedaba el

@@ -20,3 +20,7 @@ meta:
   - **E'2**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — en el **km 7**.
     - ![Señal de velocidad máxima](infraestructura/senales/senal-velocidad-140-155-160.svg) Señal — en el **km 7,3**, justo antes de llegar al puente, con tres indicaciones: **140**, **155** y **160**.
+- ![160](infraestructura/senales/velocidad-maxima-160.svg) **160** — señal de velocidad máxima.
+  - **E2**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — justo antes de llegar al segundo puente, finalizando la curva a derechas.
+    - ![Señal con indicación de rebase](infraestructura/senales/senal-entrada.svg) Señal — después de la señal de velocidad máxima de 160.
