@@ -12,6 +12,20 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (4) — Corregidos los iconos de vía directa/desviada (estaban intercambiados)
+
+**Qué se hizo:** el usuario avisó de que el icono mostrado como "vía
+directa" era en realidad el de "vía desviada": los dos patrones de
+luces (arriba encendidas / abajo encendidas) estaban intercambiados
+respecto a lo que tocaba. Se corrigió intercambiando el contenido de
+`indicador-entrada-via-directa.svg` e
+`indicador-entrada-via-desviada.svg` (ahora "directa" = luces de
+abajo encendidas, "desviada" = luces de arriba), sin tocar el texto
+del contenido ni los nombres de archivo, así que no hizo falta editar
+`altafulla-tamarit.md`.
+
+---
+
 ## 2026-11-06 (3) — Simplificada la nota de las agujas de punta
 
 **Qué se hizo:** el usuario pidió quitar el detalle "anuncio de
