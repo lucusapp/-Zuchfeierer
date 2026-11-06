@@ -12,6 +12,20 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (6) — Señal de salida S2/2 en Altafulla-Tamarit
+
+**Qué se hizo:** se añadió la señal de salida **S2/2** (nombre
+reutilizado, señal distinta de la S2/2 de Tarragona): baliza previa al
+comienzo del andén, y la señal en sí bastante alejada del andén
+(aunque se ve bien), del tipo con indicador de rebase autorizado —
+mismo icono `senal-entrada.svg` ya usado para este tipo de señal. Se
+añadió también, como nota general de la estación (no ligada a S2/2),
+que Altafulla-Tamarit no tiene indicadora de salida.
+
+**Pendiente:** seguir completando Altafulla-Tamarit.
+
+---
+
 ## 2026-11-06 (5) — Alerta roja para avisos operativos críticos (OTs en Altafulla-Tamarit)
 
 **Qué se hizo:** se añadió el punto de estacionamiento en Altafulla-Tamarit
