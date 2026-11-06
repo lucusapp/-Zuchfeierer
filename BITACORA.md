@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (7) — Velocidad 160 explícita en Altafulla-Tamarit y arranca el tramo a Torredembarra
+
+**Qué se hizo:** antes de dictar el primer punto del nuevo tramo
+Altafulla-Tamarit → Torredembarra (un anuncio, no una velocidad
+absoluta), se preguntó a qué velocidad se circula para poder ponerla
+como viñeta de nivel superior. El usuario confirmó **160 km/h** y
+señaló que la propia estación de Altafulla-Tamarit tampoco tenía la
+velocidad indicada — se corrigió también ahí, añadiendo un nuevo nivel
+superior "160" del que ahora cuelgan todos los puntos que ya existían
+(agujas de talón, agujas de punta, estacionamiento, S2/2, nota de la
+indicadora de salida). En el nuevo tramo se creó el primer punto:
+**160** de salida, con la indicadora de anuncio de LTV-CSV a 60 km/h
+anidada debajo (reutilizando `anuncio-ltv-csv-60.svg`), justo al
+superar la señal de salida.
+
+**Qué se decidió y por qué:** se preguntó antes de asumir un valor de
+velocidad en vez de dar por sentado 135 u otro valor, ya que el inicio
+de un tramo sin velocidad explícita es justo el tipo de ambigüedad que
+no se debe rellenar a ciegas.
+
+**Pendiente:** el icono nuevo `indicador-posicion-agujas.svg` (flecha
+fina discontinua) sigue sin usarse — el usuario dijo que iría "en la
+siguiente descripción", aún por dictar. Seguir completando el tramo
+Altafulla-Torredembarra.
+
+---
+
 ## 2026-11-06 (6) — Señal de salida S2/2 en Altafulla-Tamarit
 
 **Qué se hizo:** se añadió la señal de salida **S2/2** (nombre
