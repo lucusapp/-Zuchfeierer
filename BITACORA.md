@@ -12,6 +12,25 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (2) — Arranca la estación de Altafulla-Tamarit: agujas de talón y de punta
+
+**Qué se hizo:** se empezó a rellenar `altafulla-tamarit.md` (hasta
+ahora "Pendiente de completar"). El usuario mandó dos fotos de un
+indicador de 4 luces en cuadrícula 2×2 (dos nuevas señales: vía
+directa con las dos de arriba encendidas, vía desviada con las dos de
+abajo encendidas) y se crearon ambos iconos,
+`indicador-entrada-via-directa.svg` e
+`indicador-entrada-via-desviada.svg` (solo se usa el primero por
+ahora). Contenido añadido: andén de viajeros alejado; antes, agujas de
+talón con indicador de entrada a vía directa y agujas de punta, que se
+pasan a 30 km/h al venir en secuencia de señales (doble anuncio de
+parada: anuncio de precaución + anuncio de parada).
+
+**Pendiente:** seguir completando Altafulla-Tamarit; queda disponible
+el icono de vía desviada para cuando se dicte ese caso.
+
+---
+
 ## 2026-11-06 (1) — Nueva señal E2 tras otra señal de 160, con icono de rebase confirmado
 
 **Qué se hizo:** se añadió una nueva señal **E2** (distinta de la E'2
