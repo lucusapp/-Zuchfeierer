@@ -68,10 +68,6 @@ body {
   @apply bg-rail-800;
 }
 
-.prose-content blockquote {
-  @apply border-l-4 border-rail-accent bg-rail-900 px-3 py-2 text-sm text-slate-300 mb-4 rounded-r;
-}
-
 .prose-content code {
   @apply bg-rail-800 px-1 py-0.5 rounded text-xs;
 }

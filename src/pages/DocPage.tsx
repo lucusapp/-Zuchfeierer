@@ -41,7 +41,7 @@ function LineaNodo(props: { section: Section; doc: Doc }) {
         <div className="prose-content px-3 pb-3 pl-8">
           <ReactMarkdown
             remarkPlugins={[remarkGfm, [remarkGlossaryLinks, `#/${section}/${doc.slug}`]]}
-            components={{ img: ContentImage, h2: CategoryHeading }}
+            components={{ img: ContentImage, h2: CategoryHeading, blockquote: AlertBlockquote }}
           >
             {doc.body}
           </ReactMarkdown>
@@ -156,6 +156,25 @@ function CategoryHeading(props: { children?: ReactNode }) {
     >
       {props.children}
     </h2>
+  )
+}
+
+// Una cita que empieza por 🚨 es una alerta operativa (p.ej. "no podemos
+// irnos sin X"), más grave que una nota normal: se pinta en rojo para que
+// destaque claramente del resto del contenido.
+function AlertBlockquote(props: { children?: ReactNode }) {
+  const text = getPlainText(props.children)
+  if (text.trimStart().startsWith('🚨')) {
+    return (
+      <blockquote className="border-l-4 border-red-500 bg-red-950/50 px-3 py-2 text-sm text-red-100 mb-4 rounded-r font-medium">
+        {props.children}
+      </blockquote>
+    )
+  }
+  return (
+    <blockquote className="border-l-4 border-rail-accent bg-rail-900 px-3 py-2 text-sm text-slate-300 mb-4 rounded-r">
+      {props.children}
+    </blockquote>
   )
 }
 
@@ -486,7 +505,7 @@ export default function DocPage() {
         <div className="prose-content" ref={contentRef}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm, [remarkGlossaryLinks, `#/${section}/${currentSlug}`]]}
-            components={{ img: ContentImage, h2: CategoryHeading }}
+            components={{ img: ContentImage, h2: CategoryHeading, blockquote: AlertBlockquote }}
           >
             {doc.body}
           </ReactMarkdown>

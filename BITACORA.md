@@ -12,6 +12,36 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (5) — Alerta roja para avisos operativos críticos (OTs en Altafulla-Tamarit)
+
+**Qué se hizo:** se añadió el punto de estacionamiento en Altafulla-Tamarit
+(final del andén, marca amarilla con el número 1) y, a petición
+explícita del usuario, un aviso que destaque visualmente: en esta
+estación dan las OTs y no se puede salir sin recibirlas. Se creó un
+nuevo componente `AlertBlockquote` en `DocPage.tsx` (usado en ambas
+instancias de `ReactMarkdown`, la de documento normal y la de
+`LineaNodo`): una cita de Markdown (`>`) que empiece por 🚨 se pinta en
+rojo (fondo rojo oscuro, borde y texto rojos), distinta del estilo
+naranja/neutro que ya usan las citas normales (como el aviso "⚠️ Punto
+crítico" de `linea-tarragona/estaciones.md`, que se deja intacto). Se
+quitó la regla CSS genérica `.prose-content blockquote` de
+`index.css` porque ahora el componente aplica el estilo completo en
+ambos casos.
+
+**Qué se decidió y por qué:** se reutilizó el emoji ⚠️ ya existente
+para avisos importantes normales, y se reservó 🚨 como marcador nuevo
+específico para alertas operativas graves (tipo "no te puedes ir sin
+X"), para no cambiar el aspecto de avisos ya existentes en el resto
+del contenido. Se verificó explícitamente en el navegador que el aviso
+antiguo de `linea-tarragona/estaciones.md` seguía viéndose igual tras
+el cambio.
+
+**Pendiente:** usar el marcador 🚨 en el futuro para cualquier otro
+aviso operativo crítico similar (p. ej. otros puntos donde no se pueda
+salir sin una autorización).
+
+---
+
 ## 2026-11-06 (4) — Corregidos los iconos de vía directa/desviada (estaban intercambiados)
 
 **Qué se hizo:** el usuario avisó de que el icono mostrado como "vía
