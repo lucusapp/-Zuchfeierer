@@ -19,3 +19,5 @@ meta:
   - **S2/13-14**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — inmediatamente después de la indicadora de posición de agujas eléctrica. La señal sigue el túnel.
     - Señal — absoluta.
+  - Cambios de talón.
+  - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la siguiente señal permisiva, inmediatamente después de los cambios de talón.

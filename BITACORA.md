@@ -12,6 +12,18 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (12) — Cambios de talón y previa de la siguiente señal permisiva (sin nombre aún)
+
+**Qué se hizo:** se añadieron, anidados bajo el 45, unos cambios de
+talón y la baliza previa de la siguiente señal permisiva, justo
+después de los cambios. Como el usuario no ha dado el nombre de esa
+señal todavía, se dejó sin encabezado en negrita (a diferencia de
+S2/13, S2/13A o S2/13-14), solo como línea de baliza previa suelta.
+
+**Pendiente:** nombre y señal en sí de esta próxima señal permisiva.
+
+---
+
 ## 2026-11-06 (11) — Señal S2/13-14 en el túnel (Barcelona-Sants)
 
 **Qué se hizo:** se añadió, anidada bajo el 45, la señal **S2/13-14**:
