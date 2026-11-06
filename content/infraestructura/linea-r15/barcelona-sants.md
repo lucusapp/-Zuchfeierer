@@ -14,4 +14,5 @@ meta:
   - **S2/13A**
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — en el lugar donde debería estar el piquete entre esta vía y la desviada.
     - ![Indicadora de dirección B](infraestructura/senales/indicadora-direccion-b.svg) Indicadora de dirección eléctrica — debe tener la **B**, que indica que vamos a Barcelona.
-- Suelen meternos por la desviada.
+  - Suelen meternos por la desviada.
+  - ![Indicadora de posición de agujas](infraestructura/senales/indicador-posicion-agujas.svg) Indicadora eléctrica de posición de agujas a vía directa — en mitad del túnel.

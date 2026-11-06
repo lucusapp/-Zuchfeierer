@@ -12,6 +12,18 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (10) — Indicadora eléctrica de posición de agujas en mitad del túnel (Barcelona-Sants)
+
+**Qué se hizo:** se añadió, anidada bajo el grupo del 45 en
+Barcelona-Sants, una indicadora de posición de agujas a vía directa en
+mitad del túnel. Como había dos iconos candidatos (flecha maciza vs.
+flecha fina discontinua "eléctrica"), se preguntó antes de elegir; el
+usuario confirmó que es del tipo eléctrico, así que se reutilizó
+`indicador-posicion-agujas.svg` (el mismo del tramo
+Altafulla-Torredembarra), sin crear ninguno nuevo.
+
+---
+
 ## 2026-11-06 (9) — Salto a Barcelona-Sants: pajarita 45, S2/13, S2/13A e indicadora de dirección B
 
 **Qué se hizo:** el usuario saltó directamente a la estación de
