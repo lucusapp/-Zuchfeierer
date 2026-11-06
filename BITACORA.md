@@ -12,6 +12,16 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (13) — Cambio de canal 69 en Barcelona-Sants
+
+**Qué se hizo:** se añadió el letrero de cambio de canal al **canal
+69**, justo a continuación de la previa de la señal permisiva. Se creó
+`cambio-canal-69.svg` con el mismo patrón que `cambio-canal-61.svg`
+(curiosamente, el valor real coincide con la foto de referencia
+"CANAL 69" que el usuario mandó como plantilla hace varias entradas).
+
+---
+
 ## 2026-11-06 (12) — Cambios de talón y previa de la siguiente señal permisiva (sin nombre aún)
 
 **Qué se hizo:** se añadieron, anidados bajo el 45, unos cambios de
