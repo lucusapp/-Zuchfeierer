@@ -10,4 +10,4 @@ meta:
 Andén de viajeros alejado.
 
 - ![Indicador de entrada a vía directa](infraestructura/senales/indicador-entrada-via-directa.svg) Agujas de talón — con indicador de entrada a vía directa.
-- Agujas de punta — se pasan a **30 km/h**, al venir en secuencia de señales (doble anuncio de parada, generalmente: anuncio de precaución y anuncio de parada).
+- Agujas de punta — se pasan a **30 km/h**, al venir en secuencia de señales (generalmente, doble anuncio de parada).

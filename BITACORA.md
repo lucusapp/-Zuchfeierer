@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-06 (3) — Simplificada la nota de las agujas de punta
+
+**Qué se hizo:** el usuario pidió quitar el detalle "anuncio de
+precaución y anuncio de parada" de la nota de las agujas de punta,
+dejando solo la indicación general de que se sigue secuencia de
+señales (doble anuncio de parada, generalmente).
+
+---
+
 ## 2026-11-06 (2) — Arranca la estación de Altafulla-Tamarit: agujas de talón y de punta
 
 **Qué se hizo:** se empezó a rellenar `altafulla-tamarit.md` (hasta
