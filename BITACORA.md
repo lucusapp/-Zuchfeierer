@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (20) — Indicador de agujas diagonal, recuerda los 40 ya establecidos
+
+**Qué se hizo:** el usuario mandó una foto de un indicador negro con
+flecha diagonal y un valor de ejemplo ("90") y dictó que, más
+adelante, hay una indicadora de posición de agujas de este tipo que
+recuerda que esas agujas son a 40 km/h — el mismo valor ya establecido
+por la pajarita de E2, no un valor nuevo. Se creó el icono
+`indicador-agujas-diagonal-40.svg` (cuadrado negro, flecha diagonal
+blanca hacia arriba-derecha, número 40) y se añadió como punto nuevo
+al final de la página.
+
+---
+
 ## 2026-11-07 (19) — Corregida la pajarita de E2: 40, no 45
 
 **Qué se hizo:** el usuario corrigió el valor de la pajarita de la
