@@ -96,9 +96,13 @@ function ContentImage(props: { src?: string; alt?: string }) {
     // señal) son más altos que anchos: más alto que el resto de iconos, con
     // ancho automático para no deformar los círculos/rombos apilados.
     const esVelocidadApilada = /(anuncio|senal)-velocidad-\d/.test(props.src)
+    // La señal con pajarita (semáforo + pajarita debajo) es un icono
+    // compuesto, mucho más alto que ancho: mismo tratamiento que los
+    // paneles de velocidad apilados.
+    const esSenalConPajarita = /senal-con-pajarita/.test(props.src)
     const claseIcono = esCambioCanal
       ? 'inline-block align-middle h-7 w-auto'
-      : esVelocidadApilada
+      : esVelocidadApilada || esSenalConPajarita
         ? 'inline-block align-middle h-12 w-auto'
         : esBalizaPrevia
           ? 'inline-block align-middle h-6 w-6'

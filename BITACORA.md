@@ -12,6 +12,35 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (2) — Reordenado Barcelona-Sants: E12 primero, 45 blanco de referencia, icono combinado señal+pajarita
+
+**Qué se hizo:** el usuario pidió reordenar y limpiar la estación,
+que había quedado desordenada tras las correcciones anteriores:
+- El nivel superior pasa a ser un **45 blanco** (icono
+  `velocidad-maxima-45.svg`, no la pajarita amarilla), como velocidad
+  de referencia de la estación, con la descripción de dónde está esa
+  señal de velocidad máxima incorporada en su propia línea (justo
+  después de E12, justo antes de las agujas).
+- **E12** pasa a ser el primer punto anidado, ya que "la estación
+  empieza con la señal de entrada E12".
+- Se creó un icono compuesto nuevo, `senal-con-pajarita-45.svg`
+  (semáforo de 3 luces + pajarita con el 45 debajo, unidos por el
+  mismo vástago, replicando la foto original), que sustituye al icono
+  suelto `senal-fija-fundamental.svg` en las líneas "Señal" de S2/13 y
+  S2/13A — ya no hace falta repetir "con pajarita a 45" en el texto,
+  lo muestra el propio icono. El icono suelto `pajarita-45.svg` queda
+  sin usar (no se borra, por si se reutiliza).
+- Se quitó la explicación de "verde y amarillo" (icono y texto) de la
+  nota del 45, ya que no hacía falta repetirla aquí — el significado
+  general ya quedó documentado en `senales-aspectos.md`.
+- Se ajustó `ContentImage` en `DocPage.tsx` para que los iconos
+  `senal-con-pajarita-*` usen `h-12 w-auto` (como los paneles de
+  velocidad apilados), al ser mucho más altos que anchos.
+
+**Pendiente:** seguir completando Barcelona-Sants.
+
+---
+
 ## 2026-11-07 (1) — Corrección del significado de la pajarita, aspecto verde-amarillo nuevo, E12 y 45
 
 **Qué se hizo:** el usuario corrigió e hizo preguntas que resolvieron
