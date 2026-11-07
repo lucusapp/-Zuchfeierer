@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (21) — Segunda señal de entrada E2/2A a la Bifurcación Aragón
+
+**Qué se hizo:** se añadió **E2/2A**, segunda señal de entrada a la
+Bifurcación Aragón: baliza previa después de unos cambios, señal
+similar a E2 (icono genérico, ya que no se confirmó si también es de
+tipo pajarita ni su valor), e indicadora de dirección eléctrica con la
+F, delante de la señal, igual que en E2.
+
+**Pendiente:** confirmar si la señal E2/2A también es de tipo pajarita
+y, si es así, su valor.
+
+---
+
 ## 2026-11-07 (20) — Indicador de agujas diagonal, recuerda los 40 ya establecidos
 
 **Qué se hizo:** el usuario mandó una foto de un indicador negro con
