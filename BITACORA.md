@@ -12,6 +12,24 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (9) — S2/13-14 vuelve a la estación; la señal permisiva se llama 6267
+
+**Qué se hizo:** el usuario aclaró que S2/13-14 sigue dentro de los
+límites de Barcelona-Sants (tercera corrección de este límite en la
+zona) — se movió de vuelta a `barcelona-sants.md`, anidada bajo el
+grupo del 60 junto a IA25. En el tramo hacia Passeig de Gràcia se quitó
+la nota "salimos de Barcelona-Sants a velocidad máxima" del 60 (ya no
+aplicaba) y se dio nombre a la señal permisiva pendiente: **6267**,
+reformateada igual que el resto de señales con nombre (grupo en
+negrita con Previa y Señal anidadas, en vez de líneas sueltas).
+
+**Qué se decidió y por qué:** dado que este límite estación/tramo
+lleva corrigiéndose varias veces seguidas, conviene preguntar
+explícitamente la próxima vez que se dicte un punto cerca de esta
+transición, en vez de inferirlo de la estructura del texto.
+
+---
+
 ## 2026-11-07 (8) — Añadida la señal permisiva tras los cambios de talón
 
 **Qué se hizo:** se añadió la línea "Señal — permisiva" justo después
