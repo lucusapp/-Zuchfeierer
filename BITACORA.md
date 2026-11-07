@@ -12,6 +12,19 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (5) — Señal de velocidad máxima 60 cierra el grupo del 45
+
+**Qué se hizo:** revisando el tramo Barcelona-Sants → Passeig de
+Gràcia, el usuario añadió una señal de velocidad máxima de 60 justo
+antes de la indicadora eléctrica de posición de agujas. Al ser una
+señal absoluta, se le dio su propio grupo de nivel superior (nuevo
+**60**, icono `velocidad-maxima-60.svg`), cerrando el 45 y pasando
+todo lo que ya había después (indicadora, S2/13-14, cambios de talón,
+previa de la señal permisiva, cambio de canal 69) a anidarse bajo este
+nuevo 60.
+
+---
+
 ## 2026-11-07 (4) — Movido el tramo del túnel a Barcelona-Sants → Passeig de Gràcia
 
 **Qué se hizo:** el usuario avisó de que el bloque final de
