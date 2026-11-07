@@ -95,7 +95,7 @@ function ContentImage(props: { src?: string; alt?: string }) {
     // Los paneles de velocidad con varias indicaciones apiladas (anuncio o
     // señal) son más altos que anchos: más alto que el resto de iconos, con
     // ancho automático para no deformar los círculos/rombos apilados.
-    const esVelocidadApilada = /(anuncio|senal)-velocidad-\d/.test(props.src)
+    const esVelocidadApilada = /(anuncio|senal)-velocidad-\d+-\d/.test(props.src)
     // La señal con pajarita (semáforo + pajarita debajo) es un icono
     // compuesto, mucho más alto que ancho: mismo tratamiento que los
     // paneles de velocidad apilados.

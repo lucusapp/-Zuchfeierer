@@ -12,6 +12,23 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (11) — Señal de 6269 permisiva, y 6271 con anuncio de velocidad 55
+
+**Qué se hizo:** la señal 6269 es permisiva igual que 6267 (reutiliza
+`senal-permisiva.svg`) y sigue sin referencias de ubicación. Se añadió
+la siguiente, **6271**, también permisiva, con un anuncio de velocidad
+a 55 km/h entre su baliza previa y la señal. Se creó un icono nuevo,
+`anuncio-velocidad-55.svg` (círculo amarillo simple, mismo patrón que
+`anuncio-ltv-110.svg`, sin ser necesariamente una LTV). Al crearlo se
+detectó que su nombre coincidía con el patrón usado para los paneles
+de velocidad apilados (`anuncio-velocidad-\d`) en `DocPage.tsx`, lo
+que le habría aplicado el tamaño alto/ancho-automático pensado para
+esos paneles en vez del tamaño normal de icono simple — se ajustó el
+regex a `\d+-\d` (dos números) para que solo capture los paneles
+apilados de verdad.
+
+---
+
 ## 2026-11-07 (10) — Señal 6269 con su previa
 
 **Qué se hizo:** se añadió la señal **6269** con su baliza previa,

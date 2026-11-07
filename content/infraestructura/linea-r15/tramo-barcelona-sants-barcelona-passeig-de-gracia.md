@@ -15,3 +15,8 @@ meta:
   - ![Cambio de canal](infraestructura/senales/cambio-canal-69.svg) Cambio de canal — justo a continuación, al **canal 69**.
   - **6269**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa.
+    - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
+  - **6271**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa.
+    - ![Anuncio de velocidad](infraestructura/senales/anuncio-velocidad-55.svg) Anuncio de velocidad a **55**.
+    - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
