@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (8) — Añadida la señal permisiva tras los cambios de talón
+
+**Qué se hizo:** se añadió la línea "Señal — permisiva" justo después
+de su baliza previa, en el tramo Barcelona-Sants → Passeig de Gràcia,
+reutilizando el icono `senal-permisiva.svg` ya existente (el mismo
+creado para la señal 54 del tramo Tarragona-Altafulla).
+
+---
+
 ## 2026-11-07 (7) — Corregido el límite estación/tramo: 60 e IA25 vuelven a Barcelona-Sants
 
 **Qué se hizo:** el usuario se dio cuenta de que se había confundido:

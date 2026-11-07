@@ -13,4 +13,5 @@ meta:
     - Señal — absoluta.
   - Cambios de talón.
   - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la siguiente señal permisiva, inmediatamente después de los cambios de talón.
+  - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
   - ![Cambio de canal](infraestructura/senales/cambio-canal-69.svg) Cambio de canal — justo a continuación, al **canal 69**.

@@ -1698,7 +1698,7 @@
     "meta": {
       "tipo": "tramo"
     },
-    "body": "- ![60](infraestructura/senales/velocidad-maxima-60.svg) **60** — salimos de Barcelona-Sants a velocidad máxima.\n  - **S2/13-14**\n    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — inmediatamente después de la indicadora de posición de agujas eléctrica (IA25). La señal sigue el túnel.\n    - Señal — absoluta.\n  - Cambios de talón.\n  - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la siguiente señal permisiva, inmediatamente después de los cambios de talón.\n  - ![Cambio de canal](infraestructura/senales/cambio-canal-69.svg) Cambio de canal — justo a continuación, al **canal 69**."
+    "body": "- ![60](infraestructura/senales/velocidad-maxima-60.svg) **60** — salimos de Barcelona-Sants a velocidad máxima.\n  - **S2/13-14**\n    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — inmediatamente después de la indicadora de posición de agujas eléctrica (IA25). La señal sigue el túnel.\n    - Señal — absoluta.\n  - Cambios de talón.\n  - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — de la siguiente señal permisiva, inmediatamente después de los cambios de talón.\n  - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.\n  - ![Cambio de canal](infraestructura/senales/cambio-canal-69.svg) Cambio de canal — justo a continuación, al **canal 69**."
   },
   {
     "section": "infraestructura",
