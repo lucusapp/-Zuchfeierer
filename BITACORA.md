@@ -12,6 +12,14 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (17) — Baliza previa de la señal avanzada E'2
+
+**Qué se hizo:** se añadió la baliza previa de E'2, justo después de
+pasar la pantalla de proximidad de dos líneas, antes de la línea de la
+señal (siguiendo el patrón Previa → Señal).
+
+---
+
 ## 2026-11-07 (16) — Correcciones: E'2 es avanzada (no intermedia) y el anuncio de 55 es blanco
 
 **Qué se hizo:** tras una pausa (se paró el codespace con `gh
