@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (6) — Nombrada la indicadora eléctrica de agujas como IA25
+
+**Qué se hizo:** la indicadora eléctrica de posición de agujas a vía
+directa, en mitad del túnel, pasa a tener nombre propio: **IA25**. Se
+convirtió en grupo con nombre (como S2/13-14) y se referenció por
+nombre en la baliza previa de S2/13-14 que viene justo después.
+
+---
+
 ## 2026-11-07 (5) — Señal de velocidad máxima 60 cierra el grupo del 45
 
 **Qué se hizo:** revisando el tramo Barcelona-Sants → Passeig de
