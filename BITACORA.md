@@ -12,6 +12,16 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (23) — Señal de velocidad máxima 60 tras el desvío, con nota de atención
+
+**Qué se hizo:** se añadió la señal de velocidad máxima de 60 km/h
+después del desvío, con una nota de atención (⚠️) porque se viene en
+secuencia con un anuncio de parada (el de E2/2A). Se usó el emoji ⚠️
+dentro del texto, no el bloque de alerta roja reservado para avisos
+operativos críticos tipo "no podemos irnos sin X".
+
+---
+
 ## 2026-11-07 (22) — Aspectos en las señales de entrada: verde-amarillo en E2, amarillo en E2/2A
 
 **Qué se hizo:** se añadió el icono de aspecto ![verde y amarillo]

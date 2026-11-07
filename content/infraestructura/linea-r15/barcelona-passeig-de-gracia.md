@@ -18,3 +18,4 @@ meta:
   - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — segunda señal de entrada a la Bifurcación Aragón, después de unos cambios.
   - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) ![Amarillo fijo](infraestructura/senales/amarillo-fijo.svg) Señal — de entrada a la Bifurcación Aragón. Similar a E2. En anuncio de parada.
   - ![Indicadora de dirección F](infraestructura/senales/indicadora-direccion-f.svg) Indicadora de dirección eléctrica — delante de la señal, con la **F**, igual que en E2.
+- ![60](infraestructura/senales/velocidad-maxima-60.svg) **60** — después del desvío. ⚠️ Atención: venimos en secuencia con anuncio de parada.
