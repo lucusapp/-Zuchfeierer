@@ -12,6 +12,24 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (4) — Movido el tramo del túnel a Barcelona-Sants → Passeig de Gràcia
+
+**Qué se hizo:** el usuario avisó de que el bloque final de
+`barcelona-sants.md` (indicadora de posición de agujas en el túnel,
+señal S2/13-14, cambios de talón, previa de la siguiente señal
+permisiva y cambio de canal 69) en realidad ya pertenece al siguiente
+tramo, Barcelona-Sants → Barcelona-Passeig de Gràcia, no a la
+estación. Se trasladó tal cual a
+`tramo-barcelona-sants-barcelona-passeig-de-gracia.md`, manteniendo el
+45 como velocidad de salida de la estación (nivel superior del
+tramo). Barcelona-Sants queda ahora terminando en "Suelen meternos por
+la desviada."
+
+**Pendiente:** seguir completando el tramo Barcelona-Sants →
+Barcelona-Passeig de Gràcia.
+
+---
+
 ## 2026-11-07 (3) — Descripción del 45 más breve
 
 **Qué se hizo:** el usuario pidió recortar la nota del grupo del 45 a
