@@ -12,6 +12,21 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (24) — Arranca el tramo Passeig de Gràcia → Estació de França
+
+**Qué se hizo:** se empezó a rellenar
+`tramo-barcelona-passeig-de-gracia-barcelona-estacio-de-franca.md`
+(hasta ahora "Pendiente de completar"): baliza previa de la señal
+avanzada de Barcelona-Estació de França, en curva a derechas, con una
+nota de seguridad importante: como no se ve el aspecto de la señal,
+hay que ir siempre en condiciones de parar aunque la baliza cante vía
+libre (nota con ⚠️ inline, no el bloque de alerta roja reservado para
+avisos de tipo "no podemos irnos sin X").
+
+**Pendiente:** seguir completando este tramo.
+
+---
+
 ## 2026-11-07 (23) — Señal de velocidad máxima 60 tras el desvío, con nota de atención
 
 **Qué se hizo:** se añadió la señal de velocidad máxima de 60 km/h
