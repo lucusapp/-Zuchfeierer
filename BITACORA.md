@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (26) — Señal avanzada real: cambio de canal 62, en anuncio de precaución
+
+**Qué se hizo:** se añadió la señal **Avanzada** (la real, distinta de
+la intermedia ya documentada): tiene un cambio de canal al 62 y suele
+estar en anuncio de precaución (verde-amarillo). Se creó el icono
+`cambio-canal-62.svg` y se reutilizó `verde-amarillo.svg`.
+
+---
+
 ## 2026-11-07 (25) — Corrección: es intermedia absoluta, no la avanzada; iconos de pantallas de 3 y 2 rayas
 
 **Qué se hizo:** el usuario corrigió que la señal recién añadida no es
