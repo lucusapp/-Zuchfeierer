@@ -12,6 +12,33 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (15) — Arranca Barcelona-Passeig de Gràcia: E2 de la Bifurcación Aragón
+
+**Qué se hizo:** el usuario explicó el criterio de corte en esta zona:
+las bifurcaciones tienen consideración de estación en el reglamento,
+pero la ruta de la app está delimitada por paradas, así que se hace
+una salvedad: el tramo desde Sants termina en la señal avanzada de la
+Bifurcación Aragón (que ya es **E'2**, sin cambios), y el detalle de
+Barcelona-Passeig de Gràcia cubre hasta la señal de entrada de la
+Bifurcación Aragón. Se arrancó `barcelona-passeig-de-gracia.md` con
+una velocidad de referencia de **55** (icono nuevo
+`velocidad-maxima-55.svg`) y la señal **E2** de entrada a la
+Bifurcación Aragón: baliza previa en mitad del andén (suele estar en
+anuncio de precaución, se ve desde el andén), indicadora de dirección
+eléctrica con la **F** de Francia (icono nuevo
+`indicadora-direccion-f.svg`, mismo patrón que la B de Barcelona), y
+el estacionamiento casi al final del andén, antes de la marca amarilla
+del número 2.
+
+**Qué se decidió y por qué:** se preguntó primero dónde iba este
+contenido, dado el historial de confusiones en este límite
+estación/tramo — la respuesta aclaró el criterio general para toda
+esta zona de bifurcaciones, no solo para este punto.
+
+**Pendiente:** seguir completando Barcelona-Passeig de Gràcia.
+
+---
+
 ## 2026-11-07 (14) — Corregido el nombre: 1214 era en realidad la avanzada E'2
 
 **Qué se hizo:** el usuario corrigió que la señal recién añadida como
