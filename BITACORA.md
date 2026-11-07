@@ -12,6 +12,25 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (25) — Corrección: es intermedia absoluta, no la avanzada; iconos de pantallas de 3 y 2 rayas
+
+**Qué se hizo:** el usuario corrigió que la señal recién añadida no es
+la avanzada de Barcelona-Estació de França, sino una **intermedia
+absoluta** situada entre las pantallas de proximidad de tres rayas y
+dos rayas de la (verdadera) avanzada. Se renombró el grupo a
+"Intermedia *(nombre por confirmar)*" y se añadió "Señal — intermedia,
+absoluta." Se crearon dos iconos nuevos, `pantalla-proximidad-3-rayas.svg`
+y `pantalla-proximidad-2-rayas.svg` (rayas diagonales discretas,
+contables, a diferencia del patrón de rayas continuo del icono
+`senal-proximidad-avanzada.svg` ya existente), para poder distinguir
+visualmente el número de rayas de cada pantalla.
+
+**Pendiente:** confirmar el nombre/número real de esta señal
+intermedia, y documentar la avanzada real de Estació de França más
+adelante.
+
+---
+
 ## 2026-11-07 (24) — Arranca el tramo Passeig de Gràcia → Estació de França
 
 **Qué se hizo:** se empezó a rellenar
