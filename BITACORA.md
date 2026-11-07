@@ -12,6 +12,26 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (7) — Corregido el límite estación/tramo: 60 e IA25 vuelven a Barcelona-Sants
+
+**Qué se hizo:** el usuario se dio cuenta de que se había confundido:
+la señal de velocidad máxima 60 y la indicadora IA25 siguen dentro de
+los límites de la estación de Barcelona-Sants; el tramo hacia Passeig
+de Gràcia empieza realmente en **S2/13-14**. Se movieron el 60 e IA25
+de vuelta a `barcelona-sants.md` (como nuevo grupo de nivel superior,
+después de "Suelen meternos por la desviada"), y
+`tramo-barcelona-sants-barcelona-passeig-de-gracia.md` se reescribió
+para empezar directamente en un 60 de salida (velocidad heredada de la
+estación) con S2/13-14 como primer punto anidado.
+
+**Qué se decidió y por qué:** segunda vez que el límite
+estación/tramo se corrige en esta zona (antes con el bloque del túnel
+completo, ahora con el 60/IA25) — señal de que conviene preguntar el
+límite exacto la próxima vez que se dicte algo cerca de una transición
+de estación a tramo, en vez de asumirlo por la forma del texto.
+
+---
+
 ## 2026-11-07 (6) — Nombrada la indicadora eléctrica de agujas como IA25
 
 **Qué se hizo:** la indicadora eléctrica de posición de agujas a vía

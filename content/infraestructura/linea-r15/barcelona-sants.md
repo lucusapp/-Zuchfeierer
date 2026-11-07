@@ -18,3 +18,6 @@ meta:
     - ![Señal con pajarita](infraestructura/senales/senal-con-pajarita-45.svg) Señal — en el lugar donde debería estar el piquete entre esta vía y la desviada.
     - ![Indicadora de dirección B](infraestructura/senales/indicadora-direccion-b.svg) Indicadora de dirección eléctrica — debe tener la **B**, que indica que vamos a Barcelona.
   - Suelen meternos por la desviada.
+- ![60](infraestructura/senales/velocidad-maxima-60.svg) **60** — justo antes de la indicadora eléctrica de posición de agujas.
+  - **IA25**
+    - ![Indicadora de posición de agujas](infraestructura/senales/indicador-posicion-agujas.svg) Indicadora eléctrica de posición de agujas a vía directa — en mitad del túnel.
