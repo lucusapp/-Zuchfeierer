@@ -12,6 +12,30 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (18) — Reestructurada Passeig de Gràcia: Estacionamiento primero, 55 entre Previa y Señal, pajarita en E2
+
+**Qué se hizo:** el usuario corrigió el orden porque la señal de
+velocidad máxima 55 está después del andén de viajeros, no antes: en
+`barcelona-passeig-de-gracia.md`, "Estacionamiento" pasa a ser el
+primer punto de la página (antes de E2), y el 55 deja de ser el
+nivel superior que envuelve a E2 para convertirse en un punto
+intermedio dentro de **E2**, entre su Previa y su Señal. Además, el
+usuario aclaró que el aspecto de la señal de entrada es de **pajarita
+a 45** (no un semáforo simple) — se reutilizó el icono compuesto
+`senal-con-pajarita-45.svg` ya existente, sin crear uno nuevo.
+
+**Qué se decidió y por qué:** se preguntó primero si E2 entero debía
+moverse antes del 55 o solo la línea de estacionamiento, dado que ya
+se habían corregido estructuras similares varias veces en esta sesión
+— la respuesta aclaró una estructura distinta a ambas opciones
+planteadas (55 dentro de E2, no fuera), así que se siguió literalmente
+lo que pidió el usuario en vez de forzar la convención habitual de
+"nivel superior = solo velocidad" para esta página concreta.
+
+**Pendiente:** seguir completando Barcelona-Passeig de Gràcia.
+
+---
+
 ## 2026-11-07 (17) — Baliza previa de la señal avanzada E'2
 
 **Qué se hizo:** se añadió la baliza previa de E'2, justo después de
