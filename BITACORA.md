@@ -12,6 +12,16 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (14) — Corregido el nombre: 1214 era en realidad la avanzada E'2
+
+**Qué se hizo:** el usuario corrigió que la señal recién añadida como
+"1214" es en realidad la propia señal avanzada **E'2** de la
+bifurcación (la misma que anuncian las pantallas de proximidad de
+6271). Se renombró el grupo de "1214" a "E'2", sin tocar el resto del
+texto (intermedia, absoluta, antes de entrar al andén de viajeros).
+
+---
+
 ## 2026-11-07 (13) — Señal intermedia 1214, absoluta, antes del andén de viajeros
 
 **Qué se hizo:** se añadió la señal **1214** (intermedia, absoluta),
