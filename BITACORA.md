@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (19) — Corregida la pajarita de E2: 40, no 45
+
+**Qué se hizo:** el usuario corrigió el valor de la pajarita de la
+señal de entrada E2 (grabado en un túnel, con mala visibilidad): es
+**40**, no 45. Se creó el icono `senal-con-pajarita-40.svg` (mismo
+patrón compuesto que el de 45) y se actualizó el texto.
+
+---
+
 ## 2026-11-07 (18) — Reestructurada Passeig de Gràcia: Estacionamiento primero, 55 entre Previa y Señal, pajarita en E2
 
 **Qué se hizo:** el usuario corrigió el orden porque la señal de
