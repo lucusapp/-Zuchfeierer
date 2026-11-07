@@ -7,7 +7,7 @@ meta:
   tipo: "estacion"
 ---
 
-- ![45](infraestructura/senales/velocidad-maxima-45.svg) **45** — velocidad de referencia en la estación. Señal de velocidad máxima, justo después de la señal de entrada E12 y justo antes de las agujas.
+- ![45](infraestructura/senales/velocidad-maxima-45.svg) **45** — justo después de la señal de entrada E12 y justo antes de las agujas.
   - **E12**
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — de entrada. Con ella empieza la estación.
   - **S2/13**

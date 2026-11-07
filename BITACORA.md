@@ -12,6 +12,16 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (3) — Descripción del 45 más breve
+
+**Qué se hizo:** el usuario pidió recortar la nota del grupo del 45 a
+solo lo esencial ("justo después de la señal de entrada E12 y justo
+antes de las agujas"), quitando "velocidad de referencia en la
+estación. Señal de velocidad máxima,", para mantener descripciones
+breves como en el resto de la línea.
+
+---
+
 ## 2026-11-07 (2) — Reordenado Barcelona-Sants: E12 primero, 45 blanco de referencia, icono combinado señal+pajarita
 
 **Qué se hizo:** el usuario pidió reordenar y limpiar la estación,
