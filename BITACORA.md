@@ -12,6 +12,16 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (10) — Señal 6269 con su previa
+
+**Qué se hizo:** se añadió la señal **6269** con su baliza previa,
+anidada bajo el 60, justo después del cambio de canal 69.
+
+**Pendiente:** ubicación y detalle de la señal 6269 en sí (aún no
+dictados).
+
+---
+
 ## 2026-11-07 (9) — S2/13-14 vuelve a la estación; la señal permisiva se llama 6267
 
 **Qué se hizo:** el usuario aclaró que S2/13-14 sigue dentro de los
