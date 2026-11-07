@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (22) — Aspectos en las señales de entrada: verde-amarillo en E2, amarillo en E2/2A
+
+**Qué se hizo:** se añadió el icono de aspecto ![verde y amarillo]
+(`verde-amarillo.svg`, anuncio de precaución) junto a la señal E2, y
+el de amarillo fijo (`amarillo-fijo.svg`, anuncio de parada) junto a
+E2/2A, reutilizando los iconos ya existentes de `senales-aspectos.md`.
+
+---
+
 ## 2026-11-07 (21) — Segunda señal de entrada E2/2A a la Bifurcación Aragón
 
 **Qué se hizo:** se añadió **E2/2A**, segunda señal de entrada a la
