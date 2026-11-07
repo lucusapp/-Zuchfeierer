@@ -22,4 +22,4 @@ meta:
     - ![Anuncio de velocidad](infraestructura/senales/anuncio-velocidad-55.svg) Anuncio de velocidad a **55**.
     - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
   - **E'2**
-    - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — intermedia, absoluta. Antes de entrar al andén de viajeros.
+    - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — avanzada, absoluta. Antes de entrar al andén de viajeros.

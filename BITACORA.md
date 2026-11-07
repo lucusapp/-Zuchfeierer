@@ -12,6 +12,18 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (16) — Correcciones: E'2 es avanzada (no intermedia) y el anuncio de 55 es blanco
+
+**Qué se hizo:** tras una pausa (se paró el codespace con `gh
+codespace stop` a petición del usuario para no consumir cuota de
+GitHub, y se retomó en una nueva sesión), el usuario corrigió dos
+detalles: la señal **E'2** no es "intermedia, absoluta" sino la
+**avanzada** de la Bifurcación Aragón — se corrigió el texto; y el
+icono `anuncio-velocidad-55.svg` tenía fondo amarillo y debe ser
+blanco — se cambió el `fill` del círculo a `#ffffff`.
+
+---
+
 ## 2026-11-07 (15) — Arranca Barcelona-Passeig de Gràcia: E2 de la Bifurcación Aragón
 
 **Qué se hizo:** el usuario explicó el criterio de corte en esta zona:
