@@ -14,6 +14,7 @@ Iconos reutilizables para la columna "Aspecto" de las tablas de señales en cada
 | ![Amarillo fijo](infraestructura/senales/amarillo-fijo.svg) | Amarillo fijo | Anuncio de parada |
 | ![Amarillo intermitente](infraestructura/senales/amarillo-intermitente.svg) | Amarillo intermitente | Preanuncio de parada |
 | ![Verde fijo](infraestructura/senales/verde-fijo.svg) | Verde fijo | Vía libre |
-| ![Verde intermitente](infraestructura/senales/verde-intermitente.svg) | Verde intermitente | Vía libre con limitación en el próximo cambio de aguja |
+| ![Verde intermitente](infraestructura/senales/verde-intermitente.svg) | Verde intermitente | Vía libre condicional. No exceder los 160 km/h al pasar por la señal siguiente, salvo que esta última ordene vía libre |
+| ![Verde y amarillo](infraestructura/senales/verde-amarillo.svg) | Verde y amarillo (a la vez) | Anuncio de precaución |
 
 *Pendiente de confirmar con el usuario si este repertorio coincide con el de sus líneas, o si hace falta añadir/corregir aspectos.*

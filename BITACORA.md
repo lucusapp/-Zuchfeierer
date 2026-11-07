@@ -12,6 +12,46 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (1) — Corrección del significado de la pajarita, aspecto verde-amarillo nuevo, E12 y 45
+
+**Qué se hizo:** el usuario corrigió e hizo preguntas que resolvieron
+varias cosas a la vez, tras un vaivén de aclaraciones:
+- El significado de la pajarita de 45: NO es "la velocidad general del
+  tramo", sino una indicación condicional — cuando la señal muestra
+  **anuncio de precaución** (verde y amarillo encendidos a la vez), las
+  agujas situadas después de la señal siguiente se pasan a la velocidad
+  que marca la pajarita. Se reescribió la nota del grupo del 45 en
+  `barcelona-sants.md` para reflejarlo, y se creó el icono nuevo
+  `verde-amarillo.svg` (dos círculos, verde y amarillo, mismo estilo que
+  el resto de aspectos) para ilustrarlo.
+- El valor del tramo SÍ sigue siendo 45 (el usuario dijo primero que era
+  60, pero tras revisar confirmó que era 45; no se cambió el nivel
+  superior).
+- `senales-aspectos.md` tenía mal el significado de "Verde intermitente":
+  decía "Vía libre con limitación en el próximo cambio de aguja" y debe
+  decir "Vía libre condicional. No exceder los 160 km/h al pasar por la
+  señal siguiente, salvo que esta última ordene vía libre." Se corrigió,
+  y se añadió la fila nueva de "Verde y amarillo (a la vez)" = "Anuncio
+  de precaución", que no existía.
+- Se añadió la señal **E12** (de entrada, nueva, sin aspecto confirmado
+  — icono genérico) y, justo después y antes de las agujas, una señal
+  de velocidad máxima de **45** (icono nuevo `velocidad-maxima-45.svg`),
+  ambas nuevas, ubicadas antes de S2/13A.
+- Se añadió también la baliza previa de S2/13 (la primera señal de
+  salida), justo antes de la marca amarilla de suelo del andén con el
+  número 1 (punto de parada de composiciones simples).
+
+**Qué se decidió y por qué:** se preguntó dos veces para desenredar a
+qué señal se refería "la señal... justo después de E12" (no eran
+S2/13 ni S2/13A, sino una tercera señal de velocidad máxima de 45),
+en vez de adivinar y arriesgarse a mezclar señales como ya pasó antes
+con E4T.
+
+**Pendiente:** seguir completando Barcelona-Sants y confirmar el
+aspecto real de E12 cuando el usuario tenga foto.
+
+---
+
 ## 2026-11-06 (13) — Cambio de canal 69 en Barcelona-Sants
 
 **Qué se hizo:** se añadió el letrero de cambio de canal al **canal

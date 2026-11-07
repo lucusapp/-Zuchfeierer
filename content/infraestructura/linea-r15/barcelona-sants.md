@@ -7,10 +7,14 @@ meta:
   tipo: "estacion"
 ---
 
-- ![Pajarita de velocidad 45](infraestructura/senales/pajarita-45.svg) **45** — velocidad por vía general de las dos señales de salida (pajarita).
+- ![Pajarita de velocidad 45](infraestructura/senales/pajarita-45.svg) **45** — pajarita de las dos señales de salida por vía general. Cuando la señal está en anuncio de precaución (![Verde y amarillo](infraestructura/senales/verde-amarillo.svg) verde y amarillo a la vez), las agujas situadas después de la señal siguiente se pasan a la velocidad que marca la pajarita.
   - **S2/13**
+    - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa — justo antes de llegar a la marca amarilla de suelo del andén con el número **1**, que indica el punto de parada para composiciones simples.
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — al final del andén.
     - ![Indicadora de dirección B](infraestructura/senales/indicadora-direccion-b.svg) Indicadora de dirección eléctrica — debe tener la **B**, que indica que vamos a Barcelona.
+  - **E12**
+    - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — de entrada.
+  - ![45](infraestructura/senales/velocidad-maxima-45.svg) Señal de velocidad máxima de **45** — justo después de la señal de entrada E12, justo antes de las agujas.
   - **S2/13A**
     - ![Señal fija fundamental](infraestructura/senales/senal-fija-fundamental.svg) Señal — en el lugar donde debería estar el piquete entre esta vía y la desviada.
     - ![Indicadora de dirección B](infraestructura/senales/indicadora-direccion-b.svg) Indicadora de dirección eléctrica — debe tener la **B**, que indica que vamos a Barcelona.
