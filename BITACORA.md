@@ -12,6 +12,15 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (13) — Señal intermedia 1214, absoluta, antes del andén de viajeros
+
+**Qué se hizo:** se añadió la señal **1214** (intermedia, absoluta),
+justo antes de entrar al andén de viajeros, con el icono genérico de
+señal fija fundamental. El usuario dio el nombre justo después de
+dictarla, así que se formateó directamente como grupo con nombre.
+
+---
+
 ## 2026-11-07 (12) — Primera pantalla de proximidad a la avanzada de la bifurcación
 
 **Qué se hizo:** el usuario mandó una foto de un poste con travesaño y
