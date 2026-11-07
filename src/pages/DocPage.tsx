@@ -88,10 +88,11 @@ function ContentImage(props: { src?: string; alt?: string }) {
     // La baliza previa es un marcador de texto, no una señal en sí: un poco
     // más pequeña que los iconos de señales (semáforo, velocidad máxima).
     const esBalizaPrevia = /baliza-previa\.svg$/.test(props.src)
-    // Los carteles de cambio de canal son apaisados (rectángulo ancho con
-    // texto), no cuadrados como el resto de iconos: ancho automático en vez
-    // de forzar un cuadrado, para no deformar el texto.
-    const esCambioCanal = /cambio-canal/.test(props.src)
+    // Los carteles de cambio de canal y las pantallas de proximidad a la
+    // bifurcación son apaisados (rectángulo ancho con poste a un lado), no
+    // cuadrados como el resto de iconos: ancho automático en vez de forzar
+    // un cuadrado, para no deformarlos.
+    const esCambioCanal = /cambio-canal|pantalla-proximidad/.test(props.src)
     // Los paneles de velocidad con varias indicaciones apiladas (anuncio o
     // señal) son más altos que anchos: más alto que el resto de iconos, con
     // ancho automático para no deformar los círculos/rombos apilados.

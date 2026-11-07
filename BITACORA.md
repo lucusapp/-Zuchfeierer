@@ -12,6 +12,22 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-07 (12) — Primera pantalla de proximidad a la avanzada de la bifurcación
+
+**Qué se hizo:** el usuario mandó una foto de un poste con travesaño y
+un panel ámbar con una flecha/galón negro apuntando a la izquierda, y
+dictó que está justo antes del anuncio de velocidad de 55 de la señal
+6271: es la primera pantalla de proximidad a la avanzada de la
+bifurcación (sugiere que puede haber más de una, numeradas). Se creó
+el icono nuevo `pantalla-proximidad-bifurcacion-1.svg` y se ajustó
+`ContentImage` para que los iconos `pantalla-proximidad-*` usen ancho
+automático (igual que los de cambio de canal), al ser apaisados.
+
+**Pendiente:** confirmar si hay una segunda pantalla de proximidad
+más adelante en la bifurcación.
+
+---
+
 ## 2026-11-07 (11) — Señal de 6269 permisiva, y 6271 con anuncio de velocidad 55
 
 **Qué se hizo:** la señal 6269 es permisiva igual que 6267 (reutiliza

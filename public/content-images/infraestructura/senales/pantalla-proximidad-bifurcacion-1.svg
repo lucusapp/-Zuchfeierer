@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" role="img" aria-label="Primera pantalla de proximidad a la avanzada de la bifurcación">
+  <line x1="5" y1="30" x2="60" y2="30" stroke="#111111" stroke-width="5"/>
+  <line x1="5" y1="12" x2="5" y2="48" stroke="#111111" stroke-width="5"/>
+  <rect x="60" y="10" width="90" height="40" rx="8" fill="#f59e0b" stroke="#78350f" stroke-width="3"/>
+  <path d="M 125 18 L 100 30 L 125 42 Z" fill="#111111"/>
+</svg>

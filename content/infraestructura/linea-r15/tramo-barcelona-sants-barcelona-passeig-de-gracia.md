@@ -18,5 +18,6 @@ meta:
     - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
   - **6271**
     - ![Baliza previa](infraestructura/senales/baliza-previa.svg) Previa.
+    - ![Pantalla de proximidad a la bifurcación](infraestructura/senales/pantalla-proximidad-bifurcacion-1.svg) Primera pantalla de proximidad a la avanzada de la bifurcación.
     - ![Anuncio de velocidad](infraestructura/senales/anuncio-velocidad-55.svg) Anuncio de velocidad a **55**.
     - ![Señal permisiva](infraestructura/senales/senal-permisiva.svg) Señal — permisiva.
