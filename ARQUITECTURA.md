@@ -157,6 +157,30 @@ navegador sigue sirviendo el bundle antiguo desde caché. Antes de asumir
 que un cambio "no se aplicó", conviene descartar esto primero (probar en
 una ventana de incógnito es la forma más rápida de comprobarlo).
 
+## 7. Bandeja de notas (`/notas`) — para dictar sin una sesión de Claude Code abierta
+
+Problema que resuelve: Claude Code solo actúa dentro de una sesión abierta,
+no hay forma de "avisarlo" en tiempo real desde el móvil (p. ej. mientras se
+conduce). La tabla `dictation_notes` (ver `supabase/schema.sql`) es una
+bandeja de entrada asíncrona para ese caso:
+
+- La página `/notas` (`src/pages/Notes.tsx`, `src/lib/notes.ts`) deja
+  escribir notas sueltas desde el móvil, gateado tras login igual que la
+  edición de contenido.
+- RLS: lectura **pública** (igual que `doc_overrides`, para que una sesión
+  de Claude Code pueda leerlas con la sola anon key) pero escritura
+  (insertar, marcar procesada, borrar) **solo autenticado**. Importante:
+  **Claude nunca escribe en esta tabla** — ni siquiera para marcar una nota
+  como procesada. Tras incorporar una nota al contenido real, le pide al
+  usuario que la marque como procesada o la borre desde la propia app.
+- Flujo esperado: el usuario apunta notas sueltas cuando no hay sesión
+  abierta → en la siguiente sesión, pide a Claude que "revise la bandeja de
+  notas" → Claude lee `dictation_notes` (vía `curl` con la anon key, igual
+  que ya hace con `doc_overrides`) y procesa cada nota pendiente una por
+  una, igual que si el usuario la hubiera dictado directamente en el chat
+  (preguntando si algo es ambiguo, verificando en el navegador, etc.) → al
+  terminar, le dice al usuario qué notas ya puede marcar/borrar.
+
 ## Resumen en una frase
 
 Git es la única fuente de verdad permanente y versionada del contenido;

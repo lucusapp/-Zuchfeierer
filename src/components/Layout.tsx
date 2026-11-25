@@ -81,6 +81,17 @@ export default function Layout() {
               {s.label}
             </NavLink>
           ))}
+          <NavLink
+            to="/notas"
+            className={({ isActive }) =>
+              `flex flex-col items-center text-xs px-3 py-1 ${
+                isActive ? 'text-rail-accent' : 'text-slate-400'
+              }`
+            }
+          >
+            <span className="text-lg">📝</span>
+            Notas
+          </NavLink>
         </nav>
       )}
 

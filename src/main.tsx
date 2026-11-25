@@ -6,6 +6,7 @@ import { AuthProvider } from './components/AuthContext'
 import Home from './pages/Home'
 import SectionPage from './pages/SectionPage'
 import DocPage from './pages/DocPage'
+import Notes from './pages/Notes'
 import { initOverrides } from './lib/overrides'
 import './index.css'
 
@@ -17,6 +18,7 @@ function renderApp() {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
+              <Route path="/notas" element={<Notes />} />
               <Route path="/:section" element={<SectionPage />} />
               <Route path="/:section/:slug/*" element={<DocPage />} />
             </Route>

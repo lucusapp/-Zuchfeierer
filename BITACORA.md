@@ -12,6 +12,54 @@ en los mensajes o en los commits va marcado como **(deducido)**.
 
 ---
 
+## 2026-11-25 (1) — Nueva bandeja de notas (`/notas`) para dictar sin sesión abierta
+
+**Qué se hizo:** sesión aparte dedicada a resolver dos cosas no
+relacionadas con el contenido de las líneas:
+- El usuario se olvidó de su contraseña para editar desde la app. Se le
+  guio para recuperarla desde el panel de Supabase (Authentication →
+  Users → clic en el email → "Send password recovery"); el enlace del
+  correo apuntaba a `localhost` (Site URL mal configurada para
+  producción) y luego saltó el límite de envíos de email de Supabase
+  (plan gratuito). Se le dio como alternativa fijar la contraseña
+  directamente vía la Admin API de Supabase con la `service_role`/`secret`
+  key (comando `curl` desde su propio `cmd`, sin que la clave pasara
+  nunca por este chat).
+- El usuario pidió una forma de enviar información a Claude sin tener
+  una sesión de Claude Code abierta (p. ej. dictando desde el móvil
+  mientras conduce). Como no hay forma de que la app "llame" a una
+  sesión en tiempo real, se montó una bandeja asíncrona: tabla nueva
+  `dictation_notes` en Supabase (lectura pública, escritura solo
+  autenticado — igual que `doc_overrides`), página nueva `/notas`
+  (`src/pages/Notes.tsx`, `src/lib/notes.ts`) con un textarea para
+  apuntar notas sueltas desde el móvil y lista de pendientes/procesadas,
+  e icono nuevo "📝 Notas" en la barra de navegación inferior
+  (`src/components/Layout.tsx`). Documentado en `ARQUITECTURA.md`
+  (apartado 7): Claude **nunca escribe** en esta tabla, ni para marcar
+  procesada una nota — solo lee con la anon key y le pide al usuario
+  que marque/borre desde la app tras incorporar cada nota al contenido
+  real.
+
+**Qué se decidió y por qué:** escritura restringida a usuarios
+autenticados y lectura pública, replicando exactamente el patrón ya
+usado por `doc_overrides`, para no introducir un modelo de permisos
+nuevo. Marcar como "procesada" lo hace el usuario desde la app, nunca
+Claude vía API, porque Claude solo dispone de la anon key (sin sesión
+de usuario) y las políticas RLS no se lo permiten — eso mantiene la
+tabla protegida de escritura no autenticada aunque la anon key se use
+libremente para leer.
+
+**Pendiente:** el usuario tiene que ejecutar el SQL actualizado de
+`supabase/schema.sql` (la sección 3, tabla `dictation_notes`) en el
+SQL Editor de su proyecto de Supabase — la tabla no existe todavía en
+producción. Recordarle hacerlo antes de usar `/notas` por primera vez.
+También hay que revisar la "Site URL" de Supabase (Authentication →
+URL Configuration), que apuntaba a `localhost` en vez de al dominio de
+producción — causó el error `ERR_CONNECTION_REFUSED` al pulsar el
+enlace de recuperación de contraseña.
+
+---
+
 ## 2026-11-07 (26) — Señal avanzada real: cambio de canal 62, en anuncio de precaución
 
 **Qué se hizo:** se añadió la señal **Avanzada** (la real, distinta de
